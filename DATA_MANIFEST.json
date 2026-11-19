@@ -1,0 +1,95 @@
+{
+  "generated_utc": "2026-11-19T21:45:08.359964+00:00",
+  "upstream_primary_corpus": {
+    "file": "data/raw/inscriptions_5679.csv",
+    "upstream_repo": "sriharideveloper/indus -> horus84/Computational_Linguistics",
+    "upstream_license_declared": "MIT (secondary transcription derived from ICIT/Wells-Fuls conventions; verify primary concordance rights before public redistribution)"
+  },
+  "files": [
+    {
+      "path": "data/raw/IM_417_150_PNG.zip",
+      "size_bytes": 672452,
+      "sha256": "da8bdabd972f89710e6f65dba6fc5b0d2189d2403f88bc5b4e1d12e20c65fc85"
+    },
+    {
+      "path": "data/raw/UPSTREAM_LICENSE_MIT.txt",
+      "size_bytes": 1064,
+      "sha256": "42d56bb3a8933e43760cc47a2d830dabd01a021b87b549f3faa28900775633b9"
+    },
+    {
+      "path": "data/raw/cisi_real_corpus.csv",
+      "size_bytes": 14521,
+      "sha256": "431b42a4b89ce0c06f3f52f6fc224a27f717ac6527b94d4f15a9d24d817429df"
+    },
+    {
+      "path": "data/raw/cisi_real_corpus_allograph.csv",
+      "size_bytes": 18261,
+      "sha256": "2b464963848d8046b635266e4706baf98495f78fecea0ab131cfa4bc32eb4048"
+    },
+    {
+      "path": "data/raw/cisi_real_corpus_hierarchical.csv",
+      "size_bytes": 16912,
+      "sha256": "1ab96a4019a62ad199e8a72cb0cd35d732fb35488c857515db06ebbbe22111d3"
+    },
+    {
+      "path": "data/raw/hf_indus_decipher_README.md",
+      "size_bytes": 10013,
+      "sha256": "098898eac28c96a74229f4bacb0c4dc8d73ae78bf37cdbbfb93f0d1d39d15d95"
+    },
+    {
+      "path": "data/raw/indus_website_population.sql",
+      "size_bytes": 431711,
+      "sha256": "a1bcc150e91ede5e1c3ce813073d8ac7bfe370d2709be320132a651ba9c7a54c"
+    },
+    {
+      "path": "data/raw/indus_website_real_corpus.csv",
+      "size_bytes": 182368,
+      "sha256": "7258075509684e008aea3d9726417de86a135c1a4325e2e633e0cb98598392c8"
+    },
+    {
+      "path": "data/raw/inscriptions_5679.csv",
+      "size_bytes": 1190884,
+      "sha256": "c368f290d8d784093d804243100de27ae6ad09df3ae37cab7432a0205d4ec9ef"
+    },
+    {
+      "path": "data/raw/sk_indus_script-webfont.ttf",
+      "size_bytes": 503676,
+      "sha256": "2fccc124e03b8c3644e601e35e5d62af57c71d2b66396c21c15813a4a932c478"
+    },
+    {
+      "path": "data/processed/glyph_similarity.csv",
+      "size_bytes": 1953,
+      "sha256": "dfe8354b28cf7b6fe67fd96dfaa21d1ba7e80b251caf212aa74e93bd4122e2ea"
+    },
+    {
+      "path": "data/processed/glyphs_clean.csv",
+      "size_bytes": 21448,
+      "sha256": "c5a44cbe6770641ff88c872dc4cca64214ffb70c9791eb0cfee2e7e83557fcc0"
+    },
+    {
+      "path": "data/processed/indus_canonical.sqlite",
+      "size_bytes": 2424832,
+      "sha256": "93b1bcde20b74e31e9c52194780f3f4e1c159a3a365e3c2143c1194e86c5d0c8"
+    },
+    {
+      "path": "data/processed/inscriptions_clean.csv",
+      "size_bytes": 1186087,
+      "sha256": "a11a29c8350b64b523cc6a91851a9c53c706414004d6b3e268cf890c16be44bd"
+    },
+    {
+      "path": "data/processed/lines_clean.csv",
+      "size_bytes": 779115,
+      "sha256": "db69e8b7abc39b0c3753fceed8c492af23f2a1659963139f2d9fc51317fdc960"
+    },
+    {
+      "path": "data/external/faunatech_indus_traits.json",
+      "size_bytes": 22962,
+      "sha256": "6c0364d9f00adc23688b3b0b5c3feeb3ac8af79083268c8275b55f9ca1a87d7e"
+    },
+    {
+      "path": "data/external/tamil_nadu_graffiti_published.json",
+      "size_bytes": 10324,
+      "sha256": "0bf9b9e397601db8f44520e85451e607ca3fa03312b49451be3fb6858dbfabdf"
+    }
+  ]
+}

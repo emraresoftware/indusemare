@@ -1,0 +1,908 @@
+{
+  "audit1_global_fdr": {
+    "total_p_values_scanned": 422,
+    "bonferroni_alpha_05": 0.0001185,
+    "raw_p_lt_05": 379,
+    "survive_bh_fdr_05": 376,
+    "survive_bh_fdr_01": 285,
+    "survive_bonferroni_05": 155,
+    "dropped_by_fdr_05": 3,
+    "sample_dropped_by_fdr": [
+      {
+        "file": "layer3c_kinship_sacred.json",
+        "path": "test2_initial_openers_exclusion[5].p_avoid",
+        "context": "test2_initial_openers_exclusion[5]",
+        "label": "820 vs 920",
+        "p": 0.04949,
+        "q_bh": 0.0551,
+        "pass_raw_05": true,
+        "pass_fdr_05": false,
+        "pass_fdr_01": false,
+        "pass_bonf_05": false
+      },
+      {
+        "file": "layer3c_kinship_sacred.json",
+        "path": "test4_archaeology_contexts.DEITY_RITUAL_SCENES_Scene_Anth.top[2].p_value",
+        "context": "top[2]",
+        "label": "840",
+        "p": 0.0491,
+        "q_bh": 0.05482,
+        "pass_raw_05": true,
+        "pass_fdr_05": false,
+        "pass_fdr_01": false,
+        "pass_bonf_05": false
+      },
+      {
+        "file": "layer3g_faunatech_external.json",
+        "path": "part2_tamil_nadu_megalithic_graffiti.logistic_regression_complexity_control.dedup_unique_seqs.M6_split_adj_octiles_plus_seq_length.coefficients.O7.p_value",
+        "context": "O7",
+        "label": "part2_tamil_nadu_megalithic_graffiti.logistic_regression_complexity_control.dedup_unique_seqs.M6_split_adj_octiles_plus_seq_length.coefficients.O7",
+        "p": 0.045975,
+        "q_bh": 0.05146,
+        "pass_raw_05": true,
+        "pass_fdr_05": false,
+        "pass_fdr_01": false,
+        "pass_bonf_05": false
+      }
+    ],
+    "by_file": {
+      "layer1_2_findings.json": {
+        "total": 44,
+        "raw_05": 44,
+        "fdr_05": 44,
+        "fdr_01": 44,
+        "bonf_05": 37
+      },
+      "layer3_water_probe.json": {
+        "total": 39,
+        "raw_05": 39,
+        "fdr_05": 39,
+        "fdr_01": 21,
+        "bonf_05": 11
+      },
+      "layer3b_elements_findings.json": {
+        "total": 41,
+        "raw_05": 41,
+        "fdr_05": 41,
+        "fdr_01": 41,
+        "bonf_05": 20
+      },
+      "layer3c_kinship_sacred.json": {
+        "total": 62,
+        "raw_05": 52,
+        "fdr_05": 50,
+        "fdr_01": 28,
+        "bonf_05": 6
+      },
+      "layer3e_values_parallels.json": {
+        "total": 34,
+        "raw_05": 34,
+        "fdr_05": 34,
+        "fdr_01": 28,
+        "bonf_05": 12
+      },
+      "layer3f_fauna_seed_arch_order.json": {
+        "total": 82,
+        "raw_05": 82,
+        "fdr_05": 82,
+        "fdr_01": 51,
+        "bonf_05": 17
+      },
+      "layer3g_faunatech_external.json": {
+        "total": 103,
+        "raw_05": 70,
+        "fdr_05": 69,
+        "fdr_01": 55,
+        "bonf_05": 45
+      },
+      "layer5b_expanded_phonetic.json": {
+        "total": 17,
+        "raw_05": 17,
+        "fdr_05": 17,
+        "fdr_01": 17,
+        "bonf_05": 7
+      }
+    },
+    "headline_survival_table": [
+      {
+        "claim": "705/706->033 after Fish (p=2.15e-72)",
+        "raw_p": 2.15e-72,
+        "global_bh_q": 5.052e-71,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": "740 vs 520 avoidance (p=1.32e-40)",
+        "raw_p": 1.32e-40,
+        "global_bh_q": 2.792e-39,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": ":X: 4-dash terminalizer (p=4.38e-45)",
+        "raw_p": 4.38e-45,
+        "global_bh_q": 9.264e-44,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": "Numeral->Fish 254:59 (p=2.54e-26)",
+        "raw_p": 2.54e-26,
+        "global_bh_q": 3.581e-25,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": "Foreign SEAL:C human triad 15.7x (p=2.30e-13)",
+        "raw_p": 2.3e-13,
+        "global_bh_q": 2.263e-12,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": "Foreign>Heartland surprisal (p=6.98e-08)",
+        "raw_p": 6.98e-08,
+        "global_bh_q": 3.557e-07,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": "Citadel 370 47.7x (p=4.07e-05)",
+        "raw_p": 4.07e-05,
+        "global_bh_q": 0.0001179,
+        "pass_fdr_05": true,
+        "pass_bonf_05": true
+      },
+      {
+        "claim": "Harappa tablets Gavi/Fish 700 2.6x (p=4.59e-03)",
+        "raw_p": 0.00459,
+        "global_bh_q": 0.00706,
+        "pass_fdr_05": true,
+        "pass_bonf_05": false
+      },
+      {
+        "claim": "FaunaTech domestic_herd cluster (p=1.0e-03)",
+        "raw_p": 0.001,
+        "global_bh_q": 0.002024,
+        "pass_fdr_05": true,
+        "pass_bonf_05": false
+      },
+      {
+        "claim": "Layer 5B Mode 1 strict PDr (p=4.0e-03)",
+        "raw_p": 0.004,
+        "global_bh_q": 0.006267,
+        "pass_fdr_05": true,
+        "pass_bonf_05": false
+      },
+      {
+        "claim": "Tohum->Filiz 28:9 binomial (p=2.56e-03)",
+        "raw_p": 0.00256,
+        "global_bh_q": 0.00428,
+        "pass_fdr_05": true,
+        "pass_bonf_05": false
+      },
+      {
+        "claim": "Foreign SEAL:C 740 drop 34.8->6.7% (p=2.61e-02)",
+        "raw_p": 0.0261,
+        "global_bh_q": 0.03058,
+        "pass_fdr_05": true,
+        "pass_bonf_05": false
+      }
+    ]
+  },
+  "audit1b_position_preserving_null": {
+    "740_to_090_dedup": {
+      "obs_ab_ba": [
+        70,
+        1
+      ],
+      "pos_preserving_null_ab_mean": 3.9,
+      "pos_preserving_null_ba_mean": 3.06,
+      "pos_preserving_emp_p": 0.001,
+      "survives_pos_null": true
+    },
+    "705_706_to_033_dedup": {
+      "obs_ab_ba": [
+        87,
+        0
+      ],
+      "pos_preserving_null_ab_mean": 2.62,
+      "pos_preserving_null_ba_mean": 2.49,
+      "pos_preserving_emp_p": 0.001,
+      "survives_pos_null": true
+    }
+  },
+  "audit2a_seen_vs_unseen_trigram": {
+    "ALL": {
+      "n": 8639,
+      "model_top1_pct": 37.28,
+      "pos_baseline_top1_pct": 14.4,
+      "gain_vs_pos_base_pp": 22.88,
+      "model_top5_pct": 59.37,
+      "pos_baseline_top5_pct": 32.5,
+      "model_ce_bits": 5.041,
+      "pos_base_ce_bits": 6.585
+    },
+    "init": {
+      "n": 1736,
+      "model_top1_pct": 21.43,
+      "pos_baseline_top1_pct": 6.28,
+      "gain_vs_pos_base_pp": 15.15,
+      "model_top5_pct": 46.66,
+      "pos_baseline_top5_pct": 25.63,
+      "model_ce_bits": 6.444,
+      "pos_base_ce_bits": 7.404
+    },
+    "UNSEEN_TRIGRAM": {
+      "n": 4815,
+      "model_top1_pct": 13.91,
+      "pos_baseline_top1_pct": 7.54,
+      "gain_vs_pos_base_pp": 6.38,
+      "model_top5_pct": 33.23,
+      "pos_baseline_top5_pct": 19.42,
+      "model_ce_bits": 7.253,
+      "pos_base_ce_bits": 7.685
+    },
+    "init_UNSEEN": {
+      "n": 880,
+      "model_top1_pct": 1.25,
+      "pos_baseline_top1_pct": 0.8,
+      "gain_vs_pos_base_pp": 0.45,
+      "model_top5_pct": 6.93,
+      "pos_baseline_top5_pct": 5.68,
+      "model_ce_bits": 9.608,
+      "pos_base_ce_bits": 9.067
+    },
+    "medial": {
+      "n": 5167,
+      "model_top1_pct": 36.77,
+      "pos_baseline_top1_pct": 9.35,
+      "gain_vs_pos_base_pp": 27.42,
+      "model_top5_pct": 59.14,
+      "pos_baseline_top5_pct": 24.66,
+      "model_ce_bits": 4.965,
+      "pos_base_ce_bits": 6.908
+    },
+    "medial_UNSEEN": {
+      "n": 3419,
+      "model_top1_pct": 17.93,
+      "pos_baseline_top1_pct": 8.34,
+      "gain_vs_pos_base_pp": 9.59,
+      "model_top5_pct": 41.24,
+      "pos_baseline_top5_pct": 21.67,
+      "model_ce_bits": 6.45,
+      "pos_base_ce_bits": 7.294
+    },
+    "final": {
+      "n": 1736,
+      "model_top1_pct": 54.67,
+      "pos_baseline_top1_pct": 37.56,
+      "gain_vs_pos_base_pp": 17.11,
+      "model_top5_pct": 72.75,
+      "pos_baseline_top5_pct": 62.73,
+      "model_ce_bits": 3.863,
+      "pos_base_ce_bits": 4.804
+    },
+    "SEEN_TRIGRAM": {
+      "n": 3824,
+      "model_top1_pct": 66.71,
+      "pos_baseline_top1_pct": 23.04,
+      "gain_vs_pos_base_pp": 43.67,
+      "model_top5_pct": 92.29,
+      "pos_baseline_top5_pct": 48.98,
+      "model_ce_bits": 2.255,
+      "pos_base_ce_bits": 5.2
+    },
+    "final_SEEN": {
+      "n": 1220,
+      "model_top1_pct": 74.02,
+      "pos_baseline_top1_pct": 47.62,
+      "gain_vs_pos_base_pp": 26.39,
+      "model_top5_pct": 92.95,
+      "pos_baseline_top5_pct": 77.46,
+      "model_ce_bits": 1.877,
+      "pos_base_ce_bits": 3.489
+    },
+    "init_SEEN": {
+      "n": 856,
+      "model_top1_pct": 42.17,
+      "pos_baseline_top1_pct": 11.92,
+      "gain_vs_pos_base_pp": 30.26,
+      "model_top5_pct": 87.5,
+      "pos_baseline_top5_pct": 46.14,
+      "model_ce_bits": 3.191,
+      "pos_base_ce_bits": 5.694
+    },
+    "medial_SEEN": {
+      "n": 1748,
+      "model_top1_pct": 73.63,
+      "pos_baseline_top1_pct": 11.33,
+      "gain_vs_pos_base_pp": 62.3,
+      "model_top5_pct": 94.16,
+      "pos_baseline_top5_pct": 30.49,
+      "model_ce_bits": 2.061,
+      "pos_base_ce_bits": 6.152
+    },
+    "final_UNSEEN": {
+      "n": 516,
+      "model_top1_pct": 8.91,
+      "pos_baseline_top1_pct": 13.76,
+      "gain_vs_pos_base_pp": -4.84,
+      "model_top5_pct": 25.0,
+      "pos_baseline_top5_pct": 27.91,
+      "model_ce_bits": 8.557,
+      "pos_base_ce_bits": 7.914
+    }
+  },
+  "audit2b_loco_damaged_restoration": {
+    "edge_all_parallel_out": {
+      "n": 44,
+      "top1": "28/44 (63.6%)",
+      "top1_wilson_95ci": [
+        48.9,
+        76.2
+      ],
+      "top3": "32/44 (72.7%)",
+      "top3_wilson_95ci": [
+        58.2,
+        83.7
+      ],
+      "top5": "34/44 (77.3%)",
+      "pos_baseline_top1": "4/44 (9.1%)"
+    },
+    "edge_all_STRICT_LOCO": {
+      "n": 44,
+      "top1": "22/44 (50.0%)",
+      "top1_wilson_95ci": [
+        35.8,
+        64.2
+      ],
+      "top3": "28/44 (63.6%)",
+      "top3_wilson_95ci": [
+        48.9,
+        76.2
+      ],
+      "top5": "32/44 (72.7%)",
+      "pos_baseline_top1": "4/44 (9.1%)"
+    },
+    "edge_single_unambiguous_parallel_out": {
+      "n": 22,
+      "top1": "10/22 (45.5%)",
+      "top1_wilson_95ci": [
+        26.9,
+        65.3
+      ],
+      "top3": "13/22 (59.1%)",
+      "top3_wilson_95ci": [
+        38.7,
+        76.7
+      ],
+      "top5": "14/22 (63.6%)",
+      "pos_baseline_top1": "3/22 (13.6%)"
+    },
+    "edge_single_unambiguous_STRICT_LOCO": {
+      "n": 22,
+      "top1": "8/22 (36.4%)",
+      "top1_wilson_95ci": [
+        19.7,
+        57.0
+      ],
+      "top3": "10/22 (45.5%)",
+      "top3_wilson_95ci": [
+        26.9,
+        65.3
+      ],
+      "top5": "11/22 (50.0%)",
+      "pos_baseline_top1": "3/22 (13.6%)"
+    },
+    "edge_cross_site_parallel_out": {
+      "n": 25,
+      "top1": "20/25 (80.0%)",
+      "top1_wilson_95ci": [
+        60.9,
+        91.1
+      ],
+      "top3": "23/25 (92.0%)",
+      "top3_wilson_95ci": [
+        75.0,
+        97.8
+      ],
+      "top5": "23/25 (92.0%)",
+      "pos_baseline_top1": "2/25 (8.0%)"
+    },
+    "edge_cross_site_STRICT_LOCO": {
+      "n": 25,
+      "top1": "16/25 (64.0%)",
+      "top1_wilson_95ci": [
+        44.5,
+        79.8
+      ],
+      "top3": "21/25 (84.0%)",
+      "top3_wilson_95ci": [
+        65.3,
+        93.6
+      ],
+      "top5": "22/25 (88.0%)",
+      "pos_baseline_top1": "2/25 (8.0%)"
+    },
+    "edge_cross_site_single_STRICT_LOCO": {
+      "n": 14,
+      "top1": "10/14 (71.4%)",
+      "top1_wilson_95ci": [
+        45.4,
+        88.3
+      ],
+      "top3": "12/14 (85.7%)",
+      "top3_wilson_95ci": [
+        60.1,
+        96.0
+      ],
+      "top5": "12/14 (85.7%)",
+      "pos_baseline_top1": "1/14 (7.1%)"
+    },
+    "interior_all_parallel_out": {
+      "n": 10,
+      "top1": "5/10 (50.0%)",
+      "top1_wilson_95ci": [
+        23.7,
+        76.3
+      ],
+      "top3": "8/10 (80.0%)",
+      "top3_wilson_95ci": [
+        49.0,
+        94.3
+      ],
+      "top5": "9/10 (90.0%)",
+      "pos_baseline_top1": "1/10 (10.0%)"
+    },
+    "interior_all_STRICT_LOCO": {
+      "n": 10,
+      "top1": "3/10 (30.0%)",
+      "top1_wilson_95ci": [
+        10.8,
+        60.3
+      ],
+      "top3": "7/10 (70.0%)",
+      "top3_wilson_95ci": [
+        39.7,
+        89.2
+      ],
+      "top5": "8/10 (80.0%)",
+      "pos_baseline_top1": "1/10 (10.0%)"
+    },
+    "interior_single_STRICT_LOCO": {
+      "n": 7,
+      "top1": "1/7 (14.3%)",
+      "top1_wilson_95ci": [
+        2.6,
+        51.3
+      ],
+      "top3": "4/7 (57.1%)",
+      "top3_wilson_95ci": [
+        25.0,
+        84.2
+      ],
+      "top5": "5/7 (71.4%)",
+      "pos_baseline_top1": "1/7 (14.3%)"
+    },
+    "interior_cross_site_STRICT_LOCO": {
+      "n": 5,
+      "top1": "1/5 (20.0%)",
+      "top1_wilson_95ci": [
+        3.6,
+        62.4
+      ],
+      "top3": "4/5 (80.0%)",
+      "top3_wilson_95ci": [
+        37.6,
+        96.4
+      ],
+      "top5": "5/5 (100.0%)",
+      "pos_baseline_top1": "0/5 (0.0%)"
+    }
+  },
+  "audit3_seyyah_semantic_cluster_ablation": {
+    "n_unique_seqs_len_ge3": 1736,
+    "M0_structural_only_ce_bits": 5.0408,
+    "M0_structural_only_top1_pct": 37.28,
+    "M1_real_semantic_clusters_ce_bits": 5.0126,
+    "M1_real_semantic_clusters_top1_pct": 37.23,
+    "delta_ce_M1_vs_M0_bits": -0.0282,
+    "M2_null_matched_clusters_n": 100,
+    "M2_null_matched_ce_mean": 5.022,
+    "M2_null_matched_ce_std": 0.0014,
+    "delta_ce_M1_vs_M2_null_bits": -0.0094,
+    "z_M1_vs_matched_null": -6.77,
+    "emp_p_M1_better_than_matched_null": 0.0099,
+    "verdict": "PASS: Real semantic clusters beat both M0 AND freq+pos-matched random clusters!"
+  },
+  "audit4_codex_four_dash_transfer": {
+    "total_pair_tokens_dedup": 1114,
+    "framed_tokens": 82,
+    "LOCO_leave_one_city_out": {
+      "n_eval_tokens": 1056,
+      "M0_log_loss": 0.2157,
+      "M1_with_frame_log_loss": 0.1487,
+      "delta_log_loss": -0.067,
+      "per_group": {
+        "Mohenjo-daro": {
+          "n": 638,
+          "n_framed": 49,
+          "ll_M0": 0.2019,
+          "ll_M1": 0.1213,
+          "delta_ll": -0.0806
+        },
+        "Harappa": {
+          "n": 300,
+          "n_framed": 16,
+          "ll_M0": 0.1817,
+          "ll_M1": 0.1549,
+          "delta_ll": -0.0268
+        },
+        "Lothal": {
+          "n": 38,
+          "n_framed": 4,
+          "ll_M0": 0.4044,
+          "ll_M1": 0.3215,
+          "delta_ll": -0.0829
+        },
+        "Dholavira": {
+          "n": 35,
+          "n_framed": 1,
+          "ll_M0": 0.3741,
+          "ll_M1": 0.3906,
+          "delta_ll": 0.0166
+        },
+        "Chanhu-daro": {
+          "n": 27,
+          "n_framed": 5,
+          "ll_M0": 0.4552,
+          "ll_M1": 0.1922,
+          "delta_ll": -0.2631
+        },
+        "Kalibangan": {
+          "n": 18,
+          "n_framed": 1,
+          "ll_M0": 0.2032,
+          "ll_M1": 0.1144,
+          "delta_ll": -0.0888
+        }
+      }
+    },
+    "LOBO_leave_one_base_glyph_family_out": {
+      "n_eval_tokens": 1114,
+      "M0_log_loss": 0.2193,
+      "M1_with_frame_log_loss": 0.1506,
+      "delta_log_loss": -0.0687,
+      "per_group": {
+        "220": {
+          "n": 262,
+          "n_framed": 25,
+          "ll_M0": 0.3136,
+          "ll_M1": 0.2224,
+          "delta_ll": -0.0912
+        },
+        "240": {
+          "n": 201,
+          "n_framed": 11,
+          "ll_M0": 0.1545,
+          "ll_M1": 0.0644,
+          "delta_ll": -0.0901
+        },
+        "235": {
+          "n": 163,
+          "n_framed": 18,
+          "ll_M0": 0.1615,
+          "ll_M1": 0.0905,
+          "delta_ll": -0.071
+        },
+        "233": {
+          "n": 131,
+          "n_framed": 4,
+          "ll_M0": 0.1278,
+          "ll_M1": 0.0936,
+          "delta_ll": -0.0342
+        },
+        "590": {
+          "n": 126,
+          "n_framed": 5,
+          "ll_M0": 0.2689,
+          "ll_M1": 0.2953,
+          "delta_ll": 0.0264
+        },
+        "803": {
+          "n": 98,
+          "n_framed": 7,
+          "ll_M0": 0.1836,
+          "ll_M1": 0.0956,
+          "delta_ll": -0.088
+        },
+        "840": {
+          "n": 67,
+          "n_framed": 4,
+          "ll_M0": 0.232,
+          "ll_M1": 0.1159,
+          "delta_ll": -0.1161
+        },
+        "231": {
+          "n": 66,
+          "n_framed": 8,
+          "ll_M0": 0.3128,
+          "ll_M1": 0.231,
+          "delta_ll": -0.0818
+        }
+      }
+    }
+  },
+  "audit5_orivis_kober_bridge_test": {
+    "invariant_stems_taking_ge2_endings": 10,
+    "kober_same_bridge_stems": 9,
+    "kober_strictly_alternating_stems": 44,
+    "ratio_alternating_vs_same_bridge": 4.89,
+    "bridge_ending_MI_bits": 1.2883,
+    "null_MI_mean_bits": 0.4152,
+    "bridge_ending_MI_z": 48.11,
+    "sample_kober_alternating_stems": [
+      {
+        "stem": "705",
+        "pairs": [
+          [
+            "050",
+            "740"
+          ],
+          [
+            "033",
+            "520"
+          ],
+          [
+            "255",
+            "740"
+          ]
+        ]
+      },
+      {
+        "stem": "235",
+        "pairs": [
+          [
+            "482",
+            "740"
+          ],
+          [
+            "923",
+            "740"
+          ],
+          [
+            "740",
+            "151"
+          ],
+          [
+            "240",
+            "520"
+          ],
+          [
+            "232",
+            "400"
+          ],
+          [
+            "798",
+            "740"
+          ],
+          [
+            "388",
+            "740"
+          ],
+          [
+            "803",
+            "740"
+          ],
+          [
+            "231",
+            "520"
+          ],
+          [
+            "176",
+            "740"
+          ],
+          [
+            "772",
+            "740"
+          ]
+        ]
+      },
+      {
+        "stem": "692 060",
+        "pairs": [
+          [
+            "531",
+            "740"
+          ],
+          [
+            "176",
+            "740"
+          ],
+          [
+            "552",
+            "520"
+          ]
+        ]
+      },
+      {
+        "stem": "861 002 032",
+        "pairs": [
+          [
+            "176",
+            "740"
+          ],
+          [
+            "220",
+            "520"
+          ]
+        ]
+      },
+      {
+        "stem": "240",
+        "pairs": [
+          [
+            "636",
+            "740"
+          ],
+          [
+            "233",
+            "520"
+          ],
+          [
+            "904",
+            "740"
+          ],
+          [
+            "760",
+            "740"
+          ],
+          [
+            "100",
+            "740"
+          ],
+          [
+            "740",
+            "090"
+          ],
+          [
+            "772",
+            "740"
+          ],
+          [
+            "643",
+            "740"
+          ],
+          [
+            "773",
+            "740"
+          ]
+        ]
+      },
+      {
+        "stem": "032",
+        "pairs": [
+          [
+            "892",
+            "151"
+          ],
+          [
+            "226",
+            "400"
+          ],
+          [
+            "255",
+            "740"
+          ],
+          [
+            "854",
+            "400"
+          ],
+          [
+            "790",
+            "740"
+          ],
+          [
+            "877",
+            "740"
+          ],
+          [
+            "220",
+            "740"
+          ],
+          [
+            "760",
+            "740"
+          ],
+          [
+            "740",
+            "400"
+          ]
+        ]
+      },
+      {
+        "stem": "495",
+        "pairs": [
+          [
+            "460",
+            "520"
+          ],
+          [
+            "615",
+            "740"
+          ],
+          [
+            "033",
+            "740"
+          ]
+        ]
+      },
+      {
+        "stem": "861 002 031",
+        "pairs": [
+          [
+            "382",
+            "151"
+          ],
+          [
+            "233",
+            "520"
+          ]
+        ]
+      }
+    ],
+    "top_alternating_bridge_ending_pairs": [
+      {
+        "pair": "740->400",
+        "stems": 13
+      },
+      {
+        "pair": "176->740",
+        "stems": 9
+      },
+      {
+        "pair": "100->740",
+        "stems": 8
+      },
+      {
+        "pair": "760->740",
+        "stems": 7
+      },
+      {
+        "pair": "923->740",
+        "stems": 5
+      },
+      {
+        "pair": "740->090",
+        "stems": 5
+      },
+      {
+        "pair": "220->520",
+        "stems": 4
+      },
+      {
+        "pair": "798->740",
+        "stems": 3
+      },
+      {
+        "pair": "388->740",
+        "stems": 3
+      },
+      {
+        "pair": "803->740",
+        "stems": 3
+      }
+    ]
+  },
+  "audit6_nonlinguistic_negative_control": {
+    "synthetic_nonlinguistic_H1_bits": 3.1806,
+    "shuffled_null_mean": 4.5981,
+    "nonlinguistic_z_score": -230.1,
+    "conclusion": "CONFIRMS vega & orivis-mac critique: A 100% non-linguistic rigid stamp template ALSO yields huge negative z-score (~-100+)! Therefore z=-108.85 proves rigid linear order, NOT natural language by itself."
+  },
+  "audit7_manifest": {
+    "manifest_file": "DATA_MANIFEST.json",
+    "total_files_hashed": 17
+  }
+}
