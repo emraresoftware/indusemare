@@ -1,0 +1,2154 @@
+{
+  "metadata": {
+    "layer": "Layer 5 — Anti-Hallucination Blind Language-Family Tournament",
+    "candidate_families": [
+      "Proto-Dravidian",
+      "Elamite",
+      "Sumerian",
+      "Vedic Sanskrit"
+    ],
+    "n_permutations": 1000,
+    "n_bootstrap": 1000,
+    "seed": 42,
+    "anti_hallucination_gate": "z > 5.0",
+    "upstream_corpus_check": {
+      "layer1_2_unique_strict_seqs": 2047,
+      "layer3b_numeral_to_fish": 254,
+      "layer3b_reverse_fish_to_numeral": 59
+    }
+  },
+  "test_a_typology": {
+    "corpus_measurements": {
+      "n_unique_strict_sequences": 2047,
+      "n_unique_strict_tokens": 9261,
+      "A1_suffix_vs_prefix": {
+        "H_init_bits": 7.098,
+        "H_final_bits": 4.787,
+        "entropy_drop_at_right_edge_bits": 2.31,
+        "effective_initial_categories": 137.0,
+        "effective_final_categories": 27.6,
+        "right_edge_bottleneck_ratio": 4.96,
+        "top1_final_share": 0.3464,
+        "top1_init_share": 0.0576,
+        "top1_final_to_init_ratio": 6.01,
+        "top5_final_share": 0.5809,
+        "top5_init_share": 0.232,
+        "top10_final_share": 0.6698,
+        "top10_init_share": 0.3351,
+        "terminal_suffix_types_ge20": 10,
+        "initial_prefix_types_ge20": 5,
+        "terminal_suffix_tokens_ge20": 1713,
+        "initial_prefix_tokens_ge20": 603,
+        "suffix_2slot_stacks": 209,
+        "suffix_3slot_stacks": 9,
+        "prefix_2slot_stacks": 1,
+        "suffix_vs_prefix_stack_ratio": 209.0,
+        "order_lock_740_400_vs_rev": "83 vs 6",
+        "order_lock_740_090_vs_rev": "64 vs 1",
+        "top_3slot_chains": [
+          {
+            "chain": "740 -> 090 -> 400",
+            "count": 6
+          },
+          {
+            "chain": "400 -> 520 -> 400",
+            "count": 2
+          },
+          {
+            "chain": "400 -> 740 -> 090",
+            "count": 1
+          }
+        ]
+      },
+      "A2_bound_affix_paradigm": {
+        "HHI_final": 0.1391,
+        "HHI_init": 0.0173,
+        "HHI_final_to_init_ratio": 8.06,
+        "sign_740_presence_pct": 47.48,
+        "sign_740_final_pct": 34.64,
+        "top_terminal_paradigm_signs": [
+          {
+            "sign_id": "740",
+            "freq_unique": 986,
+            "p_final": 0.719
+          },
+          {
+            "sign_id": "400",
+            "freq_unique": 212,
+            "p_final": 0.882
+          },
+          {
+            "sign_id": "520",
+            "freq_unique": 171,
+            "p_final": 0.842
+          },
+          {
+            "sign_id": "090",
+            "freq_unique": 95,
+            "p_final": 0.758
+          },
+          {
+            "sign_id": "151",
+            "freq_unique": 60,
+            "p_final": 0.867
+          },
+          {
+            "sign_id": "407",
+            "freq_unique": 51,
+            "p_final": 0.667
+          },
+          {
+            "sign_id": "527",
+            "freq_unique": 44,
+            "p_final": 0.864
+          },
+          {
+            "sign_id": "156",
+            "freq_unique": 37,
+            "p_final": 0.784
+          },
+          {
+            "sign_id": "154",
+            "freq_unique": 32,
+            "p_final": 0.781
+          },
+          {
+            "sign_id": "226",
+            "freq_unique": 25,
+            "p_final": 0.72
+          }
+        ]
+      },
+      "A3_modifier_head_order": {
+        "numeral_to_fish": 254,
+        "fish_to_numeral": 59,
+        "num_fish_ratio": 4.31,
+        "num_fish_fisher_p": 2.544e-26,
+        "num_fish_direction_binom_p": 2.81e-30,
+        "tworow_013_019_to_core": 97,
+        "core_to_tworow_013_019": 36,
+        "tworow_ratio": 2.69,
+        "tworow_binom_p": 5.963e-08,
+        "long_001_007_to_core": 617,
+        "core_to_long_001_007": 323,
+        "long_ratio": 1.91,
+        "long_binom_p": 2.818e-22,
+        "plain_vessel_700_num_before_vs_after": "20 vs 8",
+        "counter_pattern_filled_vessel_705_706_to_033_vs_rev": "87 vs 0"
+      },
+      "A4_reduplication_doubling": {
+        "pua_reduplicated_types": 23,
+        "pua_total_compound_types": 56,
+        "pua_reduplicated_type_pct": 41.1,
+        "pua_reduplicated_tokens_all": 368,
+        "pua_total_compound_tokens_all": 461,
+        "pua_reduplicated_token_pct": 79.8,
+        "linear_adjacent_XX_bigrams": 15,
+        "linear_adjacent_XX_pct": 0.208,
+        "notable_doubled_pairs": [
+          {
+            "sign_id": "034",
+            "decomposition": "032+032",
+            "freq_all": 184,
+            "freq_strict_analytic": 137
+          },
+          {
+            "sign_id": "617",
+            "decomposition": "615+615",
+            "freq_all": 78,
+            "freq_strict_analytic": 65
+          },
+          {
+            "sign_id": "821",
+            "decomposition": "820+820",
+            "freq_all": 14,
+            "freq_strict_analytic": 13
+          },
+          {
+            "sign_id": "792",
+            "decomposition": "809+809",
+            "freq_all": 13,
+            "freq_strict_analytic": 9
+          },
+          {
+            "sign_id": "697",
+            "decomposition": "700+700+700",
+            "freq_all": 10,
+            "freq_strict_analytic": 8
+          },
+          {
+            "sign_id": "698",
+            "decomposition": "700+700",
+            "freq_all": 10,
+            "freq_strict_analytic": 5
+          },
+          {
+            "sign_id": "056",
+            "decomposition": "055+055",
+            "freq_all": 10,
+            "freq_strict_analytic": 10
+          },
+          {
+            "sign_id": "036",
+            "decomposition": "033+033",
+            "freq_all": 8,
+            "freq_strict_analytic": 6
+          },
+          {
+            "sign_id": "219",
+            "decomposition": "220+220",
+            "freq_all": 7,
+            "freq_strict_analytic": 7
+          },
+          {
+            "sign_id": "401",
+            "decomposition": "400+400",
+            "freq_all": 7,
+            "freq_strict_analytic": 5
+          }
+        ],
+        "visual_doubled_pair_090_091": {
+          "090_freq_unique": 95,
+          "091_freq_unique": 10
+        }
+      }
+    },
+    "feature_weights_pure_linguistic": {
+      "A1_suffixing": 0.3,
+      "A2_paradigm": 0.3,
+      "A3_mod_head": 0.3,
+      "A4_redup": 0.1
+    },
+    "rankings_by_pure_linguistic": [
+      {
+        "family": "Proto-Dravidian",
+        "A1_suffixing": 0.95,
+        "A2_paradigm": 0.95,
+        "A3_mod_head": 0.9,
+        "A4_redup": 0.85,
+        "pure_linguistic_score": 0.925,
+        "A5_adna_chrono_prior": 0.9,
+        "combined_score_70_30": 0.9175,
+        "rationales": {
+          "A1": "Exclusively suffixing (0 native prefixes), agglutinative right-edge suffix chains (Stem+Deriv+Pl/Obl+Case; Krishnamurti 2003). Minor -0.05 for 5 initial-biased signs (title/honorific openers).",
+          "A2": "Compact invariant agglutinative nominal suffix set (~6-8 cases + 3 gender/number markers *-an/*-al/*-ar; Krishnamurti 2003), matching 10 terminal signs covering 67% of final slots and invariant 740->090->400 stacking.",
+          "A3": "Strictly Modifier-Before-Head / Head-Final NP (Num->N, Adj->N, Gen->N, SOV; Krishnamurti 2003), matching Num->Fish (254:59, 4.31x) and Num(013-019)->Core (97:36, 2.69x). -0.10 for unexplained postposed 705/706->033 (87:0).",
+          "A4": "Productive lexical, distributive, and expressive reduplication (Krishnamurti 2003); non-discriminating (shared across all 4 families).",
+          "A5": "High compatibility: Mature Harappan Rakhigarhi genome I6113 (Shinde et al. 2019 Cell) + Narasimhan et al. 2019 Science show zero Steppe ancestry in IVC (2600-1900 BCE); deep South Asian Dravidian presence (Brahui + Rigvedic Dravidian loans; Witzel 1999, Southworth 2005)."
+        }
+      },
+      {
+        "family": "Elamite",
+        "A1_suffixing": 0.95,
+        "A2_paradigm": 0.95,
+        "A3_mod_head": 0.2,
+        "A4_redup": 0.9,
+        "pure_linguistic_score": 0.72,
+        "A5_adna_chrono_prior": 0.65,
+        "combined_score_70_30": 0.699,
+        "rationales": {
+          "A1": "Exclusively suffixing, agglutinative right-edge suffix stacking via Suffixaufnahme (Stolper 2004; Khacikjan 1998); matches 209:1 suffix-vs-prefix stack asymmetry.",
+          "A2": "Small invariant agglutinative nominal class + case set (-k, -t, -r, -p, -me, -n, -na; ~7-10 bound markers; Stolper 2004), tightly matching Indus terminal bottleneck.",
+          "A3": "MAJOR FALSIFIER: Elamite NPs are strictly Head-Initial (N->Adj, N->Num, N->Gen; Stolper 2004; Khacikjan 1998), directly contradicting corpus Num->Fish (254:59, p=2.54e-26) and Num(013-019)->Core (97:36). Partial credit only for 705/706->033 (87:0).",
+          "A4": "Very productive root/stem reduplication (e.g., hut- -> huthut; Khacikjan 1998); shared feature.",
+          "A5": "Moderate compatibility: Chronologically contemporary (2600-1900 BCE) and compatible with deep Iranian-plateau ancestry cline, active Susa-Meluhha trade, but geographic center lies ~1,500 km west in SW Iran."
+        }
+      },
+      {
+        "family": "Sumerian",
+        "A1_suffixing": 0.55,
+        "A2_paradigm": 0.9,
+        "A3_mod_head": 0.3,
+        "A4_redup": 0.9,
+        "pure_linguistic_score": 0.615,
+        "A5_adna_chrono_prior": 0.15,
+        "combined_score_70_30": 0.4755,
+        "rationales": {
+          "A1": "Mixed: Nominal phrases stack right-edge enclitics (=ene, =ak, =e, =ra, =a), BUT verbs carry a dense 7-slot PREFIX chain (modal+ventive+dimensional; Jagersma 2010), conflicting with 209:1 suffix-over-prefix stack dominance unless corpus is 100% verbless NPs.",
+          "A2": "Compact invariant agglutinative NP clitic/case set (~10 cases + plural + possessives; Zolyomi 2017), compatible with Indus right-edge bottleneck.",
+          "A3": "MAJOR FALSIFIER: Standard Sumerian NPs are strictly Head-Initial (N->Adj->Num, e.g., udu nita as; Jagersma 2010; Zolyomi 2017), contradicting Num->Fish (254:59) and Num(013-019)->Core (97:36). Partial credit for Ur III ledger Num->Commodity notation and 705/706->033.",
+          "A4": "Productive plural/distributive/imperfective reduplication (kur-kur, mul-mul; Jagersma 2010); shared feature.",
+          "A5": "HARD HISTORICAL FALSIFIER: Ur III cuneiform texts explicitly record official Meluhha interpreters (eme-bal me-luh-ha; Possehl 2002; Parpola 1994), proving Meluhhans (IVC) did NOT speak Sumerian despite active trade."
+        }
+      },
+      {
+        "family": "Vedic Sanskrit",
+        "A1_suffixing": 0.5,
+        "A2_paradigm": 0.25,
+        "A3_mod_head": 0.85,
+        "A4_redup": 0.8,
+        "pure_linguistic_score": 0.56,
+        "A5_adna_chrono_prior": 0.15,
+        "combined_score_70_30": 0.437,
+        "rationales": {
+          "A1": "Nominal inflection is suffixing, BUT Vedic employs productive verbal prefixes/preverbs (pra-, vi-, sam-, upa-, a-), past augment a-, and negative a-/an-, and does not stack 2-3 invariant agglutinative case suffixes (Macdonell 1910).",
+          "A2": "MAJOR STRUCTURAL MISMATCH: Highly fusional nominal paradigm (8 cases x 3 numbers x 3 genders x multiple stem declensions + sandhi/ablaut = 30-50+ portmanteau endings), conflicting with one invariant suffix (740) ending 34.6% of all sequences and stacking cleanly (740->090->400).",
+          "A3": "Predominantly Modifier-Before-Head (Num->N, Adj->N, SOV; Macdonell 1910), matching Num->Fish (254:59) and Num(013-019)->Core (97:36), with freer order permitting postposed measures.",
+          "A4": "Productive verbal reduplication (perfect/intensive) + amredita nominal doubling; shared feature.",
+          "A5": "HARD ARCHAEOGENETIC / CHRONOLOGICAL FALSIFIER: Mature Harappan Rakhigarhi genome I6113 lacks Steppe ancestry (Shinde et al. 2019 Cell); Steppe-derived ancestry linked to Indo-Aryan dispersal arrives in NW South Asia post-2000 BCE (Narasimhan et al. 2019 Science), after Mature Harappan peak."
+        }
+      }
+    ],
+    "rankings_by_combined_with_prior": [
+      {
+        "family": "Proto-Dravidian",
+        "A1_suffixing": 0.95,
+        "A2_paradigm": 0.95,
+        "A3_mod_head": 0.9,
+        "A4_redup": 0.85,
+        "pure_linguistic_score": 0.925,
+        "A5_adna_chrono_prior": 0.9,
+        "combined_score_70_30": 0.9175,
+        "rationales": {
+          "A1": "Exclusively suffixing (0 native prefixes), agglutinative right-edge suffix chains (Stem+Deriv+Pl/Obl+Case; Krishnamurti 2003). Minor -0.05 for 5 initial-biased signs (title/honorific openers).",
+          "A2": "Compact invariant agglutinative nominal suffix set (~6-8 cases + 3 gender/number markers *-an/*-al/*-ar; Krishnamurti 2003), matching 10 terminal signs covering 67% of final slots and invariant 740->090->400 stacking.",
+          "A3": "Strictly Modifier-Before-Head / Head-Final NP (Num->N, Adj->N, Gen->N, SOV; Krishnamurti 2003), matching Num->Fish (254:59, 4.31x) and Num(013-019)->Core (97:36, 2.69x). -0.10 for unexplained postposed 705/706->033 (87:0).",
+          "A4": "Productive lexical, distributive, and expressive reduplication (Krishnamurti 2003); non-discriminating (shared across all 4 families).",
+          "A5": "High compatibility: Mature Harappan Rakhigarhi genome I6113 (Shinde et al. 2019 Cell) + Narasimhan et al. 2019 Science show zero Steppe ancestry in IVC (2600-1900 BCE); deep South Asian Dravidian presence (Brahui + Rigvedic Dravidian loans; Witzel 1999, Southworth 2005)."
+        }
+      },
+      {
+        "family": "Elamite",
+        "A1_suffixing": 0.95,
+        "A2_paradigm": 0.95,
+        "A3_mod_head": 0.2,
+        "A4_redup": 0.9,
+        "pure_linguistic_score": 0.72,
+        "A5_adna_chrono_prior": 0.65,
+        "combined_score_70_30": 0.699,
+        "rationales": {
+          "A1": "Exclusively suffixing, agglutinative right-edge suffix stacking via Suffixaufnahme (Stolper 2004; Khacikjan 1998); matches 209:1 suffix-vs-prefix stack asymmetry.",
+          "A2": "Small invariant agglutinative nominal class + case set (-k, -t, -r, -p, -me, -n, -na; ~7-10 bound markers; Stolper 2004), tightly matching Indus terminal bottleneck.",
+          "A3": "MAJOR FALSIFIER: Elamite NPs are strictly Head-Initial (N->Adj, N->Num, N->Gen; Stolper 2004; Khacikjan 1998), directly contradicting corpus Num->Fish (254:59, p=2.54e-26) and Num(013-019)->Core (97:36). Partial credit only for 705/706->033 (87:0).",
+          "A4": "Very productive root/stem reduplication (e.g., hut- -> huthut; Khacikjan 1998); shared feature.",
+          "A5": "Moderate compatibility: Chronologically contemporary (2600-1900 BCE) and compatible with deep Iranian-plateau ancestry cline, active Susa-Meluhha trade, but geographic center lies ~1,500 km west in SW Iran."
+        }
+      },
+      {
+        "family": "Sumerian",
+        "A1_suffixing": 0.55,
+        "A2_paradigm": 0.9,
+        "A3_mod_head": 0.3,
+        "A4_redup": 0.9,
+        "pure_linguistic_score": 0.615,
+        "A5_adna_chrono_prior": 0.15,
+        "combined_score_70_30": 0.4755,
+        "rationales": {
+          "A1": "Mixed: Nominal phrases stack right-edge enclitics (=ene, =ak, =e, =ra, =a), BUT verbs carry a dense 7-slot PREFIX chain (modal+ventive+dimensional; Jagersma 2010), conflicting with 209:1 suffix-over-prefix stack dominance unless corpus is 100% verbless NPs.",
+          "A2": "Compact invariant agglutinative NP clitic/case set (~10 cases + plural + possessives; Zolyomi 2017), compatible with Indus right-edge bottleneck.",
+          "A3": "MAJOR FALSIFIER: Standard Sumerian NPs are strictly Head-Initial (N->Adj->Num, e.g., udu nita as; Jagersma 2010; Zolyomi 2017), contradicting Num->Fish (254:59) and Num(013-019)->Core (97:36). Partial credit for Ur III ledger Num->Commodity notation and 705/706->033.",
+          "A4": "Productive plural/distributive/imperfective reduplication (kur-kur, mul-mul; Jagersma 2010); shared feature.",
+          "A5": "HARD HISTORICAL FALSIFIER: Ur III cuneiform texts explicitly record official Meluhha interpreters (eme-bal me-luh-ha; Possehl 2002; Parpola 1994), proving Meluhhans (IVC) did NOT speak Sumerian despite active trade."
+        }
+      },
+      {
+        "family": "Vedic Sanskrit",
+        "A1_suffixing": 0.5,
+        "A2_paradigm": 0.25,
+        "A3_mod_head": 0.85,
+        "A4_redup": 0.8,
+        "pure_linguistic_score": 0.56,
+        "A5_adna_chrono_prior": 0.15,
+        "combined_score_70_30": 0.437,
+        "rationales": {
+          "A1": "Nominal inflection is suffixing, BUT Vedic employs productive verbal prefixes/preverbs (pra-, vi-, sam-, upa-, a-), past augment a-, and negative a-/an-, and does not stack 2-3 invariant agglutinative case suffixes (Macdonell 1910).",
+          "A2": "MAJOR STRUCTURAL MISMATCH: Highly fusional nominal paradigm (8 cases x 3 numbers x 3 genders x multiple stem declensions + sandhi/ablaut = 30-50+ portmanteau endings), conflicting with one invariant suffix (740) ending 34.6% of all sequences and stacking cleanly (740->090->400).",
+          "A3": "Predominantly Modifier-Before-Head (Num->N, Adj->N, SOV; Macdonell 1910), matching Num->Fish (254:59) and Num(013-019)->Core (97:36), with freer order permitting postposed measures.",
+          "A4": "Productive verbal reduplication (perfect/intensive) + amredita nominal doubling; shared feature.",
+          "A5": "HARD ARCHAEOGENETIC / CHRONOLOGICAL FALSIFIER: Mature Harappan Rakhigarhi genome I6113 lacks Steppe ancestry (Shinde et al. 2019 Cell); Steppe-derived ancestry linked to Indo-Aryan dispersal arrives in NW South Asia post-2000 BCE (Narasimhan et al. 2019 Science), after Mature Harappan peak."
+        }
+      }
+    ]
+  },
+  "test_b_rebus_permutation_gate": {
+    "n_permutations": 1000,
+    "anti_hallucination_gate": "z > 5.0 (primary gate on smooth continuous phonological similarity z_sim)",
+    "phonetic_rebus_tournament": {
+      "Proto-Dravidian": {
+        "mode1_primary_lemma_strict": {
+          "mode": "primary",
+          "testable_probes": 6,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 3.2867,
+          "null_phon_sim_mean": 2.2603,
+          "null_phon_sim_std": 0.393,
+          "z_score_phon_sim": 2.612,
+          "empirical_p_phon_sim": 0.004,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 2,
+          "null_exact_homophones_mean": 0.021,
+          "null_exact_homophones_std": 0.1435,
+          "z_score_exact_raw_skewed": 13.795,
+          "z_score_exact_normal_equiv_from_p": 3.091,
+          "empirical_p_exact_homophones": 0.001,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "mīn"
+              ],
+              "tgt_forms_tested": [
+                "mīn"
+              ],
+              "best_pair": "mīn <-> mīn",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "DEDR 4885 *mīn",
+              "tgt_cite": "DEDR 4876 *mīn (star/shine)"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "vēy"
+              ],
+              "tgt_forms_tested": [
+                "kār"
+              ],
+              "best_pair": "vēy <-> kār",
+              "phon_sim": 0.2167,
+              "exact_homophone": false,
+              "src_cite": "DEDR 5532 *vēy/*mēy (thatch/roof)",
+              "tgt_cite": "DEDR 1278 *kār (black); DEDR 5101 *may/*mai (collyrium/black)"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "kuṭam"
+              ],
+              "tgt_forms_tested": [
+                "-aṉ"
+              ],
+              "best_pair": "kuṭam <-> -aṉ",
+              "phon_sim": 0.4,
+              "exact_homophone": false,
+              "src_cite": "DEDR 1651 *kuṭam (pot); DEDR 1042 *oṭu (potsherd/vessel); DEDR 76 *aṭu (cook/pot)",
+              "tgt_cite": "Krishnamurti 2003:207,227 (*-aṉ masc, *-in/*-atu gen, *-oṭu soc)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "kā"
+              ],
+              "tgt_forms_tested": [
+                "kā"
+              ],
+              "best_pair": "kā <-> kā",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "DEDR 1417 *kā (carrying pole/yoke)",
+              "tgt_cite": "DEDR 1416 *kā (protect/guard); DEDR 4432 *pēṇ (protect)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "cīppu"
+              ],
+              "tgt_forms_tested": [
+                "peṇ"
+              ],
+              "best_pair": "cīppu <-> peṇ",
+              "phon_sim": 0.26,
+              "exact_homophone": false,
+              "src_cite": "DEDR 2600 Ta. cīppu (comb); DEDR 4449 *pēṉ (louse, Parpola metonymy)",
+              "tgt_cite": "DEDR 4395 *peṇ (woman); DEDR 4432 *pēṇ (cherish/protect)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "vayal"
+              ],
+              "tgt_forms_tested": [
+                "ūr"
+              ],
+              "best_pair": "vayal <-> ūr",
+              "phon_sim": 0.41,
+              "exact_homophone": false,
+              "src_cite": "DEDR 5258 *vayal (field); DEDR 1376 *kaḷam (field/threshing floor)",
+              "tgt_cite": "DEDR 752 *ūr (village/town); DEDR 2207 *kōṭṭai (fort/enclosure)"
+            }
+          ]
+        },
+        "mode2_expanded_scholarly_pool": {
+          "mode": "expanded",
+          "testable_probes": 6,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 5.1933,
+          "null_phon_sim_mean": 3.117,
+          "null_phon_sim_std": 0.3616,
+          "z_score_phon_sim": 5.742,
+          "empirical_p_phon_sim": 0.001,
+          "passes_z5_gate_phon_sim": true,
+          "observed_exact_homophones": 3,
+          "null_exact_homophones_mean": 0.142,
+          "null_exact_homophones_std": 0.3794,
+          "z_score_exact_raw_skewed": 7.532,
+          "z_score_exact_normal_equiv_from_p": 3.091,
+          "empirical_p_exact_homophones": 0.001,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "mīn"
+              ],
+              "tgt_forms_tested": [
+                "mīn"
+              ],
+              "best_pair": "mīn <-> mīn",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "DEDR 4885 *mīn",
+              "tgt_cite": "DEDR 4876 *mīn (star/shine)"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "vēy",
+                "mēy"
+              ],
+              "tgt_forms_tested": [
+                "kār",
+                "may"
+              ],
+              "best_pair": "mēy <-> may",
+              "phon_sim": 0.8067,
+              "exact_homophone": false,
+              "src_cite": "DEDR 5532 *vēy/*mēy (thatch/roof)",
+              "tgt_cite": "DEDR 1278 *kār (black); DEDR 5101 *may/*mai (collyrium/black)"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "kuṭam",
+                "oṭu",
+                "aṭu"
+              ],
+              "tgt_forms_tested": [
+                "-aṉ",
+                "-in",
+                "-atu",
+                "-oṭu"
+              ],
+              "best_pair": "oṭu <-> -oṭu",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "DEDR 1651 *kuṭam (pot); DEDR 1042 *oṭu (potsherd/vessel); DEDR 76 *aṭu (cook/pot)",
+              "tgt_cite": "Krishnamurti 2003:207,227 (*-aṉ masc, *-in/*-atu gen, *-oṭu soc)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "kā",
+                "kāvu"
+              ],
+              "tgt_forms_tested": [
+                "kā",
+                "pēṇ"
+              ],
+              "best_pair": "kā <-> kā",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "DEDR 1417 *kā (carrying pole/yoke)",
+              "tgt_cite": "DEDR 1416 *kā (protect/guard); DEDR 4432 *pēṇ (protect)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "cīppu",
+                "pēṉ"
+              ],
+              "tgt_forms_tested": [
+                "peṇ",
+                "pēṇ"
+              ],
+              "best_pair": "pēṉ <-> pēṇ",
+              "phon_sim": 0.9333,
+              "exact_homophone": false,
+              "src_cite": "DEDR 2600 Ta. cīppu (comb); DEDR 4449 *pēṉ (louse, Parpola metonymy)",
+              "tgt_cite": "DEDR 4395 *peṇ (woman); DEDR 4432 *pēṇ (cherish/protect)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "vayal",
+                "kaḷam"
+              ],
+              "tgt_forms_tested": [
+                "ūr",
+                "kōṭṭai"
+              ],
+              "best_pair": "kaḷam <-> kōṭṭai",
+              "phon_sim": 0.4533,
+              "exact_homophone": false,
+              "src_cite": "DEDR 5258 *vayal (field); DEDR 1376 *kaḷam (field/threshing floor)",
+              "tgt_cite": "DEDR 752 *ūr (village/town); DEDR 2207 *kōṭṭai (fort/enclosure)"
+            }
+          ]
+        }
+      },
+      "Elamite": {
+        "mode1_primary_lemma_strict": {
+          "mode": "primary",
+          "testable_probes": 2,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 0.81,
+          "null_phon_sim_mean": 0.5546,
+          "null_phon_sim_std": 0.1668,
+          "z_score_phon_sim": 1.531,
+          "empirical_p_phon_sim": 0.06793,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 0,
+          "null_exact_homophones_mean": 0.0,
+          "null_exact_homophones_std": 0.0,
+          "z_score_exact_raw_skewed": 0.0,
+          "z_score_exact_normal_equiv_from_p": 0.0,
+          "empirical_p_exact_homophones": 1.0,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "mardu"
+              ],
+              "best_pair": "UNATTESTED <-> mardu",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "Written Sumerogram KU6/HA; no secure phonetic Elamite lemma (Hinz & Koch 1987)",
+              "tgt_cite": "Blazek 2015 / Hinz & Koch (star; often Sumerogram MUL)"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "UNATTESTED"
+              ],
+              "best_pair": "UNATTESTED <-> UNATTESTED",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "No secure native phonetic roof/thatch lemma in Hinz & Koch 1987",
+              "tgt_cite": "No secure native phonetic lemma for black in Hinz & Koch 1987"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "kumaš"
+              ],
+              "tgt_forms_tested": [
+                "-r"
+              ],
+              "best_pair": "kumaš <-> -r",
+              "phon_sim": 0.15,
+              "exact_homophone": false,
+              "src_cite": "Hinz & Koch 1987 (kumas vessel/container; zul water)",
+              "tgt_cite": "Stolper 2004 (-r 3sg anim, -me inanim, -na genitive)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "kuk"
+              ],
+              "best_pair": "UNATTESTED <-> kuk",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "No secure native phonetic yoke/carrying-pole lemma in Hinz & Koch 1987",
+              "tgt_cite": "Hinz & Koch 1987 (kuk- protect/sanctuary)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "muti"
+              ],
+              "best_pair": "UNATTESTED <-> muti",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "No secure native phonetic comb lemma in Hinz & Koch 1987",
+              "tgt_cite": "Hinz & Koch 1987 (muti woman; ritu wife)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "halla"
+              ],
+              "tgt_forms_tested": [
+                "hal"
+              ],
+              "best_pair": "halla <-> hal",
+              "phon_sim": 0.66,
+              "exact_homophone": false,
+              "src_cite": "Hinz & Koch 1987 (hal-la cultivated field)",
+              "tgt_cite": "Hinz & Koch 1987 (hal land/city; sian temple)"
+            }
+          ]
+        },
+        "mode2_expanded_scholarly_pool": {
+          "mode": "expanded",
+          "testable_probes": 2,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 1.06,
+          "null_phon_sim_mean": 0.8474,
+          "null_phon_sim_std": 0.1595,
+          "z_score_phon_sim": 1.332,
+          "empirical_p_phon_sim": 0.09391,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 0,
+          "null_exact_homophones_mean": 0.003,
+          "null_exact_homophones_std": 0.0547,
+          "z_score_exact_raw_skewed": -0.055,
+          "z_score_exact_normal_equiv_from_p": 0.0,
+          "empirical_p_exact_homophones": 1.0,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "mardu"
+              ],
+              "best_pair": "UNATTESTED <-> mardu",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "Written Sumerogram KU6/HA; no secure phonetic Elamite lemma (Hinz & Koch 1987)",
+              "tgt_cite": "Blazek 2015 / Hinz & Koch (star; often Sumerogram MUL)"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "UNATTESTED"
+              ],
+              "best_pair": "UNATTESTED <-> UNATTESTED",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "No secure native phonetic roof/thatch lemma in Hinz & Koch 1987",
+              "tgt_cite": "No secure native phonetic lemma for black in Hinz & Koch 1987"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "kumaš",
+                "zul"
+              ],
+              "tgt_forms_tested": [
+                "-r",
+                "-k",
+                "-p",
+                "-me",
+                "-na"
+              ],
+              "best_pair": "kumaš <-> -na",
+              "phon_sim": 0.4,
+              "exact_homophone": false,
+              "src_cite": "Hinz & Koch 1987 (kumas vessel/container; zul water)",
+              "tgt_cite": "Stolper 2004 (-r 3sg anim, -me inanim, -na genitive)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "kuk",
+                "kuku"
+              ],
+              "best_pair": "UNATTESTED <-> kuk",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "No secure native phonetic yoke/carrying-pole lemma in Hinz & Koch 1987",
+              "tgt_cite": "Hinz & Koch 1987 (kuk- protect/sanctuary)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "UNATTESTED"
+              ],
+              "tgt_forms_tested": [
+                "muti",
+                "ritu"
+              ],
+              "best_pair": "UNATTESTED <-> muti",
+              "phon_sim": 0.0,
+              "exact_homophone": false,
+              "src_cite": "No secure native phonetic comb lemma in Hinz & Koch 1987",
+              "tgt_cite": "Hinz & Koch 1987 (muti woman; ritu wife)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "halla"
+              ],
+              "tgt_forms_tested": [
+                "hal",
+                "sian"
+              ],
+              "best_pair": "halla <-> hal",
+              "phon_sim": 0.66,
+              "exact_homophone": false,
+              "src_cite": "Hinz & Koch 1987 (hal-la cultivated field)",
+              "tgt_cite": "Hinz & Koch 1987 (hal land/city; sian temple)"
+            }
+          ]
+        }
+      },
+      "Sumerian": {
+        "mode1_primary_lemma_strict": {
+          "mode": "primary",
+          "testable_probes": 6,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 1.9033,
+          "null_phon_sim_mean": 1.9139,
+          "null_phon_sim_std": 0.393,
+          "z_score_phon_sim": -0.027,
+          "empirical_p_phon_sim": 0.50549,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 0,
+          "null_exact_homophones_mean": 0.005,
+          "null_exact_homophones_std": 0.0706,
+          "z_score_exact_raw_skewed": -0.071,
+          "z_score_exact_normal_equiv_from_p": 0.0,
+          "empirical_p_exact_homophones": 1.0,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "ku"
+              ],
+              "tgt_forms_tested": [
+                "mul"
+              ],
+              "best_pair": "ku <-> mul",
+              "phon_sim": 0.3833,
+              "exact_homophone": false,
+              "src_cite": "ePSD ku6 (fish)",
+              "tgt_cite": "ePSD mul (star/shine)"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "ur"
+              ],
+              "tgt_forms_tested": [
+                "giggi"
+              ],
+              "best_pair": "ur <-> giggi",
+              "phon_sim": 0.22,
+              "exact_homophone": false,
+              "src_cite": "ePSD ur3 (roof)",
+              "tgt_cite": "ePSD giggi / ge6 (black)"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "dug"
+              ],
+              "tgt_forms_tested": [
+                "-ak"
+              ],
+              "best_pair": "dug <-> -ak",
+              "phon_sim": 0.4,
+              "exact_homophone": false,
+              "src_cite": "ePSD dug (vessel/jar); a (water)",
+              "tgt_cite": "Jagersma 2010 (-ak gen, -e erg, -a loc, -ra dat)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "šudul"
+              ],
+              "tgt_forms_tested": [
+                "uru"
+              ],
+              "best_pair": "šudul <-> uru",
+              "phon_sim": 0.49,
+              "exact_homophone": false,
+              "src_cite": "ePSD sudul5 (yoke); il2 (carry/lift)",
+              "tgt_cite": "ePSD uru3 (guard/protect); nam (office/status)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "garig"
+              ],
+              "tgt_forms_tested": [
+                "munus"
+              ],
+              "best_pair": "garig <-> munus",
+              "phon_sim": 0.21,
+              "exact_homophone": false,
+              "src_cite": "ePSD ga-rig2 (comb)",
+              "tgt_cite": "ePSD munus (woman)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "gana"
+              ],
+              "tgt_forms_tested": [
+                "uru"
+              ],
+              "best_pair": "gana <-> uru",
+              "phon_sim": 0.2,
+              "exact_homophone": false,
+              "src_cite": "ePSD gana2 (field); uru4 (to plow/cultivate)",
+              "tgt_cite": "ePSD uru (city/settlement); bad3 (fort/wall)"
+            }
+          ]
+        },
+        "mode2_expanded_scholarly_pool": {
+          "mode": "expanded",
+          "testable_probes": 6,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 3.3033,
+          "null_phon_sim_mean": 2.6743,
+          "null_phon_sim_std": 0.4137,
+          "z_score_phon_sim": 1.52,
+          "empirical_p_phon_sim": 0.07393,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 2,
+          "null_exact_homophones_mean": 0.185,
+          "null_exact_homophones_std": 0.4135,
+          "z_score_exact_raw_skewed": 4.39,
+          "z_score_exact_normal_equiv_from_p": 2.291,
+          "empirical_p_exact_homophones": 0.01099,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "ku",
+                "kua"
+              ],
+              "tgt_forms_tested": [
+                "mul"
+              ],
+              "best_pair": "ku <-> mul",
+              "phon_sim": 0.3833,
+              "exact_homophone": false,
+              "src_cite": "ePSD ku6 (fish)",
+              "tgt_cite": "ePSD mul (star/shine)"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "ur"
+              ],
+              "tgt_forms_tested": [
+                "giggi",
+                "ge"
+              ],
+              "best_pair": "ur <-> giggi",
+              "phon_sim": 0.22,
+              "exact_homophone": false,
+              "src_cite": "ePSD ur3 (roof)",
+              "tgt_cite": "ePSD giggi / ge6 (black)"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "dug",
+                "a"
+              ],
+              "tgt_forms_tested": [
+                "-ak",
+                "-e",
+                "-a",
+                "-ra"
+              ],
+              "best_pair": "a <-> -a",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "ePSD dug (vessel/jar); a (water)",
+              "tgt_cite": "Jagersma 2010 (-ak gen, -e erg, -a loc, -ra dat)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "šudul",
+                "il"
+              ],
+              "tgt_forms_tested": [
+                "uru",
+                "nam"
+              ],
+              "best_pair": "šudul <-> uru",
+              "phon_sim": 0.49,
+              "exact_homophone": false,
+              "src_cite": "ePSD sudul5 (yoke); il2 (carry/lift)",
+              "tgt_cite": "ePSD uru3 (guard/protect); nam (office/status)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "garig"
+              ],
+              "tgt_forms_tested": [
+                "munus"
+              ],
+              "best_pair": "garig <-> munus",
+              "phon_sim": 0.21,
+              "exact_homophone": false,
+              "src_cite": "ePSD ga-rig2 (comb)",
+              "tgt_cite": "ePSD munus (woman)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "gana",
+                "uru"
+              ],
+              "tgt_forms_tested": [
+                "uru",
+                "bad"
+              ],
+              "best_pair": "uru <-> uru",
+              "phon_sim": 1.0,
+              "exact_homophone": true,
+              "src_cite": "ePSD gana2 (field); uru4 (to plow/cultivate)",
+              "tgt_cite": "ePSD uru (city/settlement); bad3 (fort/wall)"
+            }
+          ]
+        }
+      },
+      "Vedic Sanskrit": {
+        "mode1_primary_lemma_strict": {
+          "mode": "primary",
+          "testable_probes": 6,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 1.8501,
+          "null_phon_sim_mean": 2.0961,
+          "null_phon_sim_std": 0.3054,
+          "z_score_phon_sim": -0.805,
+          "empirical_p_phon_sim": 0.77822,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 0,
+          "null_exact_homophones_mean": 0.0,
+          "null_exact_homophones_std": 0.0,
+          "z_score_exact_raw_skewed": 0.0,
+          "z_score_exact_normal_equiv_from_p": 0.0,
+          "empirical_p_exact_homophones": 1.0,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "matsya"
+              ],
+              "tgt_forms_tested": [
+                "tārā"
+              ],
+              "best_pair": "matsya <-> tārā",
+              "phon_sim": 0.41,
+              "exact_homophone": false,
+              "src_cite": "RV matsya (Mayrhofer EWAia II:298; mīna is post-Vedic Dravidian loan, EWAia II:358)",
+              "tgt_cite": "RV stṛ-/tārā/nakṣatra"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "chadis"
+              ],
+              "tgt_forms_tested": [
+                "kṛṣṇa"
+              ],
+              "best_pair": "chadis <-> kṛṣṇa",
+              "phon_sim": 0.175,
+              "exact_homophone": false,
+              "src_cite": "RV/AV chadis (roof/cover)",
+              "tgt_cite": "RV kṛṣṇa/śyāma (black/dark)"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "kumbha"
+              ],
+              "tgt_forms_tested": [
+                "-asya"
+              ],
+              "best_pair": "kumbha <-> -asya",
+              "phon_sim": 0.2833,
+              "exact_homophone": false,
+              "src_cite": "RV kumbha/kalaśa/pātra (jar/vessel)",
+              "tgt_cite": "Macdonell 1910 (-asya gen, -as nom/gen, -am acc, -e dat/loc)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "yuga"
+              ],
+              "tgt_forms_tested": [
+                "pā"
+              ],
+              "best_pair": "yuga <-> pā",
+              "phon_sim": 0.3825,
+              "exact_homophone": false,
+              "src_cite": "RV yuga (yoke); vah (carry)",
+              "tgt_cite": "RV pā/rakṣ (protect); gopa (guardian)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "kaṅkata"
+              ],
+              "tgt_forms_tested": [
+                "strī"
+              ],
+              "best_pair": "kaṅkata <-> strī",
+              "phon_sim": 0.2243,
+              "exact_homophone": false,
+              "src_cite": "AV kaṅkata (comb)",
+              "tgt_cite": "RV strī/nārī/yoṣā (woman)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "kṣetra"
+              ],
+              "tgt_forms_tested": [
+                "pur"
+              ],
+              "best_pair": "kṣetra <-> pur",
+              "phon_sim": 0.375,
+              "exact_homophone": false,
+              "src_cite": "RV kṣetra (field); urvarā (fertile land)",
+              "tgt_cite": "RV pur (fort); kṣatra (dominion/chief); grāma (settlement)"
+            }
+          ]
+        },
+        "mode2_expanded_scholarly_pool": {
+          "mode": "expanded",
+          "testable_probes": 6,
+          "total_probes": 6,
+          "observed_phon_sim_sum": 3.5042,
+          "null_phon_sim_mean": 2.9847,
+          "null_phon_sim_std": 0.2544,
+          "z_score_phon_sim": 2.042,
+          "empirical_p_phon_sim": 0.02797,
+          "passes_z5_gate_phon_sim": false,
+          "observed_exact_homophones": 0,
+          "null_exact_homophones_mean": 0.0,
+          "null_exact_homophones_std": 0.0,
+          "z_score_exact_raw_skewed": 0.0,
+          "z_score_exact_normal_equiv_from_p": 0.0,
+          "empirical_p_exact_homophones": 1.0,
+          "probe_details": [
+            {
+              "probe_id": "R1_FISH_STAR",
+              "signs": "220 (Fish) + preceding numerals (016/003/032/002 -> 220, 254 vs 59, p=2.54e-26)",
+              "src_concept": "FISH",
+              "tgt_concept": "STAR",
+              "src_forms_tested": [
+                "matsya"
+              ],
+              "tgt_forms_tested": [
+                "tārā",
+                "stṛ",
+                "nakṣatra"
+              ],
+              "best_pair": "matsya <-> nakṣatra",
+              "phon_sim": 0.5437,
+              "exact_homophone": false,
+              "src_cite": "RV matsya (Mayrhofer EWAia II:298; mīna is post-Vedic Dravidian loan, EWAia II:358)",
+              "tgt_cite": "RV stṛ-/tārā/nakṣatra"
+            },
+            {
+              "probe_id": "R2_ROOF_BLACK",
+              "signs": "235 = 480 (Roof) + 220 (Fish) (145x unique; Parpola black-star Saturn test)",
+              "src_concept": "ROOF_THATCH",
+              "tgt_concept": "BLACK",
+              "src_forms_tested": [
+                "chadis",
+                "śālā"
+              ],
+              "tgt_forms_tested": [
+                "kṛṣṇa",
+                "śyāma"
+              ],
+              "best_pair": "śālā <-> śyāma",
+              "phon_sim": 0.636,
+              "exact_homophone": false,
+              "src_cite": "RV/AV chadis (roof/cover)",
+              "tgt_cite": "RV kṛṣṇa/śyāma (black/dark)"
+            },
+            {
+              "probe_id": "R3_VESSEL_SUFFIX",
+              "signs": "740 (#1 terminal suffix, 34.6% final, 47.5% seqs) & 700 (aquatic lift 8.6x, p=9.7e-10)",
+              "src_concept": "VESSEL_JAR",
+              "tgt_concept": "PRIMARY_SUFFIX",
+              "src_forms_tested": [
+                "kumbha",
+                "kalaśa",
+                "pātra"
+              ],
+              "tgt_forms_tested": [
+                "-asya",
+                "-as",
+                "-am",
+                "-e"
+              ],
+              "best_pair": "kalaśa <-> -asya",
+              "phon_sim": 0.5167,
+              "exact_homophone": false,
+              "src_cite": "RV kumbha/kalaśa/pātra (jar/vessel)",
+              "tgt_cite": "Macdonell 1910 (-asya gen, -as nom/gen, -am acc, -e dat/loc)"
+            },
+            {
+              "probe_id": "R4_YOKE_PROTECT",
+              "signs": "151 (p_final=86.7%, 60x) & 156 (p_final=78.4%, 37x) Yoke-carrier terminal title",
+              "src_concept": "YOKE_CARRY",
+              "tgt_concept": "PROTECT_OFFICE",
+              "src_forms_tested": [
+                "yuga",
+                "vah"
+              ],
+              "tgt_forms_tested": [
+                "pā",
+                "rakṣ",
+                "gopa"
+              ],
+              "best_pair": "yuga <-> gopa",
+              "phon_sim": 0.5625,
+              "exact_homophone": false,
+              "src_cite": "RV yuga (yoke); vah (carry)",
+              "tgt_cite": "RV pā/rakṣ (protect); gopa (guardian)"
+            },
+            {
+              "probe_id": "R5_COMB_WOMAN",
+              "signs": "400 (Comb, #2 terminal suffix, p_final=88.2%, 212x; Harappa lift 3.95x, p=4.1e-26)",
+              "src_concept": "COMB",
+              "tgt_concept": "WOMAN",
+              "src_forms_tested": [
+                "kaṅkata"
+              ],
+              "tgt_forms_tested": [
+                "strī",
+                "nārī",
+                "yoṣā"
+              ],
+              "best_pair": "kaṅkata <-> nārī",
+              "phon_sim": 0.3286,
+              "exact_homophone": false,
+              "src_cite": "AV kaṅkata (comb)",
+              "tgt_cite": "RV strī/nārī/yoṣā (woman)"
+            },
+            {
+              "probe_id": "R6_FIELD_SETTLEMENT",
+              "signs": "615 (Grid/Field, 74% medial) & 617 (615+615, 61% final; copper tablets lift 4.6x)",
+              "src_concept": "FIELD_ENCLOSURE",
+              "tgt_concept": "SETTLEMENT_FORT",
+              "src_forms_tested": [
+                "kṣetra",
+                "urvarā"
+              ],
+              "tgt_forms_tested": [
+                "pur",
+                "kṣatra",
+                "grāma"
+              ],
+              "best_pair": "kṣetra <-> kṣatra",
+              "phon_sim": 0.9167,
+              "exact_homophone": false,
+              "src_cite": "RV kṣetra (field); urvarā (fertile land)",
+              "tgt_cite": "RV pur (fort); kṣatra (dominion/chief); grāma (settlement)"
+            }
+          ]
+        }
+      }
+    },
+    "proto_dravidian_leave_one_probe_out_ablation": [
+      {
+        "dropped_probe": "R1_FISH_STAR",
+        "mode1_z_phon_sim": 1.184,
+        "mode1_p_phon_sim": 0.12288,
+        "mode1_passes_z5": false,
+        "mode2_z_phon_sim": 4.392,
+        "mode2_p_phon_sim": 0.001,
+        "mode2_passes_z5": false
+      },
+      {
+        "dropped_probe": "R2_ROOF_BLACK",
+        "mode1_z_phon_sim": 3.31,
+        "mode1_p_phon_sim": 0.002,
+        "mode1_passes_z5": false,
+        "mode2_z_phon_sim": 5.375,
+        "mode2_p_phon_sim": 0.001,
+        "mode2_passes_z5": true
+      },
+      {
+        "dropped_probe": "R3_VESSEL_SUFFIX",
+        "mode1_z_phon_sim": 2.87,
+        "mode1_p_phon_sim": 0.00599,
+        "mode1_passes_z5": false,
+        "mode2_z_phon_sim": 4.953,
+        "mode2_p_phon_sim": 0.001,
+        "mode2_passes_z5": false
+      },
+      {
+        "dropped_probe": "R4_YOKE_PROTECT",
+        "mode1_z_phon_sim": 1.217,
+        "mode1_p_phon_sim": 0.11089,
+        "mode1_passes_z5": false,
+        "mode2_z_phon_sim": 4.819,
+        "mode2_p_phon_sim": 0.001,
+        "mode2_passes_z5": false
+      },
+      {
+        "dropped_probe": "R5_COMB_WOMAN",
+        "mode1_z_phon_sim": 3.222,
+        "mode1_p_phon_sim": 0.004,
+        "mode1_passes_z5": false,
+        "mode2_z_phon_sim": 5.274,
+        "mode2_p_phon_sim": 0.001,
+        "mode2_passes_z5": true
+      },
+      {
+        "dropped_probe": "R6_FIELD_SETTLEMENT",
+        "mode1_z_phon_sim": 2.786,
+        "mode1_p_phon_sim": 0.004,
+        "mode1_passes_z5": false,
+        "mode2_z_phon_sim": 6.401,
+        "mode2_p_phon_sim": 0.001,
+        "mode2_passes_z5": true
+      }
+    ],
+    "cultural_and_syntactic_compounds": {
+      "C1_astral_numeral_star_compounds": {
+        "corpus_anchor": "016 (6)->220 (9x), 003 (3)->220 (14x), 032/002 (2)->220 (59x), 235 (Roof+Fish, 145x); note 017 (7)->220 only 1x!",
+        "scores": {
+          "Proto-Dravidian": {
+            "score": 0.85,
+            "note": "Attested Old Tamil aru-min ('6-star' = Pleiades), mu-m-min ('3-star' = Orion), mai-min ('black-star' = Saturn; Parpola 1994). Caveat: 017 (7)->220 elu-min occurs only 1x in strict deduplicated corpus while 032/002 (2)->220 occurs 59x."
+          },
+          "Elamite": {
+            "score": 0.0,
+            "note": "No attested native 6-star / 3-star constellation compounds (sparse corpus caveat)."
+          },
+          "Sumerian": {
+            "score": 0.25,
+            "note": "Pleiades is reduplicated mul-mul (cf. 219=220+220, 7x), NOT 6-star; Orion is sipa-zi-an-na, NOT 3-star."
+          },
+          "Vedic Sanskrit": {
+            "score": 0.25,
+            "note": "Pleiades is Krttikah (NOT sat-tara); Orion is Mrgasiras (NOT tri-tara); cultural 6/7-star lore exists without numeral+fish/star lexical structure."
+          }
+        }
+      },
+      "C2_seven_brazier_altar_017_585": {
+        "corpus_anchor": "017 (7) -> 585 (Brazier/Altar, 17x, PMI +7.03; 585 enriched on Copper/Kiln tablets lift 4.2x-9.0x)",
+        "scores": {
+          "Proto-Dravidian": {
+            "score": 0.45,
+            "note": "Sacred heptads exist in South Asian Dravidian folklore (elu-kanniyar), but no pre-Sanskritic DEDR compound specifically pairing '7 + fire-brazier'."
+          },
+          "Elamite": {
+            "score": 0.35,
+            "note": "Heptadic divine assemblies occur in Elamite religion, no direct 7+brazier compound attested."
+          },
+          "Sumerian": {
+            "score": 0.55,
+            "note": "Sacred heptad imin-bi ('The Seven'), 7 abgal sages, and 7 ritual braziers/censers attested in Mesopotamian ritual."
+          },
+          "Vedic Sanskrit": {
+            "score": 0.95,
+            "note": "Exact cultural compound: Agni saptajihva ('seven-tongued fire'), sapta-hotr ('7 fire-priests'), sapta-dhaman ('7 hearths'), saptarsi ('7 seers'). Likely reflects shared South Asian Bronze-Age substrate ritual (Kalibangan/Lothal fire altars)."
+          }
+        }
+      },
+      "C3_vessel_numeral_measure_syntax": {
+        "corpus_anchor": "705/706 (Filled vessel) -> 033 (3 strokes, 87x, PMI +5.41, seals; 705/706->033->520 37x) vs 032/033/034 -> 700 (20 vs 8) & 034/697 on pottery (lift 7.5x/21.7x)",
+        "scores": {
+          "Proto-Dravidian": {
+            "score": 0.65,
+            "note": "Explains preposed Num->700 (20:8) & pottery 034/697, but postposed 705/706->033 (87:0) requires 033 to be either a postposed measure/tally or a grammatical/phonetic syllable."
+          },
+          "Elamite": {
+            "score": 0.55,
+            "note": "Head-initial N->Num fits 705/706->033 (87:0), but conflicts with Num->700 (20:8) and Num->Fish (254:59)."
+          },
+          "Sumerian": {
+            "score": 0.6,
+            "note": "Fits postposed N->Num (705/706->033) and accounting tallies; conflicts with predominant Num->Noun order on seals."
+          },
+          "Vedic Sanskrit": {
+            "score": 0.65,
+            "note": "Same mixed profile as Proto-Dravidian: preposed Num->700 (20:8) fits, postposed 705/706->033 requires accounting-tally or non-numeral reading of 033."
+          }
+        }
+      }
+    },
+    "comparative_lexicon_size_per_family": {
+      "Proto-Dravidian": {
+        "total_concepts": 40,
+        "attested_concepts": 40
+      },
+      "Elamite": {
+        "total_concepts": 40,
+        "attested_concepts": 32
+      },
+      "Sumerian": {
+        "total_concepts": 40,
+        "attested_concepts": 40
+      },
+      "Vedic Sanskrit": {
+        "total_concepts": 40,
+        "attested_concepts": 40
+      }
+    }
+  },
+  "test_c_holdout_prediction": {
+    "split_info": {
+      "total_unique_strict_len_ge3": 1736,
+      "train_sequences_70pct": 1215,
+      "test_sequences_30pct": 521,
+      "train_test_overlap": 0,
+      "test_masked_positions": 2583,
+      "train_induced_terminal_class_size": 10,
+      "train_induced_initial_class_size": 7
+    },
+    "c1_standalone_typology_metrics": {
+      "S0_Unigram": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 10.18,
+          "top5_pct": 23.23,
+          "top10_pct": 32.71,
+          "mrr": 0.1829,
+          "cross_entropy_bits": 7.0128
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 23.42,
+          "top5_pct": 28.41,
+          "top10_pct": 39.06,
+          "mrr": 0.2836,
+          "cross_entropy_bits": 6.6862
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 5.19,
+          "top5_pct": 19.81,
+          "top10_pct": 24.53,
+          "mrr": 0.1181,
+          "cross_entropy_bits": 7.4197
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 7.1,
+          "top5_pct": 25.42,
+          "top10_pct": 32.9,
+          "mrr": 0.173,
+          "cross_entropy_bits": 7.0555
+        }
+      },
+      "S1_RightEdge_Suffix_4slot": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 14.67,
+          "top5_pct": 30.97,
+          "top10_pct": 43.52,
+          "mrr": 0.2365,
+          "cross_entropy_bits": 6.5517
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 23.42,
+          "top5_pct": 43.76,
+          "top10_pct": 54.22,
+          "mrr": 0.3335,
+          "cross_entropy_bits": 5.9251
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 6.13,
+          "top5_pct": 22.64,
+          "top10_pct": 38.44,
+          "mrr": 0.1492,
+          "cross_entropy_bits": 6.9635
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 14.19,
+          "top5_pct": 24.13,
+          "top10_pct": 38.06,
+          "mrr": 0.2128,
+          "cross_entropy_bits": 7.0036
+        }
+      },
+      "S2_LeftEdge_Prefix_4slot": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 14.05,
+          "top5_pct": 30.55,
+          "top10_pct": 41.27,
+          "mrr": 0.2297,
+          "cross_entropy_bits": 6.7262
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 22.55,
+          "top5_pct": 38.58,
+          "top10_pct": 45.49,
+          "mrr": 0.3019,
+          "cross_entropy_bits": 6.4486
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 5.19,
+          "top5_pct": 20.28,
+          "top10_pct": 29.48,
+          "mrr": 0.1294,
+          "cross_entropy_bits": 7.3457
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 9.94,
+          "top5_pct": 25.81,
+          "top10_pct": 39.87,
+          "mrr": 0.1888,
+          "cross_entropy_bits": 6.9922
+        }
+      },
+      "S3_Flat_Final_2slot": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 12.47,
+          "top5_pct": 28.46,
+          "top10_pct": 37.71,
+          "mrr": 0.2123,
+          "cross_entropy_bits": 6.6985
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 17.95,
+          "top5_pct": 41.36,
+          "top10_pct": 45.78,
+          "mrr": 0.2942,
+          "cross_entropy_bits": 6.1581
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 4.72,
+          "top5_pct": 26.65,
+          "top10_pct": 32.08,
+          "mrr": 0.1333,
+          "cross_entropy_bits": 7.112
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 11.1,
+          "top5_pct": 26.97,
+          "top10_pct": 35.61,
+          "mrr": 0.1993,
+          "cross_entropy_bits": 7.0239
+        }
+      },
+      "S4_PDr_Standalone_Morph": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 15.21,
+          "top5_pct": 32.71,
+          "top10_pct": 44.13,
+          "mrr": 0.2432,
+          "cross_entropy_bits": 6.4814
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 24.09,
+          "top5_pct": 46.26,
+          "top10_pct": 55.37,
+          "mrr": 0.3469,
+          "cross_entropy_bits": 5.857
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 9.2,
+          "top5_pct": 29.25,
+          "top10_pct": 39.86,
+          "mrr": 0.1943,
+          "cross_entropy_bits": 6.7597
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 14.58,
+          "top5_pct": 28.39,
+          "top10_pct": 39.61,
+          "mrr": 0.2247,
+          "cross_entropy_bits": 6.8464
+        }
+      },
+      "S5_Elamite_Standalone_Morph": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 14.63,
+          "top5_pct": 33.41,
+          "top10_pct": 44.64,
+          "mrr": 0.2431,
+          "cross_entropy_bits": 6.4644
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 23.22,
+          "top5_pct": 46.35,
+          "top10_pct": 55.28,
+          "mrr": 0.3405,
+          "cross_entropy_bits": 5.8766
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 6.13,
+          "top5_pct": 23.82,
+          "top10_pct": 38.21,
+          "mrr": 0.1562,
+          "cross_entropy_bits": 6.8943
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 14.19,
+          "top5_pct": 27.74,
+          "top10_pct": 39.23,
+          "mrr": 0.2209,
+          "cross_entropy_bits": 6.8672
+        }
+      },
+      "S6_Sumerian_Standalone_Morph": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 15.25,
+          "top5_pct": 34.46,
+          "top10_pct": 44.72,
+          "mrr": 0.249,
+          "cross_entropy_bits": 6.4415
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 23.8,
+          "top5_pct": 44.63,
+          "top10_pct": 51.73,
+          "mrr": 0.3351,
+          "cross_entropy_bits": 6.0353
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 5.42,
+          "top5_pct": 27.59,
+          "top10_pct": 34.91,
+          "mrr": 0.151,
+          "cross_entropy_bits": 6.9685
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 12.65,
+          "top5_pct": 30.84,
+          "top10_pct": 40.9,
+          "mrr": 0.221,
+          "cross_entropy_bits": 6.769
+        }
+      },
+      "S7_Vedic_Standalone_Morph": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 13.55,
+          "top5_pct": 31.86,
+          "top10_pct": 41.11,
+          "mrr": 0.229,
+          "cross_entropy_bits": 6.583
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 23.61,
+          "top5_pct": 39.06,
+          "top10_pct": 46.07,
+          "mrr": 0.3216,
+          "cross_entropy_bits": 6.1899
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 5.19,
+          "top5_pct": 25.47,
+          "top10_pct": 31.37,
+          "mrr": 0.1468,
+          "cross_entropy_bits": 6.9917
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 11.1,
+          "top5_pct": 28.9,
+          "top10_pct": 39.23,
+          "mrr": 0.2073,
+          "cross_entropy_bits": 6.8444
+        }
+      }
+    },
+    "c2_interpolated_ngram_metrics": {
+      "M1_Layer2C_Ngram": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 37.17,
+          "top5_pct": 57.88,
+          "top10_pct": 64.89,
+          "mrr": 0.4702,
+          "cross_entropy_bits": 5.4468
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 43.95,
+          "top5_pct": 62.09,
+          "top10_pct": 68.62,
+          "mrr": 0.5269,
+          "cross_entropy_bits": 5.0259
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 31.37,
+          "top5_pct": 55.42,
+          "top10_pct": 64.39,
+          "mrr": 0.4237,
+          "cross_entropy_bits": 6.0092
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 25.29,
+          "top5_pct": 45.94,
+          "top10_pct": 54.19,
+          "mrr": 0.3528,
+          "cross_entropy_bits": 6.1992
+        }
+      },
+      "M2_PDr_Agglutinative_HeadFinal": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 37.13,
+          "top5_pct": 57.96,
+          "top10_pct": 64.92,
+          "mrr": 0.4697,
+          "cross_entropy_bits": 5.098
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 43.76,
+          "top5_pct": 62.19,
+          "top10_pct": 68.81,
+          "mrr": 0.5261,
+          "cross_entropy_bits": 4.6913
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 31.6,
+          "top5_pct": 55.42,
+          "top10_pct": 63.68,
+          "mrr": 0.4249,
+          "cross_entropy_bits": 5.5532
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 25.29,
+          "top5_pct": 46.19,
+          "top10_pct": 53.68,
+          "mrr": 0.352,
+          "cross_entropy_bits": 5.9263
+        }
+      },
+      "M3_Elamite_Agglutinative_HeadInitial": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 37.13,
+          "top5_pct": 57.84,
+          "top10_pct": 64.89,
+          "mrr": 0.4695,
+          "cross_entropy_bits": 5.0959
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 43.76,
+          "top5_pct": 62.19,
+          "top10_pct": 68.71,
+          "mrr": 0.526,
+          "cross_entropy_bits": 4.692
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 31.6,
+          "top5_pct": 55.19,
+          "top10_pct": 63.68,
+          "mrr": 0.4245,
+          "cross_entropy_bits": 5.5633
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 25.29,
+          "top5_pct": 45.81,
+          "top10_pct": 53.55,
+          "mrr": 0.3514,
+          "cross_entropy_bits": 5.9259
+        }
+      },
+      "M4_Sumerian_PrefixSuffix_HeadInitial": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 37.05,
+          "top5_pct": 57.96,
+          "top10_pct": 64.96,
+          "mrr": 0.4689,
+          "cross_entropy_bits": 5.0968
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 43.76,
+          "top5_pct": 62.09,
+          "top10_pct": 68.71,
+          "mrr": 0.5257,
+          "cross_entropy_bits": 4.6941
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 31.37,
+          "top5_pct": 55.42,
+          "top10_pct": 63.92,
+          "mrr": 0.4223,
+          "cross_entropy_bits": 5.5607
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 24.9,
+          "top5_pct": 46.06,
+          "top10_pct": 54.32,
+          "mrr": 0.3491,
+          "cross_entropy_bits": 5.912
+        }
+      },
+      "M5_Vedic_Fusional_HeadFinal": {
+        "all": {
+          "n_positions": 2583,
+          "top1_pct": 37.01,
+          "top5_pct": 57.84,
+          "top10_pct": 64.65,
+          "mrr": 0.4685,
+          "cross_entropy_bits": 5.1254
+        },
+        "right_edge_suffix": {
+          "n_positions": 1042,
+          "top1_pct": 43.76,
+          "top5_pct": 62.09,
+          "top10_pct": 68.33,
+          "mrr": 0.5255,
+          "cross_entropy_bits": 4.7204
+        },
+        "post_numeral": {
+          "n_positions": 424,
+          "top1_pct": 31.37,
+          "top5_pct": 55.42,
+          "top10_pct": 63.92,
+          "mrr": 0.4224,
+          "cross_entropy_bits": 5.588
+        },
+        "sparse_unseen_surround": {
+          "n_positions": 775,
+          "top1_pct": 24.77,
+          "top5_pct": 45.94,
+          "top10_pct": 53.81,
+          "mrr": 0.348,
+          "cross_entropy_bits": 5.9306
+        }
+      }
+    },
+    "c1_paired_bootstrap_1000": [
+      {
+        "comparison": "S1_RightEdge_Suffix_4slot vs S2_LeftEdge_Prefix_4slot",
+        "delta_top1_pct": 0.619,
+        "delta_top1_ci95": [
+          -0.238,
+          1.453
+        ],
+        "p_top1_better": 0.08292,
+        "delta_top5_pct": 0.426,
+        "delta_top5_ci95": [
+          -0.932,
+          1.722
+        ],
+        "delta_ce_bits": -0.1745,
+        "delta_ce_ci95": [
+          -0.2314,
+          -0.1158
+        ],
+        "p_ce_lower_better": 0.001
+      },
+      {
+        "comparison": "S4_PDr_Standalone_Morph vs S5_Elamite_Standalone_Morph",
+        "delta_top1_pct": 0.581,
+        "delta_top1_ci95": [
+          0.276,
+          0.878
+        ],
+        "p_top1_better": 0.001,
+        "delta_top5_pct": -0.697,
+        "delta_top5_ci95": [
+          -1.339,
+          -0.113
+        ],
+        "delta_ce_bits": 0.0171,
+        "delta_ce_ci95": [
+          0.0075,
+          0.026
+        ],
+        "p_ce_lower_better": 1.0
+      },
+      {
+        "comparison": "S4_PDr_Standalone_Morph vs S6_Sumerian_Standalone_Morph",
+        "delta_top1_pct": -0.039,
+        "delta_top1_ci95": [
+          -0.717,
+          0.666
+        ],
+        "p_top1_better": 0.56144,
+        "delta_top5_pct": -1.742,
+        "delta_top5_ci95": [
+          -2.763,
+          -0.621
+        ],
+        "delta_ce_bits": 0.04,
+        "delta_ce_ci95": [
+          0.0172,
+          0.0651
+        ],
+        "p_ce_lower_better": 1.0
+      },
+      {
+        "comparison": "S4_PDr_Standalone_Morph vs S7_Vedic_Standalone_Morph",
+        "delta_top1_pct": 1.665,
+        "delta_top1_ci95": [
+          0.977,
+          2.312
+        ],
+        "p_top1_better": 0.001,
+        "delta_top5_pct": 0.852,
+        "delta_top5_ci95": [
+          -0.464,
+          2.196
+        ],
+        "delta_ce_bits": -0.1016,
+        "delta_ce_ci95": [
+          -0.1352,
+          -0.068
+        ],
+        "p_ce_lower_better": 0.001
+      }
+    ],
+    "c2_paired_bootstrap_1000": [
+      {
+        "comparison": "M2_PDr_Agglutinative_HeadFinal vs M1_Layer2C_Ngram",
+        "delta_top1_pct": -0.039,
+        "delta_top1_ci95": [
+          -0.188,
+          0.079
+        ],
+        "p_top1_better": 0.81319,
+        "delta_top5_pct": 0.077,
+        "delta_top5_ci95": [
+          -0.265,
+          0.422
+        ],
+        "delta_ce_bits": -0.3488,
+        "delta_ce_ci95": [
+          -0.4021,
+          -0.302
+        ],
+        "p_ce_lower_better": 0.001
+      },
+      {
+        "comparison": "M2_PDr_Agglutinative_HeadFinal vs M3_Elamite_Agglutinative_HeadInitial",
+        "delta_top1_pct": 0.0,
+        "delta_top1_ci95": [
+          0.0,
+          0.0
+        ],
+        "p_top1_better": 1.0,
+        "delta_top5_pct": 0.116,
+        "delta_top5_ci95": [
+          0.0,
+          0.268
+        ],
+        "delta_ce_bits": 0.0021,
+        "delta_ce_ci95": [
+          -0.0019,
+          0.0066
+        ],
+        "p_ce_lower_better": 0.84416
+      },
+      {
+        "comparison": "M2_PDr_Agglutinative_HeadFinal vs M4_Sumerian_PrefixSuffix_HeadInitial",
+        "delta_top1_pct": 0.077,
+        "delta_top1_ci95": [
+          -0.154,
+          0.309
+        ],
+        "p_top1_better": 0.30769,
+        "delta_top5_pct": 0.0,
+        "delta_top5_ci95": [
+          -0.155,
+          0.156
+        ],
+        "delta_ce_bits": 0.0012,
+        "delta_ce_ci95": [
+          -0.0076,
+          0.0105
+        ],
+        "p_ce_lower_better": 0.5984
+      },
+      {
+        "comparison": "M2_PDr_Agglutinative_HeadFinal vs M5_Vedic_Fusional_HeadFinal",
+        "delta_top1_pct": 0.116,
+        "delta_top1_ci95": [
+          -0.117,
+          0.348
+        ],
+        "p_top1_better": 0.23077,
+        "delta_top5_pct": 0.116,
+        "delta_top5_ci95": [
+          -0.157,
+          0.399
+        ],
+        "delta_ce_bits": -0.0274,
+        "delta_ce_ci95": [
+          -0.0397,
+          -0.0142
+        ],
+        "p_ce_lower_better": 0.001
+      }
+    ],
+    "epistemological_caveat": "Test C evaluates TYPOLOGICAL generalization (agglutinative suffix-stacking + Modifier-Before-Head order), NOT unique genetic descent. Any extinct unknown language isolate sharing Proto-Dravidian's morphosyntactic typology would achieve the exact same out-of-sample masked-sign prediction gain."
+  }
+}

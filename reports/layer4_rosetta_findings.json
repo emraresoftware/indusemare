@@ -1,0 +1,5393 @@
+{
+  "metadata": {
+    "layer": "Layer 4 — Foreign-Region 'Rosetta' Seals Computational Epigraphy",
+    "corpus_source": "data/processed/inscriptions_clean.csv + lines_clean.csv + glyphs_clean.csv",
+    "reproduction_check_vs_layer1_2": {
+      "layer1_2_hl_mean": 5.978,
+      "layer4_hl_mean": 5.978,
+      "layer1_2_foreign_mean": 8.425,
+      "layer4_foreign_mean": 8.425,
+      "exact_match": true
+    },
+    "outputs": {
+      "json_report": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer4_rosetta_findings.json",
+      "png_primary": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/rosetta_foreign_seals.png",
+      "png_brain_copy": "/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/rosetta_foreign_seals.png"
+    }
+  },
+  "section_A_verified_statistical_facts": {
+    "corpus_audit_and_surprisal": {
+      "total_foreign_inscriptions": 41,
+      "total_foreign_parsed_lines": 42,
+      "by_region_inscriptions": {
+        "Persian Gulf": 16,
+        "Mesopotamia": 11,
+        "Iranian Plateau": 11,
+        "Central Asia": 3
+      },
+      "by_region_lines": {
+        "Persian Gulf": 17,
+        "Mesopotamia": 11,
+        "Iranian Plateau": 11,
+        "Central Asia": 3
+      },
+      "usable_lines_ge2_signs": 34,
+      "single_sign_lines": 6,
+      "damaged_empty_lines": 2,
+      "heartland_cv_baseline": {
+        "n_unique_strict_heartland": 2026,
+        "mean_surprisal_bits": 5.978,
+        "std_surprisal_bits": 2.556,
+        "dir_invariant_min_mean_bits": 5.831,
+        "dir_invariant_min_std_bits": 2.347
+      },
+      "foreign_vs_heartland_surprisal": {
+        "foreign_mean_bits": 8.425,
+        "foreign_dir_invariant_min_mean_bits": 7.949,
+        "mann_whitney_p_fwd": 6.976e-08,
+        "mann_whitney_p_dir_invariant": 1.176e-07,
+        "foreign_SEAL_C_gt_SEAL_S_mw_p": 0.01905
+      },
+      "by_subgroup_surprisal": {
+        "Foreign_ALL_usable": {
+          "n": 34,
+          "mean_surprisal_bits": 8.425,
+          "mean_z_score": 0.96,
+          "median_z_score": 0.95,
+          "mean_unseen_bigram_ratio": 0.452,
+          "mw_p_vs_heartland_fwd": 6.976e-08,
+          "mw_p_vs_heartland_dir_invariant": 1.176e-07
+        },
+        "Foreign_SEAL_C_circular": {
+          "n": 15,
+          "mean_surprisal_bits": 9.547,
+          "mean_z_score": 1.4,
+          "median_z_score": 1.36,
+          "mean_unseen_bigram_ratio": 0.562,
+          "mw_p_vs_heartland_fwd": 3.866e-07,
+          "mw_p_vs_heartland_dir_invariant": 6.74e-07
+        },
+        "Foreign_SEAL_CY_cylinder": {
+          "n": 1,
+          "mean_surprisal_bits": 9.772,
+          "mean_z_score": 1.48,
+          "median_z_score": 1.48,
+          "mean_unseen_bigram_ratio": 0.556,
+          "mw_p_vs_heartland_fwd": 0.07593,
+          "mw_p_vs_heartland_dir_invariant": 0.06445
+        },
+        "Foreign_SEAL_S_square": {
+          "n": 12,
+          "mean_surprisal_bits": 7.339,
+          "mean_z_score": 0.53,
+          "median_z_score": 0.11,
+          "mean_unseen_bigram_ratio": 0.337,
+          "mw_p_vs_heartland_fwd": 0.03919,
+          "mw_p_vs_heartland_dir_invariant": 0.05428
+        },
+        "Foreign_Gaur_motif": {
+          "n": 14,
+          "mean_surprisal_bits": 9.973,
+          "mean_z_score": 1.56,
+          "median_z_score": 1.6,
+          "mean_unseen_bigram_ratio": 0.594,
+          "mw_p_vs_heartland_fwd": 2.248e-07,
+          "mw_p_vs_heartland_dir_invariant": 2.526e-07
+        },
+        "Foreign_Gulf_Meso": {
+          "n": 22,
+          "mean_surprisal_bits": 8.705,
+          "mean_z_score": 1.07,
+          "median_z_score": 1.12,
+          "mean_unseen_bigram_ratio": 0.479,
+          "mw_p_vs_heartland_fwd": 5.555e-07,
+          "mw_p_vs_heartland_dir_invariant": 6.454e-07
+        },
+        "Region_Persian_Gulf": {
+          "n": 12,
+          "mean_surprisal_bits": 8.928,
+          "mean_z_score": 1.15,
+          "median_z_score": 1.12,
+          "mean_unseen_bigram_ratio": 0.502,
+          "mw_p_vs_heartland_fwd": 0.000141,
+          "mw_p_vs_heartland_dir_invariant": 9.91e-05
+        },
+        "Region_Mesopotamia": {
+          "n": 10,
+          "mean_surprisal_bits": 8.437,
+          "mean_z_score": 0.96,
+          "median_z_score": 1.07,
+          "mean_unseen_bigram_ratio": 0.452,
+          "mw_p_vs_heartland_fwd": 0.0005457,
+          "mw_p_vs_heartland_dir_invariant": 0.0008952
+        },
+        "Region_Iranian_Plateau": {
+          "n": 9,
+          "mean_surprisal_bits": 9.007,
+          "mean_z_score": 1.18,
+          "median_z_score": 1.48,
+          "mean_unseen_bigram_ratio": 0.523,
+          "mw_p_vs_heartland_fwd": 0.0008653,
+          "mw_p_vs_heartland_dir_invariant": 0.001482
+        },
+        "Region_Central_Asia": {
+          "n": 3,
+          "mean_surprisal_bits": 4.628,
+          "mean_z_score": -0.53,
+          "median_z_score": -0.46,
+          "mean_unseen_bigram_ratio": 0.037,
+          "mw_p_vs_heartland_fwd": 0.7953,
+          "mw_p_vs_heartland_dir_invariant": 0.7859
+        }
+      },
+      "all_41_inscriptions_42_lines": [
+        {
+          "inscription_id": "16.1",
+          "line_idx": 0,
+          "region": "Central Asia",
+          "site": "Altyn Depe",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "",
+          "material": "Soft stone",
+          "complete": "Y",
+          "direction": "L/R",
+          "has_damage_token": 0,
+          "cisi": "Alt-90",
+          "excavation_idno": "-",
+          "raw_text": "+390-415+",
+          "tokens": [
+            "415",
+            "390"
+          ],
+          "reading_seq": "415 -> 390",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 4.801,
+          "surprisal_rev_bits": 8.541,
+          "min_dir_surprisal_bits": 4.801,
+          "z_score_vs_heartland": -0.46,
+          "z_score_rev": 1.0,
+          "unseen_bigrams": "0/3",
+          "unseen_bigram_ratio": 0.0,
+          "unseen_bigram_count": 0,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 31
+        },
+        {
+          "inscription_id": "147.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Failaka",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+317-817-000-090+",
+          "tokens": [
+            "090",
+            "817",
+            "317"
+          ],
+          "reading_seq": "090 -> 817 -> 317",
+          "len": 3,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 8.056,
+          "surprisal_rev_bits": 7.714,
+          "min_dir_surprisal_bits": 7.714,
+          "z_score_vs_heartland": 0.81,
+          "z_score_rev": 0.68,
+          "unseen_bigrams": "1/4",
+          "unseen_bigram_ratio": 0.25,
+          "unseen_bigram_count": 1,
+          "total_transitions": 4,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 19
+        },
+        {
+          "inscription_id": "148.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Failaka",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "",
+          "material": "-",
+          "complete": "?",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "]090-001-350-716+",
+          "tokens": [
+            "716",
+            "350",
+            "001",
+            "090"
+          ],
+          "reading_seq": "716 -> 350 -> 001 -> 090",
+          "len": 4,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 8.625,
+          "surprisal_rev_bits": 11.728,
+          "min_dir_surprisal_bits": 8.625,
+          "z_score_vs_heartland": 1.04,
+          "z_score_rev": 2.25,
+          "unseen_bigrams": "3/5",
+          "unseen_bigram_ratio": 0.6,
+          "unseen_bigram_count": 3,
+          "total_transitions": 5,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 17
+        },
+        {
+          "inscription_id": "160.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Hajar",
+          "object_type": "TAB:I",
+          "shape": "prism",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+617-117+",
+          "tokens": [
+            "117",
+            "617"
+          ],
+          "reading_seq": "117 -> 617",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 10.898,
+          "surprisal_rev_bits": 13.652,
+          "min_dir_surprisal_bits": 10.898,
+          "z_score_vs_heartland": 1.92,
+          "z_score_rev": 3.0,
+          "unseen_bigrams": "2/3",
+          "unseen_bigram_ratio": 0.667,
+          "unseen_bigram_count": 2,
+          "total_transitions": 3,
+          "unseen_signs": [
+            "117"
+          ],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 6
+        },
+        {
+          "inscription_id": "935.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Ra's al-Junayz",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull1",
+          "material": "Copper",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "RJ12803Figure 35.14a",
+          "raw_text": "+000+",
+          "tokens": [],
+          "reading_seq": "",
+          "len": 0,
+          "usable_for_surprisal": false,
+          "classification": "DAMAGED_NO_CLEAN_SIGNS"
+        },
+        {
+          "inscription_id": "1970.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Kish",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull1",
+          "material": "-",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+000-643-240+",
+          "tokens": [
+            "240",
+            "643"
+          ],
+          "reading_seq": "240 -> 643",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.247,
+          "surprisal_rev_bits": 8.509,
+          "min_dir_surprisal_bits": 8.509,
+          "z_score_vs_heartland": 1.28,
+          "z_score_rev": 0.99,
+          "unseen_bigrams": "1/3",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 1,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 14
+        },
+        {
+          "inscription_id": "1971.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Kish",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull1:L",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+740-390-590-220-003-060-840-416+",
+          "tokens": [
+            "416",
+            "840",
+            "060",
+            "003",
+            "220",
+            "590",
+            "390",
+            "740"
+          ],
+          "reading_seq": "416 -> 840 -> 060 -> 003 -> 220 -> 590 -> 390 -> 740",
+          "len": 8,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 4.278,
+          "surprisal_rev_bits": 10.687,
+          "min_dir_surprisal_bits": 4.278,
+          "z_score_vs_heartland": -0.66,
+          "z_score_rev": 1.84,
+          "unseen_bigrams": "1/9",
+          "unseen_bigram_ratio": 0.111,
+          "unseen_bigram_count": 1,
+          "total_transitions": 9,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 32
+        },
+        {
+          "inscription_id": "2153.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Luristan",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+831-413-840-091+",
+          "tokens": [
+            "091",
+            "840",
+            "413",
+            "831"
+          ],
+          "reading_seq": "091 -> 840 -> 413 -> 831",
+          "len": 4,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 10.691,
+          "surprisal_rev_bits": 12.436,
+          "min_dir_surprisal_bits": 10.691,
+          "z_score_vs_heartland": 1.84,
+          "z_score_rev": 2.53,
+          "unseen_bigrams": "3/5",
+          "unseen_bigram_ratio": 0.6,
+          "unseen_bigram_count": 3,
+          "total_transitions": 5,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 7
+        },
+        {
+          "inscription_id": "3858.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Nindowari-damb",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull1:S",
+          "material": "-",
+          "complete": "Y",
+          "direction": "BUS",
+          "has_damage_token": 0,
+          "cisi": "Nd-1",
+          "excavation_idno": "-",
+          "raw_text": "+817-220-632-066-740-760-026-060-257+",
+          "tokens": [
+            "257",
+            "060",
+            "026",
+            "760",
+            "740",
+            "066",
+            "632",
+            "220",
+            "817"
+          ],
+          "reading_seq": "257 -> 060 -> 026 -> 760 -> 740 -> 066 -> 632 -> 220 -> 817",
+          "len": 9,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 11.33,
+          "surprisal_rev_bits": 10.572,
+          "min_dir_surprisal_bits": 10.572,
+          "z_score_vs_heartland": 2.09,
+          "z_score_rev": 1.8,
+          "unseen_bigrams": "8/10",
+          "unseen_bigram_ratio": 0.8,
+          "unseen_bigram_count": 8,
+          "total_transitions": 10,
+          "unseen_signs": [
+            "026"
+          ],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 5
+        },
+        {
+          "inscription_id": "3859.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Nindowari-damb",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull1:W",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "Nd-2",
+          "excavation_idno": "-",
+          "raw_text": "+400-798-255+",
+          "tokens": [
+            "255",
+            "798",
+            "400"
+          ],
+          "reading_seq": "255 -> 798 -> 400",
+          "len": 3,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 6.343,
+          "surprisal_rev_bits": 10.532,
+          "min_dir_surprisal_bits": 6.343,
+          "z_score_vs_heartland": 0.14,
+          "z_score_rev": 1.78,
+          "unseen_bigrams": "1/4",
+          "unseen_bigram_ratio": 0.25,
+          "unseen_bigram_count": 1,
+          "total_transitions": 4,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 27
+        },
+        {
+          "inscription_id": "3860.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Nippur",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Zebu",
+          "material": "Steatite",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+151-000+",
+          "tokens": [
+            "151"
+          ],
+          "reading_seq": "151",
+          "len": 1,
+          "usable_for_surprisal": false,
+          "classification": "SINGLE_SIGN_ONLY"
+        },
+        {
+          "inscription_id": "3863.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Qala'at al-Bahrain",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "Steatite",
+          "complete": "Y",
+          "direction": "L/R",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+160-090-055-060-190+",
+          "tokens": [
+            "190",
+            "060",
+            "055",
+            "090",
+            "160"
+          ],
+          "reading_seq": "190 -> 060 -> 055 -> 090 -> 160",
+          "len": 5,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 12.544,
+          "surprisal_rev_bits": 9.409,
+          "min_dir_surprisal_bits": 9.409,
+          "z_score_vs_heartland": 2.57,
+          "z_score_rev": 1.34,
+          "unseen_bigrams": "5/6",
+          "unseen_bigram_ratio": 0.833,
+          "unseen_bigram_count": 5,
+          "total_transitions": 6,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 2
+        },
+        {
+          "inscription_id": "3864.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Ra's al-Junayz",
+          "object_type": "POT:T:g",
+          "shape": "-",
+          "symbol": "",
+          "material": "Clay",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+740-029-220-000[",
+          "tokens": [
+            "220",
+            "029",
+            "740"
+          ],
+          "reading_seq": "220 -> 029 -> 740",
+          "len": 3,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 7.382,
+          "surprisal_rev_bits": 10.094,
+          "min_dir_surprisal_bits": 7.382,
+          "z_score_vs_heartland": 0.55,
+          "z_score_rev": 1.61,
+          "unseen_bigrams": "2/4",
+          "unseen_bigram_ratio": 0.5,
+          "unseen_bigram_count": 2,
+          "total_transitions": 4,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 23
+        },
+        {
+          "inscription_id": "3865.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Ra's al-Junayz",
+          "object_type": "POT:T:g",
+          "shape": "-",
+          "symbol": "",
+          "material": "Clay",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+405-004+",
+          "tokens": [
+            "004",
+            "405"
+          ],
+          "reading_seq": "004 -> 405",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 3.661,
+          "surprisal_rev_bits": 9.649,
+          "min_dir_surprisal_bits": 3.661,
+          "z_score_vs_heartland": -0.91,
+          "z_score_rev": 1.44,
+          "unseen_bigrams": "0/3",
+          "unseen_bigram_ratio": 0.0,
+          "unseen_bigram_count": 0,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 34
+        },
+        {
+          "inscription_id": "3866.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Ra's al-Junayz",
+          "object_type": "POT:T:g",
+          "shape": "-",
+          "symbol": "",
+          "material": "Clay",
+          "complete": "?",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "DA 10115",
+          "raw_text": "]740-892-517+",
+          "tokens": [
+            "517",
+            "892",
+            "740"
+          ],
+          "reading_seq": "517 -> 892 -> 740",
+          "len": 3,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.064,
+          "surprisal_rev_bits": 14.634,
+          "min_dir_surprisal_bits": 9.064,
+          "z_score_vs_heartland": 1.21,
+          "z_score_rev": 3.39,
+          "unseen_bigrams": "2/4",
+          "unseen_bigram_ratio": 0.5,
+          "unseen_bigram_count": 2,
+          "total_transitions": 4,
+          "unseen_signs": [
+            "517"
+          ],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 16
+        },
+        {
+          "inscription_id": "3874.1",
+          "line_idx": 0,
+          "region": "Central Asia",
+          "site": "Shortughai",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Rhin",
+          "material": "Steatite",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "Sh-69",
+          "excavation_idno": "SHBB 78 76 2R",
+          "raw_text": "+426-003+",
+          "tokens": [
+            "003",
+            "426"
+          ],
+          "reading_seq": "003 -> 426",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 3.995,
+          "surprisal_rev_bits": 8.071,
+          "min_dir_surprisal_bits": 3.995,
+          "z_score_vs_heartland": -0.78,
+          "z_score_rev": 0.82,
+          "unseen_bigrams": "0/3",
+          "unseen_bigram_ratio": 0.0,
+          "unseen_bigram_count": 0,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 33
+        },
+        {
+          "inscription_id": "3881.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Susa",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+700-604-407-090-365-000+",
+          "tokens": [
+            "365",
+            "090",
+            "407",
+            "604",
+            "700"
+          ],
+          "reading_seq": "365 -> 090 -> 407 -> 604 -> 700",
+          "len": 5,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 11.414,
+          "surprisal_rev_bits": 10.379,
+          "min_dir_surprisal_bits": 10.379,
+          "z_score_vs_heartland": 2.13,
+          "z_score_rev": 1.72,
+          "unseen_bigrams": "5/6",
+          "unseen_bigram_ratio": 0.833,
+          "unseen_bigram_count": 5,
+          "total_transitions": 6,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 4
+        },
+        {
+          "inscription_id": "3882.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Susa",
+          "object_type": "SEAL:CY",
+          "shape": "cylindrical",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+416-150-002-055-031-319-001-924+",
+          "tokens": [
+            "924",
+            "001",
+            "319",
+            "031",
+            "055",
+            "002",
+            "150",
+            "416"
+          ],
+          "reading_seq": "924 -> 001 -> 319 -> 031 -> 055 -> 002 -> 150 -> 416",
+          "len": 8,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.772,
+          "surprisal_rev_bits": 10.107,
+          "min_dir_surprisal_bits": 9.772,
+          "z_score_vs_heartland": 1.48,
+          "z_score_rev": 1.62,
+          "unseen_bigrams": "5/9",
+          "unseen_bigram_ratio": 0.556,
+          "unseen_bigram_count": 5,
+          "total_transitions": 9,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 10
+        },
+        {
+          "inscription_id": "3884.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Tell Umma",
+          "object_type": "TAG:L",
+          "shape": "-",
+          "symbol": "Bull1",
+          "material": "Clay",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "1931.120",
+          "raw_text": "+390-004-002-705-127+",
+          "tokens": [
+            "127",
+            "705",
+            "002",
+            "004",
+            "390"
+          ],
+          "reading_seq": "127 -> 705 -> 002 -> 004 -> 390",
+          "len": 5,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 7.263,
+          "surprisal_rev_bits": 9.489,
+          "min_dir_surprisal_bits": 7.263,
+          "z_score_vs_heartland": 0.5,
+          "z_score_rev": 1.37,
+          "unseen_bigrams": "2/6",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 2,
+          "total_transitions": 6,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 24
+        },
+        {
+          "inscription_id": "3885.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Tello",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Tigr",
+          "material": "-",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+000-220-390-440-384+",
+          "tokens": [
+            "384",
+            "440",
+            "390",
+            "220"
+          ],
+          "reading_seq": "384 -> 440 -> 390 -> 220",
+          "len": 4,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.488,
+          "surprisal_rev_bits": 10.143,
+          "min_dir_surprisal_bits": 9.488,
+          "z_score_vs_heartland": 1.37,
+          "z_score_rev": 1.63,
+          "unseen_bigrams": "3/5",
+          "unseen_bigram_ratio": 0.6,
+          "unseen_bigram_count": 3,
+          "total_transitions": 5,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 12
+        },
+        {
+          "inscription_id": "3886.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Tepe Yahya",
+          "object_type": "POT:T:s",
+          "shape": "-",
+          "symbol": "",
+          "material": "Clay",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "TY-106",
+          "excavation_idno": "Cat. no. 66Figure 10.63",
+          "raw_text": "+002-095-000[",
+          "tokens": [
+            "095",
+            "002"
+          ],
+          "reading_seq": "095 -> 002",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 7.135,
+          "surprisal_rev_bits": 9.766,
+          "min_dir_surprisal_bits": 7.135,
+          "z_score_vs_heartland": 0.45,
+          "z_score_rev": 1.48,
+          "unseen_bigrams": "1/3",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 1,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 25
+        },
+        {
+          "inscription_id": "3897.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Ur",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "Steatite",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+093-340-924-220-528+",
+          "tokens": [
+            "528",
+            "220",
+            "924",
+            "340",
+            "093"
+          ],
+          "reading_seq": "528 -> 220 -> 924 -> 340 -> 093",
+          "len": 5,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 10.685,
+          "surprisal_rev_bits": 14.824,
+          "min_dir_surprisal_bits": 10.685,
+          "z_score_vs_heartland": 1.84,
+          "z_score_rev": 3.46,
+          "unseen_bigrams": "4/6",
+          "unseen_bigram_ratio": 0.667,
+          "unseen_bigram_count": 4,
+          "total_transitions": 6,
+          "unseen_signs": [
+            "340"
+          ],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 8
+        },
+        {
+          "inscription_id": "3898.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Ur",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "U17649",
+          "raw_text": "+002-004-328-001-803-415+",
+          "tokens": [
+            "415",
+            "803",
+            "001",
+            "328",
+            "004",
+            "002"
+          ],
+          "reading_seq": "415 -> 803 -> 001 -> 328 -> 004 -> 002",
+          "len": 6,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 10.386,
+          "surprisal_rev_bits": 7.772,
+          "min_dir_surprisal_bits": 7.772,
+          "z_score_vs_heartland": 1.72,
+          "z_score_rev": 0.7,
+          "unseen_bigrams": "5/7",
+          "unseen_bigram_ratio": 0.714,
+          "unseen_bigram_count": 5,
+          "total_transitions": 7,
+          "unseen_signs": [
+            "328"
+          ],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 9
+        },
+        {
+          "inscription_id": "3899.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Ur",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "U8685",
+          "raw_text": "+000-000-004-090-350+",
+          "tokens": [
+            "350",
+            "090",
+            "004"
+          ],
+          "reading_seq": "350 -> 090 -> 004",
+          "len": 3,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.532,
+          "surprisal_rev_bits": 9.274,
+          "min_dir_surprisal_bits": 9.274,
+          "z_score_vs_heartland": 1.39,
+          "z_score_rev": 1.29,
+          "unseen_bigrams": "2/4",
+          "unseen_bigram_ratio": 0.5,
+          "unseen_bigram_count": 2,
+          "total_transitions": 4,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 11
+        },
+        {
+          "inscription_id": "4155.1",
+          "line_idx": 0,
+          "region": "Central Asia",
+          "site": "Gonur Depe",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Elep",
+          "material": "Steatite",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+740-390-590-125-220-235-002-285+",
+          "tokens": [
+            "285",
+            "002",
+            "235",
+            "220",
+            "125",
+            "590",
+            "390",
+            "740"
+          ],
+          "reading_seq": "285 -> 002 -> 235 -> 220 -> 125 -> 590 -> 390 -> 740",
+          "len": 8,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 5.088,
+          "surprisal_rev_bits": 10.768,
+          "min_dir_surprisal_bits": 5.088,
+          "z_score_vs_heartland": -0.35,
+          "z_score_rev": 1.87,
+          "unseen_bigrams": "1/9",
+          "unseen_bigram_ratio": 0.111,
+          "unseen_bigram_count": 1,
+          "total_transitions": 9,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 30
+        },
+        {
+          "inscription_id": "4173.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Salut",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+392-004-002-278-595+",
+          "tokens": [
+            "595",
+            "278",
+            "002",
+            "004",
+            "392"
+          ],
+          "reading_seq": "595 -> 278 -> 002 -> 004 -> 392",
+          "len": 5,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.124,
+          "surprisal_rev_bits": 9.99,
+          "min_dir_surprisal_bits": 9.124,
+          "z_score_vs_heartland": 1.23,
+          "z_score_rev": 1.57,
+          "unseen_bigrams": "3/6",
+          "unseen_bigram_ratio": 0.5,
+          "unseen_bigram_count": 3,
+          "total_transitions": 6,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 15
+        },
+        {
+          "inscription_id": "4174.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Salut",
+          "object_type": "TAG",
+          "shape": "-",
+          "symbol": "Elep",
+          "material": "-",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+921-000[",
+          "tokens": [
+            "921"
+          ],
+          "reading_seq": "921",
+          "len": 1,
+          "usable_for_surprisal": false,
+          "classification": "SINGLE_SIGN_ONLY"
+        },
+        {
+          "inscription_id": "5222.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Girsu",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+740-000-744-013-255+",
+          "tokens": [
+            "255",
+            "013",
+            "744",
+            "740"
+          ],
+          "reading_seq": "255 -> 013 -> 744 -> 740",
+          "len": 4,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 8.186,
+          "surprisal_rev_bits": 11.054,
+          "min_dir_surprisal_bits": 8.186,
+          "z_score_vs_heartland": 0.86,
+          "z_score_rev": 1.99,
+          "unseen_bigrams": "3/5",
+          "unseen_bigram_ratio": 0.6,
+          "unseen_bigram_count": 3,
+          "total_transitions": 5,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 18
+        },
+        {
+          "inscription_id": "5225.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Ur",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "",
+          "material": "-",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "]000-001-000-090-000[",
+          "tokens": [
+            "090",
+            "001"
+          ],
+          "reading_seq": "090 -> 001",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 7.888,
+          "surprisal_rev_bits": 7.014,
+          "min_dir_surprisal_bits": 7.014,
+          "z_score_vs_heartland": 0.75,
+          "z_score_rev": 0.41,
+          "unseen_bigrams": "1/3",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 1,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 20
+        },
+        {
+          "inscription_id": "5227.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Karzakan",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+220-455-031-091+",
+          "tokens": [
+            "091",
+            "031",
+            "455",
+            "220"
+          ],
+          "reading_seq": "091 -> 031 -> 455 -> 220",
+          "len": 4,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 7.473,
+          "surprisal_rev_bits": 10.323,
+          "min_dir_surprisal_bits": 7.473,
+          "z_score_vs_heartland": 0.59,
+          "z_score_rev": 1.7,
+          "unseen_bigrams": "2/5",
+          "unseen_bigram_ratio": 0.4,
+          "unseen_bigram_count": 2,
+          "total_transitions": 5,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 21
+        },
+        {
+          "inscription_id": "5228.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Karzakan",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+033-001-032-091+",
+          "tokens": [
+            "091",
+            "032",
+            "001",
+            "033"
+          ],
+          "reading_seq": "091 -> 032 -> 001 -> 033",
+          "len": 4,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 6.741,
+          "surprisal_rev_bits": 10.36,
+          "min_dir_surprisal_bits": 6.741,
+          "z_score_vs_heartland": 0.3,
+          "z_score_rev": 1.71,
+          "unseen_bigrams": "1/5",
+          "unseen_bigram_ratio": 0.2,
+          "unseen_bigram_count": 1,
+          "total_transitions": 5,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 26
+        },
+        {
+          "inscription_id": "5229.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Saar",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "",
+          "material": "-",
+          "complete": "Y",
+          "direction": "R/L",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+031-093-001-091-220-055+",
+          "tokens": [
+            "055",
+            "220",
+            "091",
+            "001",
+            "093",
+            "031"
+          ],
+          "reading_seq": "055 -> 220 -> 091 -> 001 -> 093 -> 031",
+          "len": 6,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 9.451,
+          "surprisal_rev_bits": 11.346,
+          "min_dir_surprisal_bits": 9.451,
+          "z_score_vs_heartland": 1.36,
+          "z_score_rev": 2.1,
+          "unseen_bigrams": "4/7",
+          "unseen_bigram_ratio": 0.571,
+          "unseen_bigram_count": 4,
+          "total_transitions": 7,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 13
+        },
+        {
+          "inscription_id": "5230.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Karzakan",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "NR",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+740/740+",
+          "tokens": [
+            "740"
+          ],
+          "reading_seq": "740",
+          "len": 1,
+          "usable_for_surprisal": false,
+          "classification": "SINGLE_SIGN_ONLY"
+        },
+        {
+          "inscription_id": "5230.1",
+          "line_idx": 1,
+          "region": "Persian Gulf",
+          "site": "Karzakan",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "NR",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+740/740+",
+          "tokens": [
+            "740"
+          ],
+          "reading_seq": "740",
+          "len": 1,
+          "usable_for_surprisal": false,
+          "classification": "SINGLE_SIGN_ONLY"
+        },
+        {
+          "inscription_id": "5231.1",
+          "line_idx": 0,
+          "region": "Mesopotamia",
+          "site": "Ur",
+          "object_type": "SEAL:C",
+          "shape": "-",
+          "symbol": "",
+          "material": "-",
+          "complete": "?",
+          "direction": "UNK",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "]405-090[",
+          "tokens": [
+            "090",
+            "405"
+          ],
+          "reading_seq": "090 -> 405",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 7.418,
+          "surprisal_rev_bits": 7.587,
+          "min_dir_surprisal_bits": 7.418,
+          "z_score_vs_heartland": 0.56,
+          "z_score_rev": 0.63,
+          "unseen_bigrams": "1/3",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 1,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "MIXED_HYBRID",
+          "rank": 22
+        },
+        {
+          "inscription_id": "5232.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Janabiyah",
+          "object_type": "SEAL:C",
+          "shape": "circular",
+          "symbol": "Gaur",
+          "material": "-",
+          "complete": "Y",
+          "direction": "L/R",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+055-099-121-055-831-031-071+",
+          "tokens": [
+            "071",
+            "031",
+            "831",
+            "055",
+            "121",
+            "099",
+            "055"
+          ],
+          "reading_seq": "071 -> 031 -> 831 -> 055 -> 121 -> 099 -> 055",
+          "len": 7,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 14.119,
+          "surprisal_rev_bits": 12.805,
+          "min_dir_surprisal_bits": 12.805,
+          "z_score_vs_heartland": 3.18,
+          "z_score_rev": 2.67,
+          "unseen_bigrams": "8/8",
+          "unseen_bigram_ratio": 1.0,
+          "unseen_bigram_count": 8,
+          "total_transitions": 8,
+          "unseen_signs": [],
+          "has_repeated_sign": true,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 1
+        },
+        {
+          "inscription_id": "5386.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Sibri",
+          "object_type": "SEAL",
+          "shape": "square",
+          "symbol": "",
+          "material": "Stone",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "Sb-4",
+          "excavation_idno": "82.1",
+          "raw_text": "]000-095+",
+          "tokens": [
+            "095"
+          ],
+          "reading_seq": "095",
+          "len": 1,
+          "usable_for_surprisal": false,
+          "classification": "SINGLE_SIGN_ONLY"
+        },
+        {
+          "inscription_id": "5405.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Ornach area",
+          "object_type": "SEAL:S",
+          "shape": "-",
+          "symbol": "Zebu",
+          "material": "-",
+          "complete": "N",
+          "direction": "R/L",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "]000-374-000-820+",
+          "tokens": [
+            "820",
+            "374"
+          ],
+          "reading_seq": "820 -> 374",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 12.34,
+          "surprisal_rev_bits": 7.207,
+          "min_dir_surprisal_bits": 7.207,
+          "z_score_vs_heartland": 2.49,
+          "z_score_rev": 0.48,
+          "unseen_bigrams": "2/3",
+          "unseen_bigram_ratio": 0.667,
+          "unseen_bigram_count": 2,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "ROSETTA_ANOMALY_CANDIDATE",
+          "rank": 3
+        },
+        {
+          "inscription_id": "5442.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Miri Qalat",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull1:I",
+          "material": "Steatite",
+          "complete": "Y",
+          "direction": "L/R",
+          "has_damage_token": 0,
+          "cisi": "MQ-11",
+          "excavation_idno": "1-92-I-46-po245",
+          "raw_text": "+740-742+",
+          "tokens": [
+            "742",
+            "740"
+          ],
+          "reading_seq": "742 -> 740",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 5.862,
+          "surprisal_rev_bits": 10.047,
+          "min_dir_surprisal_bits": 5.862,
+          "z_score_vs_heartland": -0.05,
+          "z_score_rev": 1.59,
+          "unseen_bigrams": "1/3",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 1,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 29
+        },
+        {
+          "inscription_id": "5444.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Miri Qalat",
+          "object_type": "SEAL:S",
+          "shape": "square",
+          "symbol": "Bull3",
+          "material": "Steatite",
+          "complete": "Y",
+          "direction": "L/R",
+          "has_damage_token": 0,
+          "cisi": "MQ-12",
+          "excavation_idno": "1-93-VIII-14-po857",
+          "raw_text": "+520-013+",
+          "tokens": [
+            "013",
+            "520"
+          ],
+          "reading_seq": "013 -> 520",
+          "len": 2,
+          "usable_for_surprisal": true,
+          "surprisal_bits": 6.177,
+          "surprisal_rev_bits": 14.619,
+          "min_dir_surprisal_bits": 6.177,
+          "z_score_vs_heartland": 0.08,
+          "z_score_rev": 3.38,
+          "unseen_bigrams": "1/3",
+          "unseen_bigram_ratio": 0.333,
+          "unseen_bigram_count": 1,
+          "total_transitions": 3,
+          "unseen_signs": [],
+          "has_repeated_sign": false,
+          "classification": "NATIVE_HARAPPAN_ABROAD",
+          "rank": 28
+        },
+        {
+          "inscription_id": "5551.1",
+          "line_idx": 0,
+          "region": "Persian Gulf",
+          "site": "Kalba",
+          "object_type": "SEAL:C",
+          "shape": "-",
+          "symbol": "",
+          "material": "-",
+          "complete": "Y",
+          "direction": "NR",
+          "has_damage_token": 0,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+091+",
+          "tokens": [
+            "091"
+          ],
+          "reading_seq": "091",
+          "len": 1,
+          "usable_for_surprisal": false,
+          "classification": "SINGLE_SIGN_ONLY"
+        },
+        {
+          "inscription_id": "5556.1",
+          "line_idx": 0,
+          "region": "Iranian Plateau",
+          "site": "Murda Sang",
+          "object_type": "POT:T:g",
+          "shape": "-",
+          "symbol": "",
+          "material": "-",
+          "complete": "N",
+          "direction": "UNK",
+          "has_damage_token": 1,
+          "cisi": "-",
+          "excavation_idno": "-",
+          "raw_text": "+000+",
+          "tokens": [],
+          "reading_seq": "",
+          "len": 0,
+          "usable_for_surprisal": false,
+          "classification": "DAMAGED_NO_CLEAN_SIGNS"
+        }
+      ]
+    },
+    "top_18_rosetta_ranked": [
+      {
+        "inscription_id": "5232.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Janabiyah",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "Y",
+        "direction": "L/R",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+055-099-121-055-831-031-071+",
+        "tokens": [
+          "071",
+          "031",
+          "831",
+          "055",
+          "121",
+          "099",
+          "055"
+        ],
+        "reading_seq": "071 -> 031 -> 831 -> 055 -> 121 -> 099 -> 055",
+        "len": 7,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 14.119,
+        "surprisal_rev_bits": 12.805,
+        "min_dir_surprisal_bits": 12.805,
+        "z_score_vs_heartland": 3.18,
+        "z_score_rev": 2.67,
+        "unseen_bigrams": "8/8",
+        "unseen_bigram_ratio": 1.0,
+        "unseen_bigram_count": 8,
+        "total_transitions": 8,
+        "unseen_signs": [],
+        "has_repeated_sign": true,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 1
+      },
+      {
+        "inscription_id": "3863.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Qala'at al-Bahrain",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "Steatite",
+        "complete": "Y",
+        "direction": "L/R",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+160-090-055-060-190+",
+        "tokens": [
+          "190",
+          "060",
+          "055",
+          "090",
+          "160"
+        ],
+        "reading_seq": "190 -> 060 -> 055 -> 090 -> 160",
+        "len": 5,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 12.544,
+        "surprisal_rev_bits": 9.409,
+        "min_dir_surprisal_bits": 9.409,
+        "z_score_vs_heartland": 2.57,
+        "z_score_rev": 1.34,
+        "unseen_bigrams": "5/6",
+        "unseen_bigram_ratio": 0.833,
+        "unseen_bigram_count": 5,
+        "total_transitions": 6,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 2
+      },
+      {
+        "inscription_id": "5405.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Ornach area",
+        "object_type": "SEAL:S",
+        "shape": "-",
+        "symbol": "Zebu",
+        "material": "-",
+        "complete": "N",
+        "direction": "R/L",
+        "has_damage_token": 1,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "]000-374-000-820+",
+        "tokens": [
+          "820",
+          "374"
+        ],
+        "reading_seq": "820 -> 374",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 12.34,
+        "surprisal_rev_bits": 7.207,
+        "min_dir_surprisal_bits": 7.207,
+        "z_score_vs_heartland": 2.49,
+        "z_score_rev": 0.48,
+        "unseen_bigrams": "2/3",
+        "unseen_bigram_ratio": 0.667,
+        "unseen_bigram_count": 2,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 3
+      },
+      {
+        "inscription_id": "3881.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Susa",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "N",
+        "direction": "R/L",
+        "has_damage_token": 1,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+700-604-407-090-365-000+",
+        "tokens": [
+          "365",
+          "090",
+          "407",
+          "604",
+          "700"
+        ],
+        "reading_seq": "365 -> 090 -> 407 -> 604 -> 700",
+        "len": 5,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 11.414,
+        "surprisal_rev_bits": 10.379,
+        "min_dir_surprisal_bits": 10.379,
+        "z_score_vs_heartland": 2.13,
+        "z_score_rev": 1.72,
+        "unseen_bigrams": "5/6",
+        "unseen_bigram_ratio": 0.833,
+        "unseen_bigram_count": 5,
+        "total_transitions": 6,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 4
+      },
+      {
+        "inscription_id": "3858.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Nindowari-damb",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Bull1:S",
+        "material": "-",
+        "complete": "Y",
+        "direction": "BUS",
+        "has_damage_token": 0,
+        "cisi": "Nd-1",
+        "excavation_idno": "-",
+        "raw_text": "+817-220-632-066-740-760-026-060-257+",
+        "tokens": [
+          "257",
+          "060",
+          "026",
+          "760",
+          "740",
+          "066",
+          "632",
+          "220",
+          "817"
+        ],
+        "reading_seq": "257 -> 060 -> 026 -> 760 -> 740 -> 066 -> 632 -> 220 -> 817",
+        "len": 9,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 11.33,
+        "surprisal_rev_bits": 10.572,
+        "min_dir_surprisal_bits": 10.572,
+        "z_score_vs_heartland": 2.09,
+        "z_score_rev": 1.8,
+        "unseen_bigrams": "8/10",
+        "unseen_bigram_ratio": 0.8,
+        "unseen_bigram_count": 8,
+        "total_transitions": 10,
+        "unseen_signs": [
+          "026"
+        ],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 5
+      },
+      {
+        "inscription_id": "160.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Hajar",
+        "object_type": "TAB:I",
+        "shape": "prism",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+617-117+",
+        "tokens": [
+          "117",
+          "617"
+        ],
+        "reading_seq": "117 -> 617",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 10.898,
+        "surprisal_rev_bits": 13.652,
+        "min_dir_surprisal_bits": 10.898,
+        "z_score_vs_heartland": 1.92,
+        "z_score_rev": 3.0,
+        "unseen_bigrams": "2/3",
+        "unseen_bigram_ratio": 0.667,
+        "unseen_bigram_count": 2,
+        "total_transitions": 3,
+        "unseen_signs": [
+          "117"
+        ],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 6
+      },
+      {
+        "inscription_id": "2153.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Luristan",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+831-413-840-091+",
+        "tokens": [
+          "091",
+          "840",
+          "413",
+          "831"
+        ],
+        "reading_seq": "091 -> 840 -> 413 -> 831",
+        "len": 4,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 10.691,
+        "surprisal_rev_bits": 12.436,
+        "min_dir_surprisal_bits": 10.691,
+        "z_score_vs_heartland": 1.84,
+        "z_score_rev": 2.53,
+        "unseen_bigrams": "3/5",
+        "unseen_bigram_ratio": 0.6,
+        "unseen_bigram_count": 3,
+        "total_transitions": 5,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 7
+      },
+      {
+        "inscription_id": "3897.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Ur",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "Steatite",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+093-340-924-220-528+",
+        "tokens": [
+          "528",
+          "220",
+          "924",
+          "340",
+          "093"
+        ],
+        "reading_seq": "528 -> 220 -> 924 -> 340 -> 093",
+        "len": 5,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 10.685,
+        "surprisal_rev_bits": 14.824,
+        "min_dir_surprisal_bits": 10.685,
+        "z_score_vs_heartland": 1.84,
+        "z_score_rev": 3.46,
+        "unseen_bigrams": "4/6",
+        "unseen_bigram_ratio": 0.667,
+        "unseen_bigram_count": 4,
+        "total_transitions": 6,
+        "unseen_signs": [
+          "340"
+        ],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 8
+      },
+      {
+        "inscription_id": "3898.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Ur",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "U17649",
+        "raw_text": "+002-004-328-001-803-415+",
+        "tokens": [
+          "415",
+          "803",
+          "001",
+          "328",
+          "004",
+          "002"
+        ],
+        "reading_seq": "415 -> 803 -> 001 -> 328 -> 004 -> 002",
+        "len": 6,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 10.386,
+        "surprisal_rev_bits": 7.772,
+        "min_dir_surprisal_bits": 7.772,
+        "z_score_vs_heartland": 1.72,
+        "z_score_rev": 0.7,
+        "unseen_bigrams": "5/7",
+        "unseen_bigram_ratio": 0.714,
+        "unseen_bigram_count": 5,
+        "total_transitions": 7,
+        "unseen_signs": [
+          "328"
+        ],
+        "has_repeated_sign": false,
+        "classification": "ROSETTA_ANOMALY_CANDIDATE",
+        "rank": 9
+      },
+      {
+        "inscription_id": "3882.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Susa",
+        "object_type": "SEAL:CY",
+        "shape": "cylindrical",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+416-150-002-055-031-319-001-924+",
+        "tokens": [
+          "924",
+          "001",
+          "319",
+          "031",
+          "055",
+          "002",
+          "150",
+          "416"
+        ],
+        "reading_seq": "924 -> 001 -> 319 -> 031 -> 055 -> 002 -> 150 -> 416",
+        "len": 8,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.772,
+        "surprisal_rev_bits": 10.107,
+        "min_dir_surprisal_bits": 9.772,
+        "z_score_vs_heartland": 1.48,
+        "z_score_rev": 1.62,
+        "unseen_bigrams": "5/9",
+        "unseen_bigram_ratio": 0.556,
+        "unseen_bigram_count": 5,
+        "total_transitions": 9,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 10
+      },
+      {
+        "inscription_id": "3899.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Ur",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "N",
+        "direction": "UNK",
+        "has_damage_token": 1,
+        "cisi": "-",
+        "excavation_idno": "U8685",
+        "raw_text": "+000-000-004-090-350+",
+        "tokens": [
+          "350",
+          "090",
+          "004"
+        ],
+        "reading_seq": "350 -> 090 -> 004",
+        "len": 3,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.532,
+        "surprisal_rev_bits": 9.274,
+        "min_dir_surprisal_bits": 9.274,
+        "z_score_vs_heartland": 1.39,
+        "z_score_rev": 1.29,
+        "unseen_bigrams": "2/4",
+        "unseen_bigram_ratio": 0.5,
+        "unseen_bigram_count": 2,
+        "total_transitions": 4,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 11
+      },
+      {
+        "inscription_id": "3885.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Tello",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Tigr",
+        "material": "-",
+        "complete": "N",
+        "direction": "R/L",
+        "has_damage_token": 1,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+000-220-390-440-384+",
+        "tokens": [
+          "384",
+          "440",
+          "390",
+          "220"
+        ],
+        "reading_seq": "384 -> 440 -> 390 -> 220",
+        "len": 4,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.488,
+        "surprisal_rev_bits": 10.143,
+        "min_dir_surprisal_bits": 9.488,
+        "z_score_vs_heartland": 1.37,
+        "z_score_rev": 1.63,
+        "unseen_bigrams": "3/5",
+        "unseen_bigram_ratio": 0.6,
+        "unseen_bigram_count": 3,
+        "total_transitions": 5,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 12
+      },
+      {
+        "inscription_id": "5229.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Saar",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+031-093-001-091-220-055+",
+        "tokens": [
+          "055",
+          "220",
+          "091",
+          "001",
+          "093",
+          "031"
+        ],
+        "reading_seq": "055 -> 220 -> 091 -> 001 -> 093 -> 031",
+        "len": 6,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.451,
+        "surprisal_rev_bits": 11.346,
+        "min_dir_surprisal_bits": 9.451,
+        "z_score_vs_heartland": 1.36,
+        "z_score_rev": 2.1,
+        "unseen_bigrams": "4/7",
+        "unseen_bigram_ratio": 0.571,
+        "unseen_bigram_count": 4,
+        "total_transitions": 7,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 13
+      },
+      {
+        "inscription_id": "1970.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Kish",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Bull1",
+        "material": "-",
+        "complete": "N",
+        "direction": "UNK",
+        "has_damage_token": 1,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+000-643-240+",
+        "tokens": [
+          "240",
+          "643"
+        ],
+        "reading_seq": "240 -> 643",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.247,
+        "surprisal_rev_bits": 8.509,
+        "min_dir_surprisal_bits": 8.509,
+        "z_score_vs_heartland": 1.28,
+        "z_score_rev": 0.99,
+        "unseen_bigrams": "1/3",
+        "unseen_bigram_ratio": 0.333,
+        "unseen_bigram_count": 1,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 14
+      },
+      {
+        "inscription_id": "4173.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Salut",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+392-004-002-278-595+",
+        "tokens": [
+          "595",
+          "278",
+          "002",
+          "004",
+          "392"
+        ],
+        "reading_seq": "595 -> 278 -> 002 -> 004 -> 392",
+        "len": 5,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.124,
+        "surprisal_rev_bits": 9.99,
+        "min_dir_surprisal_bits": 9.124,
+        "z_score_vs_heartland": 1.23,
+        "z_score_rev": 1.57,
+        "unseen_bigrams": "3/6",
+        "unseen_bigram_ratio": 0.5,
+        "unseen_bigram_count": 3,
+        "total_transitions": 6,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 15
+      },
+      {
+        "inscription_id": "3866.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Ra's al-Junayz",
+        "object_type": "POT:T:g",
+        "shape": "-",
+        "symbol": "",
+        "material": "Clay",
+        "complete": "?",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "DA 10115",
+        "raw_text": "]740-892-517+",
+        "tokens": [
+          "517",
+          "892",
+          "740"
+        ],
+        "reading_seq": "517 -> 892 -> 740",
+        "len": 3,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 9.064,
+        "surprisal_rev_bits": 14.634,
+        "min_dir_surprisal_bits": 9.064,
+        "z_score_vs_heartland": 1.21,
+        "z_score_rev": 3.39,
+        "unseen_bigrams": "2/4",
+        "unseen_bigram_ratio": 0.5,
+        "unseen_bigram_count": 2,
+        "total_transitions": 4,
+        "unseen_signs": [
+          "517"
+        ],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 16
+      },
+      {
+        "inscription_id": "148.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Failaka",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "",
+        "material": "-",
+        "complete": "?",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "]090-001-350-716+",
+        "tokens": [
+          "716",
+          "350",
+          "001",
+          "090"
+        ],
+        "reading_seq": "716 -> 350 -> 001 -> 090",
+        "len": 4,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 8.625,
+        "surprisal_rev_bits": 11.728,
+        "min_dir_surprisal_bits": 8.625,
+        "z_score_vs_heartland": 1.04,
+        "z_score_rev": 2.25,
+        "unseen_bigrams": "3/5",
+        "unseen_bigram_ratio": 0.6,
+        "unseen_bigram_count": 3,
+        "total_transitions": 5,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 17
+      },
+      {
+        "inscription_id": "5222.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Girsu",
+        "object_type": "SEAL:C",
+        "shape": "circular",
+        "symbol": "Gaur",
+        "material": "-",
+        "complete": "N",
+        "direction": "R/L",
+        "has_damage_token": 1,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+740-000-744-013-255+",
+        "tokens": [
+          "255",
+          "013",
+          "744",
+          "740"
+        ],
+        "reading_seq": "255 -> 013 -> 744 -> 740",
+        "len": 4,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 8.186,
+        "surprisal_rev_bits": 11.054,
+        "min_dir_surprisal_bits": 8.186,
+        "z_score_vs_heartland": 0.86,
+        "z_score_rev": 1.99,
+        "unseen_bigrams": "3/5",
+        "unseen_bigram_ratio": 0.6,
+        "unseen_bigram_count": 3,
+        "total_transitions": 5,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "MIXED_HYBRID",
+        "rank": 18
+      }
+    ],
+    "native_harappan_abroad_bottom_8": [
+      {
+        "inscription_id": "3865.1",
+        "line_idx": 0,
+        "region": "Persian Gulf",
+        "site": "Ra's al-Junayz",
+        "object_type": "POT:T:g",
+        "shape": "-",
+        "symbol": "",
+        "material": "Clay",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+405-004+",
+        "tokens": [
+          "004",
+          "405"
+        ],
+        "reading_seq": "004 -> 405",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 3.661,
+        "surprisal_rev_bits": 9.649,
+        "min_dir_surprisal_bits": 3.661,
+        "z_score_vs_heartland": -0.91,
+        "z_score_rev": 1.44,
+        "unseen_bigrams": "0/3",
+        "unseen_bigram_ratio": 0.0,
+        "unseen_bigram_count": 0,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 34
+      },
+      {
+        "inscription_id": "3874.1",
+        "line_idx": 0,
+        "region": "Central Asia",
+        "site": "Shortughai",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Rhin",
+        "material": "Steatite",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "Sh-69",
+        "excavation_idno": "SHBB 78 76 2R",
+        "raw_text": "+426-003+",
+        "tokens": [
+          "003",
+          "426"
+        ],
+        "reading_seq": "003 -> 426",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 3.995,
+        "surprisal_rev_bits": 8.071,
+        "min_dir_surprisal_bits": 3.995,
+        "z_score_vs_heartland": -0.78,
+        "z_score_rev": 0.82,
+        "unseen_bigrams": "0/3",
+        "unseen_bigram_ratio": 0.0,
+        "unseen_bigram_count": 0,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 33
+      },
+      {
+        "inscription_id": "1971.1",
+        "line_idx": 0,
+        "region": "Mesopotamia",
+        "site": "Kish",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Bull1:L",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+740-390-590-220-003-060-840-416+",
+        "tokens": [
+          "416",
+          "840",
+          "060",
+          "003",
+          "220",
+          "590",
+          "390",
+          "740"
+        ],
+        "reading_seq": "416 -> 840 -> 060 -> 003 -> 220 -> 590 -> 390 -> 740",
+        "len": 8,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 4.278,
+        "surprisal_rev_bits": 10.687,
+        "min_dir_surprisal_bits": 4.278,
+        "z_score_vs_heartland": -0.66,
+        "z_score_rev": 1.84,
+        "unseen_bigrams": "1/9",
+        "unseen_bigram_ratio": 0.111,
+        "unseen_bigram_count": 1,
+        "total_transitions": 9,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 32
+      },
+      {
+        "inscription_id": "16.1",
+        "line_idx": 0,
+        "region": "Central Asia",
+        "site": "Altyn Depe",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "",
+        "material": "Soft stone",
+        "complete": "Y",
+        "direction": "L/R",
+        "has_damage_token": 0,
+        "cisi": "Alt-90",
+        "excavation_idno": "-",
+        "raw_text": "+390-415+",
+        "tokens": [
+          "415",
+          "390"
+        ],
+        "reading_seq": "415 -> 390",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 4.801,
+        "surprisal_rev_bits": 8.541,
+        "min_dir_surprisal_bits": 4.801,
+        "z_score_vs_heartland": -0.46,
+        "z_score_rev": 1.0,
+        "unseen_bigrams": "0/3",
+        "unseen_bigram_ratio": 0.0,
+        "unseen_bigram_count": 0,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 31
+      },
+      {
+        "inscription_id": "4155.1",
+        "line_idx": 0,
+        "region": "Central Asia",
+        "site": "Gonur Depe",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Elep",
+        "material": "Steatite",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "-",
+        "excavation_idno": "-",
+        "raw_text": "+740-390-590-125-220-235-002-285+",
+        "tokens": [
+          "285",
+          "002",
+          "235",
+          "220",
+          "125",
+          "590",
+          "390",
+          "740"
+        ],
+        "reading_seq": "285 -> 002 -> 235 -> 220 -> 125 -> 590 -> 390 -> 740",
+        "len": 8,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 5.088,
+        "surprisal_rev_bits": 10.768,
+        "min_dir_surprisal_bits": 5.088,
+        "z_score_vs_heartland": -0.35,
+        "z_score_rev": 1.87,
+        "unseen_bigrams": "1/9",
+        "unseen_bigram_ratio": 0.111,
+        "unseen_bigram_count": 1,
+        "total_transitions": 9,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 30
+      },
+      {
+        "inscription_id": "5442.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Miri Qalat",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Bull1:I",
+        "material": "Steatite",
+        "complete": "Y",
+        "direction": "L/R",
+        "has_damage_token": 0,
+        "cisi": "MQ-11",
+        "excavation_idno": "1-92-I-46-po245",
+        "raw_text": "+740-742+",
+        "tokens": [
+          "742",
+          "740"
+        ],
+        "reading_seq": "742 -> 740",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 5.862,
+        "surprisal_rev_bits": 10.047,
+        "min_dir_surprisal_bits": 5.862,
+        "z_score_vs_heartland": -0.05,
+        "z_score_rev": 1.59,
+        "unseen_bigrams": "1/3",
+        "unseen_bigram_ratio": 0.333,
+        "unseen_bigram_count": 1,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 29
+      },
+      {
+        "inscription_id": "5444.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Miri Qalat",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Bull3",
+        "material": "Steatite",
+        "complete": "Y",
+        "direction": "L/R",
+        "has_damage_token": 0,
+        "cisi": "MQ-12",
+        "excavation_idno": "1-93-VIII-14-po857",
+        "raw_text": "+520-013+",
+        "tokens": [
+          "013",
+          "520"
+        ],
+        "reading_seq": "013 -> 520",
+        "len": 2,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 6.177,
+        "surprisal_rev_bits": 14.619,
+        "min_dir_surprisal_bits": 6.177,
+        "z_score_vs_heartland": 0.08,
+        "z_score_rev": 3.38,
+        "unseen_bigrams": "1/3",
+        "unseen_bigram_ratio": 0.333,
+        "unseen_bigram_count": 1,
+        "total_transitions": 3,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 28
+      },
+      {
+        "inscription_id": "3859.1",
+        "line_idx": 0,
+        "region": "Iranian Plateau",
+        "site": "Nindowari-damb",
+        "object_type": "SEAL:S",
+        "shape": "square",
+        "symbol": "Bull1:W",
+        "material": "-",
+        "complete": "Y",
+        "direction": "R/L",
+        "has_damage_token": 0,
+        "cisi": "Nd-2",
+        "excavation_idno": "-",
+        "raw_text": "+400-798-255+",
+        "tokens": [
+          "255",
+          "798",
+          "400"
+        ],
+        "reading_seq": "255 -> 798 -> 400",
+        "len": 3,
+        "usable_for_surprisal": true,
+        "surprisal_bits": 6.343,
+        "surprisal_rev_bits": 10.532,
+        "min_dir_surprisal_bits": 6.343,
+        "z_score_vs_heartland": 0.14,
+        "z_score_rev": 1.78,
+        "unseen_bigrams": "1/4",
+        "unseen_bigram_ratio": 0.25,
+        "unseen_bigram_count": 1,
+        "total_transitions": 4,
+        "unseen_signs": [],
+        "has_repeated_sign": false,
+        "classification": "NATIVE_HARAPPAN_ABROAD",
+        "rank": 27
+      }
+    ],
+    "structural_comparisons": {
+      "group_profiles": {
+        "HL_strict_dedup": {
+          "n_inscriptions": 2026,
+          "n_tokens": 9162,
+          "mean_length": 4.52,
+          "vocab_V": 608,
+          "type_token_ratio": 0.066,
+          "H0_bits": 6.948,
+          "H0_miller_madow_bits": 6.995,
+          "H_evenness": 0.751,
+          "H_init_bits": 7.077,
+          "H_fin_bits": 4.764,
+          "H_fin_max_possible_log2n": 10.984,
+          "unique_terminal_signs": 224,
+          "H1_cond_bigram_bits": 3.75,
+          "within_seal_repeat_rate": 0.038,
+          "jar_740_final_pct": 34.8,
+          "jar_740_any_pct": 47.8,
+          "hl_8_suffixes_final_pct": 59.9,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 7.1,
+            "strokes_001_056": 17.2,
+            "jar_740": 10.7,
+            "fish_219_243": 9.3
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "740",
+              "count": 706,
+              "pct": 34.8
+            },
+            {
+              "sign_id": "400",
+              "count": 186,
+              "pct": 9.2
+            },
+            {
+              "sign_id": "520",
+              "count": 143,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "390",
+              "count": 75,
+              "pct": 3.7
+            },
+            {
+              "sign_id": "090",
+              "count": 72,
+              "pct": 3.6
+            },
+            {
+              "sign_id": "151",
+              "count": 52,
+              "pct": 2.6
+            },
+            {
+              "sign_id": "527",
+              "count": 38,
+              "pct": 1.9
+            },
+            {
+              "sign_id": "407",
+              "count": 34,
+              "pct": 1.7
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "820",
+              "count": 118,
+              "pct": 5.8
+            },
+            {
+              "sign_id": "861",
+              "count": 114,
+              "pct": 5.6
+            },
+            {
+              "sign_id": "817",
+              "count": 113,
+              "pct": 5.6
+            },
+            {
+              "sign_id": "920",
+              "count": 66,
+              "pct": 3.3
+            },
+            {
+              "sign_id": "032",
+              "count": 64,
+              "pct": 3.2
+            },
+            {
+              "sign_id": "235",
+              "count": 49,
+              "pct": 2.4
+            },
+            {
+              "sign_id": "031",
+              "count": 44,
+              "pct": 2.2
+            },
+            {
+              "sign_id": "240",
+              "count": 41,
+              "pct": 2.0
+            }
+          ]
+        },
+        "HL_Bull1_dedup": {
+          "n_inscriptions": 1192,
+          "n_tokens": 5474,
+          "mean_length": 4.59,
+          "vocab_V": 478,
+          "type_token_ratio": 0.087,
+          "H0_bits": 6.773,
+          "H0_miller_madow_bits": 6.836,
+          "H_evenness": 0.761,
+          "H_init_bits": 6.876,
+          "H_fin_bits": 4.651,
+          "H_fin_max_possible_log2n": 10.219,
+          "unique_terminal_signs": 161,
+          "H1_cond_bigram_bits": 3.55,
+          "within_seal_repeat_rate": 0.037,
+          "jar_740_final_pct": 37.0,
+          "jar_740_any_pct": 45.6,
+          "hl_8_suffixes_final_pct": 56.0,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 6.8,
+            "strokes_001_056": 18.1,
+            "jar_740": 10.0,
+            "fish_219_243": 10.1
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "740",
+              "count": 441,
+              "pct": 37.0
+            },
+            {
+              "sign_id": "520",
+              "count": 97,
+              "pct": 8.1
+            },
+            {
+              "sign_id": "390",
+              "count": 52,
+              "pct": 4.4
+            },
+            {
+              "sign_id": "090",
+              "count": 51,
+              "pct": 4.3
+            },
+            {
+              "sign_id": "151",
+              "count": 41,
+              "pct": 3.4
+            },
+            {
+              "sign_id": "400",
+              "count": 34,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "527",
+              "count": 23,
+              "pct": 1.9
+            },
+            {
+              "sign_id": "368",
+              "count": 21,
+              "pct": 1.8
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "861",
+              "count": 80,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "820",
+              "count": 76,
+              "pct": 6.4
+            },
+            {
+              "sign_id": "817",
+              "count": 76,
+              "pct": 6.4
+            },
+            {
+              "sign_id": "920",
+              "count": 48,
+              "pct": 4.0
+            },
+            {
+              "sign_id": "032",
+              "count": 40,
+              "pct": 3.4
+            },
+            {
+              "sign_id": "031",
+              "count": 29,
+              "pct": 2.4
+            },
+            {
+              "sign_id": "692",
+              "count": 23,
+              "pct": 1.9
+            },
+            {
+              "sign_id": "235",
+              "count": 22,
+              "pct": 1.8
+            }
+          ]
+        },
+        "HL_Gaur_dedup": {
+          "n_inscriptions": 105,
+          "n_tokens": 488,
+          "mean_length": 4.65,
+          "vocab_V": 161,
+          "type_token_ratio": 0.33,
+          "H0_bits": 6.489,
+          "H0_miller_madow_bits": 6.726,
+          "H_evenness": 0.885,
+          "H_init_bits": 5.82,
+          "H_fin_bits": 4.101,
+          "H_fin_max_possible_log2n": 6.714,
+          "unique_terminal_signs": 37,
+          "H1_cond_bigram_bits": 2.301,
+          "within_seal_repeat_rate": 0.029,
+          "jar_740_final_pct": 32.4,
+          "jar_740_any_pct": 42.9,
+          "hl_8_suffixes_final_pct": 59.0,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 7.2,
+            "strokes_001_056": 16.8,
+            "jar_740": 9.6,
+            "fish_219_243": 11.7
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "740",
+              "count": 34,
+              "pct": 32.4
+            },
+            {
+              "sign_id": "520",
+              "count": 10,
+              "pct": 9.5
+            },
+            {
+              "sign_id": "390",
+              "count": 6,
+              "pct": 5.7
+            },
+            {
+              "sign_id": "400",
+              "count": 5,
+              "pct": 4.8
+            },
+            {
+              "sign_id": "527",
+              "count": 5,
+              "pct": 4.8
+            },
+            {
+              "sign_id": "090",
+              "count": 4,
+              "pct": 3.8
+            },
+            {
+              "sign_id": "151",
+              "count": 3,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "407",
+              "count": 3,
+              "pct": 2.9
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "235",
+              "count": 5,
+              "pct": 4.8
+            },
+            {
+              "sign_id": "861",
+              "count": 4,
+              "pct": 3.8
+            },
+            {
+              "sign_id": "032",
+              "count": 4,
+              "pct": 3.8
+            },
+            {
+              "sign_id": "240",
+              "count": 4,
+              "pct": 3.8
+            },
+            {
+              "sign_id": "803",
+              "count": 4,
+              "pct": 3.8
+            },
+            {
+              "sign_id": "817",
+              "count": 4,
+              "pct": 3.8
+            },
+            {
+              "sign_id": "233",
+              "count": 3,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "820",
+              "count": 3,
+              "pct": 2.9
+            }
+          ]
+        },
+        "Foreign_ALL_usable": {
+          "n_inscriptions": 34,
+          "n_tokens": 138,
+          "mean_length": 4.06,
+          "vocab_V": 76,
+          "type_token_ratio": 0.551,
+          "H0_bits": 5.834,
+          "H0_miller_madow_bits": 6.226,
+          "H_evenness": 0.934,
+          "H_init_bits": 4.69,
+          "H_fin_bits": 4.396,
+          "H_fin_max_possible_log2n": 5.087,
+          "unique_terminal_signs": 25,
+          "H1_cond_bigram_bits": 1.778,
+          "within_seal_repeat_rate": 0.029,
+          "jar_740_final_pct": 17.6,
+          "jar_740_any_pct": 20.6,
+          "hl_8_suffixes_final_pct": 23.5,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 15.2,
+            "strokes_001_056": 24.6,
+            "jar_740": 5.1,
+            "fish_219_243": 7.2
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "740",
+              "count": 6,
+              "pct": 17.6
+            },
+            {
+              "sign_id": "390",
+              "count": 2,
+              "pct": 5.9
+            },
+            {
+              "sign_id": "405",
+              "count": 2,
+              "pct": 5.9
+            },
+            {
+              "sign_id": "220",
+              "count": 2,
+              "pct": 5.9
+            },
+            {
+              "sign_id": "002",
+              "count": 2,
+              "pct": 5.9
+            },
+            {
+              "sign_id": "317",
+              "count": 1,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "090",
+              "count": 1,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "617",
+              "count": 1,
+              "pct": 2.9
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "090",
+              "count": 3,
+              "pct": 8.8
+            },
+            {
+              "sign_id": "091",
+              "count": 3,
+              "pct": 8.8
+            },
+            {
+              "sign_id": "415",
+              "count": 2,
+              "pct": 5.9
+            },
+            {
+              "sign_id": "255",
+              "count": 2,
+              "pct": 5.9
+            },
+            {
+              "sign_id": "716",
+              "count": 1,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "117",
+              "count": 1,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "240",
+              "count": 1,
+              "pct": 2.9
+            },
+            {
+              "sign_id": "416",
+              "count": 1,
+              "pct": 2.9
+            }
+          ]
+        },
+        "Foreign_Gulf_Meso": {
+          "n_inscriptions": 22,
+          "n_tokens": 89,
+          "mean_length": 4.05,
+          "vocab_V": 53,
+          "type_token_ratio": 0.596,
+          "H0_bits": 5.383,
+          "H0_miller_madow_bits": 5.804,
+          "H_evenness": 0.94,
+          "H_init_bits": 4.152,
+          "H_fin_bits": 3.914,
+          "H_fin_max_possible_log2n": 4.459,
+          "unique_terminal_signs": 17,
+          "H1_cond_bigram_bits": 1.573,
+          "within_seal_repeat_rate": 0.045,
+          "jar_740_final_pct": 18.2,
+          "jar_740_any_pct": 18.2,
+          "hl_8_suffixes_final_pct": 18.2,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 18.0,
+            "strokes_001_056": 28.1,
+            "jar_740": 4.5,
+            "fish_219_243": 7.9
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "740",
+              "count": 4,
+              "pct": 18.2
+            },
+            {
+              "sign_id": "405",
+              "count": 2,
+              "pct": 9.1
+            },
+            {
+              "sign_id": "220",
+              "count": 2,
+              "pct": 9.1
+            },
+            {
+              "sign_id": "317",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "090",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "617",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "643",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "160",
+              "count": 1,
+              "pct": 4.5
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "090",
+              "count": 3,
+              "pct": 13.6
+            },
+            {
+              "sign_id": "091",
+              "count": 2,
+              "pct": 9.1
+            },
+            {
+              "sign_id": "716",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "117",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "240",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "416",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "190",
+              "count": 1,
+              "pct": 4.5
+            },
+            {
+              "sign_id": "220",
+              "count": 1,
+              "pct": 4.5
+            }
+          ]
+        },
+        "Foreign_Gaur": {
+          "n_inscriptions": 14,
+          "n_tokens": 65,
+          "mean_length": 4.64,
+          "vocab_V": 46,
+          "type_token_ratio": 0.708,
+          "H0_bits": 5.318,
+          "H0_miller_madow_bits": 5.818,
+          "H_evenness": 0.963,
+          "H_init_bits": 3.468,
+          "H_fin_bits": 3.807,
+          "H_fin_max_possible_log2n": 3.807,
+          "unique_terminal_signs": 14,
+          "H1_cond_bigram_bits": 1.194,
+          "within_seal_repeat_rate": 0.071,
+          "jar_740_final_pct": 7.1,
+          "jar_740_any_pct": 7.1,
+          "hl_8_suffixes_final_pct": 7.1,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 20.0,
+            "strokes_001_056": 29.2,
+            "jar_740": 1.5,
+            "fish_219_243": 3.1
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "317",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "617",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "831",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "160",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "700",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "416",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "093",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "002",
+              "count": 1,
+              "pct": 7.1
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "091",
+              "count": 3,
+              "pct": 21.4
+            },
+            {
+              "sign_id": "090",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "117",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "190",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "365",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "924",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "528",
+              "count": 1,
+              "pct": 7.1
+            },
+            {
+              "sign_id": "415",
+              "count": 1,
+              "pct": 7.1
+            }
+          ]
+        },
+        "Foreign_SEAL_C": {
+          "n_inscriptions": 15,
+          "n_tokens": 64,
+          "mean_length": 4.27,
+          "vocab_V": 40,
+          "type_token_ratio": 0.625,
+          "H0_bits": 4.988,
+          "H0_miller_madow_bits": 5.428,
+          "H_evenness": 0.937,
+          "H_init_bits": 3.273,
+          "H_fin_bits": 3.907,
+          "H_fin_max_possible_log2n": 3.907,
+          "unique_terminal_signs": 15,
+          "H1_cond_bigram_bits": 1.441,
+          "within_seal_repeat_rate": 0.067,
+          "jar_740_final_pct": 6.7,
+          "jar_740_any_pct": 6.7,
+          "hl_8_suffixes_final_pct": 6.7,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 25.0,
+            "strokes_001_056": 28.1,
+            "jar_740": 1.6,
+            "fish_219_243": 4.7
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "317",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "090",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "831",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "160",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "700",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "093",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "002",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "004",
+              "count": 1,
+              "pct": 6.7
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "090",
+              "count": 3,
+              "pct": 20.0
+            },
+            {
+              "sign_id": "091",
+              "count": 3,
+              "pct": 20.0
+            },
+            {
+              "sign_id": "716",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "190",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "365",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "528",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "415",
+              "count": 1,
+              "pct": 6.7
+            },
+            {
+              "sign_id": "350",
+              "count": 1,
+              "pct": 6.7
+            }
+          ]
+        },
+        "Foreign_SEAL_C_and_CY": {
+          "n_inscriptions": 16,
+          "n_tokens": 72,
+          "mean_length": 4.5,
+          "vocab_V": 43,
+          "type_token_ratio": 0.597,
+          "H0_bits": 5.065,
+          "H0_miller_madow_bits": 5.486,
+          "H_evenness": 0.933,
+          "H_init_bits": 3.406,
+          "H_fin_bits": 4.0,
+          "H_fin_max_possible_log2n": 4.0,
+          "unique_terminal_signs": 16,
+          "H1_cond_bigram_bits": 1.523,
+          "within_seal_repeat_rate": 0.062,
+          "jar_740_final_pct": 6.2,
+          "jar_740_any_pct": 6.2,
+          "hl_8_suffixes_final_pct": 6.2,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 23.6,
+            "strokes_001_056": 30.6,
+            "jar_740": 1.4,
+            "fish_219_243": 4.2
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "317",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "090",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "831",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "160",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "700",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "416",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "093",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "002",
+              "count": 1,
+              "pct": 6.2
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "090",
+              "count": 3,
+              "pct": 18.8
+            },
+            {
+              "sign_id": "091",
+              "count": 3,
+              "pct": 18.8
+            },
+            {
+              "sign_id": "716",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "190",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "365",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "924",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "528",
+              "count": 1,
+              "pct": 6.2
+            },
+            {
+              "sign_id": "415",
+              "count": 1,
+              "pct": 6.2
+            }
+          ]
+        },
+        "Foreign_SEAL_S": {
+          "n_inscriptions": 12,
+          "n_tokens": 49,
+          "mean_length": 4.08,
+          "vocab_V": 36,
+          "type_token_ratio": 0.735,
+          "H0_bits": 4.962,
+          "H0_miller_madow_bits": 5.477,
+          "H_evenness": 0.96,
+          "H_init_bits": 3.585,
+          "H_fin_bits": 3.189,
+          "H_fin_max_possible_log2n": 3.585,
+          "unique_terminal_signs": 10,
+          "H1_cond_bigram_bits": 1.086,
+          "within_seal_repeat_rate": 0.0,
+          "jar_740_final_pct": 25.0,
+          "jar_740_any_pct": 33.3,
+          "hl_8_suffixes_final_pct": 41.7,
+          "token_share_pct": {
+            "anthropomorphic_090_164": 2.0,
+            "strokes_001_056": 14.3,
+            "jar_740": 8.2,
+            "fish_219_243": 12.2
+          },
+          "top_terminal_signs": [
+            {
+              "sign_id": "740",
+              "count": 3,
+              "pct": 25.0
+            },
+            {
+              "sign_id": "390",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "643",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "817",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "400",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "426",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "220",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "392",
+              "count": 1,
+              "pct": 8.3
+            }
+          ],
+          "top_initial_signs": [
+            {
+              "sign_id": "415",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "240",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "416",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "257",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "255",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "003",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "384",
+              "count": 1,
+              "pct": 8.3
+            },
+            {
+              "sign_id": "285",
+              "count": 1,
+              "pct": 8.3
+            }
+          ]
+        }
+      },
+      "length_matched_bootstrap": {
+        "Foreign_ALL_usable__vs__HL_strict_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 34,
+          "n_tokens": 138,
+          "V": {
+            "observed": 76.0,
+            "matched_baseline_mean": 76.622,
+            "matched_baseline_std": 4.6377,
+            "z_score": -0.13,
+            "p_greater": 0.6001,
+            "p_less": 0.4877
+          },
+          "TTR": {
+            "observed": 0.5507,
+            "matched_baseline_mean": 0.5552,
+            "matched_baseline_std": 0.0336,
+            "z_score": -0.13,
+            "p_greater": 0.6001,
+            "p_less": 0.4877
+          },
+          "H0": {
+            "observed": 5.8338,
+            "matched_baseline_mean": 5.8198,
+            "matched_baseline_std": 0.1231,
+            "z_score": 0.11,
+            "p_greater": 0.4629,
+            "p_less": 0.5373
+          },
+          "H0_miller_madow": {
+            "observed": 6.2259,
+            "matched_baseline_mean": 6.215,
+            "matched_baseline_std": 0.145,
+            "z_score": 0.07,
+            "p_greater": 0.4773,
+            "p_less": 0.5229
+          },
+          "H_init": {
+            "observed": 4.6901,
+            "matched_baseline_mean": 4.6966,
+            "matched_baseline_std": 0.1553,
+            "z_score": -0.04,
+            "p_greater": 0.5599,
+            "p_less": 0.4753
+          },
+          "H_fin": {
+            "observed": 4.396,
+            "matched_baseline_mean": 3.6097,
+            "matched_baseline_std": 0.3293,
+            "z_score": 2.39,
+            "p_greater": 0.0038,
+            "p_less": 0.997
+          },
+          "H1": {
+            "observed": 1.7783,
+            "matched_baseline_mean": 1.57,
+            "matched_baseline_std": 0.0682,
+            "z_score": 3.05,
+            "p_greater": 0.0008,
+            "p_less": 0.9994
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0294,
+            "matched_baseline_mean": 0.0322,
+            "matched_baseline_std": 0.0297,
+            "z_score": -0.09,
+            "p_greater": 0.6773,
+            "p_less": 0.6981
+          }
+        },
+        "Foreign_ALL_usable__vs__HL_Bull1_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 34,
+          "n_tokens": 138,
+          "V": {
+            "observed": 76.0,
+            "matched_baseline_mean": 73.3592,
+            "matched_baseline_std": 4.6665,
+            "z_score": 0.57,
+            "p_greater": 0.3267,
+            "p_less": 0.7453
+          },
+          "TTR": {
+            "observed": 0.5507,
+            "matched_baseline_mean": 0.5316,
+            "matched_baseline_std": 0.0338,
+            "z_score": 0.57,
+            "p_greater": 0.3267,
+            "p_less": 0.7453
+          },
+          "H0": {
+            "observed": 5.8338,
+            "matched_baseline_mean": 5.735,
+            "matched_baseline_std": 0.1267,
+            "z_score": 0.78,
+            "p_greater": 0.2214,
+            "p_less": 0.779
+          },
+          "H0_miller_madow": {
+            "observed": 6.2259,
+            "matched_baseline_mean": 6.1132,
+            "matched_baseline_std": 0.1487,
+            "z_score": 0.76,
+            "p_greater": 0.2266,
+            "p_less": 0.7736
+          },
+          "H_init": {
+            "observed": 4.6901,
+            "matched_baseline_mean": 4.6496,
+            "matched_baseline_std": 0.1638,
+            "z_score": 0.25,
+            "p_greater": 0.4487,
+            "p_less": 0.5855
+          },
+          "H_fin": {
+            "observed": 4.396,
+            "matched_baseline_mean": 3.5717,
+            "matched_baseline_std": 0.3351,
+            "z_score": 2.46,
+            "p_greater": 0.0026,
+            "p_less": 0.9984
+          },
+          "H1": {
+            "observed": 1.7783,
+            "matched_baseline_mean": 1.6011,
+            "matched_baseline_std": 0.0678,
+            "z_score": 2.61,
+            "p_greater": 0.0042,
+            "p_less": 0.996
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0294,
+            "matched_baseline_mean": 0.027,
+            "matched_baseline_std": 0.0276,
+            "z_score": 0.09,
+            "p_greater": 0.6071,
+            "p_less": 0.7652
+          }
+        },
+        "Foreign_Gulf_Meso__vs__HL_strict_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 22,
+          "n_tokens": 89,
+          "V": {
+            "observed": 53.0,
+            "matched_baseline_mean": 56.2178,
+            "matched_baseline_std": 3.7099,
+            "z_score": -0.87,
+            "p_greater": 0.8402,
+            "p_less": 0.2296
+          },
+          "TTR": {
+            "observed": 0.5955,
+            "matched_baseline_mean": 0.6317,
+            "matched_baseline_std": 0.0417,
+            "z_score": -0.87,
+            "p_greater": 0.8402,
+            "p_less": 0.2296
+          },
+          "H0": {
+            "observed": 5.3829,
+            "matched_baseline_mean": 5.4667,
+            "matched_baseline_std": 0.1381,
+            "z_score": -0.61,
+            "p_greater": 0.7331,
+            "p_less": 0.2671
+          },
+          "H0_miller_madow": {
+            "observed": 5.8044,
+            "matched_baseline_mean": 5.9143,
+            "matched_baseline_std": 0.1658,
+            "z_score": -0.66,
+            "p_greater": 0.7491,
+            "p_less": 0.2511
+          },
+          "H_init": {
+            "observed": 4.1524,
+            "matched_baseline_mean": 4.1763,
+            "matched_baseline_std": 0.1625,
+            "z_score": -0.15,
+            "p_greater": 0.6629,
+            "p_less": 0.4321
+          },
+          "H_fin": {
+            "observed": 3.914,
+            "matched_baseline_mean": 3.2163,
+            "matched_baseline_std": 0.3667,
+            "z_score": 1.9,
+            "p_greater": 0.023,
+            "p_less": 0.985
+          },
+          "H1": {
+            "observed": 1.5731,
+            "matched_baseline_mean": 1.3184,
+            "matched_baseline_std": 0.0761,
+            "z_score": 3.35,
+            "p_greater": 0.0006,
+            "p_less": 0.9996
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0455,
+            "matched_baseline_mean": 0.0264,
+            "matched_baseline_std": 0.0334,
+            "z_score": 0.57,
+            "p_greater": 0.4523,
+            "p_less": 0.8922
+          }
+        },
+        "Foreign_Gaur__vs__HL_strict_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 14,
+          "n_tokens": 65,
+          "V": {
+            "observed": 46.0,
+            "matched_baseline_mean": 43.9868,
+            "matched_baseline_std": 3.1942,
+            "z_score": 0.63,
+            "p_greater": 0.3233,
+            "p_less": 0.7772
+          },
+          "TTR": {
+            "observed": 0.7077,
+            "matched_baseline_mean": 0.6767,
+            "matched_baseline_std": 0.0491,
+            "z_score": 0.63,
+            "p_greater": 0.3233,
+            "p_less": 0.7772
+          },
+          "H0": {
+            "observed": 5.3181,
+            "matched_baseline_mean": 5.1749,
+            "matched_baseline_std": 0.1538,
+            "z_score": 0.93,
+            "p_greater": 0.1842,
+            "p_less": 0.8214
+          },
+          "H0_miller_madow": {
+            "observed": 5.8175,
+            "matched_baseline_mean": 5.6519,
+            "matched_baseline_std": 0.1873,
+            "z_score": 0.88,
+            "p_greater": 0.1968,
+            "p_less": 0.8062
+          },
+          "H_init": {
+            "observed": 3.4677,
+            "matched_baseline_mean": 3.57,
+            "matched_baseline_std": 0.1908,
+            "z_score": -0.54,
+            "p_greater": 0.7998,
+            "p_less": 0.2773
+          },
+          "H_fin": {
+            "observed": 3.8074,
+            "matched_baseline_mean": 2.7205,
+            "matched_baseline_std": 0.4208,
+            "z_score": 2.58,
+            "p_greater": 0.0006,
+            "p_less": 1.0
+          },
+          "H1": {
+            "observed": 1.194,
+            "matched_baseline_mean": 1.073,
+            "matched_baseline_std": 0.0838,
+            "z_score": 1.44,
+            "p_greater": 0.0794,
+            "p_less": 0.9232
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0714,
+            "matched_baseline_mean": 0.0348,
+            "matched_baseline_std": 0.0479,
+            "z_score": 0.76,
+            "p_greater": 0.3955,
+            "p_less": 0.9164
+          }
+        },
+        "Foreign_Gaur__vs__HL_Gaur_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 14,
+          "n_tokens": 65,
+          "V": {
+            "observed": 46.0,
+            "matched_baseline_mean": 43.7204,
+            "matched_baseline_std": 3.5386,
+            "z_score": 0.64,
+            "p_greater": 0.3065,
+            "p_less": 0.7836
+          },
+          "TTR": {
+            "observed": 0.7077,
+            "matched_baseline_mean": 0.6726,
+            "matched_baseline_std": 0.0544,
+            "z_score": 0.64,
+            "p_greater": 0.3065,
+            "p_less": 0.7836
+          },
+          "H0": {
+            "observed": 5.3181,
+            "matched_baseline_mean": 5.1836,
+            "matched_baseline_std": 0.1638,
+            "z_score": 0.82,
+            "p_greater": 0.2048,
+            "p_less": 0.8006
+          },
+          "H0_miller_madow": {
+            "observed": 5.8175,
+            "matched_baseline_mean": 5.6577,
+            "matched_baseline_std": 0.201,
+            "z_score": 0.79,
+            "p_greater": 0.212,
+            "p_less": 0.791
+          },
+          "H_init": {
+            "observed": 3.4677,
+            "matched_baseline_mean": 3.5287,
+            "matched_baseline_std": 0.1815,
+            "z_score": -0.34,
+            "p_greater": 0.7429,
+            "p_less": 0.3353
+          },
+          "H_fin": {
+            "observed": 3.8074,
+            "matched_baseline_mean": 2.7466,
+            "matched_baseline_std": 0.4026,
+            "z_score": 2.63,
+            "p_greater": 0.001,
+            "p_less": 1.0
+          },
+          "H1": {
+            "observed": 1.194,
+            "matched_baseline_mean": 1.0176,
+            "matched_baseline_std": 0.0896,
+            "z_score": 1.97,
+            "p_greater": 0.024,
+            "p_less": 0.977
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0714,
+            "matched_baseline_mean": 0.0239,
+            "matched_baseline_std": 0.0402,
+            "z_score": 1.18,
+            "p_greater": 0.2903,
+            "p_less": 0.9588
+          }
+        },
+        "Foreign_SEAL_C__vs__HL_strict_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 15,
+          "n_tokens": 64,
+          "V": {
+            "observed": 40.0,
+            "matched_baseline_mean": 43.4466,
+            "matched_baseline_std": 3.1912,
+            "z_score": -1.08,
+            "p_greater": 0.8932,
+            "p_less": 0.1792
+          },
+          "TTR": {
+            "observed": 0.625,
+            "matched_baseline_mean": 0.6789,
+            "matched_baseline_std": 0.0499,
+            "z_score": -1.08,
+            "p_greater": 0.8932,
+            "p_less": 0.1792
+          },
+          "H0": {
+            "observed": 4.988,
+            "matched_baseline_mean": 5.1577,
+            "matched_baseline_std": 0.1561,
+            "z_score": -1.09,
+            "p_greater": 0.8574,
+            "p_less": 0.1434
+          },
+          "H0_miller_madow": {
+            "observed": 5.4275,
+            "matched_baseline_mean": 5.6362,
+            "matched_baseline_std": 0.1901,
+            "z_score": -1.1,
+            "p_greater": 0.8616,
+            "p_less": 0.1386
+          },
+          "H_init": {
+            "observed": 3.2729,
+            "matched_baseline_mean": 3.6699,
+            "matched_baseline_std": 0.1788,
+            "z_score": -2.22,
+            "p_greater": 0.9734,
+            "p_less": 0.0316
+          },
+          "H_fin": {
+            "observed": 3.9069,
+            "matched_baseline_mean": 2.8231,
+            "matched_baseline_std": 0.4096,
+            "z_score": 2.65,
+            "p_greater": 0.0006,
+            "p_less": 1.0
+          },
+          "H1": {
+            "observed": 1.4413,
+            "matched_baseline_mean": 1.1125,
+            "matched_baseline_std": 0.0841,
+            "z_score": 3.91,
+            "p_greater": 0.0002,
+            "p_less": 1.0
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0667,
+            "matched_baseline_mean": 0.0259,
+            "matched_baseline_std": 0.0409,
+            "z_score": 1.0,
+            "p_greater": 0.3275,
+            "p_less": 0.9456
+          }
+        },
+        "Foreign_SEAL_C__vs__HL_Bull1_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 15,
+          "n_tokens": 64,
+          "V": {
+            "observed": 40.0,
+            "matched_baseline_mean": 42.2154,
+            "matched_baseline_std": 3.2848,
+            "z_score": -0.67,
+            "p_greater": 0.7956,
+            "p_less": 0.2997
+          },
+          "TTR": {
+            "observed": 0.625,
+            "matched_baseline_mean": 0.6596,
+            "matched_baseline_std": 0.0513,
+            "z_score": -0.67,
+            "p_greater": 0.7956,
+            "p_less": 0.2997
+          },
+          "H0": {
+            "observed": 4.988,
+            "matched_baseline_mean": 5.1055,
+            "matched_baseline_std": 0.1626,
+            "z_score": -0.72,
+            "p_greater": 0.77,
+            "p_less": 0.2318
+          },
+          "H0_miller_madow": {
+            "observed": 5.4275,
+            "matched_baseline_mean": 5.5701,
+            "matched_baseline_std": 0.1976,
+            "z_score": -0.72,
+            "p_greater": 0.765,
+            "p_less": 0.2358
+          },
+          "H_init": {
+            "observed": 3.2729,
+            "matched_baseline_mean": 3.6279,
+            "matched_baseline_std": 0.1969,
+            "z_score": -1.8,
+            "p_greater": 0.9506,
+            "p_less": 0.059
+          },
+          "H_fin": {
+            "observed": 3.9069,
+            "matched_baseline_mean": 2.8299,
+            "matched_baseline_std": 0.4161,
+            "z_score": 2.59,
+            "p_greater": 0.0006,
+            "p_less": 1.0
+          },
+          "H1": {
+            "observed": 1.4413,
+            "matched_baseline_mean": 1.1383,
+            "matched_baseline_std": 0.0884,
+            "z_score": 3.43,
+            "p_greater": 0.0008,
+            "p_less": 0.9996
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0667,
+            "matched_baseline_mean": 0.0255,
+            "matched_baseline_std": 0.0403,
+            "z_score": 1.02,
+            "p_greater": 0.3225,
+            "p_less": 0.9448
+          }
+        },
+        "Foreign_SEAL_C_and_CY__vs__HL_strict_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 16,
+          "n_tokens": 72,
+          "V": {
+            "observed": 43.0,
+            "matched_baseline_mean": 47.6228,
+            "matched_baseline_std": 3.428,
+            "z_score": -1.35,
+            "p_greater": 0.9322,
+            "p_less": 0.1104
+          },
+          "TTR": {
+            "observed": 0.5972,
+            "matched_baseline_mean": 0.6614,
+            "matched_baseline_std": 0.0476,
+            "z_score": -1.35,
+            "p_greater": 0.9322,
+            "p_less": 0.1104
+          },
+          "H0": {
+            "observed": 5.0654,
+            "matched_baseline_mean": 5.2735,
+            "matched_baseline_std": 0.15,
+            "z_score": -1.39,
+            "p_greater": 0.915,
+            "p_less": 0.0852
+          },
+          "H0_miller_madow": {
+            "observed": 5.4862,
+            "matched_baseline_mean": 5.7406,
+            "matched_baseline_std": 0.1823,
+            "z_score": -1.4,
+            "p_greater": 0.917,
+            "p_less": 0.0832
+          },
+          "H_init": {
+            "observed": 3.4056,
+            "matched_baseline_mean": 3.747,
+            "matched_baseline_std": 0.181,
+            "z_score": -1.89,
+            "p_greater": 0.9566,
+            "p_less": 0.0504
+          },
+          "H_fin": {
+            "observed": 4.0,
+            "matched_baseline_mean": 2.8761,
+            "matched_baseline_std": 0.4043,
+            "z_score": 2.78,
+            "p_greater": 0.0008,
+            "p_less": 1.0
+          },
+          "H1": {
+            "observed": 1.5229,
+            "matched_baseline_mean": 1.1425,
+            "matched_baseline_std": 0.0838,
+            "z_score": 4.54,
+            "p_greater": 0.0002,
+            "p_less": 1.0
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0625,
+            "matched_baseline_mean": 0.0318,
+            "matched_baseline_std": 0.0432,
+            "z_score": 0.71,
+            "p_greater": 0.4107,
+            "p_less": 0.9166
+          }
+        },
+        "Foreign_SEAL_S__vs__HL_strict_dedup": {
+          "n_boot": 5000,
+          "n_inscriptions": 12,
+          "n_tokens": 49,
+          "V": {
+            "observed": 36.0,
+            "matched_baseline_mean": 37.05,
+            "matched_baseline_std": 2.6168,
+            "z_score": -0.4,
+            "p_greater": 0.7349,
+            "p_less": 0.4063
+          },
+          "TTR": {
+            "observed": 0.7347,
+            "matched_baseline_mean": 0.7561,
+            "matched_baseline_std": 0.0534,
+            "z_score": -0.4,
+            "p_greater": 0.7349,
+            "p_less": 0.4063
+          },
+          "H0": {
+            "observed": 4.9616,
+            "matched_baseline_mean": 5.0252,
+            "matched_baseline_std": 0.1477,
+            "z_score": -0.43,
+            "p_greater": 0.6827,
+            "p_less": 0.3207
+          },
+          "H0_miller_madow": {
+            "observed": 5.4769,
+            "matched_baseline_mean": 5.5559,
+            "matched_baseline_std": 0.1847,
+            "z_score": -0.43,
+            "p_greater": 0.6827,
+            "p_less": 0.3181
+          },
+          "H_init": {
+            "observed": 3.585,
+            "matched_baseline_mean": 3.4622,
+            "matched_baseline_std": 0.1411,
+            "z_score": 0.87,
+            "p_greater": 0.4681,
+            "p_less": 1.0
+          },
+          "H_fin": {
+            "observed": 3.1887,
+            "matched_baseline_mean": 2.8948,
+            "matched_baseline_std": 0.3791,
+            "z_score": 0.78,
+            "p_greater": 0.3033,
+            "p_less": 0.7936
+          },
+          "H1": {
+            "observed": 1.0863,
+            "matched_baseline_mean": 0.9883,
+            "matched_baseline_std": 0.0832,
+            "z_score": 1.18,
+            "p_greater": 0.1194,
+            "p_less": 0.8822
+          },
+          "within_seal_repeat_rate": {
+            "observed": 0.0,
+            "matched_baseline_mean": 0.0424,
+            "matched_baseline_std": 0.0549,
+            "z_score": -0.77,
+            "p_greater": 1.0,
+            "p_less": 0.5741
+          }
+        }
+      },
+      "controlled_2x2_fisher_tests": {
+        "Foreign_SEAL_C_vs_HL_strict_dedup": {
+          "twin_man_triad_090_091_093_any": {
+            "group_A": "12/15 (80.0%)",
+            "group_B": "103/2026 (5.1%)",
+            "lift": 15.74,
+            "fisher_two_sided_p": 2.3e-13
+          },
+          "anthropomorphic_090_164_any": {
+            "group_A": "13/15 (86.7%)",
+            "group_B": "561/2026 (27.7%)",
+            "lift": 3.13,
+            "fisher_two_sided_p": 3.619e-06
+          },
+          "sign_091_double_man_any": {
+            "group_A": "4/15 (26.7%)",
+            "group_B": "6/2026 (0.3%)",
+            "lift": 90.04,
+            "fisher_two_sided_p": 3.874e-07
+          },
+          "sign_055_12_strokes_any": {
+            "group_A": "3/15 (20.0%)",
+            "group_B": "32/2026 (1.6%)",
+            "lift": 12.66,
+            "fisher_two_sided_p": 0.001826
+          },
+          "jar_740_final": {
+            "group_A": "1/15 (6.7%)",
+            "group_B": "706/2026 (34.8%)",
+            "lift": 0.19,
+            "fisher_two_sided_p": 0.02614
+          },
+          "jar_740_any": {
+            "group_A": "1/15 (6.7%)",
+            "group_B": "968/2026 (47.8%)",
+            "lift": 0.14,
+            "fisher_two_sided_p": 0.001135
+          },
+          "hl_8_suffixes_final_excl_090": {
+            "group_A": "1/15 (6.7%)",
+            "group_B": "1213/2026 (59.9%)",
+            "lift": 0.11,
+            "fisher_two_sided_p": 2.825e-05
+          },
+          "short_strokes_001_002_004_any": {
+            "group_A": "6/15 (40.0%)",
+            "group_B": "646/2026 (31.9%)",
+            "lift": 1.25,
+            "fisher_two_sided_p": 0.5796
+          },
+          "long_strokes_031_032_033_any": {
+            "group_A": "4/15 (26.7%)",
+            "group_B": "478/2026 (23.6%)",
+            "lift": 1.13,
+            "fisher_two_sided_p": 0.7629
+          }
+        },
+        "Foreign_Gaur_vs_HL_Gaur_motif_controlled": {
+          "twin_man_triad_090_091_093_any": {
+            "group_A": "8/14 (57.1%)",
+            "group_B": "5/105 (4.8%)",
+            "lift": 12.0,
+            "fisher_two_sided_p": 3.838e-06
+          },
+          "anthropomorphic_090_164_any": {
+            "group_A": "11/14 (78.6%)",
+            "group_B": "31/105 (29.5%)",
+            "lift": 2.66,
+            "fisher_two_sided_p": 0.0005877
+          },
+          "sign_091_double_man_any": {
+            "group_A": "3/14 (21.4%)",
+            "group_B": "1/105 (1.0%)",
+            "lift": 22.5,
+            "fisher_two_sided_p": 0.004939
+          },
+          "sign_055_12_strokes_any": {
+            "group_A": "3/14 (21.4%)",
+            "group_B": "4/105 (3.8%)",
+            "lift": 5.62,
+            "fisher_two_sided_p": 0.03461
+          },
+          "jar_740_final": {
+            "group_A": "1/14 (7.1%)",
+            "group_B": "34/105 (32.4%)",
+            "lift": 0.22,
+            "fisher_two_sided_p": 0.06295
+          },
+          "jar_740_any": {
+            "group_A": "1/14 (7.1%)",
+            "group_B": "45/105 (42.9%)",
+            "lift": 0.17,
+            "fisher_two_sided_p": 0.008926
+          },
+          "hl_8_suffixes_final_excl_090": {
+            "group_A": "1/14 (7.1%)",
+            "group_B": "62/105 (59.0%)",
+            "lift": 0.12,
+            "fisher_two_sided_p": 0.0002744
+          },
+          "short_strokes_001_002_004_any": {
+            "group_A": "5/14 (35.7%)",
+            "group_B": "37/105 (35.2%)",
+            "lift": 1.01,
+            "fisher_two_sided_p": 1.0
+          },
+          "long_strokes_031_032_033_any": {
+            "group_A": "4/14 (28.6%)",
+            "group_B": "18/105 (17.1%)",
+            "lift": 1.67,
+            "fisher_two_sided_p": 0.2891
+          }
+        },
+        "Foreign_SEAL_C_vs_Foreign_SEAL_S_geography_controlled": {
+          "twin_man_triad_090_091_093_any": {
+            "group_A": "12/15 (80.0%)",
+            "group_B": "0/12 (0.0%)",
+            "lift": "INF",
+            "fisher_two_sided_p": 3.659e-05
+          },
+          "anthropomorphic_090_164_any": {
+            "group_A": "13/15 (86.7%)",
+            "group_B": "1/12 (8.3%)",
+            "lift": 10.4,
+            "fisher_two_sided_p": 6.88e-05
+          },
+          "sign_091_double_man_any": {
+            "group_A": "4/15 (26.7%)",
+            "group_B": "0/12 (0.0%)",
+            "lift": "INF",
+            "fisher_two_sided_p": 0.106
+          },
+          "sign_055_12_strokes_any": {
+            "group_A": "3/15 (20.0%)",
+            "group_B": "0/12 (0.0%)",
+            "lift": "INF",
+            "fisher_two_sided_p": 0.2308
+          },
+          "jar_740_final": {
+            "group_A": "1/15 (6.7%)",
+            "group_B": "3/12 (25.0%)",
+            "lift": 0.27,
+            "fisher_two_sided_p": 0.294
+          },
+          "jar_740_any": {
+            "group_A": "1/15 (6.7%)",
+            "group_B": "4/12 (33.3%)",
+            "lift": 0.2,
+            "fisher_two_sided_p": 0.139
+          },
+          "hl_8_suffixes_final_excl_090": {
+            "group_A": "1/15 (6.7%)",
+            "group_B": "5/12 (41.7%)",
+            "lift": 0.16,
+            "fisher_two_sided_p": 0.06016
+          },
+          "short_strokes_001_002_004_any": {
+            "group_A": "6/15 (40.0%)",
+            "group_B": "2/12 (16.7%)",
+            "lift": 2.4,
+            "fisher_two_sided_p": 0.2357
+          },
+          "long_strokes_031_032_033_any": {
+            "group_A": "4/15 (26.7%)",
+            "group_B": "0/12 (0.0%)",
+            "lift": "INF",
+            "fisher_two_sided_p": 0.106
+          }
+        },
+        "Foreign_ALL_vs_HL_strict_dedup": {
+          "twin_man_triad_090_091_093_any": {
+            "group_A": "12/34 (35.3%)",
+            "group_B": "103/2026 (5.1%)",
+            "lift": 6.94,
+            "fisher_two_sided_p": 1.005e-07
+          },
+          "anthropomorphic_090_164_any": {
+            "group_A": "18/34 (52.9%)",
+            "group_B": "561/2026 (27.7%)",
+            "lift": 1.91,
+            "fisher_two_sided_p": 0.003057
+          },
+          "sign_091_double_man_any": {
+            "group_A": "4/34 (11.8%)",
+            "group_B": "6/2026 (0.3%)",
+            "lift": 39.73,
+            "fisher_two_sided_p": 1.213e-05
+          },
+          "sign_055_12_strokes_any": {
+            "group_A": "4/34 (11.8%)",
+            "group_B": "32/2026 (1.6%)",
+            "lift": 7.45,
+            "fisher_two_sided_p": 0.002509
+          },
+          "jar_740_final": {
+            "group_A": "6/34 (17.6%)",
+            "group_B": "706/2026 (34.8%)",
+            "lift": 0.51,
+            "fisher_two_sided_p": 0.04412
+          },
+          "jar_740_any": {
+            "group_A": "7/34 (20.6%)",
+            "group_B": "968/2026 (47.8%)",
+            "lift": 0.43,
+            "fisher_two_sided_p": 0.001556
+          },
+          "hl_8_suffixes_final_excl_090": {
+            "group_A": "8/34 (23.5%)",
+            "group_B": "1213/2026 (59.9%)",
+            "lift": 0.39,
+            "fisher_two_sided_p": 2.616e-05
+          },
+          "short_strokes_001_002_004_any": {
+            "group_A": "12/34 (35.3%)",
+            "group_B": "646/2026 (31.9%)",
+            "lift": 1.11,
+            "fisher_two_sided_p": 0.7116
+          },
+          "long_strokes_031_032_033_any": {
+            "group_A": "5/34 (14.7%)",
+            "group_B": "478/2026 (23.6%)",
+            "lift": 0.62,
+            "fisher_two_sided_p": 0.3071
+          }
+        }
+      },
+      "sign_enrichments": {
+        "Foreign_ALL_usable_vs_HL_all_usable": {
+          "enriched": [
+            {
+              "sign_id": "091",
+              "visual_gloss": "two conjoined humans holding hands (twins)",
+              "target_docs": "4/34 (11.8%)",
+              "ref_docs": "18/4531 (0.40%)",
+              "lift": 29.61,
+              "fisher_p_greater": 1.707e-05
+            },
+            {
+              "sign_id": "090",
+              "visual_gloss": "standing human figure (man)",
+              "target_docs": "7/34 (20.6%)",
+              "ref_docs": "177/4531 (3.91%)",
+              "lift": 5.27,
+              "fisher_p_greater": 0.0003289
+            },
+            {
+              "sign_id": "004",
+              "visual_gloss": "4 short raised strokes",
+              "target_docs": "5/34 (14.7%)",
+              "ref_docs": "83/4531 (1.83%)",
+              "lift": 8.03,
+              "fisher_p_greater": 0.0004252
+            },
+            {
+              "sign_id": "055",
+              "visual_gloss": "12 short strokes (3x4 grid)",
+              "target_docs": "4/34 (11.8%)",
+              "ref_docs": "57/4531 (1.26%)",
+              "lift": 9.35,
+              "fisher_p_greater": 0.0009918
+            },
+            {
+              "sign_id": "093",
+              "visual_gloss": "standing human variant with lower prong",
+              "target_docs": "2/34 (5.9%)",
+              "ref_docs": "5/4531 (0.11%)",
+              "lift": 53.31,
+              "fisher_p_greater": 0.001105
+            },
+            {
+              "sign_id": "924",
+              "visual_gloss": "segmented/ladder-filled crescent",
+              "target_docs": "2/34 (5.9%)",
+              "ref_docs": "8/4531 (0.18%)",
+              "lift": 33.32,
+              "fisher_p_greater": 0.002334
+            },
+            {
+              "sign_id": "001",
+              "visual_gloss": "1 short raised stroke",
+              "target_docs": "6/34 (17.6%)",
+              "ref_docs": "202/4531 (4.46%)",
+              "lift": 3.96,
+              "fisher_p_greater": 0.003836
+            },
+            {
+              "sign_id": "831",
+              "visual_gloss": "almond/oval with 3 internal diagonal strokes",
+              "target_docs": "2/34 (5.9%)",
+              "ref_docs": "16/4531 (0.35%)",
+              "lift": 16.66,
+              "fisher_p_greater": 0.007646
+            },
+            {
+              "sign_id": "220",
+              "visual_gloss": "plain fish",
+              "target_docs": "8/34 (23.5%)",
+              "ref_docs": "431/4531 (9.51%)",
+              "lift": 2.47,
+              "fisher_p_greater": 0.01321
+            },
+            {
+              "sign_id": "013",
+              "visual_gloss": "3 staggered short strokes",
+              "target_docs": "2/34 (5.9%)",
+              "ref_docs": "40/4531 (0.88%)",
+              "lift": 6.66,
+              "fisher_p_greater": 0.0385
+            },
+            {
+              "sign_id": "390",
+              "visual_gloss": "trident/forked branch",
+              "target_docs": "5/34 (14.7%)",
+              "ref_docs": "256/4531 (5.65%)",
+              "lift": 2.6,
+              "fisher_p_greater": 0.04197
+            },
+            {
+              "sign_id": "350",
+              "visual_gloss": "three-pronged tulip/lotus bud",
+              "target_docs": "2/34 (5.9%)",
+              "ref_docs": "46/4531 (1.02%)",
+              "lift": 5.79,
+              "fisher_p_greater": 0.04907
+            },
+            {
+              "sign_id": "416",
+              "visual_gloss": "double-tiered rake/plant",
+              "target_docs": "2/34 (5.9%)",
+              "ref_docs": "46/4531 (1.02%)",
+              "lift": 5.79,
+              "fisher_p_greater": 0.04907
+            },
+            {
+              "sign_id": "031",
+              "visual_gloss": "1 long vertical stroke",
+              "target_docs": "4/34 (11.8%)",
+              "ref_docs": "235/4531 (5.19%)",
+              "lift": 2.27,
+              "fisher_p_greater": 0.09949
+            }
+          ],
+          "depleted": [
+            {
+              "sign_id": "740",
+              "visual_gloss": "two-handled Jar (top Heartland terminal)",
+              "target_docs": "7/34 (20.6%)",
+              "ref_docs": "1775/4531 (39.17%)",
+              "ratio": 0.53,
+              "fisher_p_less": 0.01788
+            },
+            {
+              "sign_id": "700",
+              "visual_gloss": "U-shaped cup/vessel",
+              "target_docs": "1/34 (2.9%)",
+              "ref_docs": "506/4531 (11.17%)",
+              "ratio": 0.26,
+              "fisher_p_less": 0.09501
+            },
+            {
+              "sign_id": "032",
+              "visual_gloss": "2 long vertical strokes",
+              "target_docs": "1/34 (2.9%)",
+              "ref_docs": "504/4531 (11.12%)",
+              "ratio": 0.26,
+              "fisher_p_less": 0.09628
+            },
+            {
+              "sign_id": "400",
+              "visual_gloss": "comb/rake",
+              "target_docs": "1/34 (2.9%)",
+              "ref_docs": "477/4531 (10.53%)",
+              "ratio": 0.28,
+              "fisher_p_less": 0.1149
+            },
+            {
+              "sign_id": "861",
+              "visual_gloss": "",
+              "target_docs": "0/34 (0.0%)",
+              "ref_docs": "261/4531 (5.76%)",
+              "ratio": 0.0,
+              "fisher_p_less": 0.1341
+            },
+            {
+              "sign_id": "033",
+              "visual_gloss": "3 long vertical strokes",
+              "target_docs": "1/34 (2.9%)",
+              "ref_docs": "442/4531 (9.76%)",
+              "ratio": 0.3,
+              "fisher_p_less": 0.1437
+            },
+            {
+              "sign_id": "741",
+              "visual_gloss": "",
+              "target_docs": "0/34 (0.0%)",
+              "ref_docs": "216/4531 (4.77%)",
+              "ratio": 0.0,
+              "fisher_p_less": 0.1912
+            }
+          ]
+        },
+        "Foreign_SEAL_C_vs_HL_strict_dedup": {
+          "enriched": [
+            {
+              "sign_id": "091",
+              "visual_gloss": "two conjoined humans holding hands (twins)",
+              "target_docs": "4/15 (26.7%)",
+              "ref_docs": "6/2026 (0.30%)",
+              "lift": 90.04,
+              "fisher_p_greater": 3.874e-07
+            },
+            {
+              "sign_id": "090",
+              "visual_gloss": "standing human figure (man)",
+              "target_docs": "7/15 (46.7%)",
+              "ref_docs": "92/2026 (4.54%)",
+              "lift": 10.28,
+              "fisher_p_greater": 2.394e-06
+            },
+            {
+              "sign_id": "093",
+              "visual_gloss": "standing human variant with lower prong",
+              "target_docs": "2/15 (13.3%)",
+              "ref_docs": "5/2026 (0.25%)",
+              "lift": 54.03,
+              "fisher_p_greater": 0.001037
+            },
+            {
+              "sign_id": "001",
+              "visual_gloss": "1 short raised stroke",
+              "target_docs": "5/15 (33.3%)",
+              "ref_docs": "125/2026 (6.17%)",
+              "lift": 5.4,
+              "fisher_p_greater": 0.001736
+            },
+            {
+              "sign_id": "055",
+              "visual_gloss": "12 short strokes (3x4 grid)",
+              "target_docs": "3/15 (20.0%)",
+              "ref_docs": "32/2026 (1.58%)",
+              "lift": 12.66,
+              "fisher_p_greater": 0.001826
+            },
+            {
+              "sign_id": "831",
+              "visual_gloss": "almond/oval with 3 internal diagonal strokes",
+              "target_docs": "2/15 (13.3%)",
+              "ref_docs": "13/2026 (0.64%)",
+              "lift": 20.78,
+              "fisher_p_greater": 0.005011
+            },
+            {
+              "sign_id": "350",
+              "visual_gloss": "three-pronged tulip/lotus bud",
+              "target_docs": "2/15 (13.3%)",
+              "ref_docs": "36/2026 (1.78%)",
+              "lift": 7.5,
+              "fisher_p_greater": 0.03043
+            },
+            {
+              "sign_id": "004",
+              "visual_gloss": "4 short raised strokes",
+              "target_docs": "2/15 (13.3%)",
+              "ref_docs": "53/2026 (2.62%)",
+              "lift": 5.1,
+              "fisher_p_greater": 0.05983
+            },
+            {
+              "sign_id": "031",
+              "visual_gloss": "1 long vertical stroke",
+              "target_docs": "3/15 (20.0%)",
+              "ref_docs": "130/2026 (6.42%)",
+              "lift": 3.12,
+              "fisher_p_greater": 0.06915
+            }
+          ],
+          "depleted": [
+            {
+              "sign_id": "740",
+              "visual_gloss": "two-handled Jar (top Heartland terminal)",
+              "target_docs": "1/15 (6.7%)",
+              "ref_docs": "968/2026 (47.78%)",
+              "ratio": 0.14,
+              "fisher_p_less": 0.0008982
+            },
+            {
+              "sign_id": "002",
+              "visual_gloss": "2 short raised strokes",
+              "target_docs": "1/15 (6.7%)",
+              "ref_docs": "499/2026 (24.63%)",
+              "ratio": 0.27,
+              "fisher_p_less": 0.08586
+            },
+            {
+              "sign_id": "400",
+              "visual_gloss": "comb/rake",
+              "target_docs": "0/15 (0.0%)",
+              "ref_docs": "207/2026 (10.22%)",
+              "ratio": 0.0,
+              "fisher_p_less": 0.1999
+            }
+          ]
+        }
+      },
+      "direction_caveat_audit_090_091": {
+        "verified_dir_SEAL_C_n": 11,
+        "verified_dir_SEAL_C_091_initial": 3,
+        "verified_dir_SEAL_C_090_positions": {
+          "init": 0,
+          "medial": 2,
+          "final": 1
+        },
+        "verified_dir_SEAL_C_unique_terminals": "11/11",
+        "unk_dir_SEAL_C_n": 4,
+        "unk_dir_SEAL_C_090_initial_caveat": [
+          {
+            "inscription_id": "147.1",
+            "site": "Failaka",
+            "seq_canonical": "090 817 317",
+            "seq_reversed": "317 817 090"
+          },
+          {
+            "inscription_id": "3899.1",
+            "site": "Ur",
+            "seq_canonical": "350 090 004",
+            "seq_reversed": "004 090 350"
+          },
+          {
+            "inscription_id": "5225.1",
+            "site": "Ur",
+            "seq_canonical": "090 001",
+            "seq_reversed": "001 090"
+          },
+          {
+            "inscription_id": "5231.1",
+            "site": "Ur",
+            "seq_canonical": "090 405",
+            "seq_reversed": "405 090"
+          }
+        ]
+      }
+    },
+    "foreign_patterns_and_formulas": {
+      "recurring_directed_bigrams_in_foreign": [
+        {
+          "bigram": "590 -> 390",
+          "foreign_count": 2,
+          "heartland_count": 70,
+          "lift": 3.35,
+          "fisher_p": 0.1238,
+          "examples": [
+            "1971.1 (Kish, SEAL:S)",
+            "4155.1 (Gonur Depe, SEAL:S)"
+          ]
+        },
+        {
+          "bigram": "390 -> 740",
+          "foreign_count": 2,
+          "heartland_count": 57,
+          "lift": 4.12,
+          "fisher_p": 0.08878,
+          "examples": [
+            "1971.1 (Kish, SEAL:S)",
+            "4155.1 (Gonur Depe, SEAL:S)"
+          ]
+        },
+        {
+          "bigram": "002 -> 004",
+          "foreign_count": 2,
+          "heartland_count": 20,
+          "lift": 11.73,
+          "fisher_p": 0.01464,
+          "examples": [
+            "3884.1 (Tell Umma, TAG:L)",
+            "4173.1 (Salut, SEAL:S)"
+          ]
+        }
+      ],
+      "foreign_motif_and_formula_inventory": [
+        {
+          "motif_id": "091_double_man_family",
+          "description": "Sign 091 (Twins/Double-Man) anywhere",
+          "foreign_count": 5,
+          "unprovenanced_other_count": 1,
+          "heartland_count": 17,
+          "foreign_examples": [
+            "2153.1 (Luristan, SEAL:C, Gaur): 091 840 413 831",
+            "5227.1 (Karzakan, SEAL:C, Gaur): 091 031 455 220",
+            "5228.1 (Karzakan, SEAL:C, Gaur): 091 032 001 033",
+            "5229.1 (Saar, SEAL:C, -): 055 220 091 001 093 031",
+            "5551.1 (Kalba, SEAL:C, -): 091"
+          ],
+          "unprovenanced_examples": [
+            "3887.1 (Unknown, SEAL:C, Scene): 190 091 603"
+          ]
+        },
+        {
+          "motif_id": "091_followed_by_stroke",
+          "description": "091 -> {031, 032, 033, 001} (Twins + stroke)",
+          "foreign_count": 3,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 1,
+          "foreign_examples": [
+            "5227.1 (Karzakan, SEAL:C, Gaur): 091 031 455 220",
+            "5228.1 (Karzakan, SEAL:C, Gaur): 091 032 001 033",
+            "5229.1 (Saar, SEAL:C, -): 055 220 091 001 093 031"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "055_to_090_gulf_exclusive",
+          "description": "055 -> 090 (12-strokes -> Man, 0x Heartland!)",
+          "foreign_count": 1,
+          "unprovenanced_other_count": 1,
+          "heartland_count": 0,
+          "foreign_examples": [
+            "3863.1 (Qala'at al-Bahrain, SEAL:C, Gaur): 190 060 055 090 160"
+          ],
+          "unprovenanced_examples": [
+            "3888.1 (Unknown, SEAL:CY, Unknown): 032 132 055 090"
+          ]
+        },
+        {
+          "motif_id": "001_to_090_gulf_exclusive",
+          "description": "001 -> 090 (1-stroke -> Man, 0x Heartland!)",
+          "foreign_count": 1,
+          "unprovenanced_other_count": 1,
+          "heartland_count": 0,
+          "foreign_examples": [
+            "148.1 (Failaka, SEAL:C, -): 716 350 001 090"
+          ],
+          "unprovenanced_examples": [
+            "5223.1 (Unknown, SEAL:C, Gaur): 160 384 133 001 090"
+          ]
+        },
+        {
+          "motif_id": "090_001_adjacent_either_dir",
+          "description": "001 ~ 090 adjacent (either direction)",
+          "foreign_count": 2,
+          "unprovenanced_other_count": 1,
+          "heartland_count": 1,
+          "foreign_examples": [
+            "148.1 (Failaka, SEAL:C, -): 716 350 001 090",
+            "5225.1 (Ur, SEAL:C, -): 090 001"
+          ],
+          "unprovenanced_examples": [
+            "5223.1 (Unknown, SEAL:C, Gaur): 160 384 133 001 090"
+          ]
+        },
+        {
+          "motif_id": "093_rare_man_variant",
+          "description": "Sign 093 anywhere (53.3x lift abroad)",
+          "foreign_count": 2,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 5,
+          "foreign_examples": [
+            "3897.1 (Ur, SEAL:C, Gaur): 528 220 924 340 093",
+            "5229.1 (Saar, SEAL:C, -): 055 220 091 001 093 031"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "093_to_031_foreign_only",
+          "description": "093 -> 031 (0x Heartland!)",
+          "foreign_count": 1,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 0,
+          "foreign_examples": [
+            "5229.1 (Saar, SEAL:C, -): 055 220 091 001 093 031"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "031_and_055_cooccur",
+          "description": "031 + 055 co-occurrence in same seal",
+          "foreign_count": 3,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 2,
+          "foreign_examples": [
+            "3882.1 (Susa, SEAL:CY, Gaur): 924 001 319 031 055 002 150 416",
+            "5229.1 (Saar, SEAL:C, -): 055 220 091 001 093 031",
+            "5232.1 (Janabiyah, SEAL:C, Gaur): 071 031 831 055 121 099 055"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "350_and_090_cooccur",
+          "description": "350 + 090 co-occurrence (Failaka & Ur)",
+          "foreign_count": 2,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 3,
+          "foreign_examples": [
+            "148.1 (Failaka, SEAL:C, -): 716 350 001 090",
+            "3899.1 (Ur, SEAL:C, Gaur): 350 090 004"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "002_004_adjacent_either_dir",
+          "description": "002 ~ 004 adjacent (Umma, Salut, Ur)",
+          "foreign_count": 3,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 20,
+          "foreign_examples": [
+            "3884.1 (Tell Umma, TAG:L, Bull1): 127 705 002 004 390",
+            "3898.1 (Ur, SEAL:C, Gaur): 415 803 001 328 004 002",
+            "4173.1 (Salut, SEAL:S, Gaur): 595 278 002 004 392"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "004_to_002_foreign_only",
+          "description": "004 -> 002 (Ur 3898.1, 0x Heartland!)",
+          "foreign_count": 1,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 0,
+          "foreign_examples": [
+            "3898.1 (Ur, SEAL:C, Gaur): 415 803 001 328 004 002"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "924_segmented_crescent",
+          "description": "Sign 924 anywhere (Ur & Susa cylinder, 33.3x)",
+          "foreign_count": 2,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 8,
+          "foreign_examples": [
+            "3882.1 (Susa, SEAL:CY, Gaur): 924 001 319 031 055 002 150 416",
+            "3897.1 (Ur, SEAL:C, Gaur): 528 220 924 340 093"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "831_striped_oval",
+          "description": "Sign 831 anywhere (Luristan & Janabiyah, 16.7x)",
+          "foreign_count": 2,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 16,
+          "foreign_examples": [
+            "2153.1 (Luristan, SEAL:C, Gaur): 091 840 413 831",
+            "5232.1 (Janabiyah, SEAL:C, Gaur): 071 031 831 055 121 099 055"
+          ],
+          "unprovenanced_examples": []
+        },
+        {
+          "motif_id": "590_390_740_native_formula_abroad",
+          "description": "590 -> 390 -> 740 (#1 Native Harappan trigram abroad!)",
+          "foreign_count": 2,
+          "unprovenanced_other_count": 0,
+          "heartland_count": 52,
+          "foreign_examples": [
+            "1971.1 (Kish, SEAL:S, Bull1:L): 416 840 060 003 220 590 390 740",
+            "4155.1 (Gonur Depe, SEAL:S, Elep): 285 002 235 220 125 590 390 740"
+          ],
+          "unprovenanced_examples": []
+        }
+      ],
+      "out_of_sample_unprovenanced_and_dholavira_circular_seals": [
+        {
+          "inscription_id": "3887.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:C",
+          "symbol": "Scene",
+          "reading_seq": "190 -> 091 -> 603",
+          "shared_gulf_signature_signs": [
+            "091",
+            "190"
+          ]
+        },
+        {
+          "inscription_id": "3888.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:CY",
+          "symbol": "Unknown",
+          "reading_seq": "032 -> 132 -> 055 -> 090",
+          "shared_gulf_signature_signs": [
+            "055",
+            "090"
+          ]
+        },
+        {
+          "inscription_id": "3889.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:C",
+          "symbol": "Gaur",
+          "reading_seq": "467 -> 550 -> 001 -> 740 -> 740",
+          "shared_gulf_signature_signs": []
+        },
+        {
+          "inscription_id": "4247.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "object_type": "SEAL:C",
+          "symbol": "Gaur",
+          "reading_seq": "255 -> 368 -> 001 -> 091 -> 806",
+          "shared_gulf_signature_signs": [
+            "091"
+          ]
+        },
+        {
+          "inscription_id": "5223.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:C",
+          "symbol": "Gaur",
+          "reading_seq": "160 -> 384 -> 133 -> 001 -> 090",
+          "shared_gulf_signature_signs": [
+            "090",
+            "160"
+          ]
+        },
+        {
+          "inscription_id": "5224.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:C",
+          "symbol": "Gaur",
+          "reading_seq": "033 -> 220 -> 001 -> 032 -> 061",
+          "shared_gulf_signature_signs": []
+        },
+        {
+          "inscription_id": "5226.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:C",
+          "symbol": "Bird",
+          "reading_seq": "002",
+          "shared_gulf_signature_signs": []
+        },
+        {
+          "inscription_id": "5226.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:C",
+          "symbol": "Bird",
+          "reading_seq": "725 -> 090",
+          "shared_gulf_signature_signs": [
+            "090"
+          ]
+        },
+        {
+          "inscription_id": "5557.1",
+          "region": "Other",
+          "site": "Unknown",
+          "object_type": "SEAL:CY",
+          "symbol": "Scene",
+          "reading_seq": "139 -> 145",
+          "shared_gulf_signature_signs": []
+        }
+      ]
+    }
+  },
+  "section_B_verified_cuneiform_reference": {
+    "epistemic_status": "VERIFIED_PRIMARY_ASSYRIOLOGICAL_REFERENCES",
+    "personal_names_and_titles_linked_to_meluhha_and_dilmun": [
+      {
+        "name_transliteration": "Šu-ilīšu (šu-i-li-su)",
+        "cuneiform_title_or_context": "eme-bal me-luḫ-ḫa ('interpreter of the Meluhhan language')",
+        "artifact_or_text_id": "Louvre AO 22310 (Collection de Clercq, Old Akkadian cylinder seal)",
+        "language": "Akkadian personal name + Sumerian title",
+        "morpheme_template": "Šu- + ilī + -šu ('He of his god') — prefixing Akkadian PN",
+        "syllable_count_pn": 4,
+        "total_seal_cuneiform_signs": 9,
+        "scholarly_refs": [
+          "Parpola, Parpola & Brunswig 1977",
+          "Parpola 1994",
+          "Possehl 1996"
+        ]
+      },
+      {
+        "name_transliteration": "Lú-sunzida (lú-su₃-zi-da)",
+        "cuneiform_title_or_context": "lú-me-luḫ-ḫa-ke₄ ('man of Meluhha'); paid 10 shekels silver to Urur for a broken tooth",
+        "artifact_or_text_id": "Old Akkadian / Ur III legal-administrative record (Girsu/Lagash corpus)",
+        "language": "Sumerian (likely literal calque of an Indus/Meluhhan name: 'Man of the just buffalo cow')",
+        "morpheme_template": "Lú- ('Man of') + sun-zi-da — prefixing Sumerian PN",
+        "syllable_count_pn": 4,
+        "scholarly_refs": [
+          "Parpola, Parpola & Brunswig 1977",
+          "Parpola 1994",
+          "Vidale 2005"
+        ]
+      },
+      {
+        "name_transliteration": "Ur-Lama (Ur-dLamma)",
+        "cuneiform_title_or_context": "dumu me-luḫ-ḫa ('son of Meluhha') in é-duru₅ me-luḫ-ḫa ('Meluhha village') at Guabba/Lagash",
+        "artifact_or_text_id": "Ur III Girsu/Lagash administrative archives (ITT / MVN 7 420 = ITT 4 8024)",
+        "language": "Sumerian adopted name (acculturated 2nd/3rd-generation Meluhhan diaspora)",
+        "morpheme_template": "Ur- ('Servant/Man of') + dLamma (tutelary deity) — prefixing Sumerian PN",
+        "syllable_count_pn": 3,
+        "scholarly_refs": [
+          "Parpola, Parpola & Brunswig 1977",
+          "Vermaak 2008"
+        ]
+      },
+      {
+        "name_transliteration": "Samar & Nanaza",
+        "cuneiform_title_or_context": "Individuals explicitly designated as 'Meluhhans' working as royal bezoar-goat shepherds",
+        "artifact_or_text_id": "Ur III administrative archives",
+        "language": "Non-Sumerian / foreign-sounding anthroponyms in cuneiform transcription",
+        "morpheme_template": "2–3 syllable non-Mesopotamian stems (Sa-mar, Na-na-za)",
+        "syllable_count_pn": "2–3",
+        "scholarly_refs": [
+          "Laursen & Steinkeller 2017"
+        ]
+      },
+      {
+        "name_transliteration": "Yaglī-El (ya-ag-li-DINGIR) & Rī'mum",
+        "cuneiform_title_or_context": "É.GAL ya-ag-li-DINGIR ARAD dIn-za-ak ša a-kà-rum ('Palace of Yaglī-El, servant of Inzak of Agarum')",
+        "artifact_or_text_id": "Royal Mounds of A'ali, Bahrain (steatite vessel inscriptions, Early Dilmun c. 1800–1700 BCE)",
+        "language": "Amorite personal names in Babylonian cuneiform (Dilmun royal dynasty)",
+        "morpheme_template": "[Prefix/Verb]-El + ARAD ('servant of') + dInzak (theophoric/title formula)",
+        "syllable_count_pn": "2–3 (full seal/vessel legend 6–10 signs)",
+        "scholarly_refs": [
+          "Marchesi 2017",
+          "Laursen 2017",
+          "Glassner 1984, 2002"
+        ]
+      },
+      {
+        "name_transliteration": "Inzak-gāmil / Anzak-gāmil",
+        "cuneiform_title_or_context": "Dilmunite theophoric personal name attested in Mesopotamian / Sealand / Gulf archives",
+        "artifact_or_text_id": "Old Babylonian / Sealand economic texts & Failaka/Dilmun corpus",
+        "language": "Dilmunite-Akkadian hybrid theophoric PN ('Inzak spares')",
+        "morpheme_template": "dInzak + Akkadian participle gāmil",
+        "syllable_count_pn": 4,
+        "scholarly_refs": [
+          "Glassner 1984, 2002"
+        ]
+      },
+      {
+        "name_transliteration": "Ea-nāṣir (É-a-na-ṣir) & Ilī-ippašra (Ì-lí-ip-pa-aš-ra)",
+        "cuneiform_title_or_context": "Ur-Dilmun copper merchant (Old Babylonian Ur, c. 1750 BCE) & Dilmun governor (Kassite Nippur letters, c. 14th c. BCE)",
+        "artifact_or_text_id": "UET V (Ur) & Nippur Kassite correspondence",
+        "language": "Akkadian",
+        "morpheme_template": "[Deity]-participle / Ì-lí- ('My god') + verb — 4–5 syllables",
+        "syllable_count_pn": "4–5",
+        "scholarly_refs": [
+          "Oppenheim 1954",
+          "Glassner 2002"
+        ]
+      },
+      {
+        "name_transliteration": "Gadd 1 archaic cuneiform legend: 'sak-ku-si' / 'ka-lu' (provisional)",
+        "cuneiform_title_or_context": "Circular grey-steatite Indus-style short-horned bull (gaur) & manger seal inscribed in ARCHAIC CUNEIFORM instead of Indus script!",
+        "artifact_or_text_id": "Gadd 1932 No. 1 = BM 120573 = U.7683 (excavated at Ur)",
+        "language": "Pre-Sargonic/Akkadian cuneiform on a Gulf/Indus-motif seal (direct typological bridge)",
+        "morpheme_template": "3 cuneiform signs on an Indus short-horned bull circular stamp seal",
+        "syllable_count_pn": 3,
+        "scholarly_refs": [
+          "Gadd 1932",
+          "Parpola 1994",
+          "Vidale 2005",
+          "Laursen 2010"
+        ]
+      }
+    ],
+    "meluhha_and_dilmun_lexicon_and_goods": [
+      {
+        "term": "Me-luḫ-ḫa (KI)",
+        "meaning": "Indus Valley Civilization / Harappan maritime sphere",
+        "syllables": 3,
+        "refs": [
+          "Parpola & Parpola 1975",
+          "Possehl 1996"
+        ]
+      },
+      {
+        "term": "Dilmun / Tilmun (NI.TUK.KI)",
+        "meaning": "Bahrain / Eastern Arabia / Failaka maritime entrepôt",
+        "syllables": 2,
+        "refs": [
+          "Glassner 2002",
+          "Laursen 2010"
+        ]
+      },
+      {
+        "term": "dInzak (Enzak) & Meskilak (Panipa)",
+        "meaning": "Chief patron god & goddess of Dilmun (often in ARAD dInzak seal formulas)",
+        "syllables": "2 / 3",
+        "refs": [
+          "Glassner 1984",
+          "Marchesi 2017"
+        ]
+      },
+      {
+        "term": "gug (sāmtu)",
+        "meaning": "Carnelian (signature etched/long-barrel Indus export bead)",
+        "syllables": 1,
+        "refs": [
+          "Possehl 1996",
+          "Parpola 1994"
+        ]
+      },
+      {
+        "term": "zú-am-si",
+        "meaning": "Elephant ivory ('tooth of the wild bull/elephant')",
+        "syllables": 3,
+        "refs": [
+          "Possehl 1996",
+          "Laursen & Steinkeller 2017"
+        ]
+      },
+      {
+        "term": "giš-ab-ba me-luḫ-ḫa",
+        "meaning": "Meluhhan sea-wood / kušabku thorn-tree timber (tracked at Guabba)",
+        "syllables": "3 (+3)",
+        "refs": [
+          "Parpola et al. 1977",
+          "Vermaak 2008"
+        ]
+      },
+      {
+        "term": "mes-magan (mêsu)",
+        "meaning": "Prized dark hardwood timber from Magan/Meluhha orbit",
+        "syllables": "3",
+        "refs": [
+          "Possehl 1996"
+        ]
+      },
+      {
+        "term": "ḫa-i̯a-mušen",
+        "meaning": "Exotic palace bird from Meluhha (widely identified as peacock)",
+        "syllables": "2 (+det)",
+        "refs": [
+          "Parpola 1994"
+        ]
+      },
+      {
+        "term": "dar-mušen",
+        "meaning": "Francolin / multi-colored fowl of the highlands/Meluhha",
+        "syllables": "1 (+det)",
+        "refs": [
+          "Parpola 1994"
+        ]
+      }
+    ],
+    "mesopotamian_vs_heartland_structural_templates": {
+      "sumerian_akkadian_personal_names": {
+        "morphology": "PREFIXING / THEOPHORIC / COMPOUND (Ur-X, Lú-X, En-X, Šu-X, Ì-lí-X, [PN] ARAD [Deity])",
+        "typical_syllable_length": "3–5 syllables for single PN; 6–9 signs for PN + patronymic/title",
+        "terminal_constraint": "Open/diverse endings (no single dominant 35% terminal suffix across unrelated PNs)"
+      },
+      "heartland_harappan_seals": {
+        "morphology": "RIGIDLY SUFFIXING (59.9% end in 8 suffixes; 34.8% end in Jar 740 alone)",
+        "typical_sign_length": "4.52 signs mean (strict dedup)",
+        "terminal_constraint": "Strongly collapsed terminal entropy H_fin (jar 740, comb 400, arrow 520)"
+      }
+    }
+  },
+  "section_C_candidate_hypotheses_falsifiable": {
+    "epistemic_warning": "STRICTLY FALSIFIABLE STRUCTURAL HYPOTHESES — NOT DECIPHERMENT OR PHONETIC READINGS. No individual Indus sign is assigned a proven phonetic value below.",
+    "H1_phonetic_syllabic_reencoding_abroad": {
+      "statement": "Circular Gulf/Mesopotamian seals (SEAL:C, n=15) and the Susa cylinder (SEAL:CY) exhibit a simultaneous statistical shift predicted by phonetic/syllabic spelling of foreign (Sumerian/Akkadian/Dilmunite/Amorite/Elamite) names — extending Rao et al. (2009 PNAS/Science), Parpola (1994), Vidale (2005), and Laursen (2010).",
+      "supporting_verified_evidence": [
+        "Length-matched conditional bigram entropy H1 spikes +3.91σ on Foreign SEAL:C (1.441 vs 1.113±0.084 bits, B=5000 p=0.0002) while vocabulary V is compact (40 vs 43.45) -> higher combinatorial recombination of a reused sign pool.",
+        "Terminal entropy H_fin hits the mathematical maximum log2(15)=3.907 bits on Foreign SEAL:C (15/15 unique endings, z=+2.65, B=5000 p=0.0006) as Heartland grammatical suffixes drop from 59.9% to 6.7% (p=2.83e-5).",
+        "Controlled 2x2 natural experiment rules out both motif confounding (Heartland Gaur seals retain normal 32.4% final 740 & 59.0% suffixes vs Foreign Gaur 7.1%, p=2.74e-4) and geographic drift (Foreign Square SEAL:S seals retain normal syntax, H1 z=+1.18 n.s., H_fin z=+0.78 n.s., and exact 590->390->740 formulas).",
+        "Direction-invariant min(fwd, rev) surprisal remains overwhelmingly higher abroad (7.949 vs 5.831 bits, Mann-Whitney p=1.18e-7)."
+      ],
+      "alternative_competing_hypotheses": [
+        "Semi-literate or localized Dilmunite merchant pidgin / emblem drift (Laursen 2010): breakaway Harappan/Dilmunite seal cutters reusing familiar iconic signs (human figures, numerals) outside mainland grammatical rules without full syllabic encoding.",
+        "Corporate/guild-marker system (Vidale 2005): short-horned bull (Gaur) + circular seal + 091/090 encoding merchant family/trade-house identity rather than full spoken sentences."
+      ]
+    },
+    "H2_anthropomorphic_prefix_slot_091_090": {
+      "statement": "The 15.7x surge of the human-figure triad {090, 091, 093} on Foreign SEAL:C (12/15 = 80.0% vs 5.1% Heartland, p=2.30e-13) and the initial-prefix positioning of 091 (Twins) on 3/11 verified-direction SEAL:C seals (depressing H_init by -2.22σ, B=5000 p=0.0316) structurally mirror prefixing Mesopotamian personal-name/title markers (e.g., Sumerian Lú- 'Man of', Ur- 'Servant of', Akkadian Šu- 'He of', or Dilmunite ARAD 'Servant of').",
+      "critical_falsification_caveat": "While 091's initial position is direction-verified (R/L on 2153.1 Luristan, 5227.1 & 5228.1 Karzakan), all three SEAL:C seals with initial 090 (147.1 Failaka, 5225.1 & 5231.1 Ur) have direction=UNK; reversing 5225.1 (090 001 -> 001 090) restores 090 to terminal position matching verified-R/L Failaka 148.1 (... 001->090) and unprovenanced Gulf seal 5223.1 (... 001->090). However, 090 is still unambiguously MEDIAL on verified Qala'at al-Bahrain 3863.1 (L/R) and Susa 3881.1 (R/L), confirming partial syntactic displacement."
+    },
+    "H3_seal_by_seal_structural_constraint_mapping": [
+      {
+        "seal_id": "5232.1",
+        "site": "Janabiyah (Bahrain / Dilmun)",
+        "type_motif": "SEAL:C · Gaur · L/R · Complete",
+        "seq": "071 -> 031 -> 831 -> 055 -> 121 -> 099 -> 055",
+        "metrics": "len=7, z_fwd=+3.18, z_rev=+2.67, unseen=8/8 (100%)",
+        "structural_constraints": [
+          "Longest complete circular Gulf seal (7 signs); anomalous in BOTH reading directions.",
+          "Exact periodic sign reduplication of 055 (12-strokes) at slots 4 & 7: [071-031-831]-055-[121-099]-055 (3+1+2+1 two-clause symmetry!).",
+          "Contains two ultra-rare anthropomorphic figures (121 & 099, each freq=2 in entire 5,679 corpus) + Gulf-enriched 831 (16.7x, shared with Luristan 2153.1).",
+          "Cuneiform structural parallel (length & bimorphemic repetition): matches a 6–7 sign two-part Dilmunite/Akkadian seal legend ([PN] + [patronymic/title] or repeated syllable/case marker -X ... -X)."
+        ]
+      },
+      {
+        "seal_id": "3863.1",
+        "site": "Qala'at al-Bahrain (Dilmun capital)",
+        "type_motif": "SEAL:C · Gaur · L/R · Complete",
+        "seq": "190 -> 060 -> 055 -> 090 -> 160",
+        "metrics": "len=5, z_fwd=+2.57, z_rev=+1.34, unseen=5/6 (83%)",
+        "structural_constraints": [
+          "Contains Gulf-exclusive bigram 055 -> 090 (0 occurrences in entire Indus Heartland; shared ONLY with unprovenanced cylinder seal 3888.1).",
+          "Initial 190 (spider/insect) is shared with unprovenanced circular seal 3887.1 (190-091-603); terminal 160 (yoke-carrier) is shared with unprovenanced Gulf Gaur seal 5223.1.",
+          "5-sign length with zero Heartland suffixes aligns with a 4–5 syllable Dilmunite/Akkadian name (cf. Ilī-ippašra, Inzak-gāmil, Šu-ilīšu)."
+        ]
+      },
+      {
+        "seal_id": "3881.1 & 3882.1",
+        "site": "Susa (Elam / Iranian Plateau)",
+        "type_motif": "3881.1 SEAL:C (len=5, N) & 3882.1 SEAL:CY cylinder (len=8, Y) · both Gaur · R/L",
+        "seq": "3881.1: 365->090->407->604->700 | 3882.1: 924->001->319->031->055->002->150->416",
+        "metrics": "3881.1: z=+2.13 (5/6 unseen) | 3882.1: z=+1.48, z_rev=+1.62 (5/9 unseen)",
+        "structural_constraints": [
+          "3882.1 is an 8-sign Elamite/Mesopotamian CYLINDER seal combining the Indus Gaur motif with Gulf-enriched signs 924 (33.3x, shared with Ur 3897.1), 031->055, short numerals 001/002, and yoke-man 150.",
+          "8-sign length matches a full two-register Mesopotamian/Elamite cylinder legend (PN + title/filiation; cf. Šu-ilīšu's 9-sign Louvre cylinder seal AO 22310)."
+        ]
+      },
+      {
+        "seal_id": "3897.1 & 3898.1",
+        "site": "Ur (Southern Mesopotamia)",
+        "type_motif": "Both SEAL:C · Gaur · R/L · Complete",
+        "seq": "3897.1: 528->220->924->340->093 | 3898.1 (U.17649): 415->803->001->328->004->002",
+        "metrics": "3897.1: len=5, z=+1.84 (4/6 unseen) | 3898.1: len=6, z=+1.72 (5/7 unseen)",
+        "structural_constraints": [
+          "3897.1 contains the corpus-wide HAPAX quadruped 340 (freq=1), plus Gulf-enriched 924 (shared with Susa cylinder 3882.1) and 093 (53.3x, shared with Saar 5229.1). Length 5 fits a 4–5 syllable Sumerian/Akkadian personal name.",
+          "3898.1 (U.17649) ends in a unique stroke-dense block 001->328->004->002 (004->002 occurs 0x in Heartland; 328 is freq=2). Half of its signs (3/6) are short strokes {001, 004, 002}, consistent either with phonetic reuse of frequent CV/V stroke signs or trade/metrological notation."
+        ]
+      },
+      {
+        "seal_id": "2153.1, 5227.1, 5228.1 (The '091 + 3-sign' Quartet Template)",
+        "site": "Luristan (2153.1) & Karzakan, Bahrain (5227.1, 5228.1) + Saar (5229.1)",
+        "type_motif": "All SEAL:C · Gaur (except Saar blank) · R/L · Complete",
+        "seq": "2153.1: 091->840->413->831 | 5227.1: 091->031->455->220 | 5228.1: 091->032->001->033 | 5229.1: 055->220->091->001->093->031",
+        "metrics": "2153.1 z=+1.84; 5229.1 z=+1.36; 5227.1 z=+0.59; 5228.1 z=+0.30",
+        "structural_constraints": [
+          "Three independent complete circular Gaur seals share an identical 4-sign prefixing frame [091 + X + Y + Z] (and 5229.1 embeds [091 + 001 + 093 + 031] right after [055-220]!).",
+          "Notably, 5227.1, 5228.1, and 5229.1 all place a stroke numeral immediately after 091 (091->031, 091->032, 091->001) — a pattern appearing only ONCE in the entire 4,531-line Heartland (Harappa 697.1).",
+          "Structurally matches a 1-morpheme human/title prefix (Lú- / Ur- / Šu- / guild marker) + 3-sign personal name or numeral-qualified trade title."
+        ]
+      },
+      {
+        "seal_id": "CONTROL: 1971.1 (Kish) & 4155.1 (Gonur Depe)",
+        "site": "Mesopotamia (Kish) & Central Asia (Gonur Depe)",
+        "type_motif": "SEAL:S (Square!) · Bull1:L & Elep · R/L · Complete",
+        "seq": "1971.1: 416->840->060->003->220->590->390->740 | 4155.1: 285->002->235->220->125->590->390->740",
+        "metrics": "1971.1: len=8, z=-0.66 (1/9 unseen) | 4155.1: len=8, z=-0.35 (1/9 unseen)",
+        "structural_constraints": [
+          "BOTH 8-sign square seals found thousands of kilometers apart terminate in the exact #1 Heartland trigram 590 -> 390 -> 740 (preceded by plain fish 220 in Kish and 220->125 in Gonur Depe).",
+          "Provides a decisive falsification control: authentic Harappan merchants carrying square seals abroad kept 100% canonical Heartland suffix syntax. Therefore, the high surprisal of circular SEAL:C seals is NOT an artifact of distance or sample noise."
+        ]
+      }
+    ]
+  }
+}
