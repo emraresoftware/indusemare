@@ -180,6 +180,29 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
         self.assertGreater(ia["hybrid_ensemble"]["top1_pct"], ia["ngram"]["top1_pct"])
         self.assertGreaterEqual(l11b["open_restoration_catalog_stats"]["total_single_gap_damaged_inscriptions_restored"], 650)
 
+    def test_11_layer12_stratigraphic_time_evolution(self) -> None:
+        l12 = json.loads((REPORTS / "layer12_stratigraphic_time.json").read_text(encoding="utf-8"))
+        # Datum validation: Early < Intermediate < Late strictly monotonic in within-area rel_time
+        dv = l12["mohenjo_daro_datum_validation"]
+        self.assertLess(dv["Early"]["median_rel_time"], dv["Intermediate"]["median_rel_time"])
+        self.assertLess(dv["Intermediate"]["median_rel_time"], dv["Late"]["median_rel_time"])
+        # Paleographic drift chains survive BH-FDR q < 0.05: #156 -> #154 & #838 -> #806
+        shifts = {(s["older_sign"], s["younger_sign"]): s for s in l12["layer1b_allograph_paleographic_drift_top10"]}
+        self.assertIn(("156", "154"), shifts)
+        self.assertLess(shifts[("156", "154")]["q_fdr"], 0.05)
+        self.assertIn(("838", "806"), shifts)
+        self.assertLess(shifts[("838", "806")]["q_fdr"], 0.05)
+        # Cross-city Mohenjo-daro vs Harappa chronological replication rho > 0.20, p < 0.05
+        cc = l12["cross_city_replication_md_vs_harappa"]
+        self.assertGreater(cc["spearman_rho"], 0.20)
+        self.assertLess(cc["p"], 0.05)
+        # Crescent monotonic ladder (900 -> 904 -> 923) in Fish precedence & 740 following
+        cr = l12["calendar_and_crescent_audit"]["crescent_progression_non_tabc"]
+        self.assertLess(cr["900"]["preceded_by_fish_pct"], cr["904"]["preceded_by_fish_pct"])
+        self.assertLess(cr["904"]["preceded_by_fish_pct"], cr["923"]["preceded_by_fish_pct"])
+        self.assertLess(cr["900"]["followed_by_740_pct"], cr["904"]["followed_by_740_pct"])
+        self.assertLess(cr["904"]["followed_by_740_pct"], cr["923"]["followed_by_740_pct"])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
