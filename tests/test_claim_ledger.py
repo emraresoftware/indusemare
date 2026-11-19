@@ -102,6 +102,49 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
         for key in ("edge_all_STRICT_LOCO", "edge_single_unambiguous_STRICT_LOCO", "edge_cross_site_STRICT_LOCO"):
             self.assertIn(key, rest)
 
+    def test_07_layer8_calibration_invariants(self) -> None:
+        l8 = json.loads((REPORTS / "layer8_calibration.json").read_text(encoding="utf-8"))
+        m = l8["primary_5way_matched"]
+        # Validated discriminators separate Indus & real scripts from Non-Linguistic Stamps:
+        # 1. Unseen-trigram generalization: Non-Ling < 0, Indus > +5 pp
+        self.assertLess(m["nonlinguistic_stamps"]["metric4_masked_prediction"]["UNSEEN_TRIGRAM"]["gain_vs_pos_base_pp"], 0.0)
+        self.assertGreater(m["indus_strict"]["metric4_masked_prediction"]["UNSEEN_TRIGRAM"]["gain_vs_pos_base_pp"], 5.0)
+        # 2. Kober bridge-ending MI z: Non-Ling ~ 0 (< 2), Indus > 30
+        self.assertLess(abs(m["nonlinguistic_stamps"]["metric3_kober_bridge"]["bridge_ending_MI_z"]), 2.0)
+        self.assertGreater(m["indus_strict"]["metric3_kober_bridge"]["bridge_ending_MI_z"], 30.0)
+        # 3. Known-Answer CSP locks 23/23 on closed Linear B at k=0 and rescues open Sumerian with k=2 anchors
+        csp = l8["metric5_known_answer_csp"]
+        self.assertTrue(csp["linearb_23_closed_100pct"]["results"]["k0_anchors"]["exact_23_of_23_sat"])
+        self.assertEqual(csp["linearb_23_closed_100pct"]["results"]["k0_anchors"]["true_recovered_locked_all"], "52/52")
+        self.assertGreater(csp["sumerian_23_open_74pct"]["results"]["k2_anchors"]["z_score"], 4.5)
+
+    def test_08_layer9_internal_rosetta_and_trade_invariants(self) -> None:
+        l9 = json.loads((REPORTS / "layer9_internal_rosetta_trade.json").read_text(encoding="utf-8"))
+        # Module 1: Mohenjo-daro TAB:C monopoly (>99%) & Text<->Icon MI z >> SEAL:S control
+        m1 = l9["module1_copper_rosetta"]
+        self.assertGreater(m1["mohenjo_daro_share_pct"], 99.0)
+        self.assertGreater(m1["text_symbol_mi_tab_c_all"]["mi_z"], 15.0)
+        self.assertGreater(m1["text_symbol_mi_tab_c_named_only"]["weighted_purity"], 0.90)
+        self.assertLess(m1["text_symbol_mi_seal_s_control"]["mi_z"], 5.0)
+        self.assertGreaterEqual(m1["total_single_sign_equation_tablets"], 20)
+        # Module 2: Harappa Entity<->Quantity lock & ': X : + 400' clitic stacking
+        m2 = l9["module2_harappa_tokens"]
+        self.assertGreater(m2["entity_quantity_mi_test"]["mi_z"], 7.0)
+        self.assertGreater(m2["clitic_stacking_X_plus_400"]["rate_pct"], 90.0)
+        self.assertLess(m2["clitic_stacking_X_plus_400"]["fisher_p"], 1e-6)
+        # Module 3: Multi-sig cargo lumps & intercity TAG<->SEAL links
+        m3 = l9["module3_multisig_cargo"]
+        self.assertGreaterEqual(m3["multisig_lumps_with_ge2_distinct_seals"], 25)
+        self.assertGreaterEqual(len(m3["lothal_master_counter_sign"]["co_signed_lumps"]), 4)
+        self.assertGreaterEqual(len(m3["intercity_cargo_tag_to_distant_stone_seal_len3"]), 8)
+        # Module 4: Deduplicated global BH-FDR trade audit catches duplicate artifacts & retains Export 091 + BNGL 790
+        m4 = l9["module4_meluhha_trade"]
+        self.assertEqual(m4["categories"]["Lothal_Port_vs_Core"]["n_survive_global_fdr_05"], 0)
+        exp_fdr_signs = {h["sign"] for h in m4["categories"]["Export_Corridor_Foreign_vs_CoreSeals"]["top_dedup_hits"] if h["survives_fdr_05"]}
+        self.assertIn("091", exp_fdr_signs)
+        bngl_fdr_signs = {h["sign"] for h in m4["categories"]["Stoneware_Shell_Bangles"]["top_dedup_hits"] if h["survives_fdr_05"]}
+        self.assertIn("790", bngl_fdr_signs)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

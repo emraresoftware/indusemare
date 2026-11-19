@@ -1,0 +1,1890 @@
+{
+  "layer": "Layer 9 — Internal Rosetta (TAB:C), Harappa Accounting Tokens (TAB:I/B), Multi-Signature Cargo Protocol (TAG*), & Meluhha Trade Commodities",
+  "module1_copper_rosetta": {
+    "total_tab_c_rows": 230,
+    "mohenjo_daro_rows": 229,
+    "mohenjo_daro_share_pct": 99.57,
+    "distinct_objects": 190,
+    "two_sided_objects": 40,
+    "text_symbol_mi_tab_c_all": {
+      "n_pairs": 136,
+      "unique_texts": 55,
+      "unique_symbols": 15,
+      "obs_mi_bits": 2.8209,
+      "null_mi_mean": 1.5915,
+      "null_mi_sd": 0.0668,
+      "mi_z": 18.39,
+      "mi_emp_p": 0.001,
+      "repeated_texts_total": 15,
+      "repeated_texts_100pct_pure": 10,
+      "weighted_purity": 0.9062,
+      "null_weighted_purity_mean": 0.454,
+      "purity_z": 16.01
+    },
+    "text_symbol_mi_tab_c_named_only": {
+      "n_pairs": 79,
+      "unique_texts": 38,
+      "unique_symbols": 14,
+      "obs_mi_bits": 3.4348,
+      "null_mi_mean": 2.1384,
+      "null_mi_sd": 0.0659,
+      "mi_z": 19.66,
+      "mi_emp_p": 0.001,
+      "repeated_texts_total": 12,
+      "repeated_texts_100pct_pure": 10,
+      "weighted_purity": 0.9623,
+      "null_weighted_purity_mean": 0.3552,
+      "purity_z": 19.13
+    },
+    "text_symbol_mi_seal_s_control": {
+      "n_pairs": 1622,
+      "unique_texts": 1485,
+      "unique_symbols": 48,
+      "obs_mi_bits": 3.5782,
+      "null_mi_mean": 3.562,
+      "null_mi_sd": 0.0058,
+      "mi_z": 2.79,
+      "mi_emp_p": 0.002,
+      "repeated_texts_total": 80,
+      "repeated_texts_100pct_pure": 15,
+      "weighted_purity": 0.5438,
+      "null_weighted_purity_mean": 0.476,
+      "purity_z": 3.72
+    },
+    "locked_classes": [
+      {
+        "text": "503 615 752 740",
+        "n_total": 29,
+        "dominant_symbol": "Othr",
+        "dominant_count": 28,
+        "purity": 0.9655,
+        "all_symbols": {
+          "Othr": 28,
+          "Gaur": 1
+        }
+      },
+      {
+        "text": "235 705 033 845 407 321 407",
+        "n_total": 12,
+        "dominant_symbol": "Hare",
+        "dominant_count": 12,
+        "purity": 1.0,
+        "all_symbols": {
+          "Hare": 12
+        }
+      },
+      {
+        "text": "806 845 061 407 850 900 740",
+        "n_total": 10,
+        "dominant_symbol": "Anth",
+        "dominant_count": 10,
+        "purity": 1.0,
+        "all_symbols": {
+          "Anth": 10
+        }
+      },
+      {
+        "text": "706 033 923 740",
+        "n_total": 7,
+        "dominant_symbol": "Elep",
+        "dominant_count": 7,
+        "purity": 1.0,
+        "all_symbols": {
+          "Elep": 7
+        }
+      },
+      {
+        "text": "798 240 845 061 407",
+        "n_total": 5,
+        "dominant_symbol": "Tigr",
+        "dominant_count": 2,
+        "purity": 0.4,
+        "all_symbols": {
+          "Gaur": 1,
+          "Tigr": 2,
+          "Othr": 2
+        }
+      },
+      {
+        "text": "905 032 597 142 617",
+        "n_total": 5,
+        "dominant_symbol": "Othr",
+        "dominant_count": 5,
+        "purity": 1.0,
+        "all_symbols": {
+          "Othr": 5
+        }
+      },
+      {
+        "text": "415 220 845 407",
+        "n_total": 4,
+        "dominant_symbol": "Loop",
+        "dominant_count": 4,
+        "purity": 1.0,
+        "all_symbols": {
+          "Loop": 4
+        }
+      },
+      {
+        "text": "706 033 923 740 001",
+        "n_total": 4,
+        "dominant_symbol": "Elep",
+        "dominant_count": 4,
+        "purity": 1.0,
+        "all_symbols": {
+          "Elep": 4
+        }
+      },
+      {
+        "text": "235 233 222 740",
+        "n_total": 4,
+        "dominant_symbol": "Othr",
+        "dominant_count": 2,
+        "purity": 0.5,
+        "all_symbols": {
+          "Othr": 2,
+          "Rhin": 2
+        }
+      },
+      {
+        "text": "017 585 388 740",
+        "n_total": 4,
+        "dominant_symbol": "Othr",
+        "dominant_count": 3,
+        "purity": 0.75,
+        "all_symbols": {
+          "Comp": 1,
+          "Othr": 3
+        }
+      },
+      {
+        "text": "003 421 176 100 740 790",
+        "n_total": 3,
+        "dominant_symbol": "Goat:8",
+        "dominant_count": 3,
+        "purity": 1.0,
+        "all_symbols": {
+          "Goat:8": 3
+        }
+      },
+      {
+        "text": "231 017 585 095 520 032 407",
+        "n_total": 3,
+        "dominant_symbol": "Othr",
+        "dominant_count": 1,
+        "purity": 0.3333,
+        "all_symbols": {
+          "Othr": 1,
+          "Goat:8": 1,
+          "Buff": 1
+        }
+      },
+      {
+        "text": "806 235 233 705 033 585 407",
+        "n_total": 2,
+        "dominant_symbol": "Comp",
+        "dominant_count": 2,
+        "purity": 1.0,
+        "all_symbols": {
+          "Comp": 2
+        }
+      },
+      {
+        "text": "744 760 095 595 001 142 617",
+        "n_total": 2,
+        "dominant_symbol": "Bull1:W",
+        "dominant_count": 2,
+        "purity": 1.0,
+        "all_symbols": {
+          "Bull1:W": 2
+        }
+      },
+      {
+        "text": "032 071 407",
+        "n_total": 2,
+        "dominant_symbol": "Gaur",
+        "dominant_count": 2,
+        "purity": 1.0,
+        "all_symbols": {
+          "Gaur": 2
+        }
+      }
+    ],
+    "single_sign_logogram_equations": [
+      {
+        "short_sign": "777",
+        "long_spelling": "231 017 585 095 520 032 407",
+        "count": 4,
+        "cisi_ids": [
+          "M-1555",
+          "M-1556",
+          "M-1557",
+          "M-1558"
+        ],
+        "linked_icon": "Othr (1/3)"
+      },
+      {
+        "short_sign": "341",
+        "long_spelling": "503 615 740",
+        "count": 2,
+        "cisi_ids": [
+          "M-516",
+          "M-517"
+        ],
+        "linked_icon": "unmapped_icon"
+      },
+      {
+        "short_sign": "749",
+        "long_spelling": "806 233 384 740",
+        "count": 2,
+        "cisi_ids": [
+          "M-597",
+          "M-1550"
+        ],
+        "linked_icon": "unmapped_icon"
+      },
+      {
+        "short_sign": "753",
+        "long_spelling": "235 705 033 845 407 321 407",
+        "count": 2,
+        "cisi_ids": [
+          "M-593",
+          "M-1547"
+        ],
+        "linked_icon": "Hare (12/12)"
+      },
+      {
+        "short_sign": "957",
+        "long_spelling": "798 231 705 033 904 100 740",
+        "count": 2,
+        "cisi_ids": [
+          "M-606",
+          "M-1568"
+        ],
+        "linked_icon": "unmapped_icon"
+      },
+      {
+        "short_sign": "035",
+        "long_spelling": "773 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-1465"
+        ],
+        "linked_icon": "unmapped_icon"
+      },
+      {
+        "short_sign": "749",
+        "long_spelling": "231 255",
+        "count": 1,
+        "cisi_ids": [
+          "M-1549"
+        ],
+        "linked_icon": "unmapped_icon"
+      },
+      {
+        "short_sign": "777",
+        "long_spelling": "806 845 407 850 900 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-603"
+        ],
+        "linked_icon": "~Anth (10/10)"
+      },
+      {
+        "short_sign": "777",
+        "long_spelling": "806 845 061 407 850 900 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-604"
+        ],
+        "linked_icon": "Anth (10/10)"
+      },
+      {
+        "short_sign": "780",
+        "long_spelling": "806 845 061 407 850 900 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-2054"
+        ],
+        "linked_icon": "Anth (10/10)"
+      },
+      {
+        "short_sign": "781",
+        "long_spelling": "220 017 585 095 520 032 408",
+        "count": 1,
+        "cisi_ids": [
+          "M-599"
+        ],
+        "linked_icon": "~Othr (1/3)"
+      },
+      {
+        "short_sign": "781",
+        "long_spelling": "806 845 061 407 850 900 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-602"
+        ],
+        "linked_icon": "Anth (10/10)"
+      },
+      {
+        "short_sign": "782",
+        "long_spelling": "220 017 585 095 520 032 407",
+        "count": 1,
+        "cisi_ids": [
+          "M-2053"
+        ],
+        "linked_icon": "~Othr (1/3)"
+      },
+      {
+        "short_sign": "782",
+        "long_spelling": "806 845 061 407 850 900 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-1563"
+        ],
+        "linked_icon": "Anth (10/10)"
+      },
+      {
+        "short_sign": "797",
+        "long_spelling": "408 032 520 090",
+        "count": 1,
+        "cisi_ids": [
+          "M-600"
+        ],
+        "linked_icon": "unmapped_icon"
+      },
+      {
+        "short_sign": "841",
+        "long_spelling": "003 220 590 405 740",
+        "count": 1,
+        "cisi_ids": [
+          "M-605"
+        ],
+        "linked_icon": "unmapped_icon"
+      }
+    ],
+    "total_single_sign_equation_tablets": 23,
+    "shared_motifs": {
+      "845 ... 407 (shared frame)": [
+        "Hare: 235 705 033 845 407 321 407 (n=12)",
+        "Anth: 806 845 061 407 850 900 740 (n=10)",
+        "Tigr: 798 240 845 061 407 (n=5)",
+        "Loop: 415 220 845 407 (n=4)"
+      ],
+      "705/706 033 (shared pair)": [
+        "Hare: 235 705 033 845 407 321 407 (n=12)",
+        "Elep: 706 033 923 740 (n=7)",
+        "Elep: 706 033 923 740 001 (n=4)",
+        "Comp: 806 235 233 705 033 585 407 (n=2)"
+      ],
+      "142 617 (shared ending)": [
+        "Othr: 905 032 597 142 617 (n=5)",
+        "Bull1:W: 744 760 095 595 001 142 617 (n=2)"
+      ],
+      "900 165 (reverse formula)": [],
+      "503 615 (Othr/Rhin stem)": [
+        "Othr: 503 615 752 740 (n=29)"
+      ]
+    },
+    "cross_corpus_seal_s_check": {
+      "923": {
+        "tab_c_role": "Elep (11/11)",
+        "seal_s_count": 21,
+        "seal_s_top_animals": {
+          "Bull1:W": 8,
+          "Bull1": 3,
+          "Bull1:J": 3,
+          "Bull1:S": 2,
+          "Zebu": 1
+        }
+      },
+      "321": {
+        "tab_c_role": "Hare (12/12)",
+        "seal_s_count": 1,
+        "seal_s_top_animals": {
+          "Bull1:W": 1
+        }
+      },
+      "845": {
+        "tab_c_role": "Hare/Anth/Loop stem",
+        "seal_s_count": 2,
+        "seal_s_top_animals": {
+          "Bull1:W": 2
+        }
+      },
+      "407": {
+        "tab_c_role": "TAB:C terminal/stem",
+        "seal_s_count": 10,
+        "seal_s_top_animals": {
+          "Bull1:W": 6
+        }
+      },
+      "503": {
+        "tab_c_role": "Othr/Rhin opener",
+        "seal_s_count": 25,
+        "seal_s_top_animals": {
+          "Bull1:W": 8,
+          "Bull1": 4,
+          "Gaur": 4,
+          "Bull1:J": 3,
+          "Bull1:I": 2
+        }
+      },
+      "615": {
+        "tab_c_role": "Othr/Rhin medial",
+        "seal_s_count": 25,
+        "seal_s_top_animals": {
+          "Bull1:W": 7,
+          "Bull1:I": 3,
+          "Zebu": 3,
+          "Bull1:J": 3,
+          "Buff": 2
+        }
+      },
+      "752": {
+        "tab_c_role": "Othr medial",
+        "seal_s_count": 6,
+        "seal_s_top_animals": {
+          "Bull1:W": 5,
+          "Bull1": 1
+        }
+      },
+      "850": {
+        "tab_c_role": "Anth medial",
+        "seal_s_count": 19,
+        "seal_s_top_animals": {
+          "Bull1:W": 4,
+          "Gaur": 2,
+          "Bull1:L": 2,
+          "Bull1": 2,
+          "Tigr": 1
+        }
+      }
+    }
+  },
+  "module2_harappa_tokens": {
+    "multi_side_stats": {
+      "TAB:I": {
+        "total_rows": 952,
+        "harappa_share_pct": 96.74,
+        "distinct_objects": 527,
+        "multi_sided_objects": 390,
+        "has_700_count": 236,
+        "has_700_pct": 60.5,
+        "exact_num700_side_count": 220,
+        "has_400_count": 140,
+        "has_400_pct": 35.9
+      },
+      "TAB:B": {
+        "total_rows": 1108,
+        "harappa_share_pct": 84.75,
+        "distinct_objects": 709,
+        "multi_sided_objects": 382,
+        "has_700_count": 253,
+        "has_700_pct": 66.2,
+        "exact_num700_side_count": 213,
+        "has_400_count": 111,
+        "has_400_pct": 29.1
+      }
+    },
+    "quantity_distribution": {
+      "033+700 (val=3)": 152,
+      "034+700 (val=4)": 124,
+      "032+700 (val=2)": 110,
+      "700_only": 45,
+      "031+700 (val=1)": 2
+    },
+    "entity_quantity_mi_test": {
+      "n_pairs": 381,
+      "unique_texts": 251,
+      "unique_symbols": 4,
+      "obs_mi_bits": 1.3248,
+      "null_mi_mean": 1.102,
+      "null_mi_sd": 0.0233,
+      "mi_z": 9.55,
+      "mi_emp_p": 0.001,
+      "repeated_texts_total": 53,
+      "repeated_texts_100pct_pure": 25,
+      "weighted_purity": 0.776,
+      "null_weighted_purity_mean": 0.5773,
+      "purity_z": 8.36
+    },
+    "top_entity_quantity_pairs": [
+      {
+        "entity_side": "176 740 400",
+        "n": 31,
+        "quantities": {
+          "034+700 (val=4)": 9,
+          "033+700 (val=3)": 19,
+          "032+700 (val=2)": 2,
+          "700_only": 1
+        }
+      },
+      {
+        "entity_side": "003 156 || 003 861",
+        "n": 21,
+        "quantities": {
+          "033+700 (val=3)": 1,
+          "034+700 (val=4)": 20
+        }
+      },
+      {
+        "entity_side": "740",
+        "n": 8,
+        "quantities": {
+          "032+700 (val=2)": 4,
+          "700_only": 4
+        }
+      },
+      {
+        "entity_side": "416 861 002",
+        "n": 6,
+        "quantities": {
+          "034+700 (val=4)": 6
+        }
+      },
+      {
+        "entity_side": "176 740",
+        "n": 6,
+        "quantities": {
+          "033+700 (val=3)": 2,
+          "032+700 (val=2)": 2,
+          "700_only": 2
+        }
+      },
+      {
+        "entity_side": "900 368",
+        "n": 5,
+        "quantities": {
+          "034+700 (val=4)": 1,
+          "033+700 (val=3)": 4
+        }
+      },
+      {
+        "entity_side": "415 220 520",
+        "n": 5,
+        "quantities": {
+          "034+700 (val=4)": 4,
+          "032+700 (val=2)": 1
+        }
+      },
+      {
+        "entity_side": "240 520",
+        "n": 5,
+        "quantities": {
+          "034+700 (val=4)": 3,
+          "033+700 (val=3)": 2
+        }
+      },
+      {
+        "entity_side": "740 400",
+        "n": 5,
+        "quantities": {
+          "031+700 (val=1)": 1,
+          "700_only": 4
+        }
+      },
+      {
+        "entity_side": "137 400",
+        "n": 4,
+        "quantities": {
+          "033+700 (val=3)": 3,
+          "034+700 (val=4)": 1
+        }
+      },
+      {
+        "entity_side": "176 156",
+        "n": 4,
+        "quantities": {
+          "034+700 (val=4)": 4
+        }
+      },
+      {
+        "entity_side": "491 817 740 400",
+        "n": 3,
+        "quantities": {
+          "034+700 (val=4)": 1,
+          "033+700 (val=3)": 1,
+          "032+700 (val=2)": 1
+        }
+      }
+    ],
+    "clitic_stacking_X_plus_400": {
+      "total_framed_tokens": 21,
+      "direct_before_final_400": 15,
+      "final_or_pre_400_total": 20,
+      "rate_pct": 95.2,
+      "background_rate_pct": 35.0,
+      "fisher_p": 1.157e-08,
+      "examples": [
+        "TAB:B 225.1: 219 740 804",
+        "TAB:B 317.1: 032 226 400",
+        "TAB:B 560.2: 233 236 400",
+        "TAB:B 751.2: 220 236 400",
+        "TAB:I 812.2: 236 400",
+        "TAB:I 815.2: 226 400",
+        "TAB:B 927.2: 220 236 400",
+        "TAB:B 1271.1: 240 233 804 400",
+        "TAB:B 1685.1: 235 232 400",
+        "TAB:I 1770.1: 234 400",
+        "TAB:I 1771.1: 226 400",
+        "TAB:I 1823.1: 592 158 400"
+      ]
+    },
+    "harappa_mound_distribution": {
+      "TAB:B": {
+        "Mound_AB_Citadel": 19,
+        "Mound_D": 38,
+        "Mound_E_ET_Gate_Craft": 340,
+        "Mound_F_Granary_WorkArea": 260,
+        "Other_Unprovenanced": 282
+      },
+      "TAB:I": {
+        "Mound_AB_Citadel": 12,
+        "Mound_D": 43,
+        "Mound_E_ET_Gate_Craft": 354,
+        "Mound_F_Granary_WorkArea": 387,
+        "Other_Unprovenanced": 125
+      }
+    }
+  },
+  "module3_multisig_cargo": {
+    "total_tag_rows": 262,
+    "multisig_lumps_with_ge2_distinct_seals": 26,
+    "multisig_by_site": {
+      "Kalibangan": 3,
+      "Lothal": 12,
+      "Harappa": 3,
+      "Mohenjo-daro": 1,
+      "Rupar": 1,
+      "Dholavira": 6
+    },
+    "top_cosigning_hubs": [
+      {
+        "seal": "Lothal :: 705 500 741 001 055 220 740 090",
+        "lumps": 4
+      },
+      {
+        "seal": "Kalibangan :: 740",
+        "lumps": 2
+      },
+      {
+        "seal": "Dholavira :: 820 002 520",
+        "lumps": 2
+      },
+      {
+        "seal": "Dholavira :: 740 090",
+        "lumps": 2
+      },
+      {
+        "seal": "Kalibangan :: 861 002 740",
+        "lumps": 1
+      },
+      {
+        "seal": "Kalibangan :: 861 002 460 740",
+        "lumps": 1
+      },
+      {
+        "seal": "Kalibangan :: 832 360 002 362 740 090",
+        "lumps": 1
+      },
+      {
+        "seal": "Kalibangan :: 002 705 033",
+        "lumps": 1
+      },
+      {
+        "seal": "Kalibangan :: 390 595 002 350 001",
+        "lumps": 1
+      },
+      {
+        "seal": "Kalibangan :: 491",
+        "lumps": 1
+      }
+    ],
+    "lothal_master_counter_sign": {
+      "seal_text": "705 500 741 001 055 220 740 090",
+      "co_signed_lumps": [
+        {
+          "base_id": "2112",
+          "site": "Lothal",
+          "object_type": "TAG",
+          "n_impressions": 3,
+          "distinct_seals": [
+            "705 500 741 001 055 220 740 090",
+            "317 920 002",
+            "880"
+          ],
+          "distant_stone_seal_matches_len3": {}
+        },
+        {
+          "base_id": "2113",
+          "site": "Lothal",
+          "object_type": "TAG",
+          "n_impressions": 2,
+          "distinct_seals": [
+            "705 500 741 001 055 220 740 090",
+            "861 002 235"
+          ],
+          "distant_stone_seal_matches_len3": {
+            "861 002 235": [
+              {
+                "id": "2239.1",
+                "site": "Mohenjo-daro",
+                "type": "SEAL:S",
+                "sym": "Bull1:I"
+              }
+            ]
+          }
+        },
+        {
+          "base_id": "2115",
+          "site": "Lothal",
+          "object_type": "TAG",
+          "n_impressions": 3,
+          "distinct_seals": [
+            "705 500 741 001 055 220 740 090",
+            "070 125"
+          ],
+          "distant_stone_seal_matches_len3": {}
+        },
+        {
+          "base_id": "2117",
+          "site": "Lothal",
+          "object_type": "TAG",
+          "n_impressions": 2,
+          "distinct_seals": [
+            "705 500 741 001 055 220 740 090",
+            "032"
+          ],
+          "distant_stone_seal_matches_len3": {}
+        }
+      ]
+    },
+    "intercity_cargo_tag_to_distant_stone_seal_len3": [
+      {
+        "text": "817 002 048 740",
+        "len": 4,
+        "tag_site": "Lothal",
+        "tag_count": 10,
+        "tag_symbol": "Elep",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "3300.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull1"
+      },
+      {
+        "text": "861 002 003 390",
+        "len": 4,
+        "tag_site": "Kalibangan",
+        "tag_count": 1,
+        "tag_symbol": "Bull1",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "2228.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull1:W"
+      },
+      {
+        "text": "415 220 520",
+        "len": 3,
+        "tag_site": "Harappa",
+        "tag_count": 1,
+        "tag_symbol": "",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "2565.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull1:S"
+      },
+      {
+        "text": "590 407 740",
+        "len": 3,
+        "tag_site": "Hulas",
+        "tag_count": 1,
+        "tag_symbol": "",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "3606.1",
+        "stone_seal_type": "SEAL:R",
+        "stone_seal_symbol": ""
+      },
+      {
+        "text": "705 033 520",
+        "len": 3,
+        "tag_site": "Lothal",
+        "tag_count": 1,
+        "tag_symbol": "Bull1",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "2649.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull1:J"
+      },
+      {
+        "text": "140 100 740",
+        "len": 3,
+        "tag_site": "Lothal",
+        "tag_count": 1,
+        "tag_symbol": "-",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "3451.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull2"
+      },
+      {
+        "text": "220 740 090",
+        "len": 3,
+        "tag_site": "Lothal",
+        "tag_count": 1,
+        "tag_symbol": "-",
+        "stone_seal_site": "Harappa",
+        "stone_seal_id": "576.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull"
+      },
+      {
+        "text": "861 002 235",
+        "len": 3,
+        "tag_site": "Lothal",
+        "tag_count": 1,
+        "tag_symbol": "-",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "2239.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull1:I"
+      },
+      {
+        "text": "017 585 740",
+        "len": 3,
+        "tag_site": "Rupar",
+        "tag_count": 1,
+        "tag_symbol": "Bull1:J",
+        "stone_seal_site": "Mohenjo-daro",
+        "stone_seal_id": "2324.1",
+        "stone_seal_type": "SEAL:S",
+        "stone_seal_symbol": "Bull1:L"
+      }
+    ],
+    "all_multisig_lumps_sample": [
+      {
+        "base_id": "1942",
+        "site": "Kalibangan",
+        "object_type": "TAG:L",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "740",
+          "861 002 740"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "1943",
+        "site": "Kalibangan",
+        "object_type": "TAG:L",
+        "n_impressions": 4,
+        "distinct_seals": [
+          "861 002 460 740",
+          "740"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "1944",
+        "site": "Kalibangan",
+        "object_type": "TAG:L",
+        "n_impressions": 4,
+        "distinct_seals": [
+          "832 360 002 362 740 090",
+          "002 705 033",
+          "390 595 002 350 001",
+          "491"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2110",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 3,
+        "distinct_seals": [
+          "740",
+          "520",
+          "033"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2112",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 3,
+        "distinct_seals": [
+          "705 500 741 001 055 220 740 090",
+          "317 920 002",
+          "880"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2113",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "705 500 741 001 055 220 740 090",
+          "861 002 235"
+        ],
+        "distant_stone_seal_matches_len3": {
+          "861 002 235": [
+            {
+              "id": "2239.1",
+              "site": "Mohenjo-daro",
+              "type": "SEAL:S",
+              "sym": "Bull1:I"
+            }
+          ]
+        }
+      },
+      {
+        "base_id": "2115",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 3,
+        "distinct_seals": [
+          "705 500 741 001 055 220 740 090",
+          "070 125"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2116",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "002 032 590 390",
+          "861 002"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2117",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "705 500 741 001 055 220 740 090",
+          "032"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2118",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "055",
+          "002 032 590 390 740"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2122",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "220 590 390",
+          "861 002 236"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2124",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "760 740",
+          "002 803 798 740"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2127",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "002",
+          "820 002 220 234"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2128",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 2,
+        "distinct_seals": [
+          "406 104",
+          "904 740"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      },
+      {
+        "base_id": "2129",
+        "site": "Lothal",
+        "object_type": "TAG",
+        "n_impressions": 3,
+        "distinct_seals": [
+          "231 100 740",
+          "002 220 233 388 740",
+          "240 335 760 740"
+        ],
+        "distant_stone_seal_matches_len3": {}
+      }
+    ]
+  },
+  "module4_meluhha_trade": {
+    "total_dedup_tests_run": 327,
+    "total_surviving_global_fdr_05": 14,
+    "categories": {
+      "Ivory_Objects": {
+        "control": "Ivory vs all non-Ivory",
+        "n_raw": 36,
+        "n_dedup_unique_texts": 32,
+        "n_signs_tested_dedup": 16,
+        "duplicate_stamp_artifacts_caught": [
+          {
+            "sign": "096",
+            "raw_hits": 2,
+            "dedup_hits": 1,
+            "p_raw": 0.000245,
+            "reason": "duplicate_stamp_artifact"
+          }
+        ],
+        "top_dedup_hits": [
+          {
+            "category": "Ivory_Objects",
+            "sign": "400",
+            "raw_fg": 11,
+            "raw_n": 36,
+            "p_raw": 0.000207,
+            "dedup_fg": 9,
+            "dedup_n": 32,
+            "dedup_bg": 268,
+            "dedup_bg_n": 3215,
+            "lift_dedup": 3.37,
+            "p_dedup": 0.001016,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Ivory_Objects",
+            "sign": "556",
+            "raw_fg": 2,
+            "raw_n": 36,
+            "p_raw": 0.002184,
+            "dedup_fg": 2,
+            "dedup_n": 32,
+            "dedup_bg": 8,
+            "dedup_bg_n": 3215,
+            "lift_dedup": 25.12,
+            "p_dedup": 0.0040314,
+            "q_fdr_global": 0.081455,
+            "survives_fdr_05": false
+          }
+        ],
+        "n_survive_global_fdr_05": 1
+      },
+      "Stoneware_Shell_Bangles": {
+        "control": "BNGL vs all non-BNGL",
+        "n_raw": 50,
+        "n_dedup_unique_texts": 38,
+        "n_signs_tested_dedup": 16,
+        "duplicate_stamp_artifacts_caught": [
+          {
+            "sign": "631",
+            "raw_hits": 2,
+            "dedup_hits": 1,
+            "p_raw": 0.000239,
+            "reason": "duplicate_stamp_artifact"
+          }
+        ],
+        "top_dedup_hits": [
+          {
+            "category": "Stoneware_Shell_Bangles",
+            "sign": "064",
+            "raw_fg": 3,
+            "raw_n": 50,
+            "p_raw": 0.0002359,
+            "dedup_fg": 3,
+            "dedup_n": 38,
+            "dedup_bg": 11,
+            "dedup_bg_n": 3210,
+            "lift_dedup": 23.04,
+            "p_dedup": 0.00049227,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Stoneware_Shell_Bangles",
+            "sign": "790",
+            "raw_fg": 7,
+            "raw_n": 50,
+            "p_raw": 3.591e-07,
+            "dedup_fg": 4,
+            "dedup_n": 38,
+            "dedup_bg": 37,
+            "dedup_bg_n": 3210,
+            "lift_dedup": 9.13,
+            "p_dedup": 0.0011834,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Stoneware_Shell_Bangles",
+            "sign": "252",
+            "raw_fg": 2,
+            "raw_n": 50,
+            "p_raw": 0.001634,
+            "dedup_fg": 2,
+            "dedup_n": 38,
+            "dedup_bg": 5,
+            "dedup_bg_n": 3210,
+            "lift_dedup": 33.79,
+            "p_dedup": 0.0026978,
+            "q_fdr_global": 0.058813,
+            "survives_fdr_05": false
+          },
+          {
+            "category": "Stoneware_Shell_Bangles",
+            "sign": "511",
+            "raw_fg": 3,
+            "raw_n": 50,
+            "p_raw": 0.0001444,
+            "dedup_fg": 2,
+            "dedup_n": 38,
+            "dedup_bg": 8,
+            "dedup_bg_n": 3210,
+            "lift_dedup": 21.12,
+            "p_dedup": 0.0056543,
+            "q_fdr_global": 0.097314,
+            "survives_fdr_05": false
+          }
+        ],
+        "n_survive_global_fdr_05": 2
+      },
+      "Copper_Gold_Implements": {
+        "control": "IMPL vs all non-IMPL",
+        "n_raw": 23,
+        "n_dedup_unique_texts": 18,
+        "n_signs_tested_dedup": 12,
+        "duplicate_stamp_artifacts_caught": [
+          {
+            "sign": "821",
+            "raw_hits": 3,
+            "dedup_hits": 1,
+            "p_raw": 2.22e-05,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "850",
+            "raw_hits": 3,
+            "dedup_hits": 1,
+            "p_raw": 0.00159,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "480",
+            "raw_hits": 3,
+            "dedup_hits": 1,
+            "p_raw": 0.000649,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "595",
+            "raw_hits": 3,
+            "dedup_hits": 1,
+            "p_raw": 0.00102,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "391",
+            "raw_hits": 3,
+            "dedup_hits": 1,
+            "p_raw": 7.4e-06,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "136",
+            "raw_hits": 3,
+            "dedup_hits": 1,
+            "p_raw": 1.75e-05,
+            "reason": "duplicate_stamp_artifact"
+          }
+        ],
+        "top_dedup_hits": [
+          {
+            "category": "Copper_Gold_Implements",
+            "sign": "006",
+            "raw_fg": 2,
+            "raw_n": 23,
+            "p_raw": 0.000343,
+            "dedup_fg": 2,
+            "dedup_n": 18,
+            "dedup_bg": 4,
+            "dedup_bg_n": 3221,
+            "lift_dedup": 89.47,
+            "p_dedup": 0.00043191,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Copper_Gold_Implements",
+            "sign": "930",
+            "raw_fg": 3,
+            "raw_n": 23,
+            "p_raw": 3.471e-06,
+            "dedup_fg": 2,
+            "dedup_n": 18,
+            "dedup_bg": 5,
+            "dedup_bg_n": 3221,
+            "lift_dedup": 71.58,
+            "p_dedup": 0.00060268,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Copper_Gold_Implements",
+            "sign": "005",
+            "raw_fg": 3,
+            "raw_n": 23,
+            "p_raw": 0.001022,
+            "dedup_fg": 3,
+            "dedup_n": 18,
+            "dedup_bg": 36,
+            "dedup_bg_n": 3221,
+            "lift_dedup": 14.91,
+            "p_dedup": 0.0011627,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Copper_Gold_Implements",
+            "sign": "645",
+            "raw_fg": 2,
+            "raw_n": 23,
+            "p_raw": 0.00506,
+            "dedup_fg": 2,
+            "dedup_n": 18,
+            "dedup_bg": 16,
+            "dedup_bg_n": 3221,
+            "lift_dedup": 22.37,
+            "p_dedup": 0.0042347,
+            "q_fdr_global": 0.081455,
+            "survives_fdr_05": false
+          },
+          {
+            "category": "Copper_Gold_Implements",
+            "sign": "004",
+            "raw_fg": 3,
+            "raw_n": 23,
+            "p_raw": 0.007386,
+            "dedup_fg": 3,
+            "dedup_n": 18,
+            "dedup_bg": 74,
+            "dedup_bg_n": 3221,
+            "lift_dedup": 7.25,
+            "p_dedup": 0.0081523,
+            "q_fdr_global": 0.12117,
+            "survives_fdr_05": false
+          }
+        ],
+        "n_survive_global_fdr_05": 3
+      },
+      "Cargo_Clay_Sealings_vs_Seals": {
+        "control": "TAG* vs SEAL:S",
+        "n_raw": 242,
+        "n_dedup_unique_texts": 171,
+        "n_signs_tested_dedup": 71,
+        "duplicate_stamp_artifacts_caught": [
+          {
+            "sign": "417",
+            "raw_hits": 8,
+            "dedup_hits": 1,
+            "p_raw": 3.39e-07,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "056",
+            "raw_hits": 8,
+            "dedup_hits": 1,
+            "p_raw": 3.39e-07,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "091",
+            "raw_hits": 8,
+            "dedup_hits": 1,
+            "p_raw": 3.12e-05,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "890",
+            "raw_hits": 8,
+            "dedup_hits": 1,
+            "p_raw": 4.99e-06,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "500",
+            "raw_hits": 11,
+            "dedup_hits": 1,
+            "p_raw": 2.09e-06,
+            "reason": "duplicate_stamp_artifact"
+          },
+          {
+            "sign": "048",
+            "raw_hits": 10,
+            "dedup_hits": 1,
+            "p_raw": 1.19e-07,
+            "reason": "duplicate_stamp_artifact"
+          }
+        ],
+        "top_dedup_hits": [
+          {
+            "category": "Cargo_Clay_Sealings_vs_Seals",
+            "sign": "326",
+            "raw_fg": 3,
+            "raw_n": 242,
+            "p_raw": 0.001763,
+            "dedup_fg": 3,
+            "dedup_n": 171,
+            "dedup_bg": 0,
+            "dedup_bg_n": 1585,
+            "lift_dedup": 999.0,
+            "p_dedup": 0.00090887,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Cargo_Clay_Sealings_vs_Seals",
+            "sign": "700",
+            "raw_fg": 7,
+            "raw_n": 242,
+            "p_raw": 0.004907,
+            "dedup_fg": 7,
+            "dedup_n": 171,
+            "dedup_bg": 11,
+            "dedup_bg_n": 1585,
+            "lift_dedup": 5.9,
+            "p_dedup": 0.00092551,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          }
+        ],
+        "n_survive_global_fdr_05": 2
+      },
+      "Lothal_Port_vs_Core": {
+        "control": "Lothal vs MD+HA (SEAL+TAG)",
+        "n_raw": 179,
+        "n_dedup_unique_texts": 146,
+        "n_signs_tested_dedup": 72,
+        "duplicate_stamp_artifacts_caught": [
+          {
+            "sign": "500",
+            "raw_hits": 11,
+            "dedup_hits": 1,
+            "p_raw": 1.75e-08,
+            "reason": "duplicate_stamp_artifact"
+          }
+        ],
+        "top_dedup_hits": [],
+        "n_survive_global_fdr_05": 0
+      },
+      "Dholavira_Port_vs_Core": {
+        "control": "Dholavira vs MD+HA (SEAL+TAG)",
+        "n_raw": 202,
+        "n_dedup_unique_texts": 171,
+        "n_signs_tested_dedup": 77,
+        "duplicate_stamp_artifacts_caught": [],
+        "top_dedup_hits": [
+          {
+            "category": "Dholavira_Port_vs_Core",
+            "sign": "148",
+            "raw_fg": 2,
+            "raw_n": 202,
+            "p_raw": 0.009985,
+            "dedup_fg": 2,
+            "dedup_n": 171,
+            "dedup_bg": 0,
+            "dedup_bg_n": 1630,
+            "lift_dedup": 999.0,
+            "p_dedup": 0.0089672,
+            "q_fdr_global": 0.12749,
+            "survives_fdr_05": false
+          }
+        ],
+        "n_survive_global_fdr_05": 0
+      },
+      "Chanhudaro_BeadHub_vs_Core": {
+        "control": "Chanhu-daro vs MD+HA (SEAL+TAG)",
+        "n_raw": 58,
+        "n_dedup_unique_texts": 57,
+        "n_signs_tested_dedup": 38,
+        "duplicate_stamp_artifacts_caught": [],
+        "top_dedup_hits": [
+          {
+            "category": "Chanhudaro_BeadHub_vs_Core",
+            "sign": "031",
+            "raw_fg": 14,
+            "raw_n": 58,
+            "p_raw": 6.914e-06,
+            "dedup_fg": 13,
+            "dedup_n": 57,
+            "dedup_bg": 97,
+            "dedup_bg_n": 1630,
+            "lift_dedup": 3.83,
+            "p_dedup": 4.0933e-05,
+            "q_fdr_global": 0.0066926,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Chanhudaro_BeadHub_vs_Core",
+            "sign": "032",
+            "raw_fg": 16,
+            "raw_n": 58,
+            "p_raw": 8.836e-05,
+            "dedup_fg": 15,
+            "dedup_n": 57,
+            "dedup_bg": 165,
+            "dedup_bg_n": 1630,
+            "lift_dedup": 2.6,
+            "p_dedup": 0.00057379,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Chanhudaro_BeadHub_vs_Core",
+            "sign": "128",
+            "raw_fg": 2,
+            "raw_n": 58,
+            "p_raw": 0.0009429,
+            "dedup_fg": 2,
+            "dedup_n": 57,
+            "dedup_bg": 0,
+            "dedup_bg_n": 1630,
+            "lift_dedup": 999.0,
+            "p_dedup": 0.0011223,
+            "q_fdr_global": 0.032248,
+            "survives_fdr_05": true
+          }
+        ],
+        "n_survive_global_fdr_05": 3
+      },
+      "Export_Corridor_Foreign_vs_CoreSeals": {
+        "control": "Foreign (Gulf/Meso/Iran/CA) vs Core SEAL*",
+        "n_raw": 39,
+        "n_dedup_unique_texts": 39,
+        "n_signs_tested_dedup": 25,
+        "duplicate_stamp_artifacts_caught": [],
+        "top_dedup_hits": [
+          {
+            "category": "Export_Corridor_Foreign_vs_CoreSeals",
+            "sign": "091",
+            "raw_fg": 5,
+            "raw_n": 39,
+            "p_raw": 3.042e-06,
+            "dedup_fg": 5,
+            "dedup_n": 39,
+            "dedup_bg": 6,
+            "dedup_bg_n": 1982,
+            "lift_dedup": 42.35,
+            "p_dedup": 8.7397e-07,
+            "q_fdr_global": 0.00028579,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Export_Corridor_Foreign_vs_CoreSeals",
+            "sign": "004",
+            "raw_fg": 5,
+            "raw_n": 39,
+            "p_raw": 0.001259,
+            "dedup_fg": 5,
+            "dedup_n": 39,
+            "dedup_bg": 40,
+            "dedup_bg_n": 1982,
+            "lift_dedup": 6.35,
+            "p_dedup": 0.0014285,
+            "q_fdr_global": 0.035932,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Export_Corridor_Foreign_vs_CoreSeals",
+            "sign": "090",
+            "raw_fg": 7,
+            "raw_n": 39,
+            "p_raw": 0.001179,
+            "dedup_fg": 7,
+            "dedup_n": 39,
+            "dedup_bg": 89,
+            "dedup_bg_n": 1982,
+            "lift_dedup": 4.0,
+            "p_dedup": 0.0019294,
+            "q_fdr_global": 0.045065,
+            "survives_fdr_05": true
+          },
+          {
+            "category": "Export_Corridor_Foreign_vs_CoreSeals",
+            "sign": "924",
+            "raw_fg": 2,
+            "raw_n": 39,
+            "p_raw": 0.004128,
+            "dedup_fg": 2,
+            "dedup_n": 39,
+            "dedup_bg": 4,
+            "dedup_bg_n": 1982,
+            "lift_dedup": 25.41,
+            "p_dedup": 0.0051845,
+            "q_fdr_global": 0.094185,
+            "survives_fdr_05": false
+          },
+          {
+            "category": "Export_Corridor_Foreign_vs_CoreSeals",
+            "sign": "055",
+            "raw_fg": 4,
+            "raw_n": 39,
+            "p_raw": 0.004353,
+            "dedup_fg": 4,
+            "dedup_n": 39,
+            "dedup_bg": 36,
+            "dedup_bg_n": 1982,
+            "lift_dedup": 5.65,
+            "p_dedup": 0.0065692,
+            "q_fdr_global": 0.10741,
+            "survives_fdr_05": false
+          },
+          {
+            "category": "Export_Corridor_Foreign_vs_CoreSeals",
+            "sign": "093",
+            "raw_fg": 2,
+            "raw_n": 39,
+            "p_raw": 0.005717,
+            "dedup_fg": 2,
+            "dedup_n": 39,
+            "dedup_bg": 5,
+            "dedup_bg_n": 1982,
+            "lift_dedup": 20.33,
+            "p_dedup": 0.00717,
+            "q_fdr_global": 0.11165,
+            "survives_fdr_05": false
+          }
+        ],
+        "n_survive_global_fdr_05": 3
+      }
+    },
+    "impl_records_sample": [
+      {
+        "inscription_id": "121.1",
+        "site": "Chanhu-daro",
+        "material": "Copper",
+        "norm_seq": "016 220 776 825 005 909 095 390"
+      },
+      {
+        "inscription_id": "121.2",
+        "site": "Chanhu-daro",
+        "material": "Copper",
+        "norm_seq": "066 900 031 235 240 835 740"
+      },
+      {
+        "inscription_id": "1396.1",
+        "site": "Harappa",
+        "material": "Copper",
+        "norm_seq": "920 632 930"
+      },
+      {
+        "inscription_id": "1397.1",
+        "site": "Harappa",
+        "material": "Copper",
+        "norm_seq": "632 930"
+      },
+      {
+        "inscription_id": "1966.1",
+        "site": "Kalibangan",
+        "material": "Copper",
+        "norm_seq": "817 628 220"
+      },
+      {
+        "inscription_id": "1966.2",
+        "site": "Kalibangan",
+        "material": "Copper",
+        "norm_seq": "005"
+      },
+      {
+        "inscription_id": "2362.1",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "391 595 850 480 001 821"
+      },
+      {
+        "inscription_id": "2362.2",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "006 911"
+      },
+      {
+        "inscription_id": "2368.1",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "391 595 850 480 001 821"
+      },
+      {
+        "inscription_id": "2369.1",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "832 740 006 090"
+      },
+      {
+        "inscription_id": "2370.1",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "391 595 850 480 001 821"
+      },
+      {
+        "inscription_id": "2370.2",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "803 151 004 005 913"
+      },
+      {
+        "inscription_id": "2371.1",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "007 004"
+      },
+      {
+        "inscription_id": "2421.1",
+        "site": "Mohenjo-daro",
+        "material": "Gold",
+        "norm_seq": "817 002 645 017 898"
+      },
+      {
+        "inscription_id": "3900.1",
+        "site": "Kanmer",
+        "material": "Terracotta",
+        "norm_seq": "031 136"
+      },
+      {
+        "inscription_id": "3900.2",
+        "site": "Kanmer",
+        "material": "Terracotta",
+        "norm_seq": "031 933 413"
+      },
+      {
+        "inscription_id": "3901.1",
+        "site": "Kanmer",
+        "material": "Terracotta",
+        "norm_seq": "031 136"
+      },
+      {
+        "inscription_id": "3902.1",
+        "site": "Kanmer",
+        "material": "Terracotta",
+        "norm_seq": "031 136"
+      },
+      {
+        "inscription_id": "3902.2",
+        "site": "Kanmer",
+        "material": "Terracotta",
+        "norm_seq": "931"
+      },
+      {
+        "inscription_id": "4047.1",
+        "site": "Mohenjo-daro",
+        "material": "Gold",
+        "norm_seq": "905 002 705 041"
+      },
+      {
+        "inscription_id": "4142.1",
+        "site": "Harappa",
+        "material": "Copper",
+        "norm_seq": "632 930"
+      },
+      {
+        "inscription_id": "4143.1",
+        "site": "Harappa",
+        "material": "Copper",
+        "norm_seq": "900 003 645 368"
+      },
+      {
+        "inscription_id": "5534.1",
+        "site": "Mohenjo-daro",
+        "material": "Copper",
+        "norm_seq": "004 004"
+      }
+    ],
+    "bngl_840_790_records": [
+      {
+        "inscription_id": "384.1",
+        "site": "Harappa",
+        "material": "Clay",
+        "norm_seq": "790"
+      },
+      {
+        "inscription_id": "820.1",
+        "site": "Harappa",
+        "material": "Stoneware",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "1160.1",
+        "site": "Harappa",
+        "material": "-",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "1162.1",
+        "site": "Harappa",
+        "material": "-",
+        "norm_seq": "790"
+      },
+      {
+        "inscription_id": "2174.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "790"
+      },
+      {
+        "inscription_id": "2358.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "2383.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "2494.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "2496.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "3824.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "140 743 790"
+      },
+      {
+        "inscription_id": "3825.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "741 290 790 002"
+      },
+      {
+        "inscription_id": "3828.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "264 840"
+      },
+      {
+        "inscription_id": "3835.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "840"
+      },
+      {
+        "inscription_id": "3836.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "840 790"
+      },
+      {
+        "inscription_id": "3837.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "790"
+      },
+      {
+        "inscription_id": "4032.1",
+        "site": "Mohenjo-daro",
+        "material": "Stoneware",
+        "norm_seq": "705 840"
+      }
+    ],
+    "cuneiform_meluhha_commodity_ledger": [
+      {
+        "commodity_tr": "Kirmizi Akik (Carnelian)",
+        "cuneiform_sumerian": "na4.gug (Akk. samtu)",
+        "attestation_status": "verified_cuneiform_meluhha_export",
+        "indus_source_hubs": "Lothal, Chanhu-daro, Dholavira (Gujarat/Kutch)",
+        "corpus_presence": "2 Agate SEAL:R at Lothal; Chanhu-daro bead hub (n=60 SEAL+TAG)",
+        "etymology_note": "Sumerce 'gug' yerel/kulturel sozcuk; dogrudan Dravidce odunc degil"
+      },
+      {
+        "commodity_tr": "Fildisi (Ivory)",
+        "cuneiform_sumerian": "zu2-am-si (Akk. sinnu piri)",
+        "attestation_status": "verified_cuneiform_meluhha_export",
+        "indus_source_hubs": "Mohenjo-daro, Harappa, Lothal",
+        "corpus_presence": "37 Ivory objects (31 Ivory ROD at MD, 4 at HA, 1 Ivory SEAL at Lothal) + Elep icon",
+        "etymology_note": "Akadca 'piru' (fil) / Sanskrit 'ibha' tartismali; kesin Meluhha oduncu degil"
+      },
+      {
+        "commodity_tr": "Sert Tropik Kereste / Abanoz / Mangrov",
+        "cuneiform_sumerian": "gis-esi, gis-mes-ma2-kan-na, gis-ab-ba-me-luh-ha",
+        "attestation_status": "verified_cuneiform_meluhha_export",
+        "indus_source_hubs": "Indus deltasi & bati kiyi ormanlari",
+        "corpus_presence": "Organik (yazitli ahsap korunmamis)",
+        "etymology_note": "'gis-ab-ba-me-luh-ha' Ur III / Eski Babil listelerinde 12+ kez geciyor"
+      },
+      {
+        "commodity_tr": "Bakir, Altin, Kalay/Tunc",
+        "cuneiform_sumerian": "urudu, ku3-sig17, an-na",
+        "attestation_status": "verified_cuneiform_meluhha_magan_trade",
+        "indus_source_hubs": "Umman (Magan) <-> Lothal <-> Mohenjo-daro",
+        "corpus_presence": "230 Copper TAB:C, 23 Copper/Gold IMPL, 3 Silver SEAL:S",
+        "etymology_note": "Sumerce/Akadca standart metal terimleri"
+      },
+      {
+        "commodity_tr": "Lacivert Tasi (Lapis Lazuli)",
+        "cuneiform_sumerian": "na4.za-gin3 (Akk. uqnu)",
+        "attestation_status": "verified_cuneiform_meluhha_transit",
+        "indus_source_hubs": "Shortughai (Bedahsan/Afganistan) -> Indus -> Korfez",
+        "corpus_presence": "Shortughai'da 1 Indus muhru; Gonur Depe & Altyn Depe'de 2 muhur",
+        "etymology_note": "Meluhha uzerinden transit ticaret mali"
+      },
+      {
+        "commodity_tr": "Tavus Kusu / Meluhha Kusu",
+        "cuneiform_sumerian": "ha-ia3-musen / dar-me-luh-ha",
+        "attestation_status": "verified_cuneiform_meluhha_export",
+        "indus_source_hubs": "Indus Vadisi (comlek boyamalarinda cok yaygin)",
+        "corpus_presence": "Enki ve Dunya Duzeni'nde 'sarayda oten ha-ia3 kusu'",
+        "etymology_note": "Parpola/Witzel bazi kus adlarini yerli substratla iliskilendirir (hipotez)"
+      },
+      {
+        "commodity_tr": "Deniz Kabugu & Tas Bilesik Bilezikler",
+        "cuneiform_sumerian": "Turbinella pyrum / kakma deniz kabugu",
+        "attestation_status": "verified_archaeological_export",
+        "indus_source_hubs": "Nageshwar, Lothal, Dholavira, Mohenjo-daro",
+        "corpus_presence": "50 yazitli bilezik (BNGL: 38 Stoneware, Shell)",
+        "etymology_note": "Firin kapaklarina muhur basilarak uretilen prestij urunu (Halim & Vidale 1984)"
+      },
+      {
+        "commodity_tr": "Susam Yagi & Pamuk Dokuma (Tartismali Odunc)",
+        "cuneiform_sumerian": "i3-gis / ellu? (susam); tug2 (karsi ihracat: Mezopotamya yunu)",
+        "attestation_status": "archaeobotanical_indus_origin_etymology_disputed",
+        "indus_source_hubs": "Harappa, Mohenjo-daro (Sesamum indicum & Gossypium)",
+        "corpus_presence": "Organik (kumas/yag); Laursen & Steinkeller (2017): Mezopotamya karsi ihracati yun/arpa/yag",
+        "etymology_note": "Dravidce '*el' (susam) <-> Akadca 'ellu' onerilen ama tartismali etimoloji (Akadca 'ellu'=saf)"
+      }
+    ]
+  }
+}
