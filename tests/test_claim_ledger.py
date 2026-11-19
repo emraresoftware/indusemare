@@ -63,18 +63,21 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
 
     def test_04_layer5_and_5b_anti_hallucination_invariants(self) -> None:
         l5b = json.loads((REPORTS / "layer5b_expanded_phonetic.json").read_text(encoding="utf-8"))
+        tour = l5b["part1_expanded_13probe_phonetic_gate"]["expanded_13_probes_tournament"]
         # Strict Mode 1 MUST fail z > 5.0 across all 4 families
-        m1 = l5b["part1_expanded_13probe_tournament"]["mode1_strict_primary"]["by_family"]
-        for fam, stats in m1.items():
-            self.assertLess(stats["z_phon_sim"], 5.0, f"Unexpected strict Mode 1 pass for {fam}")
-        # Proto-Dravidian Mode 2B clears z > 5.0 and survives 13/13 LOPO
-        pdr_m2b = l5b["part1_expanded_13probe_tournament"]["mode2b_distinct_etymon"]["by_family"]["Proto-Dravidian"]
-        self.assertGreater(pdr_m2b["z_phon_sim"], 5.0)
+        for fam, fdict in tour.items():
+            m1 = fdict["mode1_primary_lemma_strict"]
+            self.assertLess(m1["z_score_phon_sim"], 5.0, f"Unexpected strict Mode 1 pass for {fam}")
+            self.assertFalse(m1["passes_z5_gate_phon_sim"])
+        # Proto-Dravidian Mode 2B clears z > 5.0
+        pdr_m2b = tour["Proto-Dravidian"]["mode2b_expanded_distinct_etymon"]
+        self.assertGreater(pdr_m2b["z_score_phon_sim"], 5.0)
 
     def test_05_layer4b_csp_underdetermined_invariant(self) -> None:
         l4b = json.loads((REPORTS / "layer4b_rosetta_csp.json").read_text(encoding="utf-8"))
-        self.assertGreaterEqual(l4b["constraint_graph"]["gulf_cc_23"]["dof_linear"], 25)
-        self.assertEqual(l4b["monte_carlo_gate"]["regime_A_curated"]["signs_uniquely_locked"], 0)
+        self.assertEqual(l4b["constraint_graph_density"]["G_gulf_cc_23"]["DOF_full_U_minus_rankM"], 30)
+        self.assertTrue(l4b["verdict"]["mathematically_underdetermined"])
+        self.assertFalse(l4b["verdict"]["uniquely_locks_any_sign_at_p_lt_0_001"])
 
     def test_06_layer7_council_audit_invariants(self) -> None:
         l7 = json.loads((REPORTS / "layer7_council_audit.json").read_text(encoding="utf-8"))
