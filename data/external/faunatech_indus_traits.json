@@ -1,0 +1,738 @@
+{
+  "schema_provenance": {
+    "source_platform": "FaunaTech v2.0 (Emare / Elraenn Digital Encyclopedia)",
+    "verification_method": "Read-only inspection of schema files on emare-dev-91:/var/www/elraenn/current/ (FaunaTech-Spec.md, python/build_full_catalog.py, python/faunatech_engine.py, js/species-groups.js); faunatech.shop timed out externally and www-data-restricted database archives were NOT accessed.",
+    "aligned_faunatech_fields": [
+      "canli_id",
+      "isim",
+      "bilimsel_adi",
+      "kategori",
+      "alt_grup",
+      "siniflandirma",
+      "ekolojik_rol"
+    ],
+    "indus_trait_dimensions": [
+      "habitat",
+      "body_size",
+      "morphology",
+      "trophic_role",
+      "social_behavior"
+    ],
+    "total_motifs": 18
+  },
+  "motifs": [
+    {
+      "motif_code": "Bull1",
+      "icit_variants": [
+        "Bull1",
+        "Bull1:W",
+        "Bull1:J",
+        "Bull1:S",
+        "Bull1:I",
+        "Bull1:L",
+        "Bull1:U",
+        "Bull1:II",
+        "Bull1:V",
+        "Bull1:X",
+        "Bull1:T",
+        "Bull:i:J"
+      ],
+      "canli_id": "INDUS-FAUNA-01",
+      "isim": "İndus Tek Boynuzlu Boğası (Unicorn)",
+      "english_name": "Indus Unicorn (Single-Horned Mythic Bovid)",
+      "bilimsel_adi": "Bos primigenius (mythic stylized profile)",
+      "kategori": "Mitolojik & Sembolik Fauna",
+      "alt_grup": "Tek Boynuzlu Ritüel Bovidler",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae (stylized/mythic)"
+      },
+      "ekolojik_rol": "Olgun Harappa mühürlerinin %60'ından fazlasında ritüel sunak/tütsülük (cult stand) önünde yer alan baş amblem; doğada tek boynuzlu sığır bulunmadığından mitik/idari semboldür.",
+      "traits": {
+        "habitat": "mythic/composite",
+        "body_size": "large_bovid",
+        "morphology": "single_horn_mythic",
+        "morphology_tags": [
+          "single_horn_mythic",
+          "horned_stylized"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 1
+      }
+    },
+    {
+      "motif_code": "Bult",
+      "icit_variants": [
+        "Bult"
+      ],
+      "canli_id": "INDUS-FAUNA-02",
+      "isim": "Tablet Boğası (Kısa Boynuzlu Bovid)",
+      "english_name": "Tablet Bull (Miniature Steatite/Faience Bovid)",
+      "bilimsel_adi": "Bos sp. (Harappan tablet bovid)",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Evcil & İdari Sığırgiller (Bovidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae"
+      },
+      "ekolojik_rol": "Ağırlıklı olarak Harappa kazılarındaki minyatür steatit/fayans prizma ve dikdörtgen tabletlerde (TAB:I, TAB:B) yer alan evcil/yarı-evcil bovid motifi.",
+      "traits": {
+        "habitat": "domesticated/urban",
+        "body_size": "large_bovid",
+        "morphology": "horned",
+        "morphology_tags": [
+          "horned"
+        ],
+        "trophic_role": "herbivore_domestic",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 1,
+        "solitary_apex": 0,
+        "domestic_herd": 1,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Gaur",
+      "icit_variants": [
+        "Gaur"
+      ],
+      "canli_id": "INDUS-FAUNA-03",
+      "isim": "Hint Yaban Bizonu (Gaur / Kısa Boynuzlu Boğa)",
+      "english_name": "Indian Gaur (Short-Horned Wild Bison)",
+      "bilimsel_adi": "Bos gaurus",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Yaban Bovidleri (Bovidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae"
+      },
+      "ekolojik_rol": "Orman-çayır geçiş kuşağının en iri yaban sığırı; Körfez/Dilmun dairesel mühürlerinde (SEAL:C) başlıca hayvan ikonografisidir.",
+      "traits": {
+        "habitat": "marsh/forest",
+        "body_size": "large_bovid",
+        "morphology": "horned",
+        "morphology_tags": [
+          "horned"
+        ],
+        "trophic_role": "herbivore_wild",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 1,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Zebu",
+      "icit_variants": [
+        "Zebu"
+      ],
+      "canli_id": "INDUS-FAUNA-04",
+      "isim": "Hörgüçlü Zebu Boğası",
+      "english_name": "Humped Zebu Bull",
+      "bilimsel_adi": "Bos indicus",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Evcil Sığırgiller (Bovidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae"
+      },
+      "ekolojik_rol": "İndus tarım ve çeki ekonomisinin temel evcil sığırı; geniş gerdanlı ve yüksek omuz hörgüçlü elit kare mühür motifi.",
+      "traits": {
+        "habitat": "domesticated/urban",
+        "body_size": "large_bovid",
+        "morphology": "humped",
+        "morphology_tags": [
+          "humped",
+          "horned"
+        ],
+        "trophic_role": "herbivore_domestic",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 1,
+        "solitary_apex": 0,
+        "domestic_herd": 1,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Bull",
+      "icit_variants": [
+        "Bull",
+        "Bull2",
+        "Bull3"
+      ],
+      "canli_id": "INDUS-FAUNA-05",
+      "isim": "Hörgüçsüz / Genel İndus Boğası",
+      "english_name": "Humpless / Two-Horned Bull",
+      "bilimsel_adi": "Bos taurus / Bos primigenius namadicus",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Sığırgiller (Bovidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae"
+      },
+      "ekolojik_rol": "Tarım ve hayvancılık ortamında kullanılan çift boynuzlu hörgüçsüz sığır (ICIT Bull, Bull2, Bull3).",
+      "traits": {
+        "habitat": "domesticated/urban",
+        "body_size": "large_bovid",
+        "morphology": "horned",
+        "morphology_tags": [
+          "horned"
+        ],
+        "trophic_role": "herbivore_domestic",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 1,
+        "solitary_apex": 0,
+        "domestic_herd": 1,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Elep",
+      "icit_variants": [
+        "Elep"
+      ],
+      "canli_id": "INDUS-FAUNA-06",
+      "isim": "Asya Fili",
+      "english_name": "Asian Elephant",
+      "bilimsel_adi": "Elephas maximus",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Hortumlular / Megafauna (Proboscidea)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Proboscidea",
+        "aile": "Elephantidae"
+      },
+      "ekolojik_rol": "İndus ovası ve Gucerat-Pencap orman/sulak alan kenarlarının kilit ekosistem mühendisi megafaunası; fildişi zanaatının kaynağı.",
+      "traits": {
+        "habitat": "marsh/forest",
+        "body_size": "megafauna",
+        "morphology": "tusked",
+        "morphology_tags": [
+          "tusked"
+        ],
+        "trophic_role": "herbivore_wild",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 1,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Rhin",
+      "icit_variants": [
+        "Rhin"
+      ],
+      "canli_id": "INDUS-FAUNA-07",
+      "isim": "Hint Tek Boynuzlu Gergedanı",
+      "english_name": "Greater One-Horned Indian Rhinoceros",
+      "bilimsel_adi": "Rhinoceros unicornis",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Tek Toynaklı Megafauna (Perissodactyla)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Perissodactyla",
+        "aile": "Rhinocerotidae"
+      },
+      "ekolojik_rol": "İndus taşkın ovası sazlık ve bataklıklarında yaşayan, zırhlı derili ve tek nazal keratin boynuzlu soliter megafauna.",
+      "traits": {
+        "habitat": "marsh/forest",
+        "body_size": "megafauna",
+        "morphology": "horned",
+        "morphology_tags": [
+          "horned",
+          "armored_hide",
+          "real_single_horn"
+        ],
+        "trophic_role": "herbivore_wild",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 1,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Tigr",
+      "icit_variants": [
+        "Tigr"
+      ],
+      "canli_id": "INDUS-FAUNA-08",
+      "isim": "Bengal Kaplanı",
+      "english_name": "Bengal Tiger",
+      "bilimsel_adi": "Panthera tigris",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Büyük Kedigiller / Süper Avcılar (Felidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Carnivora",
+        "aile": "Felidae"
+      },
+      "ekolojik_rol": "İndus nehir kıyısı orman ve sazlıklarının soliter tepe yırtıcısı (apex predator).",
+      "traits": {
+        "habitat": "marsh/forest",
+        "body_size": "megafauna",
+        "morphology": "fanged/clawed",
+        "morphology_tags": [
+          "fanged/clawed"
+        ],
+        "trophic_role": "apex_predator",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 1,
+        "horned_bovid": 0,
+        "solitary_apex": 1,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Buff",
+      "icit_variants": [
+        "Buff"
+      ],
+      "canli_id": "INDUS-FAUNA-09",
+      "isim": "Hint Yaban Mandası (Su Mandası)",
+      "english_name": "Wild / Domestic Water Buffalo",
+      "bilimsel_adi": "Bubalus arnee / Bubalus bubalis",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Sulak Alan Bovidleri (Bovidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae"
+      },
+      "ekolojik_rol": "İndus taşkın yatakları ve bataklık çayırlarında yaşayan, geriye kıvrık iri boynuzlu yarı-sucul bovid.",
+      "traits": {
+        "habitat": "marsh/forest",
+        "body_size": "large_bovid",
+        "morphology": "horned",
+        "morphology_tags": [
+          "horned",
+          "semi_aquatic"
+        ],
+        "trophic_role": "herbivore_wild",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 1,
+        "megafauna": 0,
+        "horned_bovid": 1,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Gavi",
+      "icit_variants": [
+        "Gavi"
+      ],
+      "canli_id": "INDUS-FAUNA-10",
+      "isim": "İndus Gavyali (Balıkçıl Timsah)",
+      "english_name": "Indian Gharial",
+      "bilimsel_adi": "Gavialis gangeticus",
+      "kategori": "Sürüngenler",
+      "alt_grup": "Timsahlar & Gavyaller (Gavialidae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Reptilia",
+        "takim": "Crocodilia",
+        "aile": "Gavialidae"
+      },
+      "ekolojik_rol": "İndus nehir sisteminin özelleşmiş balıkçıl tepe yırtıcısı; Harappa tabletlerinde sıklıkla ağzında balıkla betimlenir.",
+      "traits": {
+        "habitat": "aquatic/riverine",
+        "body_size": "megafauna",
+        "morphology": "scaled/finned",
+        "morphology_tags": [
+          "scaled/finned",
+          "fanged/clawed"
+        ],
+        "trophic_role": "apex_predator",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 1,
+        "megafauna": 1,
+        "horned_bovid": 0,
+        "solitary_apex": 1,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Fish",
+      "icit_variants": [
+        "Fish"
+      ],
+      "canli_id": "INDUS-FAUNA-11",
+      "isim": "İndus Nehir Balığı",
+      "english_name": "Indus Riverine Fish",
+      "bilimsel_adi": "Actinopterygii (cf. Labeo rohita / Tenualosa ilisha)",
+      "kategori": "Balıklar & Sucul Canlılar",
+      "alt_grup": "Tatlısu Kemikli Balıkları (Actinopterygii)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Actinopterygii",
+        "takim": "Cypriniformes / Clupeiformes",
+        "aile": "Cyprinidae / Dorosomatidae"
+      },
+      "ekolojik_rol": "İndus nehir ekonomisinin temel protein ve ticaret kaynağı; Harappa minyatür tabletlerinde sıkça görülen sucul motif.",
+      "traits": {
+        "habitat": "aquatic/riverine",
+        "body_size": "medium_small",
+        "morphology": "scaled/finned",
+        "morphology_tags": [
+          "scaled/finned"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 1,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Hare",
+      "icit_variants": [
+        "Hare"
+      ],
+      "canli_id": "INDUS-FAUNA-12",
+      "isim": "Hint Yaban Tavşanı",
+      "english_name": "Indian Hare",
+      "bilimsel_adi": "Lepus nigricollis",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Tavşansılar (Lagomorpha)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Lagomorpha",
+        "aile": "Leporidae"
+      },
+      "ekolojik_rol": "Çalılık ve tarım kenarı otlaklarının küçük otçulu; Mohenjo-daro bakır tabletlerinde (TAB:C) yoğunlaşır.",
+      "traits": {
+        "habitat": "grassland/pastoral",
+        "body_size": "medium_small",
+        "morphology": "furred_small",
+        "morphology_tags": [
+          "clawed_burrowing",
+          "furred_small"
+        ],
+        "trophic_role": "herbivore_wild",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Goat",
+      "icit_variants": [
+        "Goat",
+        "Goat:2",
+        "Goat:3",
+        "Goat:4",
+        "Goat:8"
+      ],
+      "canli_id": "INDUS-FAUNA-13",
+      "isim": "İndus Dağ Keçisi / Evcil Keçi (Markhor & Capra)",
+      "english_name": "Goat / Wild Ibex / Markhor",
+      "bilimsel_adi": "Capra hircus / Capra falconeri",
+      "kategori": "Kara Memelileri",
+      "alt_grup": "Keçigiller (Caprinae)",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Artiodactyla",
+        "aile": "Bovidae"
+      },
+      "ekolojik_rol": "Pastoral ekonomi ve dağ/ova geçiş kuşağının boynuzlu küçükbaş türü; Harappa mühür ve bakır tabletlerinde yer alır.",
+      "traits": {
+        "habitat": "grassland/pastoral",
+        "body_size": "medium_small",
+        "morphology": "horned",
+        "morphology_tags": [
+          "horned"
+        ],
+        "trophic_role": "herbivore_domestic",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 1,
+        "mythic_composite": 0
+      }
+    },
+    {
+      "motif_code": "Mult",
+      "icit_variants": [
+        "Mult"
+      ],
+      "canli_id": "INDUS-FAUNA-14",
+      "isim": "Çoklu Hayvan / Çok Başlı Motif",
+      "english_name": "Multi-Animal / Multi-Headed Motif",
+      "bilimsel_adi": "Iconographic assemblage (multi-taxa)",
+      "kategori": "Mitolojik & Sembolik Fauna",
+      "alt_grup": "Çoklu Hayvan & Ritüel Dizilimler",
+      "siniflandirma": {
+        "alem": "Iconography",
+        "filum": "Composite",
+        "sinif": "Multi-Fauna",
+        "takim": "Ritual",
+        "aile": "Harappan Glyptic"
+      },
+      "ekolojik_rol": "Aynı mühür veya kalıp tablet (TAB:B) üzerinde birden fazla hayvanın veya çok başlı gövdelerin birleşimi.",
+      "traits": {
+        "habitat": "mythic/composite",
+        "body_size": "medium_small",
+        "morphology": "composite_mythic",
+        "morphology_tags": [
+          "composite_mythic"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 1
+      }
+    },
+    {
+      "motif_code": "Comp",
+      "icit_variants": [
+        "Comp",
+        "CompBull"
+      ],
+      "canli_id": "INDUS-FAUNA-15",
+      "isim": "Kompozit Kimera Canlısı",
+      "english_name": "Composite Chimera Creature",
+      "bilimsel_adi": "Chimera (bovid-elephant-tiger-ram hybrid)",
+      "kategori": "Mitolojik & Sembolik Fauna",
+      "alt_grup": "Kompozit Kimeralar",
+      "siniflandirma": {
+        "alem": "Iconography",
+        "filum": "Composite",
+        "sinif": "Chimera",
+        "takim": "Mythic",
+        "aile": "Harappan Glyptic"
+      },
+      "ekolojik_rol": "Fil hortumu, koç/boğa boynuzu, kaplan gövdesi ve yılan kuyruğunu birleştiren kutsal melez canlı.",
+      "traits": {
+        "habitat": "mythic/composite",
+        "body_size": "medium_small",
+        "morphology": "composite_mythic",
+        "morphology_tags": [
+          "composite_mythic",
+          "horned",
+          "tusked"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 1
+      }
+    },
+    {
+      "motif_code": "Anth",
+      "icit_variants": [
+        "Anth"
+      ],
+      "canli_id": "INDUS-FAUNA-16",
+      "isim": "Antropomorfik / Boynuzlu Tanrı Figürü",
+      "english_name": "Anthropomorphic / Horned Deity Figure",
+      "bilimsel_adi": "Homo sapiens (ritual/horned iconography)",
+      "kategori": "Mitolojik & Sembolik Fauna",
+      "alt_grup": "Antropomorfik & Ritüel Figürler",
+      "siniflandirma": {
+        "alem": "Animalia",
+        "filum": "Chordata",
+        "sinif": "Mammalia",
+        "takim": "Primates",
+        "aile": "Hominidae (ritual)"
+      },
+      "ekolojik_rol": "Boynuzlu başlık taşıyan oturan/ayakta duran ritüel veya tanrısal insan figürü (bakır ve kalıp tabletlerde yaygın).",
+      "traits": {
+        "habitat": "mythic/composite",
+        "body_size": "medium_small",
+        "morphology": "anthropomorphic_horned",
+        "morphology_tags": [
+          "horned_headdress",
+          "anthropomorphic"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 1
+      }
+    },
+    {
+      "motif_code": "Scene",
+      "icit_variants": [
+        "Scene"
+      ],
+      "canli_id": "INDUS-FAUNA-17",
+      "isim": "Anlatısal Ritüel & Ekolojik Sahne",
+      "english_name": "Narrative Ritual / Ecological Scene",
+      "bilimsel_adi": "Iconographic narrative (human-fauna-flora)",
+      "kategori": "Mitolojik & Sembolik Fauna",
+      "alt_grup": "Anlatısal Ritüel Sahneleri",
+      "siniflandirma": {
+        "alem": "Iconography",
+        "filum": "Composite",
+        "sinif": "Narrative",
+        "takim": "Ritual",
+        "aile": "Harappan Glyptic"
+      },
+      "ekolojik_rol": "İnsan, kaplan, manda, pipal ağacı ve tören alayını bir arada gösteren karmaşık anlatı sahnesi.",
+      "traits": {
+        "habitat": "mythic/composite",
+        "body_size": "medium_small",
+        "morphology": "composite_mythic",
+        "morphology_tags": [
+          "narrative_composite"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "herd/social"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 1
+      }
+    },
+    {
+      "motif_code": "Phyt",
+      "icit_variants": [
+        "Phyt",
+        "Pipal"
+      ],
+      "canli_id": "INDUS-FAUNA-18",
+      "isim": "Kutsal Pipal / Akasya Fitomorfu",
+      "english_name": "Sacred Pipal / Acacia Phytomorph",
+      "bilimsel_adi": "Ficus religiosa / Vachellia nilotica",
+      "kategori": "Bitkiler & Kutsal Flora",
+      "alt_grup": "Kutsal İndus Ağaçları (Moraceae / Fabaceae)",
+      "siniflandirma": {
+        "alem": "Plantae",
+        "filum": "Tracheophyta",
+        "sinif": "Magnoliopsida",
+        "takim": "Rosales",
+        "aile": "Moraceae"
+      },
+      "ekolojik_rol": "Harappa kalıp tabletleri (TAB:B) ve ritüel sahnelerde koruyucu çit/sunak içinde betimlenen kutsal flora.",
+      "traits": {
+        "habitat": "grassland/pastoral",
+        "body_size": "medium_small",
+        "morphology": "botanical",
+        "morphology_tags": [
+          "botanical_foliar"
+        ],
+        "trophic_role": "omnivore_ritual",
+        "social_behavior": "solitary/territorial"
+      },
+      "binary_niches": {
+        "aquatic": 0,
+        "megafauna": 0,
+        "horned_bovid": 0,
+        "solitary_apex": 0,
+        "domestic_herd": 0,
+        "mythic_composite": 0
+      }
+    }
+  ]
+}

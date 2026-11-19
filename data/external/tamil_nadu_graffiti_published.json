@@ -1,0 +1,314 @@
+{
+  "published_studies": {
+    "lal_1960": {
+      "citation": "B. B. Lal (1960 [published 1962]). 'From the Megalithic to the Harappa: Tracing Back the Graffiti on the Pottery'. Ancient India, No. 16, pp. 4-24.",
+      "total_surveyed_symbols": 61,
+      "common_symbols_megalithic_and_harappan_chalcolithic": 47,
+      "reported_megalithic_overlap_pct": 89.0,
+      "reported_harappan_chalcolithic_survival_pct": 85.0,
+      "author_epistemic_caution": "Lal explicitly warned it would be 'presumptuous' to assign phonetic, syllabic, or alphabetic linguistic values based solely on graffiti mark overlap.",
+      "verbatim_verified_quote": "out of the total of sixty-one symbols noted so far, as many as forty-seven are common to the megalithic pottery on the one hand and the Harappan and post-Harappan chalcolithic on the other... eighty-nine per cent of the megalithic symbols go back to the chalcolithic-Harappan times."
+    },
+    "rajan_sivanantham_2025": {
+      "citation": "K. Rajan & R. Sivanantham (2025). Indus Signs and Graffiti Marks of Tamil Nadu: A Morphological Study. Department of Archaeology, Government of Tamil Nadu.",
+      "total_graffiti_potsherds_analyzed": 15184,
+      "archaeological_sites_surveyed": 140,
+      "notable_sites": [
+        "Keeladi",
+        "Sivagalai",
+        "Adichanallur",
+        "Kodumanal",
+        "Korkai",
+        "Porunthal"
+      ],
+      "base_signs_count": 42,
+      "variants_count": 544,
+      "composite_forms_count": 1521,
+      "reported_potsherd_broad_similarity_pct": 90.0,
+      "reported_base_sign_direct_parallel_pct": 60.0,
+      "open_dataset_availability_audit": "NO official open machine-readable CSV/JSON/GitHub dataset published by TN State Dept. of Archaeology as of verification; available via Tamil Digital Library flipbook/print monograph and Harappa.com research summaries.",
+      "key_scholarly_critiques": [
+        "Low geometric stroke-complexity confounder (simple lines, Vs, Xs, triangles, strokes recur independently across unrelated Bronze/Iron Age ceramic traditions worldwide).",
+        "Chronological gap between Mature Harappan urban collapse (~1900 BCE) and South Indian Iron Age / Early Historic ceramic graffiti contexts (~2nd-1st millennium BCE).",
+        "Graffiti marks are overwhelmingly isolated single/double potmarks rather than syntax-governed multi-sign sentences."
+      ]
+    }
+  },
+  "visual_verification_note": "All ICIT sign IDs below were visually rendered and inspected from data/raw/sk_indus_script-webfont.ttf prior to categorization; missing-glyph (.notdef U+2047) signs such as 515 are excluded from visual-complexity modeling.",
+  "megalithic_shared_categories": [
+    {
+      "category": "vertical_strokes",
+      "icit_signs": [
+        "031",
+        "032",
+        "033",
+        "034",
+        "035"
+      ],
+      "shape_desc": "1 to 5 simple vertical incised strokes",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": true,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "arrow_trident_up",
+      "icit_signs": [
+        "520"
+      ],
+      "shape_desc": "Upward-pointing arrow / trident-tip",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "chevron_inverted_v",
+      "icit_signs": [
+        "480",
+        "482"
+      ],
+      "shape_desc": "Simple & double-lined inverted-V / chevron / roof",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "cross_x",
+      "icit_signs": [
+        "690",
+        "692"
+      ],
+      "shape_desc": "Double-stroke and outlined X / saltire cross",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "hourglass_damaru",
+      "icit_signs": [
+        "550"
+      ],
+      "shape_desc": "Hourglass / opposing double-triangle (damaru)",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "fish_basic",
+      "icit_signs": [
+        "220"
+      ],
+      "shape_desc": "Plain geometric fish outline (cross-tailed oval)",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "u_vessel_bowl",
+      "icit_signs": [
+        "700"
+      ],
+      "shape_desc": "Open U-shaped cup / vessel outline",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "diamond_lozenge",
+      "icit_signs": [
+        "850",
+        "861"
+      ],
+      "shape_desc": "Plain lozenge/diamond and internally peaked diamond",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "grid_ladder_box",
+      "icit_signs": [
+        "615"
+      ],
+      "shape_desc": "Divided square / 3x3 grid / ladder box",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": false
+    },
+    {
+      "category": "tree_trident_branch",
+      "icit_signs": [
+        "390",
+        "411"
+      ],
+      "shape_desc": "Three-pronged Y-branch & multi-branched tree/plant",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "circle_sun_wheel",
+      "icit_signs": [
+        "790",
+        "820"
+      ],
+      "shape_desc": "Plain circle/oval and 6-spoked wheel/sun",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    },
+    {
+      "category": "bow_and_arrow",
+      "icit_signs": [
+        "890",
+        "892"
+      ],
+      "shape_desc": "D-shaped bow and bow-with-arrow",
+      "attested_in": [
+        "Lal 1960",
+        "Rajan & Sivanantham 2025"
+      ],
+      "is_tally_stroke": false,
+      "is_basic_geometric": true
+    }
+  ],
+  "complex_indus_specific_categories": [
+    {
+      "category": "iconic_jar_variants",
+      "icit_signs": [
+        "740",
+        "741",
+        "742",
+        "745",
+        "746",
+        "747",
+        "752"
+      ],
+      "shape_desc": "Iconic Harappan rimmed-handle jar (terminal suffix sign) & hatched variants"
+    },
+    {
+      "category": "filled_vessels",
+      "icit_signs": [
+        "705",
+        "706"
+      ],
+      "shape_desc": "Filled U-vessel with interior stroke or droplet"
+    },
+    {
+      "category": "human_anthropomorphic_090_161",
+      "icit_signs": [
+        "090",
+        "091",
+        "093",
+        "095",
+        "097",
+        "100",
+        "104",
+        "110",
+        "111",
+        "125",
+        "130",
+        "136",
+        "137",
+        "140",
+        "142",
+        "151",
+        "154",
+        "156",
+        "158",
+        "160",
+        "161"
+      ],
+      "shape_desc": "Indus human figures, horned/armed figures, and yoke-carriers (090-161)"
+    },
+    {
+      "category": "diacritic_modified_fish",
+      "icit_signs": [
+        "231",
+        "233",
+        "235",
+        "240"
+      ],
+      "shape_desc": "Complex diacritic-modified fish signs (topped, roofed, finned)"
+    },
+    {
+      "category": "architectural_ritual_compounds",
+      "icit_signs": [
+        "572",
+        "575",
+        "590",
+        "617",
+        "803",
+        "817",
+        "840",
+        "845"
+      ],
+      "shape_desc": "Multi-element shrines, double-grid compounds, and ligatured oval/seed signs"
+    }
+  ],
+  "west_asia_gulf_published_literature": {
+    "gadd_1932": {
+      "citation": "C. J. Gadd (1932). 'Seals of Ancient Indian Style Found at Ur'. Proceedings of the British Academy, Vol. 18, pp. 191-210.",
+      "cataloged_items_total": 18,
+      "notes": "Includes Gadd No. 1 (U.7683 / BM 120573, Indus bull iconography with cuneiform 'sag-ku-zi', NOT Indus script), several uninscribed/iconographic Gulf-style seals, and a subset of circular/square seals bearing authentic Indus script."
+    },
+    "laursen_2010": {
+      "citation": "Steffen Terp Laursen (2010). 'The westward transmission of Indus Valley sealing technology: origin and development of the \"Gulf Type\" seal and other administrative technologies in Early Dilmun, c. 2100-2000 BC'. Arabian Archaeology and Epigraphy 21: 96-134.",
+      "total_gulf_type_seals_known": "120+",
+      "gulf_type_seals_with_indus_script": 28,
+      "range_cited_in_literature": "27-29 (depending on fragmentary specimens)",
+      "key_sites": [
+        "Bahrain (Saar, Karzakan, Janabiyah, Qala'at al-Bahrain)",
+        "Failaka (Kuwait)",
+        "Ur",
+        "Girsu/Tello",
+        "Susa",
+        "Luristan",
+        "Kalba",
+        "Lothal",
+        "Mohenjo-daro",
+        "Dholavira"
+      ]
+    },
+    "parpola_cisi_vol3_and_syntheses": {
+      "citations": [
+        "R. H. Brunswig, A. Parpola & D. Potts (1983). 'New Indus type and related seals from the Near East'. In Dilmun (ed. D. Potts).",
+        "A. Parpola (1994). Deciphering the Indus Script. Cambridge University Press.",
+        "A. Parpola, B. M. Pande & P. Koskikallio (2010, 2019, 2022, forthcoming). Corpus of Indus Seals and Inscriptions (CISI) Vol. 3: Part 1 (2010), Part 2 (2019), Part 3 (2022 Indo-Iranian Borderlands), Part 4 (planned: Persian Gulf & West Asia).",
+        "M. Vidale (2005); D. Frenez (2018)."
+      ],
+      "estimated_worldwide_west_asia_inscribed_seals": "30-40 total (comprising ~28 circular Gulf-type seals with Indus script plus ~10-12 classic square Harappan / cylinder seals from Ur, Kish, Tell Asmar, Nippur, Tello/Girsu, Umma, Susa, Tepe Yahya, Salut, Ra's al-Junayz, Gonur Depe, Shortughai, Altyn Depe)."
+    }
+  }
+}
