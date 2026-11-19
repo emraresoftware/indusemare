@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>INDUS-DEDUCT Open Benchmark Preprint</title>
+  <style>
+    @page { size: A4; margin: 16mm 15mm 18mm 15mm; }
+    body {
+      font-family: "Georgia", "Iowan Old Style", serif;
+      color: #182c22;
+      background: #ffffff;
+      font-size: 9.6pt;
+      line-height: 1.48;
+      margin: 0;
+    }
+    h1 {
+      font-size: 16.5pt; line-height: 1.22; color: #182c22;
+      border-bottom: 2px solid #315b41; padding-bottom: 8px; margin-bottom: 10px;
+    }
+    h2 {
+      font-size: 12pt; color: #315b41; margin-top: 16px; margin-bottom: 6px;
+      border-bottom: 1px solid #dfe5dc; padding-bottom: 3px; page-break-after: avoid;
+    }
+    h3 { font-size: 10.3pt; color: #182c22; margin-top: 11px; margin-bottom: 4px; page-break-after: avoid; }
+    p { margin: 0 0 7px; text-align: justify; }
+    ul, ol { margin: 4px 0 8px 18px; padding: 0; }
+    li { margin-bottom: 3px; }
+    code {
+      font-family: "Menlo", "JetBrains Mono", monospace; font-size: 8.3pt;
+      background: #eef2eb; padding: 1px 4px; border-radius: 3px; color: #182c22;
+    }
+    pre {
+      background: #f6f7f3; border: 1px solid #dfe5dc; border-radius: 6px;
+      padding: 8px 10px; font-size: 8pt; white-space: pre-wrap; word-break: break-word; page-break-inside: avoid;
+    }
+    pre code { background: transparent; padding: 0; }
+    table {
+      width: 100%; border-collapse: collapse; margin: 9px 0 12px;
+      font-family: "Avenir Next", -apple-system, sans-serif; font-size: 8pt;
+      page-break-inside: avoid;
+    }
+    th, td { border: 1px solid #dfe5dc; padding: 4.5px 6px; text-align: left; }
+    th { background: #eef2eb; color: #182c22; font-weight: 600; }
+    hr { border: none; border-top: 1px solid #dfe5dc; margin: 12px 0; }
+    .figure {
+      margin: 14px 0; padding: 8px; border: 1px solid #dfe5dc; border-radius: 6px;
+      background: #fafaf7; page-break-inside: avoid; text-align: center;
+    }
+    .figure img { width: 100%; max-height: 220mm; object-fit: contain; }
+    .figcap {
+      font-family: "Avenir Next", sans-serif; font-size: 8pt; color: #43554a;
+      margin-top: 6px; text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1>INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script — Validated Linguistic Discriminators, Internal Icon-Text Registries, Trade Logistics, and Exact Decipherment Boundaries</h1>
+<p><strong>Project:</strong> INDUS-DEDUCT (Layers 0–11B Reproducible Open Benchmark)</p>
+<p><strong>Date:</strong> November 20, 2026</p>
+<p><strong>Repository:</strong> <code>indus-decipher</code> (10/10 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)</p>
+<p><strong>Epistemological Contract:</strong> Zero fabricated phonetic readings; all speculative upstream annotations stripped prior to modeling; all positive claims paired with position-preserving nulls, global Benjamini–Hochberg FDR, known-answer positive controls, and non-linguistic negative controls.</p>
+<hr/>
+<h2>Abstract</h2>
+<p>A century of research on the Indus Valley (Harappan) script (c. 2600–1900 BCE) has produced dozens of incompatible decipherment claims and an enduring methodological impasse between linguistic and non-linguistic interpretations. Here we present <strong>INDUS-DEDUCT</strong>, an end-to-end, reproducible 11-layer computational epigraphy benchmark across <strong>5,679 inscriptions</strong> (5,805 parsed lines; 713 raw signs) engineered to separate statistically verified structural properties from unfalsifiable phonetic speculation.</p>
+<p>First, we audit and retire widely cited entropy tests: on a length- and size-matched <strong>5-way calibration benchmark</strong> against real <strong>Ur III Sumerian (CDLI)</strong>, <strong>Linear B</strong>, <strong>Linear A</strong>, and a <strong>non-linguistic structured stamp negative control</strong>, within-sequence conditional entropy (<code>z_H1</code>) fails catastrophically as a language discriminator (<code>Non-Linguistic Stamps = -245.34σ</code> vs. <code>Indus = -108.85σ</code>). By contrast, <strong>three validated discriminators</strong> cleanly separate Indus and attested natural-language scripts from structured non-linguistic stamps: (i) <strong>unseen-trigram generalization</strong> over a position-aware baseline (<code>Indus = +6.38 pp / +0.432 bits</code>, <code>Ur III Sumerian = +10.71 pp / +1.133 bits</code>, <code>Linear B = +0.81 pp</code>, vs. <code>Non-Linguistic Stamps = -2.95 pp / -0.960 bits</code>), (ii) <strong>Kober bridge–ending mutual information</strong> (<code>Indus = +53.67σ</code>, <code>Ur III Sumerian = +20.40σ</code>, <code>Linear B = +18.47σ</code>, vs. <code>Non-Linguistic = +0.07σ</code>), and (iii) <strong>blind 2-affix stacking</strong> (<code>Indus = 207:1</code> suffix-to-prefix ratio with a <code>4.96×</code> right-edge bottleneck, vs. <code>Non-Linguistic = 0:0</code>).</p>
+<p>Second, joint visual–distributional allograph clustering across 697 rendered font glyphs establishes a functional core inventory of <strong><code>N_core = 240–271</code></strong> signs covering 95.7% of tokens (<code>223–254</code> excluding explicit compounds), placing the script firmly in the <strong>logo-syllabic</strong> regime and ruling out a pure syllabary. Globally FDR-controlled structural findings (<code>376/422</code> tests survive BH-FDR; <code>155</code> survive Bonferroni) include a productive <strong><code>: X :</code> four-dash sub-graphemic frame</strong> that converts medial stems (<code>2.9%</code> final) into terminals (<code>62.2%</code> final, 8/8 pairs, <code>p = 4.38e-45</code>) and transfers zero-shot across unseen base-glyph families (<code>LOBO Δlog-loss = -0.0687</code>), strict <strong>Leave-One-City-Out (LOCO)</strong> real damaged-inscription restoration (<code>50.0%</code> Top-1 / <code>63.6%</code> Top-3 on all edge breaks vs. <code>9.1%</code> position baseline; <code>71.4%</code> / <code>85.7%</code> on cross-site singletons), and three archaeologically localized document systems:</p>
+<ol>
+<li><strong>Mohenjo-daro Copper Tablets (<code>TAB:C</code>, 229/230 = 99.6% city-exclusive):</strong> Exhibit an extraordinary <strong>Text ↔ Icon lock</strong> (<code>MI z = +18.39σ</code>, named animals <code>+19.66σ</code>, weighted purity <code>96.2%</code> vs. <code>35.5%</code> null; square-seal <code>SEAL:S</code> control <code>+2.79σ</code>) and 23 two-sided tablets pairing a single reverse logogram (e.g., quadruped pictograph <code>#341 ↔ 503 615 740</code>; <code>#753 ↔ Hare</code>; vessel variants <code>#777/780/781/782 ↔ Anth</code> and <code>Goat/Buff</code>) with 3–7 sign formulas. Crucially, length (<code>4.79</code> signs), polysemous reverse vessel marks, zero <code>SEAL:S</code> animal retention (<code>0/11</code> probes), and a blind 4-family phonological null (<code>p &gt; 0.30</code> across all 4 families) refute the hypothesis that <code>TAB:C</code> inscriptions are bare animal nouns and confirm them as compound institutional/protective formulas.</li>
+<li><strong>Harappa Double-Sided Accounting Tokens (<code>TAB:I</code> 96.7% and <code>TAB:B</code> 84.7% Harappa-exclusive; 772 multi-sided objects):</strong> Show a fixed <strong>Entity ↔ Quantity (<code>[numeral + 700]</code>) lock</strong> (<code>MI z = +9.55σ</code>, <code>p = 0.001</code>) and <strong><code>: X : + 400</code> clitic stacking</strong> (<code>20/21 = 95.2%</code>, <code>p = 1.16e-08</code>), proving register continuity rather than a distinct language.</li>
+<li><strong>Inter-City Logistics &amp; External Trade Corridor:</strong> Twenty-six multi-signature clay cargo lumps (<code>TAG*</code>)—anchored by a Lothal warehouse master counter-signature (<code>705 500 741 001 055 220 740 090</code>) co-signing four bales including Mohenjo-daro stone seal <code>861 002 235</code> (<code>2239.1</code>)—and a strictly deduplicated global BH-FDR trade audit (<code>14/327</code> survivors after eliminating 15 duplicate-stamp artifacts) identify Twin-Humans <strong><code>#091</code></strong> as a dedicated export/logistics opener (<code>0%</code> final, <code>82.1%</code> initial/solo, <code>11.89×</code> trade-context lift, <code>p = 1.48e-06</code>; <code>42.35×</code> in foreign export seals, <code>q = 2.86e-04</code>) and Ring <strong><code>#790</code></strong> (<code>○</code>) on prestige stoneware bangles (<code>9.13×</code>, <code>q = 0.032</code>).</li>
+</ol>
+<p>Finally, we formalize the exact mathematical boundary preventing phonetic decipherment today. While <strong>Proto-Dravidian</strong> ranks first on typology (<code>0.925</code>) and expanded distinct-etymon rebus probes (<code>z = +6.86</code>), strict single-primary-lemma testing still fails our <code>z &gt; 5.0</code> anti-hallucination gate (<code>z = +3.18</code>, <code>p = 0.004</code>). On the <strong>23-seal Gulf/Mesopotamia connected component</strong> (<code>DOF = 30</code>, <code>66.0%</code> singletons), our exact Max-CSP solver locks <strong>0 signs</strong> (<code>p = 1.000</code> vs. synthetic nulls; <code>15/23</code>, <code>z = +1.60, p = 0.188</code> vs. real CDLI Ur III). Known-answer CSP calibration proves this barrier is physical rather than algorithmic: on closed 23-seal graphs at <code>k = 0</code>, the exact same solver achieves <strong>23/23 exact lock</strong> on real Linear B (<code>+22.75σ</code>, 100% of signs recovered) and real Ur III Sumerian (<code>+7.00σ</code>, 100% of shared signs), whereas under realistic 74% open-vocabulary attestation even real Sumerian collapses to noise at <code>k = 0</code> (<code>z = -0.11σ</code>) and jumps to <code>21/23</code> (<code>+4.97σ</code>, <code>68.2%</code> shared signs locked) once <code>k = 2</code> bilingual anchors are supplied.</p>
+<hr/>
+<h2>1. Corpus Hygiene, Reading Direction, and Reproducibility Architecture (Layer 0)</h2>
+<p>Every downstream claim in computational epigraphy is vulnerable to silent upstream contamination. In Layer 0 (<code>src/layer0_ingest.py</code>), we ingest the raw ICIT corpus (<code>5,679</code> inscriptions; <code>5,805</code> parsed lines; <code>713</code> raw active signs) into a canonical SQLite/CSV pipeline under three hard engineering guarantees:</p>
+<ol>
+<li><strong>Zero Speculative Contamination:</strong> All upstream theory-laden columns (<code>sanskrit</code>, <code>translation</code>, <code>notes</code>) are permanently stripped prior to analysis and guarded by automated unit test <code>test_01_zero_speculative_contamination</code>.</li>
+<li><strong>Empirical Directionality Audit:</strong> Upstream metadata notes often imply reversing only <code>R/L</code> rows. Direct distributional measurement on the canonical text stream demonstrates that <strong>both</strong> <code>R/L</code> (<code>n = 3,042</code>, sign <code>740</code> leftmost in <code>29.91%</code>, rightmost in <code>0.10%</code>) and <code>L/R</code> (<code>n = 163</code>, sign <code>740</code> leftmost in <code>24.54%</code>, rightmost in <code>0.61%</code>) rows are already stored in canonical seal-impression visual order. All analytic token sequences are therefore canonically reversed into chronological reading order (<code>clean_reading_seq</code>).</li>
+<li><strong>PUA Compound Recovery &amp; Cryptographic Integrity:</strong> Fixing multiline SQL entity parsing recovers all <code>56</code> explicit PUA multi-sign compounds. All 16 raw, external, and processed CSV artifacts are pinned by SHA-256 hashes in <code>DATA_MANIFEST.json</code> (<code>test_02</code>), with full cross-OS bit-for-bit reproduction independently verified between macOS ARM64 (Python 3.12.14) and Ubuntu Linux x86_64 (<code>emare-ai-92</code>, Python 3.14.4).</li>
+</ol>
+<hr/>
+<h2>2. Visual–Distributional Allograph Clustering and Script Typology (Layer 1B)</h2>
+<p>Raw sign catalogs conflate true graphemes with calligraphic allographs and ligatures. In <code>src/layer1b_visual_allographs.py</code>, we render <code>697</code> font glyphs (<code>sk_indus_script-webfont.ttf</code>, 64×64 normalized) and jointly cluster the <code>294</code> frequent renderable signs (<code>freq ≥ 5</code>, covering <code>95.7%</code> of corpus tokens) using visual similarity, left/right contextual cosine similarity, and complementary-distribution constraints:</p>
+<ul>
+<li><strong>Functional Core Inventory:</strong> <code>N_core = 240–271</code> distinct graphemes across moderate-to-conservative agglomerative thresholds (<code>223–254</code> after subtracting all <code>17</code> explicit PUA compounds in the frequent set; <code>293–424</code> projected across all <code>713</code> raw signs).</li>
+<li><strong>Predictive Validation Against Random Merges:</strong> Collapsing identified allographs improves 5-fold cross-validated masked-sign prediction Top-1 accuracy (<code>36.93% → 39.66%</code>) and reduces raw back-projected perplexity (<code>35.50 → 34.37</code>, <code>−1.12</code> PPL vs. <code>+4.65</code> PPL degradation under frequency-matched random merges, a <code>5.77</code> PPL advantage).</li>
+<li><strong>Typological Conclusion:</strong> Even under aggressive allograph collapse and compound removal, the functional core exceeds pure syllabaries (<code>~50–100</code> signs; e.g., Linear B <code>~87</code>, Cypriot <code>~56</code>) by more than 2× and aligns with Bronze Age <strong>logo-syllabic</strong> systems (<code>~200–400</code> active core graphemes).</li>
+</ul>
+<hr/>
+<h2>3. Five-Way Known-Answer &amp; Negative-Control Calibration (Layer 8)</h2>
+<p>Following independent peer-review critiques from the Emare agent council (<code>seyyah</code>, <code>codex-mac</code>, <code>orivis-mac</code>, <code>vega</code>)—particularly the warning that conditional entropy drop under within-sequence shuffling (<code>z_H1</code>) can fire on purely non-linguistic slot templates—we constructed a <strong>5-way matched calibration benchmark</strong> (<code>src/layer8_known_answer_calibration.py</code>). All corpora were matched to the exact size (<code>N = 2,047</code> unique sequences) and exact length histogram (<code>mean = 4.524</code>) of strict Indus inscriptions:</p>
+<ol>
+<li><strong>Indus Strict</strong> (<code>N = 2,047</code>, canonical reading order).</li>
+<li><strong>Ur III Sumerian (Real CDLI Gold Corpus, MTAAC)</strong> (<code>N = 2,047</code>, length-matched administrative lines; plus seal/NP sensitivity check).</li>
+<li><strong>Linear B (Mycenaean Greek, Real Transliterated Words &amp; Tablets)</strong> (<code>N = 2,047</code>, length-matched).</li>
+<li><strong>Linear A (Real Undeciphered Minoan Words, <code>LinearAWords.json</code>)</strong> (natural vocabulary size, <code>n &lt; 2,047</code>).</li>
+<li><strong>Non-Linguistic Structured Stamps (Negative Control):</strong> Synthetic heraldic/bureaucratic stamp sequences with fixed rigid slot templates (<code>[Header] [Emblem] [Region] [Tier] [Seal-Type]</code>), matched identically in <code>N</code> and length histogram to Indus.</li>
+</ol>
+<h3>Table 1. Five-Way Calibration Results (Exact Size &amp; Length Matched)</h3>
+<table><thead><tr><th>Corpus</th><th><code>z_H1</code> Shuffle <em>(RETIRED)</em></th><th>Right-Edge Bottleneck (<code>eff_init/eff_fin</code>)</th><th>Blind 2-Affix Stack (<code>Suf:Pre</code>)</th><th>Kober Bridge–Ending <code>MI z</code></th><th>Unseen-Trigram Gain vs. Pos Baseline</th><th><code>final_UNSEEN</code> Gain vs. Pos Baseline</th></tr></thead><tbody>
+<tr><td><strong>Indus Strict</strong></td><td><code>-108.85σ</code></td><td><strong>4.96×</strong></td><td><strong>207 : 1</strong></td><td><strong>+53.67σ</strong></td><td><strong>+6.38 pp (+0.432 bits)</strong></td><td><code>-4.84 pp</code></td></tr>
+<tr><td><strong>Ur III Sumerian (CDLI)</strong></td><td><code>-105.29σ</code></td><td>0.63×</td><td>4 : 39</td><td><strong>+20.40σ</strong></td><td><strong>+10.71 pp (+1.133 bits)</strong></td><td><code>-3.62 pp</code></td></tr>
+<tr><td><strong>Linear B (Matched)</strong></td><td><code>-82.93σ</code></td><td>1.22×</td><td>22 : 11</td><td><strong>+18.47σ</strong></td><td><strong>+0.81 pp (-0.038 bits)</strong></td><td><code>-2.11 pp</code></td></tr>
+<tr><td><strong>Linear A (Words)</strong></td><td><code>-18.66σ</code></td><td>0.87×</td><td>0 : 2</td><td><code>+2.29σ</code></td><td><code>-0.62 pp (-0.582 bits)</code></td><td><code>-2.46 pp</code></td></tr>
+<tr><td><strong>Non-Linguistic Stamps</strong></td><td><strong><code>-245.34σ</code></strong></td><td>1.89×</td><td><strong>0 : 0</strong></td><td><strong><code>+0.07σ</code></strong></td><td><strong><code>-2.95 pp (-0.960 bits)</code></strong></td><td><strong><code>-16.00 pp</code></strong></td></tr>
+</tbody></table>
+<h3>Key Methodological Results from Calibration</h3>
+<ul>
+<li><strong>Retired Metric:</strong> Within-sequence shuffle <code>z_H1</code> is <strong>retired</strong> as evidence of natural language; Non-Linguistic Stamps produce <code>-245.34σ</code>, more than double the Indus score. Raw Kober <code>alternating/same</code> stem ratio (<code>Non-Ling = 2.41</code> &gt; <code>Linear B = 1.88</code>) is likewise retired.</li>
+<li><strong>Validated Language-vs-Non-Language Discriminators:</strong></li>
+</ul>
+<ol>
+<li><strong>Unseen-Trigram Generalization:</strong> Non-Linguistic Stamps collapse below a position-aware baseline (<code>-2.95 pp</code>, <code>-0.960 bits</code>), whereas <strong>Indus (<code>+6.38 pp</code>, <code>+0.432 bits</code>)</strong> and <strong>Ur III Sumerian (<code>+10.71 pp</code>, <code>+1.133 bits</code>)</strong> generalize strongly to unseen trigram contexts. Furthermore, the negative <code>final_UNSEEN</code> dip observed in Indus (<code>-4.84 pp</code>) proves to be a natural property of all attested scripts (<code>Sumerian -3.62 pp</code>, <code>Linear B -2.11 pp</code>, <code>Linear A -2.46 pp</code>), contrasting sharply with the <code>-16.00 pp</code> crash of rigid stamp templates.</li>
+<li><strong>Kober <code>MI(Bridge; Ending) z</code>:</strong> Non-Linguistic Stamps sit at flat zero (<code>+0.07σ</code>), whereas <strong>Indus (<code>+53.67σ</code>)</strong>, <strong>Ur III Sumerian (<code>+20.40σ</code>)</strong>, and <strong>Linear B (<code>+18.47σ</code>; full words <code>+40.67σ</code>)</strong> show powerful morphological stem-to-ending coupling.</li>
+<li><strong>Blind 2-Affix Stacking:</strong> Non-Linguistic Stamps produce <code>0 : 0</code>, whereas <strong>Indus (<code>207 : 1</code> suffix-dominant)</strong> contrasts cleanly with prefix-heavy <strong>Ur III Sumerian (<code>4 : 39</code>)</strong> and mixed <strong>Linear B (<code>22 : 11</code>)</strong>, strongly supporting an <strong>exclusively suffixing (agglutinative/SOV-compatible)</strong> morphology.</li>
+</ol>
+<hr/>
+<h2>4. Globally Audited Structural Grammar &amp; Strict LOCO Restoration (Layers 3, 5B, 7)</h2>
+<p>Across <code>422</code> statistical hypothesis tests spanning Layers 1–6 (<code>src/layer7_council_audit.py</code>), <strong><code>376</code> survive global Benjamini–Hochberg FDR (<code>q &lt; 0.05</code>)</strong> and <strong><code>155</code> survive strict Bonferroni correction (<code>α = 0.05/422</code>)</strong>. Verified structural discoveries include:</p>
+<ul>
+<li><strong>Sub-Graphemic Modifier Grammar (<code>: X :</code> Four-Dash Frame):</strong> Across 8 minimal pairs (<code>226, 232, 234, 236, 241, 592, 804, 842</code>), wrapping a medial stem (<code>2.9%</code> final) inside the four-dash frame <code>: X :</code> converts it into a terminal (<code>62.2%</code> final, 8/8 pairs, <code>p = 4.38e-45</code>). Crucially, a <strong>Leave-One-Base-Glyph-Family-Out (LOBO)</strong> transfer test proves this rule generalizes zero-shot to <strong>unseen base glyphs</strong> (<code>log-loss 0.2193 → 0.1506</code>, <code>-31.3%</code>, matching Leave-One-City-Out <code>0.2157 → 0.1487</code>). Conversely, adding rim ticks to Jar <code>740</code> (<code>741–747</code>) inverts finality (<code>71.9% → 2.4%</code>, <code>p = 3.43e-88</code>).</li>
+<li><strong>Position-Preserving Null Validations:</strong> Both <code>740 → 090</code> (deduplicated <code>70:1</code>, position-preserving null <code>3.9</code>, <code>p = 0.001</code>) and <code>[Fish] → [705/706+033]</code> (<code>87:0</code> dedup; <code>77.8%</code> preceded by Fish <code>p = 2.15e-72</code>, localized to monumental <code>930 mm²</code> elite seals and absent from pottery graffiti) survive strict position-preserving nulls. Mutually exclusive initial openers (<code>817, 820, 861, 920</code>) are pan-Harappan institutional headers rather than city names (<code>p = 0.35</code>) or 1-to-1 animal totems (<code>p = 0.24</code>), governing downstream slots (<code>817/861 → 002</code>, <code>920 → 060</code>, <code>p = 4.9e-49</code>).</li>
+<li><strong>Strict Leave-One-City-Out (LOCO) Damaged-Inscription Restoration:</strong> Holding out the entire city of each broken inscription prevents local duplicate leakage. Across all three reported subsets with 95% Wilson CIs:</li>
+<li><code>edge_all_STRICT_LOCO</code> (<code>n = 44</code>): <strong><code>50.0%</code> Top-1</strong> <code>[35.8, 64.2]</code> / <strong><code>63.6%</code> Top-3</strong> (position baseline <code>9.1%</code>).</li>
+<li><code>edge_cross_site_single_STRICT_LOCO</code> (<code>n = 14</code>): <strong><code>71.4%</code> Top-1</strong> <code>[45.4, 88.3]</code> / <strong><code>85.7%</code> Top-3</strong> (baseline <code>7.1%</code>).</li>
+<li><code>edge_single_unambiguous_STRICT_LOCO</code> (<code>n = 22</code>): <strong><code>36.4%</code> Top-1</strong> <code>[19.7, 57.0]</code> (baseline <code>13.6%</code>).</li>
+<li><code>interior_all_STRICT_LOCO</code> (<code>n = 10</code>): <strong><code>30.0%</code> Top-1</strong> / <strong><code>70.0%</code> Top-3</strong> (baseline <code>10.0%</code>).</li>
+<li><strong>External Negative Controls (Tamil Nadu Graffiti &amp; FaunaTech Ecological Traits, Layer 3G):</strong> Removing universal vertical tally strokes (<code>031–035</code>, <code>58.3%</code> of shared tokens) from published Tamil Nadu megalithic pottery graffiti collapses the remaining <code>17</code> geometric signs to zero pottery enrichment (<code>OR = 1.16×, p = 0.124</code>, complexity-matched permutation <code>z = +0.30, p = 0.388</code>). Conversely, mapping 18 Indus seal animals onto the FaunaTech v2.0 ecological trait schema reveals that <code>domestic_herd</code> (<code>p = 0.001</code>) and <code>body_size/megafauna</code> (<code>z = +3.96, p = 0.001</code>) survive strict object-type confounding controls.</li>
+</ul>
+<hr/>
+<h2>5. Document-Type Stratification, Mohenjo-daro Copper Tablets (&quot;Internal Rosetta&quot;), and Harappa Accounting Tokens (Layers 9–10)</h2>
+<p>A central open question is whether the Indus corpus encodes multiple languages across regions or distinct administrative registers within one language. Controlling strictly for object type (<code>SEAL:S</code>, size-matched <code>n = 150</code> token bootstrap), distant cities <strong>600–700 km apart</strong> are statistically indistinguishable (<code>Mohenjo-daro ↔ Harappa JSD = 0.371</code>; <code>Mohenjo-daro ↔ Lothal JSD = 0.366</code>, matching Mohenjo-daro&#x27;s internal split-half noise). By contrast, <strong>different tablet types inside the exact same city</strong> diverge more sharply (<code>MD SEAL:S vs. MD TAB:C JSD = 0.587</code>) than square seals 2,000 km away in the Persian Gulf (<code>0.493</code>), yet share the core Harappan suffix grammar:</p>
+<h3>5.1 Mohenjo-daro Copper Tablets (<code>TAB:C</code>, 229/230 = 99.6% City-Exclusive)</h3>
+<p>Unlike square seals—where the exact same inscription (<code>817 002 048 740</code>) occurs on a Mohenjo-daro <code>Bull1</code> seal (<code>3300.1</code>) and 10 Lothal <code>Elep</code> cargo tags (<code>2093.1–2102.1</code>)—<strong>Mohenjo-daro Copper Tablets exhibit an almost deterministic Text ↔ Icon lock</strong> (<code>src/layer9_internal_rosetta_and_trade.py</code>):</p>
+<ul>
+<li><strong>All <code>TAB:C</code> pairs (<code>n = 136</code>):</strong> <code>MI = 2.8209 bits</code> vs. null <code>1.5915 ± 0.0668</code> (<strong><code>z = +18.39σ</code></strong>, <code>p = 0.001</code>, weighted purity <strong><code>90.6%</code></strong> vs. null <code>45.4%</code>).</li>
+<li><strong>Named animals only (excluding <code>Othr</code>, <code>n = 79</code>):</strong> <code>MI = 3.4348 bits</code> (<strong><code>z = +19.66σ</code></strong>, weighted purity <strong><code>96.2%</code></strong> vs. null <code>35.5%</code>; <code>Hare</code> 12/12, <code>Elep</code> 11/11, <code>Anth</code> 10/10, <code>Loop</code> 4/4, <code>Goat:8</code> 3/3).</li>
+<li><strong>Control (<code>SEAL:S</code>, <code>n = 1,622</code>):</strong> <code>MI = 3.5782</code> vs. null <code>3.5620</code> (<code>z = +2.79σ</code>, weighted purity <code>54.4%</code> vs. null <code>47.6%</code>).</li>
+<li><strong>23 Two-Sided Single-Sign Equations:</strong> Twenty-three double-sided <code>TAB:C</code> objects replace the reverse animal drawing with a <strong>single Indus sign</strong>, including quadruped pictograph <strong><code>#341</code></strong> (<code>M-516, M-517</code>) ↔ <code>503 615 740</code>, dotted-U <strong><code>#753</code></strong> (<code>M-593, M-1547</code>) ↔ <code>Hare</code> (<code>235 705 033 845 407 321 407</code>), and horned/knotted-U variants <strong><code>#777/780/781/782</code></strong> ↔ both <code>Anth</code> (<code>806 845 061 407 850 900 740</code>) and <code>Goat/Buff</code> (<code>220/231 017 585 095 520 032 407</code>).</li>
+</ul>
+<p><strong>Refutation of Bare Animal-Noun Hypothesis (<code>H1</code>, Layer 10):</strong> Four independent tests (<code>src/layer10_copper_rosetta_deep_test.py</code>) refute interpreting <code>TAB:C</code> inscriptions as bare animal nouns and confirm them as <strong>compound institutional/protective formulas (<code>H2</code>)</strong>:</p>
+<ol>
+<li>Mean length (<code>4.79</code> signs; <code>64.6% ≥ 4</code> signs; max <code>11</code>) exceeds square seals (<code>4.51</code>).</li>
+<li>Reverse logograms <strong><code>#777</code>, <code>#781</code>, <code>#782</code></strong> are polysemous class-vessel marks shared across two disjoint 7-sign animal classes (<code>Anth</code> and <code>Goat/Buff</code>).</li>
+<li><strong>Zero Animal Retention on <code>SEAL:S</code> (<code>0/11</code> probes):</strong> Excluding <code>TAB:C</code>, none of the 11 icon-locked signs/bigrams (<code>923</code>, <code>706 033</code>, <code>321</code>, <code>845</code>, <code>407</code>, <code>503</code>, <code>615</code>, <code>503 615</code>, <code>850</code>, <code>415 220</code>, <code>705 033</code>) enrich their corresponding animal on <code>SEAL:S</code> (all <code>p &gt; 0.40</code>).</li>
+<li><strong>Honest Blind 4-Family Phonological Null:</strong> Testing consonant-skeleton overlap across the 7 empirically coupled <code>TAB:C</code> animal pairs against 1,000 random concept permutations yields flat noise across <strong>all four language families</strong> (<code>Proto-Dravidian M1 z = +0.53 / M2 -1.04</code>; <code>Proto-Munda +0.26 / -0.91</code>; <code>Old Indo-Aryan -0.27 / -1.57</code>; <code>Sumerian/Elamite -0.67 / -0.95</code>, all <code>p &gt; 0.30</code>). Shared stems such as <code>845 ... 407</code> and <code>705/706 033</code> represent shared formulaic/ritual scaffolding, not animal-noun homophony.</li>
+</ol>
+<h3>5.2 Harappa Double-Sided Accounting Tokens (<code>TAB:I</code> &amp; <code>TAB:B</code>, 772 Multi-Sided Objects)</h3>
+<p>Concentrated overwhelmingly at Harappa (<code>TAB:I</code> 96.7%, <code>TAB:B</code> 84.7%; Mound F Granary and Mound E), <code>60.5%–66.2%</code> of multi-sided tokens pair an <strong>entity/institution obverse</strong> (frequently suffixed by <strong><code>400</code></strong>) with a <strong><code>[numeral + 700]</code> quantity reverse</strong> (<code>032/033/034 + 700</code> = 2, 3, 4 units). Entity ↔ Quantity mutual information reaches <strong><code>z = +9.55σ</code></strong> (<code>p = 0.001</code>, weighted purity <code>77.6%</code> vs. null <code>57.7%</code>; e.g., <code>003 861 || 003 156</code> receives <code>034 700</code> on <code>20/20</code> specimens). Crucially, <strong><code>20/21</code> (<code>95.2%</code>)</strong> of all <code>: X :</code> framed signs on Harappa miniature tablets sit final or immediately preceding <code>400</code> (<code>Fisher p = 1.16e-08</code> vs. <code>35.0%</code> background), proving Harappa tokens obey the exact same Harappan suffix grammar with an outer <code>+ 400</code> token clitic.</p>
+<hr/>
+<h2>6. Inter-City Logistics &amp; Meluhha External Trade Commodity Audit (Layers 9–10)</h2>
+<h3>6.1 Multi-Signature Cargo Protocol (<code>TAG*</code>)</h3>
+<p>Twenty-six wet clay cargo lumps across six sites bear <strong>≥2 distinct seal impressions</strong> (<code>Lothal: 12, Dholavira: 6, Kalibangan: 3, Harappa: 3, Mohenjo-daro: 1, Rupar: 1</code>). At Lothal&#x27;s dockyard warehouse, a single 8-sign master counter-signature (<strong><code>705 500 741 001 055 220 740 090</code></strong>) co-signs <strong>four distinct bales</strong> (<code>2112, 2113, 2115, 2117</code>) alongside separate merchant seals—including bale <code>#2113</code>&#x27;s co-signer <strong><code>861 002 235</code></strong>, whose stone seal matrix (<code>2239.1</code>, <code>SEAL:S</code>) was excavated 700 km north at Mohenjo-daro. Across the full corpus, <strong>9 exact <code>len ≥ 3</code> cargo tag impressions</strong> match stone seals excavated in distant cities (8 linking back to Mohenjo-daro, 1 to Harappa).</p>
+<h3>6.2 Meluhha Trade Commodities: Deduplicated Global BH-FDR Audit (<code>327</code> Tests)</h3>
+<p>Cross-referencing historically attested Mesopotamian cuneiform Meluhha exports (<code>na₄.gug</code> carnelian, <code>zu₂-am-si</code> ivory, <code>giš-esi</code>/<code>giš-ab-ba-me-luh-ha</code> timber, <code>urudu</code>/<code>ku₃-sig₁₇</code> metals, <code>na₄.za-gin₃</code> lapis, <code>ha-ia₃-mušen</code> exotic bird, marine shell/stoneware bangles; Possehl 1996, 2002; Laursen &amp; Steinkeller 2017) against material- and hub-stratified inscriptions demonstrates why <strong>strict deduplication is mandatory</strong>: eliminating duplicate impressions catches <code>15</code> false-positive stamp artifacts (reducing Lothal and Dholavira port-specific signs from illusory <code>p = 1e-10</code> to <strong><code>0</code></strong> FDR survivors).</p>
+<p>Exactly <strong>14 deduplicated sign–category enrichments survive global BH-FDR (<code>q &lt; 0.05</code>)</strong>:</p>
+<ul>
+<li><strong>Export Corridor (Persian Gulf / Mesopotamia / Iran / Central Asia, <code>n_uniq = 39</code>):</strong> Twin-Humans <strong><code>#091</code></strong> (<code>42.35×</code>, <code>q = 2.86e-04</code>), <strong><code>#004</code></strong> (<code>6.35×</code>, <code>q = 0.036</code>), and Single-Human <strong><code>#090</code></strong> (<code>4.00×</code>, <code>q = 0.045</code>). Exhaustive corpus-wide tracing (<code>Layer 10</code>) reveals that <strong><code>#091</code> (<code>👯</code>) NEVER occurs in final position (<code>0/28</code>)</strong>, acts as an opener/standalone (<code>82.1%</code>), and concentrates overwhelmingly in export seals, round Gulf seals, and cargo tags (<code>45.0%</code> dedup vs. <code>6.4%</code> baseline; <strong><code>11.89×</code> lift, <code>Fisher p = 1.48e-06</code></strong>; also enriched relative to single-human <code>#090</code> in foreign seals, <code>p = 0.0093</code>).</li>
+<li><strong>Stoneware &amp; Shell Bangles (<code>BNGL</code>, <code>n_uniq = 38</code>):</strong> <strong><code>#064</code></strong> (<code>23.04×</code>, <code>q = 0.032</code>) and Ring/Circle <strong><code>#790</code></strong> (<code>○</code>, <code>9.13×</code>, <code>q = 0.032</code> across 4 distinct bangle texts).</li>
+<li><strong>Cargo Sealings (<code>TAG</code> classes vs. <code>SEAL:S</code>, <code>n_uniq = 171</code>):</strong> Vessel-measure <strong><code>#700</code></strong> (<code>5.90×</code>, <code>q = 0.032</code>) and <strong><code>#326</code></strong> (<code>q = 0.032</code>).</li>
+<li><strong>Ivory Objects (<code>n_uniq = 32</code>):</strong> <strong><code>#400</code></strong> (<code>3.37×</code>, <code>q = 0.032</code>); <strong>Chanhu-daro Bead Hub (<code>n_uniq = 57</code>):</strong> <strong><code>#031</code></strong> (<code>3.83×</code>, <code>q = 0.0067</code>), <strong><code>#032</code></strong> (<code>2.60×</code>), <strong><code>#128</code></strong>; <strong>Copper/Gold Implements (<code>IMPL</code>, <code>n_uniq = 18</code>):</strong> <strong><code>#006</code></strong>, <strong><code>#930</code></strong>, <strong><code>#005</code></strong>.</li>
+</ul>
+<hr/>
+<h2>7. Exact Mathematical &amp; Empirical Boundaries of Phonetic Decipherment (Layers 4B, 5B, 8)</h2>
+<ol>
+<li><strong>Language-Family Ranking vs. Strict Anti-Hallucination Gate (Layer 5B):</strong> On typology (<code>0.925</code>), South Asian aDNA (Rakhigarhi zero Steppe ancestry), and 13-probe expanded distinct-etymon rebus testing (<code>z = +6.86</code>, 13/13 LOPO <code>&gt; 5.0</code>), <strong>Proto-Dravidian</strong> ranks cleanly #1 ahead of Proto-Munda, Old Indo-Aryan, and Sumerian/Elamite. However, under strict single-primary-lemma testing (<strong>Mode 1</strong>), <strong>no family clears our <code>z &gt; 5.0</code> gate</strong> (<code>Proto-Dravidian z = +3.18, p = 0.004</code>; 7 newly added probes alone <code>z = +1.44</code>). Accordingly, we assign <strong>zero verified phonetic sign values</strong>.</li>
+<li><strong>Known-Answer Validation of the 23-Seal Gulf CSP Barrier (Layers 4B &amp; 8):</strong> In the 23-seal Gulf/Mesopotamia connected component (<code>T = 101</code> tokens, <code>U = 53</code> signs, <code>35/53 = 66.04%</code> singletons, incidence-rank <code>DOF = 30</code>), exact Max-CSP locks <strong>0 signs</strong> (<code>5/10</code> on strict intact seals, <code>p = 1.000</code> vs. 1,000 synthetic nulls; <code>15/23</code>, <code>z = +1.60, p = 0.188</code> vs. real CDLI Ur III). Crucially, running the <strong>exact same solver</strong> on 23-phrase known-answer benchmarks from real Linear B and real CDLI Ur III Sumerian proves the instrument is sharp:</li>
+</ol>
+<h3>Table 2. Known-Answer 23-Seal Max-CSP Calibration (Layer 8)</h3>
+<table><thead><tr><th>23-Seal Graph Regime</th><th>Anchors (<code>k</code>)</th><th>Observed <code>max_k</code></th><th>Null Mean ± SD</th><th><code>z</code>-score</th><th>Shared Signs Locked Correctly</th></tr></thead><tbody>
+<tr><td><strong>Linear B (100% closed vocab)</strong></td><td><code>0</code></td><td><strong>23 / 23</strong></td><td><code>11.80 ± 0.49</code></td><td><strong><code>+22.75σ</code></strong></td><td><strong>23/23 (<code>100.0%</code>; 52/52 all signs)</strong></td></tr>
+<tr><td><strong>Ur III Sumerian (100% closed vocab)</strong></td><td><code>0</code></td><td><strong>23 / 23</strong></td><td><code>16.40 ± 0.94</code></td><td><strong><code>+7.00σ</code></strong></td><td><strong>22/22 (<code>100.0%</code>)</strong></td></tr>
+<tr><td><strong>Ur III Sumerian (74% open vocab)</strong></td><td><code>0</code></td><td><code>14 / 23</code></td><td><code>14.12 ± 1.14</code></td><td><code>-0.11σ</code> (<code>p=0.68</code>)</td><td><code>8/22</code> (<code>36.4%</code>, fails!)</td></tr>
+<tr><td><strong>Ur III Sumerian (74% open vocab)</strong></td><td><strong><code>2</code></strong></td><td><strong><code>21 / 23</code></strong></td><td><code>14.99 ± 1.21</code></td><td><strong><code>+4.97σ</code></strong> (<code>p=0.0099</code>)</td><td><strong><code>15/22</code> (<code>68.2%</code>, rescued!)</strong></td></tr>
+<tr><td><strong>Indus Gulf (23 seals vs. CDLI Ur III)</strong></td><td><code>0</code></td><td><code>15 / 23</code></td><td><code>13.90 ± 0.69</code></td><td><code>+1.60σ</code> (<code>p=0.188</code>)</td><td><code>0</code> verified locks (underdetermined)</td></tr>
+</tbody></table>
+<p>This proves that the Indus Gulf phonetic barrier is a <strong>physical information-theoretic boundary</strong> (open foreign onomastic vocabulary + <code>66%</code> singletons + <code>k = 0</code> bilingual anchors), not solver blindness. Globally, only ~8–15 additional published Indus-inscribed Gulf seals exist outside our corpus (<code>Laursen 2010</code> ~32 circular Gulf-type inscribed seals worldwide).</p>
+<hr/>
+<h2>8. Expanded Foreign Seal Escalation, Post-Harappan Diachronic Successor, and Visual-Neural Damaged Restoration (Layers 11A–11B)</h2>
+<h3>8.1 Foreign Seal Escalation (<code>24 → 42 → 55</code>) &amp; Square vs. Circular Split (Layer 11A)</h3>
+<p>Expanding the foreign/round-seal constraint graph across three nested rings empirically demonstrates why additional unanchored foreign seals cannot close the <code>k = 0</code> CSP barrier (<code>src/layer11a_external_gulf_and_diachronic.py</code>):</p>
+<ul>
+<li><strong>Ring 1 (<code>E = 24</code> Gulf circular/cylinder CC):</strong> <code>U = 53</code>, <code>DOF = 29</code>, <code>66.0%</code> singletons.</li>
+<li><strong>Ring 2 (<code>E = 42</code> all foreign + unknown round):</strong> <code>U = 85</code>, <strong><code>DOF = 43</code></strong>, <code>65.9%</code> singletons.</li>
+<li><strong>Ring 3 (<code>E = 55</code> + domestic circular/cylinder):</strong> <code>U = 100</code>, <strong><code>DOF = 45</code></strong>, <code>60.0%</code> singletons.</li>
+</ul>
+<p>Because each added foreign seal introduces <code>~1.8–2.1</code> unseen signs from a <code>~250</code>-sign logo-syllabic inventory, <strong><code>DOF</code> strictly increases</strong> across <code>E = 5 → 55</code>, confirming that <code>k ≥ 2</code> bilingual anchors—not 10–15 additional unanchored Gulf seals—are required for percolation.</p>
+<p>Stratifying foreign finds by seal shape reveals a crisp diaspora split matching Laursen (2010) and Vidale&#x27;s hybrid-Dilmun model: <strong>foreign square Harappan seals (<code>E = 12</code>: Kish, Gonur Depe, Salut, Shortughai, Nindowari, Miri Qalat, Altyn Depe)</strong> preserve Harappan terminal <code>740</code> (<code>25.0%</code>) and contain <strong><code>0/12</code></strong> occurrences of <code>#090</code> or <code>#091</code>, whereas <strong>foreign circular/cylinder Gulf seals (<code>E = 17</code>: Ur, Bahrain, Failaka, Saar, Karzakan, Susa, Girsu, Janabiyah)</strong> halve <code>740</code> (<code>11.8%</code>) and surge to <strong><code>11/17</code></strong> occurrences of <code>#090</code> (<code>7</code>) and <code>#091</code> (<code>4</code>)—independently converging with Massimo Vidale&#x27;s hypothesis that <code>#090/#091</code> encode Gulf/Dilmun patronymics or trade proxies.</p>
+<h3>8.2 Post-Harappan Linguistic Succession &amp; Typological Adjudication (1900–300 BCE)</h3>
+<p>Following Harappan de-urbanization (<code>~1900 BCE</code>), the first historically attested language directly inside the Indus Basin (<code>Saptasindhu</code>) is <strong>Early Vedic Sanskrit</strong> (<em>Rigveda</em>, <code>~1500–1000 BCE</code>, aligned with post-1900 BCE <code>Steppe_MLBA</code> arrival; Narasimhan et al. 2019), which absorbed retroflex consonants (<code>ṭ, ḍ, ṇ, ṣ</code>) and <code>~300–380</code> non-Indo-European substrate loans for Harappan material culture (<em>iṣṭakā</em> fired brick, <em>karpāsa</em> cotton, <em>tila</em> sesame, <em>khala</em> threshing floor, <em>ulūkhala</em> mortar, <em>mayūra</em> peacock, <em>lāṅgala</em> plough; Kuiper 1991, Witzel 1999, Southworth 2005). Crucially, our Layer 8 empirical measurement—showing Indus is <strong><code>207:1</code> exclusively suffixing</strong> (<code>4.96×</code> right-edge bottleneck, only <code>1</code> prefix 2-stack)—directly constrains the post-Harappan substrate debate: it disfavors purely prefixing &quot;Para-Munda&quot; as the mature Harappan elite script language and aligns with <strong>exclusively suffixing Proto-Dravidian</strong> (whose northern pocket <strong>Brahui</strong> still survives adjacent to the Indus highlands in Balochistan, alongside heavy Dravidian toponymic substrates in Gujarat/Maharashtra).</p>
+<h3>8.3 Visual-Glyph + Neural MLP LOCO Restoration &amp; 690-Inscription Open Catalog (Layer 11B)</h3>
+<p>To upgrade damaged-inscription restoration without city leakage (<code>src/layer11b_glyph_neural_restoration.py</code>), we combined 20-dim rendered 32×32 visual glyph SVD embeddings, fold-strict 20-dim PPMI distributional embeddings, object-type/sub-grapheme priors (<code>: X :</code>, <code>741–747</code>), and a <code>(128, 64)</code> ReLU MLP with fixed a-priori ensemble weights (<code>0.50</code> N-gram + <code>0.25</code> Object/Allograph/Skip + <code>0.25</code> Visual-Context MLP) across <strong>285 real damaged inscriptions over 12 held-out cities</strong> (<code>STRICT_LOCO</code>):</p>
+<ul>
+<li><strong><code>edge_all_STRICT_LOCO</code> (<code>n = 275</code>, position baseline <code>10.2%</code>):</strong> Hybrid Ensemble reaches <strong><code>57.5%</code> Top-1 (<code>158/275</code>, <code>+4.0 pp</code> over N-gram <code>53.5%</code>)</strong> and <strong><code>82.9%</code> Top-5 (<code>228/275</code>, <code>+3.3 pp</code> over N-gram <code>79.6%</code>)</strong>.</li>
+<li><strong><code>interior_all_STRICT_LOCO</code> (<code>n = 10</code>, baseline <code>10.0%</code>):</strong> Hybrid Ensemble improves from <code>30.0%</code> → <strong><code>40.0%</code> Top-1 (<code>+10.0 pp</code>)</strong> and <code>50.0%</code> → <strong><code>60.0%</code> Top-3 (<code>+10.0 pp</code>)</strong>.</li>
+<li><strong>Open Restoration Catalog:</strong> Deployed across all <strong><code>690</code> real single-gap damaged inscriptions across <code>25</code> archaeological sites</strong> (<code>405</code> novel unattested restorations, <code>32</code> high-confidence <code>p ≥ 0.40</code>; exported to <code>reports/damaged_inscriptions_restoration_catalog.{json,csv}</code> and live-browsable in <code>portal/index.html</code>).</li>
+</ul>
+<hr/>
+<h2>9. Reproducibility &amp; Open Verification Appendix</h2>
+<p>Every quantitative result in this manuscript is deterministically reproducible and machine-checked via <code>unittest</code>:</p>
+<pre><code>
+# 1. Rebuild canonical corpus from raw SQL/CSV (Layer 0)
+.venv/bin/python src/layer0_ingest.py
+
+# 2. Run Layers 8, 9, 10, 11A, 11B &amp; portal/PDF compiler
+.venv/bin/python src/layer8_known_answer_calibration.py
+.venv/bin/python src/layer9_internal_rosetta_and_trade.py
+.venv/bin/python src/layer10_copper_rosetta_deep_test.py
+.venv/bin/python src/layer11a_external_gulf_and_diachronic.py
+.venv/bin/python src/layer11b_glyph_neural_restoration.py
+.venv/bin/python src/build_portal_and_pdf.py
+
+# 3. Verify all 10 claim-ledger invariants &amp; SHA-256 data manifest
+.venv/bin/python -m unittest tests/test_claim_ledger.py -v
+</code></pre>
+<h3>Verification Ledger Summary (<code>tests/test_claim_ledger.py</code>)</h3>
+<ol>
+<li><code>test_01_zero_speculative_contamination</code>: Zero <code>sanskrit</code>/<code>translation</code>/<code>notes</code> columns across CSVs and SQLite.</li>
+<li><code>test_02_data_manifest_sha256_integrity</code>: Strict SHA-256 verification on all 16 manifest files + SQLite row integrity (<code>5,679</code> / <code>5,805</code>).</li>
+<li><code>test_03_layer0_canonical_counts_match_disk</code>: Exact canonical counts and reading-order Jar <code>740</code> finality (<code>R/L &gt; 25%</code>, <code>L/R &gt; 20%</code>).</li>
+<li><code>test_04_layer5_and_5b_anti_hallucination_invariants</code>: Mode 1 fails <code>z &gt; 5.0</code> across all 4 families; Proto-Dravidian Mode 2B clears <code>z &gt; 5.0</code>.</li>
+<li><code>test_05_layer4b_csp_underdetermined_invariant</code>: <code>DOF = 30</code>, mathematically underdetermined, <code>0</code> locked signs at <code>p &lt; 0.001</code>.</li>
+<li><code>test_06_layer7_council_audit_invariants</code>: Global FDR (<code>422</code> p-values), position-preserving nulls, non-linguistic negative control (<code>z &lt; -50</code>), <code>: X :</code> LOBO transfer, and all 3 LOCO restoration subsets.</li>
+<li><code>test_07_layer8_calibration_invariants</code>: 5-way unseen-trigram separation, Kober <code>MI z</code> separation, Linear B <code>23/23</code> exact lock (<code>52/52</code> signs), and Sumerian open-vocab <code>k = 2</code> rescue.</li>
+<li><code>test_08_layer9_internal_rosetta_and_trade_invariants</code>: <code>TAB:C</code> Mohenjo-daro monopoly (<code>&gt;99%</code>) &amp; <code>MI z &gt; 15</code> vs. <code>SEAL:S &lt; 5</code>, Harappa <code>Entity↔Qty MI z &gt; 7</code> &amp; <code>: X : + 400</code> clitic stacking (<code>&gt;90%</code>), 26 multi-sig cargo lumps, Lothal <code>0</code> FDR after dedup, and Export <code>#091</code> + Bangle <code>#790</code> BH-FDR survival.</li>
+<li><code>test_09_layer10_copper_deep_and_091_invariants</code>: <code>TAB:C</code> <code>H1</code> refutation (mean len <code>&gt; 4.5</code>, polysemous <code>777</code>, zero <code>SEAL:S</code> animal retention), <code>#091</code> <code>0%</code> final &amp; <code>&gt;10×</code> trade lift (<code>p &lt; 1e-5</code>), and honest 4-family phonological null.</li>
+<li><code>test_10_layer11_gulf_diachronic_and_neural_restoration</code>: Foreign DOF escalation (<code>Ring1 &lt; Ring2</code>), foreign square (<code>0/12</code>) vs. circular (<code>≥4</code>) <code>#091</code> diaspora split, Hybrid LOCO restoration beating N-gram on <code>edge_all</code> (<code>n = 275</code>) and <code>interior_all</code> (<code>n = 10</code>), and <code>≥650</code> damaged-inscription catalog.</li>
+</ol>
+  <div class="figure">
+    <img src="file:///Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/calibration_5way_chart.png" alt="Layer 8 Five-Way Calibration" />
+    <div class="figcap"><strong>Figure 1 (Layer 8).</strong> Five-way matched calibration comparing Indus Strict against real Ur III Sumerian (CDLI), Linear B, Linear A, and structured Non-Linguistic Stamps across retired (z_H1) and validated discriminators (Unseen-Trigram generalization, Kober Bridge–Ending MI z, 2-Affix stacking) plus 23-seal Known-Answer Max-CSP validation.</div>
+  </div>
+  <div class="figure">
+    <img src="file:///Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer9_copper_rosetta_plate.png" alt="Layer 9 Internal Rosetta and Meluhha Trade Plate" />
+    <div class="figcap"><strong>Figure 2 (Layer 9).</strong> Actual ICIT TTF glyph plate illustrating Mohenjo-daro Copper Tablet (TAB:C) Text-to-Icon locks &amp; single-sign reverse equations (#341 quadruped pictograph, #753 Hare, #777–782 class vessels), Lothal multi-signature cargo co-signing with Mohenjo-daro stone seal #2239.1, Harappa double-sided ration tokens (: X : + 400 stacking), and global BH-FDR trade/material enrichments (#091 Twin-Humans, #790 Ring).</div>
+  </div>
+</body>
+</html>

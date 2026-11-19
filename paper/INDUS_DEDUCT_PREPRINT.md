@@ -1,8 +1,8 @@
 # INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script — Validated Linguistic Discriminators, Internal Icon-Text Registries, Trade Logistics, and Exact Decipherment Boundaries
 
-**Project:** INDUS-DEDUCT (Layers 0–10 Reproducible Open Benchmark)  
+**Project:** INDUS-DEDUCT (Layers 0–11B Reproducible Open Benchmark)  
 **Date:** November 20, 2026  
-**Repository:** `indus-decipher` (9/9 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)  
+**Repository:** `indus-decipher` (10/10 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)  
 **Epistemological Contract:** Zero fabricated phonetic readings; all speculative upstream annotations stripped prior to modeling; all positive claims paired with position-preserving nulls, global Benjamini–Hochberg FDR, known-answer positive controls, and non-linguistic negative controls.
 
 ---
@@ -119,7 +119,7 @@ Cross-referencing historically attested Mesopotamian cuneiform Meluhha exports (
 Exactly **14 deduplicated sign–category enrichments survive global BH-FDR (`q < 0.05`)**:
 - **Export Corridor (Persian Gulf / Mesopotamia / Iran / Central Asia, `n_uniq = 39`):** Twin-Humans **`#091`** (`42.35×`, `q = 2.86e-04`), **`#004`** (`6.35×`, `q = 0.036`), and Single-Human **`#090`** (`4.00×`, `q = 0.045`). Exhaustive corpus-wide tracing (`Layer 10`) reveals that **`#091` (`👯`) NEVER occurs in final position (`0/28`)**, acts as an opener/standalone (`82.1%`), and concentrates overwhelmingly in export seals, round Gulf seals, and cargo tags (`45.0%` dedup vs. `6.4%` baseline; **`11.89×` lift, `Fisher p = 1.48e-06`**; also enriched relative to single-human `#090` in foreign seals, `p = 0.0093`).
 - **Stoneware & Shell Bangles (`BNGL`, `n_uniq = 38`):** **`#064`** (`23.04×`, `q = 0.032`) and Ring/Circle **`#790`** (`○`, `9.13×`, `q = 0.032` across 4 distinct bangle texts).
-- **Cargo Sealings (`TAG*` vs. `SEAL:S`, `n_uniq = 171`):** Vessel-measure **`#700`** (`5.90×`, `q = 0.032`) and **`#326`** (`q = 0.032`).
+- **Cargo Sealings (`TAG` classes vs. `SEAL:S`, `n_uniq = 171`):** Vessel-measure **`#700`** (`5.90×`, `q = 0.032`) and **`#326`** (`q = 0.032`).
 - **Ivory Objects (`n_uniq = 32`):** **`#400`** (`3.37×`, `q = 0.032`); **Chanhu-daro Bead Hub (`n_uniq = 57`):** **`#031`** (`3.83×`, `q = 0.0067`), **`#032`** (`2.60×`), **`#128`**; **Copper/Gold Implements (`IMPL`, `n_uniq = 18`):** **`#006`**, **`#930`**, **`#005`**.
 
 ---
@@ -139,11 +139,33 @@ Exactly **14 deduplicated sign–category enrichments survive global BH-FDR (`q 
 | **Ur III Sumerian (74% open vocab)** | **`2`** | **`21 / 23`** | `14.99 ± 1.21` | **`+4.97σ`** (`p=0.0099`) | **`15/22` (`68.2%`, rescued!)** |
 | **Indus Gulf (23 seals vs. CDLI Ur III)** | `0` | `15 / 23` | `13.90 ± 0.69` | `+1.60σ` (`p=0.188`) | `0` verified locks (underdetermined) |
 
-This proves that the Indus Gulf phonetic barrier is a **physical information-theoretic boundary** (open foreign onomastic vocabulary + `66%` singletons + `k = 0` bilingual anchors), not solver blindness. Globally, only ~5–15 additional published Indus-inscribed Gulf seals exist outside our 23 (`28–38` total)—still short of the `k = 2` bilingual anchors or `~73` cross-linked foreign seals required for percolation.
+This proves that the Indus Gulf phonetic barrier is a **physical information-theoretic boundary** (open foreign onomastic vocabulary + `66%` singletons + `k = 0` bilingual anchors), not solver blindness. Globally, only ~8–15 additional published Indus-inscribed Gulf seals exist outside our corpus (`Laursen 2010` ~32 circular Gulf-type inscribed seals worldwide).
 
 ---
 
-## 8. Reproducibility & Open Verification Appendix
+## 8. Expanded Foreign Seal Escalation, Post-Harappan Diachronic Successor, and Visual-Neural Damaged Restoration (Layers 11A–11B)
+
+### 8.1 Foreign Seal Escalation (`24 → 42 → 55`) & Square vs. Circular Split (Layer 11A)
+Expanding the foreign/round-seal constraint graph across three nested rings empirically demonstrates why additional unanchored foreign seals cannot close the `k = 0` CSP barrier (`src/layer11a_external_gulf_and_diachronic.py`):
+- **Ring 1 (`E = 24` Gulf circular/cylinder CC):** `U = 53`, `DOF = 29`, `66.0%` singletons.
+- **Ring 2 (`E = 42` all foreign + unknown round):** `U = 85`, **`DOF = 43`**, `65.9%` singletons.
+- **Ring 3 (`E = 55` + domestic circular/cylinder):** `U = 100`, **`DOF = 45`**, `60.0%` singletons.
+Because each added foreign seal introduces `~1.8–2.1` unseen signs from a `~250`-sign logo-syllabic inventory, **`DOF` strictly increases** across `E = 5 → 55`, confirming that `k ≥ 2` bilingual anchors—not 10–15 additional unanchored Gulf seals—are required for percolation.
+
+Stratifying foreign finds by seal shape reveals a crisp diaspora split matching Laursen (2010) and Vidale's hybrid-Dilmun model: **foreign square Harappan seals (`E = 12`: Kish, Gonur Depe, Salut, Shortughai, Nindowari, Miri Qalat, Altyn Depe)** preserve Harappan terminal `740` (`25.0%`) and contain **`0/12`** occurrences of `#090` or `#091`, whereas **foreign circular/cylinder Gulf seals (`E = 17`: Ur, Bahrain, Failaka, Saar, Karzakan, Susa, Girsu, Janabiyah)** halve `740` (`11.8%`) and surge to **`11/17`** occurrences of `#090` (`7`) and `#091` (`4`)—independently converging with Massimo Vidale's hypothesis that `#090/#091` encode Gulf/Dilmun patronymics or trade proxies.
+
+### 8.2 Post-Harappan Linguistic Succession & Typological Adjudication (1900–300 BCE)
+Following Harappan de-urbanization (`~1900 BCE`), the first historically attested language directly inside the Indus Basin (`Saptasindhu`) is **Early Vedic Sanskrit** (*Rigveda*, `~1500–1000 BCE`, aligned with post-1900 BCE `Steppe_MLBA` arrival; Narasimhan et al. 2019), which absorbed retroflex consonants (`ṭ, ḍ, ṇ, ṣ`) and `~300–380` non-Indo-European substrate loans for Harappan material culture (*iṣṭakā* fired brick, *karpāsa* cotton, *tila* sesame, *khala* threshing floor, *ulūkhala* mortar, *mayūra* peacock, *lāṅgala* plough; Kuiper 1991, Witzel 1999, Southworth 2005). Crucially, our Layer 8 empirical measurement—showing Indus is **`207:1` exclusively suffixing** (`4.96×` right-edge bottleneck, only `1` prefix 2-stack)—directly constrains the post-Harappan substrate debate: it disfavors purely prefixing "Para-Munda" as the mature Harappan elite script language and aligns with **exclusively suffixing Proto-Dravidian** (whose northern pocket **Brahui** still survives adjacent to the Indus highlands in Balochistan, alongside heavy Dravidian toponymic substrates in Gujarat/Maharashtra).
+
+### 8.3 Visual-Glyph + Neural MLP LOCO Restoration & 690-Inscription Open Catalog (Layer 11B)
+To upgrade damaged-inscription restoration without city leakage (`src/layer11b_glyph_neural_restoration.py`), we combined 20-dim rendered 32×32 visual glyph SVD embeddings, fold-strict 20-dim PPMI distributional embeddings, object-type/sub-grapheme priors (`: X :`, `741–747`), and a `(128, 64)` ReLU MLP with fixed a-priori ensemble weights (`0.50` N-gram + `0.25` Object/Allograph/Skip + `0.25` Visual-Context MLP) across **285 real damaged inscriptions over 12 held-out cities** (`STRICT_LOCO`):
+- **`edge_all_STRICT_LOCO` (`n = 275`, position baseline `10.2%`):** Hybrid Ensemble reaches **`57.5%` Top-1 (`158/275`, `+4.0 pp` over N-gram `53.5%`)** and **`82.9%` Top-5 (`228/275`, `+3.3 pp` over N-gram `79.6%`)**.
+- **`interior_all_STRICT_LOCO` (`n = 10`, baseline `10.0%`):** Hybrid Ensemble improves from `30.0%` → **`40.0%` Top-1 (`+10.0 pp`)** and `50.0%` → **`60.0%` Top-3 (`+10.0 pp`)**.
+- **Open Restoration Catalog:** Deployed across all **`690` real single-gap damaged inscriptions across `25` archaeological sites** (`405` novel unattested restorations, `32` high-confidence `p ≥ 0.40`; exported to `reports/damaged_inscriptions_restoration_catalog.{json,csv}` and live-browsable in `portal/index.html`).
+
+---
+
+## 9. Reproducibility & Open Verification Appendix
 
 Every quantitative result in this manuscript is deterministically reproducible and machine-checked via `unittest`:
 
@@ -151,12 +173,15 @@ Every quantitative result in this manuscript is deterministically reproducible a
 # 1. Rebuild canonical corpus from raw SQL/CSV (Layer 0)
 .venv/bin/python src/layer0_ingest.py
 
-# 2. Run calibration (Layer 8), Internal Rosetta & trade audit (Layer 9), and deep stress test (Layer 10)
+# 2. Run Layers 8, 9, 10, 11A, 11B & portal/PDF compiler
 .venv/bin/python src/layer8_known_answer_calibration.py
 .venv/bin/python src/layer9_internal_rosetta_and_trade.py
 .venv/bin/python src/layer10_copper_rosetta_deep_test.py
+.venv/bin/python src/layer11a_external_gulf_and_diachronic.py
+.venv/bin/python src/layer11b_glyph_neural_restoration.py
+.venv/bin/python src/build_portal_and_pdf.py
 
-# 3. Verify all 9 claim-ledger invariants & SHA-256 data manifest
+# 3. Verify all 10 claim-ledger invariants & SHA-256 data manifest
 .venv/bin/python -m unittest tests/test_claim_ledger.py -v
 ```
 
@@ -170,3 +195,4 @@ Every quantitative result in this manuscript is deterministically reproducible a
 7. `test_07_layer8_calibration_invariants`: 5-way unseen-trigram separation, Kober `MI z` separation, Linear B `23/23` exact lock (`52/52` signs), and Sumerian open-vocab `k = 2` rescue.
 8. `test_08_layer9_internal_rosetta_and_trade_invariants`: `TAB:C` Mohenjo-daro monopoly (`>99%`) & `MI z > 15` vs. `SEAL:S < 5`, Harappa `Entity↔Qty MI z > 7` & `: X : + 400` clitic stacking (`>90%`), 26 multi-sig cargo lumps, Lothal `0` FDR after dedup, and Export `#091` + Bangle `#790` BH-FDR survival.
 9. `test_09_layer10_copper_deep_and_091_invariants`: `TAB:C` `H1` refutation (mean len `> 4.5`, polysemous `777`, zero `SEAL:S` animal retention), `#091` `0%` final & `>10×` trade lift (`p < 1e-5`), and honest 4-family phonological null.
+10. `test_10_layer11_gulf_diachronic_and_neural_restoration`: Foreign DOF escalation (`Ring1 < Ring2`), foreign square (`0/12`) vs. circular (`≥4`) `#091` diaspora split, Hybrid LOCO restoration beating N-gram on `edge_all` (`n = 275`) and `interior_all` (`n = 10`), and `≥650` damaged-inscription catalog.

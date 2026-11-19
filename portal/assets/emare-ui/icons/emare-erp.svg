@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg-emare-erp" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6e3e2c"/>
+      <stop offset="100%" stop-color="#48261a"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="115" fill="url(#bg-emare-erp)"/>
+  <circle cx="256" cy="256" r="192" fill="none" stroke="#f5e1d3" stroke-width="6" stroke-opacity="0.20"/>
+  <g fill="none" stroke="#f5e1d3" stroke-width="28" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M256 132 362 192v124l-106 62-106-62V192l106-60Z"/>
+          <path d="M150 192l106 60 106-60"/>
+          <path d="M256 252v126"/>
+        </g>
+        <circle cx="256" cy="252" r="17" fill="#f5e1d3"/>
+</svg>

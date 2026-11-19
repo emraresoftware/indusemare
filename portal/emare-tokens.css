@@ -1,0 +1,139 @@
+/* ==========================================================================
+   EMARE ORTAK ARAYÜZ & DOĞAL İKON SİSTEMİ — DESIGN TOKENS (v2.0)
+   Estetik Yön: FaunaTech Doğallığı · Sıcak Minimal / Doğal Atlas
+   Sıfır yapay neon / sıfır plastik 3B — sakin, organik, zamansız mürekkep & kâğıt.
+   ========================================================================== */
+
+@import url("./assets/emare-ui/fonts/geist.css");
+
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  /* 1. Yüzeyler (FaunaTech Doğal Atlas — Sabah Keteni & Kâğıt) */
+  --em-canvas: #f6f7f3;
+  --em-surface: #ffffff;
+  --em-surface-subtle: #eef2eb;
+  --em-surface-muted: #e5ebe1;
+  --em-surface-elevated: #ffffff;
+  --em-glass: rgba(246, 247, 243, 0.92);
+  --em-glass-strong: rgba(255, 255, 255, 0.94);
+
+  /* 2. Doğal Taş & Yaprak Çizgileri */
+  --em-border: #dfe5dc;
+  --em-border-subtle: #e9eee6;
+  --em-border-strong: #b2c2ad;
+
+  /* 3. Mürekkep / Tipografi Renkleri (Çam Mürekkebi — Siyah Değil, Canlı) */
+  --em-ink: #182c22;
+  --em-ink-secondary: #43554a;
+  --em-ink-muted: #68766b;
+  --em-ink-inverse: #f6f7f3;
+
+  /* 4. Doğal Marka İmzası: Derin Orman Çamı & Taze Filiz */
+  --em-accent: #315b41;
+  --em-accent-hover: #254b34;
+  --em-accent-deep: #18372c;
+  --em-accent-seal: #1c4231;
+  --em-accent-seal-end: #10251c;
+  --em-accent-sprout: #d7efaf;
+  --em-accent-soft: #e4eddf;
+  --em-accent-soft-hover: #d8e6d1;
+  --em-accent-ring: rgba(49, 91, 65, 0.22);
+
+  /* 5. Toprak & Mineral Semantik Tonlar */
+  --em-success: #2b6142;
+  --em-success-soft: #e3f0e6;
+  --em-warning: #8f5616;
+  --em-warning-soft: #f9eed9;
+  --em-danger: #9e3226;
+  --em-danger-soft: #fae8e6;
+  --em-clay: #8a4b35;
+  --em-clay-soft: #f5e7e1;
+
+  /* 6. Tipografi Aileleri (FaunaTech Avenir Next + Doğal Editorial Serif) */
+  --em-font-editorial: "Newsreader", Georgia, "Iowan Old Style", "Times New Roman", serif;
+  --em-font-sans: "Avenir Next", Avenir, "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --em-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* 7. Tipografi Ölçeği */
+  --em-text-xs: 0.75rem;
+  --em-text-sm: 0.84375rem;
+  --em-text-base: 0.9375rem;
+  --em-text-md: 1.04rem;
+  --em-text-lg: 1.35rem;
+  --em-text-xl: 1.85rem;
+  --em-text-hero: clamp(2.15rem, 3.8vw, 3.35rem);
+
+  /* 8. Organik Köşe Yarıçapları */
+  --em-radius-xs: 8px;
+  --em-radius-sm: 11px;
+  --em-radius-md: 15px;
+  --em-radius-lg: 18px;
+  --em-radius-xl: 24px;
+  --em-radius-pill: 999px;
+  --em-radius-squircle: 22.5%;
+  --em-radius-leaf: 26% 26% 10% 26%;
+
+  /* 9. Fısıltı Kadar Sakin Doğal Gölgeler (FaunaTech --elev çizgisi) */
+  --em-shadow-xs: 0 1px 2px rgba(24, 44, 34, 0.04);
+  --em-shadow-sm: 0 4px 16px rgba(24, 44, 34, 0.045);
+  --em-shadow-md: 0 10px 28px -10px rgba(24, 44, 34, 0.09), 0 2px 6px rgba(24, 44, 34, 0.03);
+  --em-shadow-lg: 0 18px 46px -16px rgba(24, 44, 34, 0.11), 0 3px 10px rgba(24, 44, 34, 0.04);
+  --em-shadow-icon: 0 6px 16px -6px rgba(16, 37, 28, 0.22), 0 2px 4px rgba(16, 37, 28, 0.08);
+  --em-shadow-dock: 0 14px 36px -12px rgba(24, 44, 34, 0.14), 0 2px 8px rgba(24, 44, 34, 0.05);
+
+  /* 10. Sakin Hareket Eğrileri */
+  --em-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --em-ease-spring: cubic-bezier(0.32, 1.25, 0.64, 1);
+  --em-dur-fast: 150ms;
+  --em-dur-base: 240ms;
+}
+
+/* Orman Gecesi — Koyu Tema (FaunaTech --ink katmanı: #10271f / #18372c / #d7f2a4) */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --em-canvas: #0f1f18;
+  --em-surface: #152a21;
+  --em-surface-subtle: #1c362b;
+  --em-surface-muted: #244436;
+  --em-surface-elevated: #1e3a2e;
+  --em-glass: rgba(15, 31, 24, 0.90);
+  --em-glass-strong: rgba(21, 42, 33, 0.94);
+
+  --em-border: #2a463a;
+  --em-border-subtle: #21392f;
+  --em-border-strong: #3f6052;
+
+  --em-ink: #f1f4ec;
+  --em-ink-secondary: #b6c5ba;
+  --em-ink-muted: #829689;
+  --em-ink-inverse: #10251c;
+
+  --em-accent: #d7efaf;
+  --em-accent-hover: #e3f5c4;
+  --em-accent-deep: #b8dc82;
+  --em-accent-seal: #1c4231;
+  --em-accent-seal-end: #10251c;
+  --em-accent-sprout: #d7efaf;
+  --em-accent-soft: rgba(215, 239, 175, 0.12);
+  --em-accent-soft-hover: rgba(215, 239, 175, 0.20);
+  --em-accent-ring: rgba(215, 239, 175, 0.28);
+
+  --em-success: #7fd49f;
+  --em-success-soft: rgba(127, 212, 159, 0.14);
+  --em-warning: #ecc075;
+  --em-warning-soft: rgba(236, 192, 117, 0.14);
+  --em-danger: #ea867b;
+  --em-danger-soft: rgba(234, 134, 123, 0.14);
+  --em-clay: #d9977e;
+  --em-clay-soft: rgba(217, 151, 126, 0.14);
+
+  --em-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.28);
+  --em-shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.30);
+  --em-shadow-md: 0 12px 32px -8px rgba(0, 0, 0, 0.44);
+  --em-shadow-lg: 0 22px 54px -14px rgba(0, 0, 0, 0.56);
+  --em-shadow-icon: 0 8px 20px -6px rgba(0, 0, 0, 0.48), 0 0 0 1px rgba(215, 239, 175, 0.12);
+  --em-shadow-dock: 0 18px 44px -10px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(215, 239, 175, 0.08);
+}

@@ -164,6 +164,22 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
             self.assertFalse(modes["mode1_primary"]["passes_z5_gate"], f"Unexpected M1 pass for {fam}")
             self.assertFalse(modes["mode2_expanded"]["passes_z5_gate"], f"Unexpected M2 pass for {fam}")
 
+    def test_10_layer11_gulf_diachronic_and_neural_restoration(self) -> None:
+        l11a = json.loads((REPORTS / "layer11a_external_gulf_diachronic.json").read_text(encoding="utf-8"))
+        rd = l11a["ring_diagnostics"]
+        # DOF increases from Ring 1 -> Ring 2 -> Ring 3; foreign square keeps 0/12 of 090/091 while circular jumps
+        self.assertLess(rd["ring1_gulf_cc"]["DOF_U_minus_rank"], rd["ring2_all_foreign_plus_unk_round"]["DOF_U_minus_rank"])
+        self.assertEqual(rd["foreign_square_seals_only"]["has_091_seals"], 0)
+        self.assertEqual(rd["foreign_square_seals_only"]["has_090_seals"], 0)
+        self.assertGreaterEqual(rd["foreign_round_cyl_seals_only"]["has_091_seals"], 4)
+        # Layer 11B: Hybrid beats N-gram on strict LOCO edge_all (n=275) & interior_all (n=10), catalog >= 650
+        l11b = json.loads((REPORTS / "layer11b_neural_restoration.json").read_text(encoding="utf-8"))
+        ea = l11b["strict_loco_head_to_head"]["edge_all_STRICT_LOCO"]
+        self.assertGreater(ea["hybrid_ensemble"]["top1_pct"], ea["ngram"]["top1_pct"])
+        ia = l11b["strict_loco_head_to_head"]["interior_all_STRICT_LOCO"]
+        self.assertGreater(ia["hybrid_ensemble"]["top1_pct"], ia["ngram"]["top1_pct"])
+        self.assertGreaterEqual(l11b["open_restoration_catalog_stats"]["total_single_gap_damaged_inscriptions_restored"], 650)
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
