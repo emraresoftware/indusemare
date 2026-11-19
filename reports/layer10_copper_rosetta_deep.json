@@ -1,0 +1,1990 @@
+{
+  "layer": "Layer 10 — Deep Morpheme Audit of Mohenjo-daro Copper Tablets (TAB:C), Exhaustive Trace of Export #091 & Bangle #790, and Blind 4-Family Phonological Stress Test",
+  "test1_tabc_morpheme_architecture": {
+    "length_comparison_H1_vs_H2": {
+      "tab_c_mean_len_all": 4.79,
+      "tab_c_mean_len_unique": 4.43,
+      "tab_c_max_len": 11,
+      "tab_c_len_ge_4_pct": 64.6,
+      "seal_s_mean_len_all": 4.51,
+      "top3_terminals_unique_tabc": {
+        "740": 33,
+        "407": 13,
+        "617": 7,
+        "001": 3,
+        "165": 3
+      },
+      "top3_terminals_share_pct": 67.1,
+      "top5_initials_unique_tabc": {
+        "003": 8,
+        "806": 6,
+        "233": 5,
+        "798": 4,
+        "255": 4
+      },
+      "verdict": "REFUTES H1 (bare 1-2 syllable animal nouns); STRONGLY SUPPORTS H2 (compound institutional/protective/deity formulas averaging 4.8+ signs with shared 845..407 / 705-033 / 740-407-617 scaffolding and polysemous 777/781/782 class-vessel reverse marks)."
+    },
+    "recurring_tabc_bigrams": [
+      {
+        "bigram": "142 617",
+        "n_distinct_tabc_formulas": 9,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "142 617 001 004 407",
+          "235 233 222 740 861 368 001 142 617",
+          "744 760 095 595 001 142 617"
+        ]
+      },
+      {
+        "bigram": "690 740",
+        "n_distinct_tabc_formulas": 7,
+        "sample_formulas": [
+          "231 255 435 690 740",
+          "255 435 690 740",
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424"
+        ]
+      },
+      {
+        "bigram": "176 740",
+        "n_distinct_tabc_formulas": 7,
+        "sample_formulas": [
+          "003 176 740 790",
+          "032 220 176 740",
+          "233 176 740",
+          "326 002 176 740 240 405"
+        ]
+      },
+      {
+        "bigram": "435 690",
+        "n_distinct_tabc_formulas": 6,
+        "sample_formulas": [
+          "231 255 435 690 740",
+          "255 435 690 740",
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424"
+        ]
+      },
+      {
+        "bigram": "001 142",
+        "n_distinct_tabc_formulas": 5,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "235 233 222 740 861 368 001 142 617",
+          "744 760 095 595 001 142 617",
+          "747 717 095 595 001 142 617"
+        ]
+      },
+      {
+        "bigram": "255 435",
+        "n_distinct_tabc_formulas": 5,
+        "sample_formulas": [
+          "231 255 435 690 740",
+          "255 435 690 740",
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424"
+        ]
+      },
+      {
+        "bigram": "100 740",
+        "n_distinct_tabc_formulas": 5,
+        "sample_formulas": [
+          "003 233 100 740",
+          "003 421 176 100 740 790",
+          "003 422 176 100 740",
+          "590 405 100 740 790"
+        ]
+      },
+      {
+        "bigram": "595 001",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "744 760 095 595 001 142 617",
+          "747 717 095 595 001 142 617",
+          "747 717 142 595 001"
+        ]
+      },
+      {
+        "bigram": "017 585",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "017 585 388 740",
+          "220 017 585 095 520 032 407",
+          "220 017 585 095 520 032 408",
+          "231 017 585 095 520 032 407"
+        ]
+      },
+      {
+        "bigram": "705 033",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "235 705 033 845 407 321 407",
+          "705 033 923 740 001",
+          "798 231 705 033 904 100 740",
+          "806 235 233 705 033 585 407"
+        ]
+      },
+      {
+        "bigram": "740 900",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424",
+          "255 435 690 740 900 003 422",
+          "690 740 900"
+        ]
+      },
+      {
+        "bigram": "032 597",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "904 032 597 142 617",
+          "905 032 597 142",
+          "905 032 597 142 617",
+          "905 032 597 142 617 495 460 365 002 004 407"
+        ]
+      },
+      {
+        "bigram": "597 142",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "904 032 597 142 617",
+          "905 032 597 142",
+          "905 032 597 142 617",
+          "905 032 597 142 617 495 460 365 002 004 407"
+        ]
+      },
+      {
+        "bigram": "900 740",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "407 900 740",
+          "806 845 061 407 850 900 740",
+          "806 845 407 850 900 740"
+        ]
+      },
+      {
+        "bigram": "095 595",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "744 760 095 595 001 142 617",
+          "747 717 095 595 001 142 617"
+        ]
+      }
+    ],
+    "recurring_tabc_trigrams": [
+      {
+        "trigram": "435 690 740",
+        "n_distinct_tabc_formulas": 6,
+        "sample_formulas": [
+          "231 255 435 690 740",
+          "255 435 690 740",
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424"
+        ]
+      },
+      {
+        "trigram": "001 142 617",
+        "n_distinct_tabc_formulas": 5,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "235 233 222 740 861 368 001 142 617",
+          "744 760 095 595 001 142 617",
+          "747 717 095 595 001 142 617"
+        ]
+      },
+      {
+        "trigram": "255 435 690",
+        "n_distinct_tabc_formulas": 5,
+        "sample_formulas": [
+          "231 255 435 690 740",
+          "255 435 690 740",
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424"
+        ]
+      },
+      {
+        "trigram": "690 740 900",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "255 435 690 740 900 001 003 423",
+          "255 435 690 740 900 001 003 424",
+          "255 435 690 740 900 003 422",
+          "690 740 900"
+        ]
+      },
+      {
+        "trigram": "032 597 142",
+        "n_distinct_tabc_formulas": 4,
+        "sample_formulas": [
+          "904 032 597 142 617",
+          "905 032 597 142",
+          "905 032 597 142 617",
+          "905 032 597 142 617 495 460 365 002 004 407"
+        ]
+      },
+      {
+        "trigram": "095 595 001",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "744 760 095 595 001 142 617",
+          "747 717 095 595 001 142 617"
+        ]
+      },
+      {
+        "trigram": "595 001 142",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "095 595 001 142 617",
+          "744 760 095 595 001 142 617",
+          "747 717 095 595 001 142 617"
+        ]
+      },
+      {
+        "trigram": "017 585 095",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "220 017 585 095 520 032 407",
+          "220 017 585 095 520 032 408",
+          "231 017 585 095 520 032 407"
+        ]
+      },
+      {
+        "trigram": "585 095 520",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "220 017 585 095 520 032 407",
+          "220 017 585 095 520 032 408",
+          "231 017 585 095 520 032 407"
+        ]
+      },
+      {
+        "trigram": "095 520 032",
+        "n_distinct_tabc_formulas": 3,
+        "sample_formulas": [
+          "220 017 585 095 520 032 407",
+          "220 017 585 095 520 032 408",
+          "231 017 585 095 520 032 407"
+        ]
+      }
+    ],
+    "polysemous_single_sign_reverse_logograms": {
+      "782": {
+        "distinct_long_spellings": [
+          "220 017 585 095 520 032 407",
+          "806 845 061 407 850 900 740"
+        ],
+        "n_tablets": 2,
+        "cisis": [
+          "M-2053",
+          "M-1563"
+        ]
+      },
+      "749": {
+        "distinct_long_spellings": [
+          "231 255",
+          "806 233 384 740"
+        ],
+        "n_tablets": 3,
+        "cisis": [
+          "M-597",
+          "M-1549",
+          "M-1550"
+        ]
+      },
+      "781": {
+        "distinct_long_spellings": [
+          "220 017 585 095 520 032 408",
+          "806 845 061 407 850 900 740"
+        ],
+        "n_tablets": 2,
+        "cisis": [
+          "M-599",
+          "M-602"
+        ]
+      },
+      "777": {
+        "distinct_long_spellings": [
+          "231 017 585 095 520 032 407",
+          "806 845 061 407 850 900 740",
+          "806 845 407 850 900 740"
+        ],
+        "n_tablets": 6,
+        "cisis": [
+          "M-603",
+          "M-604",
+          "M-1555",
+          "M-1556",
+          "M-1557",
+          "M-1558"
+        ]
+      }
+    },
+    "seal_s_animal_retention_tests": [
+      {
+        "pattern": "923",
+        "tab_c_role": "TAB:C Elep 11/11",
+        "target_animal": "Elep",
+        "seal_s_pattern_hits": 21,
+        "seal_s_same_animal_hits": 1,
+        "seal_s_target_animal_total": 41,
+        "fisher_p_same_animal": 0.41374,
+        "seal_s_actual_top_animals": {
+          "Bull1": 18,
+          "Zebu": 1,
+          "Elep": 1,
+          "Tigr": 1
+        }
+      },
+      {
+        "pattern": "706 033",
+        "tab_c_role": "TAB:C Elep 11/11",
+        "target_animal": "Elep",
+        "seal_s_pattern_hits": 21,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 41,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 19,
+          "Gaur": 2
+        }
+      },
+      {
+        "pattern": "321",
+        "tab_c_role": "TAB:C Hare 12/12",
+        "target_animal": "Hare",
+        "seal_s_pattern_hits": 1,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 0,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 1
+        }
+      },
+      {
+        "pattern": "845",
+        "tab_c_role": "TAB:C Hare/Anth/Loop",
+        "target_animal": "Hare",
+        "seal_s_pattern_hits": 2,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 0,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 2
+        }
+      },
+      {
+        "pattern": "407",
+        "tab_c_role": "TAB:C Hare/Anth/Loop",
+        "target_animal": "Hare",
+        "seal_s_pattern_hits": 6,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 0,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 6
+        }
+      },
+      {
+        "pattern": "503",
+        "tab_c_role": "TAB:C Othr/Rhin",
+        "target_animal": "Rhin",
+        "seal_s_pattern_hits": 25,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 25,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 20,
+          "Gaur": 4,
+          "Bull": 1
+        }
+      },
+      {
+        "pattern": "615",
+        "tab_c_role": "TAB:C Othr/Rhin",
+        "target_animal": "Rhin",
+        "seal_s_pattern_hits": 24,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 25,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 17,
+          "Zebu": 3,
+          "Buff": 2,
+          "Tigr": 1
+        }
+      },
+      {
+        "pattern": "503 615",
+        "tab_c_role": "TAB:C Othr/Rhin bigram",
+        "target_animal": "Rhin",
+        "seal_s_pattern_hits": 2,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 25,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 2
+        }
+      },
+      {
+        "pattern": "850",
+        "tab_c_role": "TAB:C Anth 10/10",
+        "target_animal": "Anth",
+        "seal_s_pattern_hits": 16,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 2,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 9,
+          "Gaur": 2,
+          "Tigr": 1,
+          "Zebu": 1
+        }
+      },
+      {
+        "pattern": "415 220",
+        "tab_c_role": "TAB:C Loop 4/4",
+        "target_animal": "Loop",
+        "seal_s_pattern_hits": 28,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 0,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 25,
+          "Gaur": 1,
+          "Elep": 1,
+          "Bull": 1
+        }
+      },
+      {
+        "pattern": "705 033",
+        "tab_c_role": "TAB:C Hare/Comp",
+        "target_animal": "Hare",
+        "seal_s_pattern_hits": 42,
+        "seal_s_same_animal_hits": 0,
+        "seal_s_target_animal_total": 0,
+        "fisher_p_same_animal": 1.0,
+        "seal_s_actual_top_animals": {
+          "Bull1": 34,
+          "Gaur": 2,
+          "Rhin": 2,
+          "Bull": 1
+        }
+      }
+    ],
+    "cross_corpus_non_tabc_trace": {
+      "845 407": {
+        "non_tabc_count": 7,
+        "by_object_type": {
+          "SEAL:R": 6,
+          "SEAL:S": 1
+        },
+        "by_site": {
+          "Mohenjo-daro": 5,
+          "Harappa": 2
+        },
+        "sample_texts": {
+          "798 231 233 740 845 407 471 806 154": 1,
+          "263 365 798 240 233 740 140 845 407": 1,
+          "806 233 845 407": 1,
+          "861 002 240 923 101 740 140 845 407": 1
+        }
+      },
+      "705 033": {
+        "non_tabc_count": 84,
+        "by_object_type": {
+          "SEAL:S": 46,
+          "TAB:B": 17,
+          "SEAL:R": 13,
+          "TAB:I": 1,
+          "SEAL:CY": 1
+        },
+        "by_site": {
+          "Mohenjo-daro": 51,
+          "Harappa": 24,
+          "Chanhu-daro": 3,
+          "Lothal": 2
+        },
+        "sample_texts": {
+          "240 705 033 550 525 400": 5,
+          "705 033 590 390 740": 5,
+          "705 033 520": 3,
+          "235 705 033": 2
+        }
+      },
+      "706 033": {
+        "non_tabc_count": 34,
+        "by_object_type": {
+          "SEAL:S": 22,
+          "SEAL:R": 12
+        },
+        "by_site": {
+          "Mohenjo-daro": 20,
+          "Harappa": 12,
+          "Dholavira": 2
+        },
+        "sample_texts": {
+          "706 033 520": 2,
+          "233 706 033 520": 1,
+          "803 415 231 706 033 520": 1,
+          "921 690 002 706 033 590 405 740 001 354": 1
+        }
+      },
+      "503 615": {
+        "non_tabc_count": 5,
+        "by_object_type": {
+          "SEAL:R": 3,
+          "SEAL:S": 2
+        },
+        "by_site": {
+          "Mohenjo-daro": 3,
+          "Harappa": 2
+        },
+        "sample_texts": {
+          "817 002 503 615 760 740": 1,
+          "503 615 154": 1,
+          "503 615 740": 1,
+          "503 615 003 900 740": 1
+        }
+      },
+      "415 220": {
+        "non_tabc_count": 88,
+        "by_object_type": {
+          "SEAL:S": 30,
+          "TAB:B": 21,
+          "TAB:I": 19,
+          "SEAL:R": 15,
+          "ROD": 2
+        },
+        "by_site": {
+          "Harappa": 44,
+          "Mohenjo-daro": 40,
+          "Chanhu-daro": 1,
+          "Lothal": 1
+        },
+        "sample_texts": {
+          "415 220 520": 18,
+          "803 415 220 318 920 255 436 690 590 407 740": 11,
+          "415 220": 6,
+          "798 415 220 740 400": 5
+        }
+      },
+      "142 617": {
+        "non_tabc_count": 15,
+        "by_object_type": {
+          "SEAL:R": 9,
+          "TAB:B": 3,
+          "SEAL:S": 2,
+          "POT:T:g": 1
+        },
+        "by_site": {
+          "Mohenjo-daro": 12,
+          "Harappa": 2,
+          "Dholavira": 1
+        },
+        "sample_texts": {
+          "142 617": 8,
+          "817 002 142 617": 1,
+          "140 746 142 617": 1,
+          "467 806 154 032 384 142 617": 1
+        }
+      },
+      "900 165": {
+        "non_tabc_count": 4,
+        "by_object_type": {
+          "SEAL:R": 1,
+          "TAB:B": 1,
+          "SEAL:S": 1,
+          "MISC": 1
+        },
+        "by_site": {
+          "Harappa": 2,
+          "Mohenjo-daro": 2
+        },
+        "sample_texts": {
+          "001 900 165 400 255 400": 1,
+          "900 165 480 001": 1,
+          "457 575 111 060 900 165 740": 1,
+          "900 165": 1
+        }
+      },
+      "017 585": {
+        "non_tabc_count": 16,
+        "by_object_type": {
+          "SEAL:S": 14,
+          "SEAL:R": 1,
+          "TAG:L": 1
+        },
+        "by_site": {
+          "Mohenjo-daro": 9,
+          "Harappa": 4,
+          "Kalibangan": 2,
+          "Rupar": 1
+        },
+        "sample_texts": {
+          "017 585 740": 2,
+          "703 615 611 002 017 585 740": 1,
+          "920 455 220 002 803 706 033 017 585 740": 1,
+          "904 032 305 002 240 017 585 740": 1
+        }
+      },
+      "706 033 923": {
+        "non_tabc_count": 0,
+        "by_object_type": {},
+        "by_site": {},
+        "sample_texts": {}
+      }
+    }
+  },
+  "test2_deep_trace_091_and_790": {
+    "sign_091_twin_humans": {
+      "sign_id": "091",
+      "total_inscriptions": 28,
+      "unique_texts": 15,
+      "foreign_or_cargo_or_gulfseal_count": 16,
+      "foreign_or_cargo_or_gulfseal_pct": 57.1,
+      "by_region": {
+        "Inter-Riverine": 14,
+        "Lower Indus": 5,
+        "Persian Gulf": 4,
+        "Gujarat/Kutch": 3,
+        "Iranian Plateau": 1,
+        "Other": 1
+      },
+      "by_site": {
+        "Kalibangan": 8,
+        "Harappa": 6,
+        "Mohenjo-daro": 5,
+        "Dholavira": 3,
+        "Karzakan": 2,
+        "Luristan": 1,
+        "Unknown": 1,
+        "Saar": 1,
+        "Kalba": 1
+      },
+      "by_object_type": {
+        "TAG": 8,
+        "SEAL:C": 7,
+        "TAB:B": 5,
+        "SEAL:S": 5,
+        "SEAL": 1,
+        "SEAL:CY": 1,
+        "SEAL:R": 1
+      },
+      "position_profile": {
+        "INIT": 17,
+        "MEDIAL": 5,
+        "SOLO": 6
+      },
+      "top_left_neighbors": {
+        "390": 1,
+        "190": 1,
+        "001": 1,
+        "031": 1,
+        "220": 1
+      },
+      "top_right_neighbors": {
+        "056": 8,
+        "368": 4,
+        "032": 2,
+        "500": 2,
+        "840": 1,
+        "831": 1
+      },
+      "all_records": [
+        {
+          "id": "499.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "-",
+          "symbol": "",
+          "text": "091 368 033 700"
+        },
+        {
+          "id": "654.2",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Faience",
+          "symbol": "",
+          "text": "091 368"
+        },
+        {
+          "id": "697.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Clay",
+          "symbol": "Gavi",
+          "text": "091 032 700"
+        },
+        {
+          "id": "774.2",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Faience",
+          "symbol": "",
+          "text": "091 368"
+        },
+        {
+          "id": "1264.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Faience",
+          "symbol": "",
+          "text": "060 390 091 500 740"
+        },
+        {
+          "id": "1427.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "-",
+          "text": "091"
+        },
+        {
+          "id": "1927.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "1928.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "1929.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "1930.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "1931.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "1932.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "1933.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "2153.1",
+          "region": "Iranian Plateau",
+          "site": "Luristan",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "Gaur",
+          "text": "091 840 413 831"
+        },
+        {
+          "id": "2180.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:V",
+          "text": "091 500 741 240 416 840 740"
+        },
+        {
+          "id": "3212.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:W",
+          "text": "091 831 585"
+        },
+        {
+          "id": "3414.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull",
+          "text": "091"
+        },
+        {
+          "id": "3567.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL",
+          "material": "Steatite",
+          "symbol": "-",
+          "text": "091"
+        },
+        {
+          "id": "3669.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:CY",
+          "material": "Steatite",
+          "symbol": "Phyt",
+          "text": "091"
+        },
+        {
+          "id": "3887.1",
+          "region": "Other",
+          "site": "Unknown",
+          "is_foreign": 0,
+          "object_type": "SEAL:C",
+          "material": "Steatite",
+          "symbol": "Scene",
+          "text": "190 091 603"
+        },
+        {
+          "id": "4247.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "is_foreign": 0,
+          "object_type": "SEAL:C",
+          "material": "Steatite",
+          "symbol": "Gaur",
+          "text": "255 368 001 091 806"
+        },
+        {
+          "id": "4257.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "-",
+          "symbol": "",
+          "text": "091"
+        },
+        {
+          "id": "5191.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Faience",
+          "symbol": "Bull1:U",
+          "text": "031 091 368"
+        },
+        {
+          "id": "5227.1",
+          "region": "Persian Gulf",
+          "site": "Karzakan",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "Gaur",
+          "text": "091 031 455 220"
+        },
+        {
+          "id": "5228.1",
+          "region": "Persian Gulf",
+          "site": "Karzakan",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "Gaur",
+          "text": "091 032 001 033"
+        },
+        {
+          "id": "5229.1",
+          "region": "Persian Gulf",
+          "site": "Saar",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "",
+          "text": "055 220 091 001 093 031"
+        },
+        {
+          "id": "5281.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "TAG",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "091 056 002 417 890 892"
+        },
+        {
+          "id": "5551.1",
+          "region": "Persian Gulf",
+          "site": "Kalba",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "",
+          "text": "091"
+        }
+      ]
+    },
+    "sign_091_combined_trade_logistics_test": {
+      "in_export_or_cargo_or_roundseal_dedup": 9,
+      "outside_trade_dedup": 11,
+      "trade_context_share_of_091_pct": 45.0,
+      "trade_context_share_of_corpus_pct": 6.4,
+      "lift": 11.89,
+      "fisher_p": 1.4759e-06,
+      "foreign_091_vs_090_ratio_test": {
+        "foreign_091": 5,
+        "foreign_090": 7,
+        "core_091": 23,
+        "core_090": 188,
+        "fisher_p_091_over_090_in_foreign": 0.0092859
+      }
+    },
+    "sign_790_ring_bangle": {
+      "sign_id": "790",
+      "total_inscriptions": 53,
+      "unique_texts": 40,
+      "foreign_or_cargo_or_gulfseal_count": 0,
+      "foreign_or_cargo_or_gulfseal_pct": 0.0,
+      "by_region": {
+        "Lower Indus": 26,
+        "Inter-Riverine": 22,
+        "Gujarat/Kutch": 5
+      },
+      "by_site": {
+        "Mohenjo-daro": 22,
+        "Harappa": 21,
+        "Chanhu-daro": 3,
+        "Dholavira": 2,
+        "Lothal": 2,
+        "Desalpur": 1,
+        "Kalibangan": 1,
+        "Nausharo": 1
+      },
+      "by_object_type": {
+        "SEAL:S": 11,
+        "TAB:B": 11,
+        "SEAL:R": 7,
+        "BNGL": 7,
+        "TAB:C": 6,
+        "POT:T:g": 4,
+        "POT:T:s": 3,
+        "MISC": 2,
+        "TAB:I": 1,
+        "SEAL": 1
+      },
+      "position_profile": {
+        "INIT": 20,
+        "MEDIAL": 15,
+        "SOLO": 6,
+        "FINAL": 13
+      },
+      "top_left_neighbors": {
+        "032": 6,
+        "740": 6,
+        "440": 2,
+        "001": 2,
+        "233": 2,
+        "495": 1
+      },
+      "top_right_neighbors": {
+        "407": 4,
+        "176": 4,
+        "900": 4,
+        "390": 3,
+        "740": 3,
+        "717": 3
+      },
+      "all_records": [
+        {
+          "id": "86.1",
+          "region": "Lower Indus",
+          "site": "Chanhu-daro",
+          "is_foreign": 0,
+          "object_type": "POT:T:g",
+          "material": "Clay",
+          "symbol": "",
+          "text": "790 055 740"
+        },
+        {
+          "id": "107.1",
+          "region": "Lower Indus",
+          "site": "Chanhu-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:I",
+          "text": "495 790 031 790 151"
+        },
+        {
+          "id": "109.1",
+          "region": "Lower Indus",
+          "site": "Chanhu-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Gaur",
+          "text": "032 390 440 790 390 368"
+        },
+        {
+          "id": "124.1",
+          "region": "Gujarat/Kutch",
+          "site": "Desalpur",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "-",
+          "symbol": "",
+          "text": "440 790 407 590"
+        },
+        {
+          "id": "135.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "Clay",
+          "symbol": "",
+          "text": "032 790 407 590"
+        },
+        {
+          "id": "231.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "POT:T:g",
+          "material": "Clay",
+          "symbol": "",
+          "text": "740 550 790 904"
+        },
+        {
+          "id": "262.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:I",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "790 031 001"
+        },
+        {
+          "id": "384.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "Clay",
+          "symbol": "",
+          "text": "790"
+        },
+        {
+          "id": "426.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "032 790 407"
+        },
+        {
+          "id": "429.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Copper",
+          "symbol": "",
+          "text": "790 176"
+        },
+        {
+          "id": "465.2",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Copper",
+          "symbol": "",
+          "text": "790 176"
+        },
+        {
+          "id": "564.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Copper",
+          "symbol": "",
+          "text": "790 176"
+        },
+        {
+          "id": "565.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Copper",
+          "symbol": "",
+          "text": "790 176"
+        },
+        {
+          "id": "662.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Clay",
+          "symbol": "Mult",
+          "text": "790 003 550 617"
+        },
+        {
+          "id": "930.2",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Faience",
+          "symbol": "",
+          "text": "032 790 740"
+        },
+        {
+          "id": "1162.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "-",
+          "symbol": "",
+          "text": "790"
+        },
+        {
+          "id": "1467.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:W",
+          "text": "790 590 405 740"
+        },
+        {
+          "id": "1579.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "032 790"
+        },
+        {
+          "id": "1583.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "740 790"
+        },
+        {
+          "id": "1656.2",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "-",
+          "symbol": "",
+          "text": "790 717 740"
+        },
+        {
+          "id": "1657.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Faience",
+          "symbol": "",
+          "text": "790 717 740"
+        },
+        {
+          "id": "1727.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Faience",
+          "symbol": "",
+          "text": "790 740 400"
+        },
+        {
+          "id": "2053.1",
+          "region": "Gujarat/Kutch",
+          "site": "Lothal",
+          "is_foreign": 0,
+          "object_type": "MISC",
+          "material": "Clay",
+          "symbol": "",
+          "text": "063 032 790 700 390"
+        },
+        {
+          "id": "2152.1",
+          "region": "Gujarat/Kutch",
+          "site": "Lothal",
+          "is_foreign": 0,
+          "object_type": "POT:T:g",
+          "material": "-",
+          "symbol": "-",
+          "text": "480 001 790"
+        },
+        {
+          "id": "2174.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "Stoneware",
+          "symbol": "",
+          "text": "790"
+        },
+        {
+          "id": "2234.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "806 798 415 220 790 900 740"
+        },
+        {
+          "id": "2405.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:W",
+          "text": "790 032 632 892 350 296 400"
+        },
+        {
+          "id": "2648.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:W",
+          "text": "798 233 790 900 740"
+        },
+        {
+          "id": "2658.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:W",
+          "text": "790 390 741 590 390 740"
+        },
+        {
+          "id": "2683.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:J",
+          "text": "820 001 798 233 790 900 740"
+        },
+        {
+          "id": "3015.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "TAB:C",
+          "material": "Copper",
+          "symbol": "Goat:8",
+          "text": "003 421 176 100 740 790"
+        },
+        {
+          "id": "3016.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "TAB:C",
+          "material": "Copper",
+          "symbol": "Goat:8",
+          "text": "003 421 176 100 740 790"
+        },
+        {
+          "id": "3017.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "TAB:C",
+          "material": "Copper",
+          "symbol": "Goat:8",
+          "text": "003 421 176 100 740 790"
+        },
+        {
+          "id": "3148.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "-",
+          "symbol": "Bull1:J",
+          "text": "861 002 790 721 390"
+        },
+        {
+          "id": "3552.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Gaur",
+          "text": "790 840 257 740 415 100 740"
+        },
+        {
+          "id": "3555.2",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1",
+          "text": "790"
+        },
+        {
+          "id": "3673.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "POT:T:s",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "705 033 032 790"
+        },
+        {
+          "id": "3734.2",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "TAB:C",
+          "material": "Copper",
+          "symbol": "Loop",
+          "text": "590 405 100 740 790"
+        },
+        {
+          "id": "3735.2",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "TAB:C",
+          "material": "Copper",
+          "symbol": "-",
+          "text": "790 900 165"
+        },
+        {
+          "id": "3758.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "TAB:C",
+          "material": "Copper",
+          "symbol": "Othr",
+          "text": "003 176 740 790"
+        },
+        {
+          "id": "3824.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "Stoneware",
+          "symbol": "",
+          "text": "140 743 790"
+        },
+        {
+          "id": "3825.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "Stoneware",
+          "symbol": "",
+          "text": "741 290 790 002"
+        },
+        {
+          "id": "3836.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "Stoneware",
+          "symbol": "",
+          "text": "840 790"
+        },
+        {
+          "id": "3837.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "BNGL",
+          "material": "Stoneware",
+          "symbol": "",
+          "text": "790"
+        },
+        {
+          "id": "3963.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "-",
+          "symbol": "",
+          "text": "790 717 740"
+        },
+        {
+          "id": "3979.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "-",
+          "symbol": "",
+          "text": "790 740 400"
+        },
+        {
+          "id": "4014.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "POT:T:s",
+          "material": "Clay",
+          "symbol": "Bull1",
+          "text": "956 005 790"
+        },
+        {
+          "id": "4284.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "is_foreign": 0,
+          "object_type": "SEAL:R",
+          "material": "-",
+          "symbol": "",
+          "text": "746 001 790 407 590"
+        },
+        {
+          "id": "4442.1",
+          "region": "Inter-Riverine",
+          "site": "Kalibangan",
+          "is_foreign": 0,
+          "object_type": "POT:T:g",
+          "material": "Clay",
+          "symbol": "-",
+          "text": "791 790"
+        },
+        {
+          "id": "5353.1",
+          "region": "Lower Indus",
+          "site": "Nausharo",
+          "is_foreign": 0,
+          "object_type": "SEAL",
+          "material": "Terracotta",
+          "symbol": "Bull1",
+          "text": "790 390"
+        },
+        {
+          "id": "5408.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Copper",
+          "symbol": "Bull1",
+          "text": "790 850"
+        },
+        {
+          "id": "5479.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "MISC",
+          "material": "Terracotta",
+          "symbol": "",
+          "text": "790"
+        },
+        {
+          "id": "5519.1",
+          "region": "Lower Indus",
+          "site": "Mohenjo-daro",
+          "is_foreign": 0,
+          "object_type": "POT:T:s",
+          "material": "Clay",
+          "symbol": "",
+          "text": "790 153"
+        }
+      ]
+    },
+    "sign_090_single_human_summary": {
+      "sign_id": "090",
+      "total_inscriptions": 195,
+      "unique_texts": 141,
+      "foreign_or_cargo_or_gulfseal_count": 30,
+      "foreign_or_cargo_or_gulfseal_pct": 15.4,
+      "by_region": {
+        "Lower Indus": 80,
+        "Inter-Riverine": 71,
+        "Gujarat/Kutch": 30,
+        "Other": 4,
+        "Eastern Headwaters": 3,
+        "Persian Gulf": 3,
+        "Mesopotamia": 3,
+        "Iranian Plateau": 1
+      },
+      "by_site": {
+        "Mohenjo-daro": 76,
+        "Harappa": 67,
+        "Lothal": 17,
+        "Dholavira": 12,
+        "Unknown": 4,
+        "Kalibangan": 4,
+        "Banawali": 3,
+        "Nausharo": 3,
+        "Ur": 3,
+        "Failaka": 2
+      },
+      "by_object_type": {
+        "SEAL:S": 79,
+        "TAB:B": 40,
+        "TAB:I": 19,
+        "POT:T:g": 11,
+        "TAG": 10,
+        "TAG:L": 9,
+        "SEAL:C": 9,
+        "SEAL:R": 8,
+        "SEAL": 2,
+        "ROD": 2,
+        "MISC": 1,
+        "TAG:W": 1,
+        "IMPL": 1,
+        "TAB:C": 1,
+        "BNGL": 1,
+        "SEAL:CY": 1
+      },
+      "position_profile": {
+        "FINAL": 130,
+        "INIT": 26,
+        "MEDIAL": 31,
+        "SOLO": 10
+      },
+      "top_left_neighbors": {
+        "740": 124,
+        "001": 2,
+        "405": 2,
+        "125": 2,
+        "350": 2,
+        "055": 2
+      },
+      "top_right_neighbors": {
+        "400": 16,
+        "405": 4,
+        "942": 3,
+        "817": 2,
+        "001": 2,
+        "700": 2
+      },
+      "all_records": [
+        {
+          "id": "27.1",
+          "region": "Eastern Headwaters",
+          "site": "Banawali",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:O",
+          "text": "821 550 368 002 220 740 090"
+        },
+        {
+          "id": "37.1",
+          "region": "Eastern Headwaters",
+          "site": "Banawali",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Htgr",
+          "text": "090 308 002 236"
+        },
+        {
+          "id": "42.1",
+          "region": "Eastern Headwaters",
+          "site": "Banawali",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "-",
+          "symbol": "Scene",
+          "text": "900 484 380 900 158 090 906"
+        },
+        {
+          "id": "94.1",
+          "region": "Lower Indus",
+          "site": "Chanhu-daro",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1:J",
+          "text": "521 521 817 500 031 002 221 740 090"
+        },
+        {
+          "id": "141.1",
+          "region": "Gujarat/Kutch",
+          "site": "Dholavira",
+          "is_foreign": 0,
+          "object_type": "TAG:L",
+          "material": "Clay",
+          "symbol": "",
+          "text": "740 090"
+        },
+        {
+          "id": "147.1",
+          "region": "Persian Gulf",
+          "site": "Failaka",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "Gaur",
+          "text": "090 817 317"
+        },
+        {
+          "id": "148.1",
+          "region": "Persian Gulf",
+          "site": "Failaka",
+          "is_foreign": 1,
+          "object_type": "SEAL:C",
+          "material": "-",
+          "symbol": "-",
+          "text": "716 350 001 090"
+        },
+        {
+          "id": "164.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "MISC",
+          "material": "Brick",
+          "symbol": "",
+          "text": "090 001 520"
+        },
+        {
+          "id": "179.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "POT:T:g",
+          "material": "Clay",
+          "symbol": "",
+          "text": "090"
+        },
+        {
+          "id": "217.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:I",
+          "material": "Steatite",
+          "symbol": "S590",
+          "text": "220 240 740 090"
+        },
+        {
+          "id": "237.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "Steatite",
+          "symbol": "Bull1",
+          "text": "003 220 740 090 400"
+        },
+        {
+          "id": "239.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "TAB:B",
+          "material": "Steatite",
+          "symbol": "",
+          "text": "090 400"
+        },
+        {
+          "id": "284.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "-",
+          "symbol": "Bull1:W",
+          "text": "861 002 103 740 090"
+        },
+        {
+          "id": "321.1",
+          "region": "Other",
+          "site": "Unknown",
+          "is_foreign": 0,
+          "object_type": "SEAL:S",
+          "material": "-",
+          "symbol": "Bull1:J",
+          "text": "066 741 103 740 090"
+        },
+        {
+          "id": "338.1",
+          "region": "Inter-Riverine",
+          "site": "Harappa",
+          "is_foreign": 0,
+          "object_type": "POT:T:g",
+          "material": "Clay",
+          "symbol": "",
+          "text": "400 090 066 740"
+        }
+      ]
+    }
+  },
+  "test3_blind_4family_phonetic_tournament": {
+    "n_concepts": 10,
+    "n_linked_pairs": 7,
+    "n_unlinked_pairs": 38,
+    "n_permutations": 1000,
+    "linked_pairs_rationale": [
+      "hare<->elephant (TAB:C shared 705/706 033)",
+      "hare<->hunter_man (TAB:C shared 845..407)",
+      "hare<->knot_loop (TAB:C shared 845 407)",
+      "hunter_man<->knot_loop (TAB:C shared 845..407)",
+      "hunter_man<->goat_buffalo (TAB:C shared reverse 777/781/782)",
+      "antelope_deer<->rhinoceros (TAB:C shared 503 615 740)",
+      "elephant<->fish_star (706 033 links Fish seals & Elep TAB:C)"
+    ],
+    "family_results": {
+      "Proto-Dravidian (DEDR)": {
+        "mode1_primary": {
+          "linked_mean_cons_sim": 0.2262,
+          "unlinked_mean_cons_sim": 0.1842,
+          "obs_contrast_delta": 0.042,
+          "null_delta_mean": -0.0024,
+          "null_delta_sd": 0.0833,
+          "z_score": 0.53,
+          "emp_p": 0.3077,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.25,
+            "hare<->hunter_man": 0.0,
+            "hare<->knot_loop": 0.25,
+            "hunter_man<->knot_loop": 0.25,
+            "hunter_man<->goat_buffalo": 0.25,
+            "antelope_deer<->rhinoceros": 0.25,
+            "elephant<->fish_star": 0.333
+          }
+        },
+        "mode2_expanded": {
+          "linked_mean_cons_sim": 0.5119,
+          "unlinked_mean_cons_sim": 0.6294,
+          "obs_contrast_delta": -0.1175,
+          "null_delta_mean": 0.0033,
+          "null_delta_sd": 0.1164,
+          "z_score": -1.04,
+          "emp_p": 0.8591,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.667,
+            "hare<->hunter_man": 0.333,
+            "hare<->knot_loop": 0.333,
+            "hunter_man<->knot_loop": 1.0,
+            "hunter_man<->goat_buffalo": 0.25,
+            "antelope_deer<->rhinoceros": 0.333,
+            "elephant<->fish_star": 0.667
+          }
+        }
+      },
+      "Proto-Munda / Austroasiatic (Pinnow/Sidwell)": {
+        "mode1_primary": {
+          "linked_mean_cons_sim": 0.1524,
+          "unlinked_mean_cons_sim": 0.1382,
+          "obs_contrast_delta": 0.0142,
+          "null_delta_mean": -0.002,
+          "null_delta_sd": 0.0618,
+          "z_score": 0.26,
+          "emp_p": 0.4206,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.0,
+            "hare<->hunter_man": 0.0,
+            "hare<->knot_loop": 0.333,
+            "hunter_man<->knot_loop": 0.2,
+            "hunter_man<->goat_buffalo": 0.2,
+            "antelope_deer<->rhinoceros": 0.0,
+            "elephant<->fish_star": 0.333
+          }
+        },
+        "mode2_expanded": {
+          "linked_mean_cons_sim": 0.3667,
+          "unlinked_mean_cons_sim": 0.4382,
+          "obs_contrast_delta": -0.0715,
+          "null_delta_mean": -0.0011,
+          "null_delta_sd": 0.0772,
+          "z_score": -0.91,
+          "emp_p": 0.8162,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.333,
+            "hare<->hunter_man": 0.333,
+            "hare<->knot_loop": 0.333,
+            "hunter_man<->knot_loop": 0.4,
+            "hunter_man<->goat_buffalo": 0.333,
+            "antelope_deer<->rhinoceros": 0.333,
+            "elephant<->fish_star": 0.5
+          }
+        }
+      },
+      "Old Indo-Aryan / Sanskrit (EWAia)": {
+        "mode1_primary": {
+          "linked_mean_cons_sim": 0.0833,
+          "unlinked_mean_cons_sim": 0.1001,
+          "obs_contrast_delta": -0.0167,
+          "null_delta_mean": 0.0013,
+          "null_delta_sd": 0.0661,
+          "z_score": -0.27,
+          "emp_p": 0.5764,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.0,
+            "hare<->hunter_man": 0.0,
+            "hare<->knot_loop": 0.0,
+            "hunter_man<->knot_loop": 0.333,
+            "hunter_man<->goat_buffalo": 0.0,
+            "antelope_deer<->rhinoceros": 0.25,
+            "elephant<->fish_star": 0.0
+          }
+        },
+        "mode2_expanded": {
+          "linked_mean_cons_sim": 0.35,
+          "unlinked_mean_cons_sim": 0.4785,
+          "obs_contrast_delta": -0.1285,
+          "null_delta_mean": 0.0011,
+          "null_delta_sd": 0.0825,
+          "z_score": -1.57,
+          "emp_p": 0.9421,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.333,
+            "hare<->hunter_man": 0.2,
+            "hare<->knot_loop": 0.5,
+            "hunter_man<->knot_loop": 0.5,
+            "hunter_man<->goat_buffalo": 0.25,
+            "antelope_deer<->rhinoceros": 0.333,
+            "elephant<->fish_star": 0.333
+          }
+        }
+      },
+      "Sumerian / Elamite (ePSD / Hinz)": {
+        "mode1_primary": {
+          "linked_mean_cons_sim": 0.0952,
+          "unlinked_mean_cons_sim": 0.1754,
+          "obs_contrast_delta": -0.0802,
+          "null_delta_mean": -0.0014,
+          "null_delta_sd": 0.1183,
+          "z_score": -0.67,
+          "emp_p": 0.7353,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.0,
+            "hare<->hunter_man": 0.0,
+            "hare<->knot_loop": 0.333,
+            "hunter_man<->knot_loop": 0.0,
+            "hunter_man<->goat_buffalo": 0.0,
+            "antelope_deer<->rhinoceros": 0.333,
+            "elephant<->fish_star": 0.0
+          }
+        },
+        "mode2_expanded": {
+          "linked_mean_cons_sim": 0.4762,
+          "unlinked_mean_cons_sim": 0.5654,
+          "obs_contrast_delta": -0.0892,
+          "null_delta_mean": 0.0061,
+          "null_delta_sd": 0.1007,
+          "z_score": -0.95,
+          "emp_p": 0.8202,
+          "passes_z5_gate": false,
+          "passes_p05_nominal": false,
+          "pair_scores": {
+            "hare<->elephant": 0.667,
+            "hare<->hunter_man": 0.5,
+            "hare<->knot_loop": 0.5,
+            "hunter_man<->knot_loop": 0.333,
+            "hunter_man<->goat_buffalo": 0.5,
+            "antelope_deer<->rhinoceros": 0.5,
+            "elephant<->fish_star": 0.333
+          }
+        }
+      }
+    }
+  }
+}

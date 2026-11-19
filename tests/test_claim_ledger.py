@@ -145,6 +145,25 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
         bngl_fdr_signs = {h["sign"] for h in m4["categories"]["Stoneware_Shell_Bangles"]["top_dedup_hits"] if h["survives_fdr_05"]}
         self.assertIn("790", bngl_fdr_signs)
 
+    def test_09_layer10_copper_deep_and_091_invariants(self) -> None:
+        l10 = json.loads((REPORTS / "layer10_copper_rosetta_deep.json").read_text(encoding="utf-8"))
+        # T1: H1 refuted (TAB:C mean len > 4.5, polysemous 777/781/782, zero SEAL:S animal retention)
+        t1 = l10["test1_tabc_morpheme_architecture"]
+        self.assertGreater(t1["length_comparison_H1_vs_H2"]["tab_c_mean_len_all"], 4.5)
+        self.assertIn("777", t1["polysemous_single_sign_reverse_logograms"])
+        for r in t1["seal_s_animal_retention_tests"]:
+            self.assertGreater(r["fisher_p_same_animal"], 0.05)
+        # T2: Export/Logistics header #091 (0% final, >=10x lift in trade/cargo context, p < 1e-5)
+        t2 = l10["test2_deep_trace_091_and_790"]
+        self.assertEqual(t2["sign_091_twin_humans"]["position_profile"].get("FINAL", 0), 0)
+        self.assertGreater(t2["sign_091_combined_trade_logistics_test"]["lift"], 10.0)
+        self.assertLess(t2["sign_091_combined_trade_logistics_test"]["fisher_p"], 1e-5)
+        # T3: Honest null across all 4 language families on blind TAB:C animal-name phonological test
+        t3 = l10["test3_blind_4family_phonetic_tournament"]["family_results"]
+        for fam, modes in t3.items():
+            self.assertFalse(modes["mode1_primary"]["passes_z5_gate"], f"Unexpected M1 pass for {fam}")
+            self.assertFalse(modes["mode2_expanded"]["passes_z5_gate"], f"Unexpected M2 pass for {fam}")
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
