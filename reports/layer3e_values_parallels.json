@@ -1,0 +1,1099 @@
+{
+  "archaeological_contexts": {
+    "YEMEK_TROUGH_FEEDING_OFFERING": {
+      "lines": 214,
+      "top_signs": [
+        {
+          "sign": "233",
+          "in": "19/167 (11.4%)",
+          "out_pct": 4.81,
+          "lift": 2.37,
+          "p_value": 0.0007295
+        },
+        {
+          "sign": "235",
+          "in": "20/167 (12.0%)",
+          "out_pct": 5.48,
+          "lift": 2.19,
+          "p_value": 0.001298
+        },
+        {
+          "sign": "853",
+          "in": "4/167 (2.4%)",
+          "out_pct": 0.22,
+          "lift": 10.75,
+          "p_value": 0.001564
+        },
+        {
+          "sign": "150",
+          "in": "3/167 (1.8%)",
+          "out_pct": 0.1,
+          "lift": 18.81,
+          "p_value": 0.002258
+        },
+        {
+          "sign": "518",
+          "in": "3/167 (1.8%)",
+          "out_pct": 0.13,
+          "lift": 14.11,
+          "p_value": 0.003806
+        },
+        {
+          "sign": "503",
+          "in": "7/167 (4.2%)",
+          "out_pct": 1.27,
+          "lift": 3.29,
+          "p_value": 0.008376
+        },
+        {
+          "sign": "003",
+          "in": "15/167 (9.0%)",
+          "out_pct": 4.39,
+          "lift": 2.04,
+          "p_value": 0.009234
+        },
+        {
+          "sign": "001",
+          "in": "17/167 (10.2%)",
+          "out_pct": 5.41,
+          "lift": 1.88,
+          "p_value": 0.01189
+        }
+      ]
+    },
+    "IS_TICARET_BALE_SEALINGS_TAG": {
+      "lines": 196,
+      "top_signs": [
+        {
+          "sign": "326",
+          "in": "3/144 (2.1%)",
+          "out_pct": 0.09,
+          "lift": 22.15,
+          "p_value": 0.001435
+        },
+        {
+          "sign": "880",
+          "in": "3/144 (2.1%)",
+          "out_pct": 0.25,
+          "lift": 8.3,
+          "p_value": 0.01009
+        }
+      ]
+    },
+    "IS_COPPER_METAL_WORK_TAB_C": {
+      "lines": 232,
+      "top_signs": [
+        {
+          "sign": "407",
+          "in": "17/96 (17.7%)",
+          "out_pct": 1.63,
+          "lift": 10.89,
+          "p_value": 3.266e-12
+        },
+        {
+          "sign": "845",
+          "in": "7/96 (7.3%)",
+          "out_pct": 0.44,
+          "lift": 16.66,
+          "p_value": 1.195e-06
+        },
+        {
+          "sign": "597",
+          "in": "3/96 (3.1%)",
+          "out_pct": 0.0,
+          "lift": 31250.0,
+          "p_value": 2.401e-05
+        },
+        {
+          "sign": "095",
+          "in": "6/96 (6.2%)",
+          "out_pct": 0.5,
+          "lift": 12.49,
+          "p_value": 2.681e-05
+        },
+        {
+          "sign": "142",
+          "in": "9/96 (9.4%)",
+          "out_pct": 1.53,
+          "lift": 6.12,
+          "p_value": 3.401e-05
+        },
+        {
+          "sign": "900",
+          "in": "10/96 (10.4%)",
+          "out_pct": 2.28,
+          "lift": 4.56,
+          "p_value": 0.0001152
+        },
+        {
+          "sign": "422",
+          "in": "3/96 (3.1%)",
+          "out_pct": 0.06,
+          "lift": 49.97,
+          "p_value": 0.00023
+        },
+        {
+          "sign": "747",
+          "in": "3/96 (3.1%)",
+          "out_pct": 0.13,
+          "lift": 24.98,
+          "p_value": 0.0007714
+        }
+      ]
+    },
+    "SAVAS_TOOLS_WEAPONS_IMPL": {
+      "lines": 27,
+      "top_signs": [
+        {
+          "sign": "005",
+          "in": "3/20 (15.0%)",
+          "out_pct": 1.1,
+          "lift": 13.59,
+          "p_value": 0.001538
+        }
+      ]
+    },
+    "SAVAS_FIERCE_BEASTS_TIGR_RHIN_ELEP": {
+      "lines": 128,
+      "top_signs": [
+        {
+          "sign": "621",
+          "in": "5/101 (5.0%)",
+          "out_pct": 0.41,
+          "lift": 12.16,
+          "p_value": 0.0001529
+        },
+        {
+          "sign": "440",
+          "in": "7/101 (6.9%)",
+          "out_pct": 1.1,
+          "lift": 6.32,
+          "p_value": 0.0002305
+        },
+        {
+          "sign": "002",
+          "in": "34/101 (33.7%)",
+          "out_pct": 20.95,
+          "lift": 1.61,
+          "p_value": 0.002433
+        },
+        {
+          "sign": "853",
+          "in": "3/101 (3.0%)",
+          "out_pct": 0.25,
+          "lift": 11.86,
+          "p_value": 0.003856
+        },
+        {
+          "sign": "520",
+          "in": "14/101 (13.9%)",
+          "out_pct": 6.29,
+          "lift": 2.2,
+          "p_value": 0.005246
+        },
+        {
+          "sign": "921",
+          "in": "3/101 (3.0%)",
+          "out_pct": 0.41,
+          "lift": 7.3,
+          "p_value": 0.01171
+        },
+        {
+          "sign": "923",
+          "in": "4/101 (4.0%)",
+          "out_pct": 0.91,
+          "lift": 4.36,
+          "p_value": 0.0172
+        }
+      ]
+    },
+    "KORUMA_AMULET_TABLETS_TAB_B_I": {
+      "lines": 1979,
+      "top_signs": [
+        {
+          "sign": "400",
+          "in": "182/772 (23.6%)",
+          "out_pct": 3.94,
+          "lift": 5.99,
+          "p_value": 2.711e-55
+        },
+        {
+          "sign": "700",
+          "in": "53/772 (6.9%)",
+          "out_pct": 1.29,
+          "lift": 5.33,
+          "p_value": 7.835e-15
+        },
+        {
+          "sign": "167",
+          "in": "8/772 (1.0%)",
+          "out_pct": 0.0,
+          "lift": 10362.69,
+          "p_value": 6.646e-06
+        },
+        {
+          "sign": "158",
+          "in": "17/772 (2.2%)",
+          "out_pct": 0.42,
+          "lift": 5.29,
+          "p_value": 1.495e-05
+        },
+        {
+          "sign": "711",
+          "in": "7/772 (0.9%)",
+          "out_pct": 0.0,
+          "lift": 9067.36,
+          "p_value": 2.96e-05
+        },
+        {
+          "sign": "525",
+          "in": "7/772 (0.9%)",
+          "out_pct": 0.0,
+          "lift": 9067.36,
+          "p_value": 2.96e-05
+        },
+        {
+          "sign": "868",
+          "in": "5/772 (0.6%)",
+          "out_pct": 0.0,
+          "lift": 6476.68,
+          "p_value": 0.0005853
+        },
+        {
+          "sign": "690",
+          "in": "29/772 (3.8%)",
+          "out_pct": 1.67,
+          "lift": 2.26,
+          "p_value": 0.000678
+        }
+      ]
+    }
+  },
+  "weapon_war_sign_profiles": [
+    {
+      "sign": "125",
+      "total_lines": 59,
+      "top_object_types": {
+        "SEAL:S": 43,
+        "SEAL:R": 7,
+        "TAB:B": 4,
+        "TAB:I": 2
+      },
+      "top_symbols": {
+        "NONE": 16,
+        "Bull1:W": 12,
+        "Bull1:J": 7,
+        "Bull1": 7
+      },
+      "top_sites": {
+        "Mohenjo-daro": 28,
+        "Harappa": 16,
+        "Dholavira": 4,
+        "Allahdino": 1
+      }
+    },
+    {
+      "sign": "892",
+      "total_lines": 90,
+      "top_object_types": {
+        "SEAL:S": 26,
+        "TAB:I": 20,
+        "TAB:B": 18,
+        "TAG": 11
+      },
+      "top_symbols": {
+        "NONE": 40,
+        "Bull1": 11,
+        "Bull1:W": 10,
+        "-": 8
+      },
+      "top_sites": {
+        "Harappa": 45,
+        "Mohenjo-daro": 19,
+        "Kalibangan": 11,
+        "Dholavira": 5
+      }
+    },
+    {
+      "sign": "890",
+      "total_lines": 12,
+      "top_object_types": {
+        "TAG": 8,
+        "SEAL:S": 3,
+        "POT:T:g": 1
+      },
+      "top_symbols": {
+        "Bull1": 7,
+        "Bull1:W": 1,
+        "NONE": 1,
+        "Bull1:S": 1
+      },
+      "top_sites": {
+        "Kalibangan": 9,
+        "Mohenjo-daro": 2,
+        "Harappa": 1
+      }
+    },
+    {
+      "sign": "520",
+      "total_lines": 320,
+      "top_object_types": {
+        "SEAL:S": 170,
+        "TAB:B": 61,
+        "TAB:I": 31,
+        "SEAL:R": 18
+      },
+      "top_symbols": {
+        "NONE": 88,
+        "Bull1:W": 40,
+        "Bull1:I": 33,
+        "Bull1": 30
+      },
+      "top_sites": {
+        "Mohenjo-daro": 144,
+        "Harappa": 121,
+        "Dholavira": 20,
+        "Lothal": 9
+      }
+    },
+    {
+      "sign": "519",
+      "total_lines": 17,
+      "top_object_types": {
+        "TAB:B": 8,
+        "SEAL:S": 6,
+        "SEAL:R": 2,
+        "TAB:I": 1
+      },
+      "top_symbols": {
+        "NONE": 9,
+        "Bull1:I": 1,
+        "Bull1:L": 1,
+        "Zebu": 1
+      },
+      "top_sites": {
+        "Harappa": 9,
+        "Mohenjo-daro": 5,
+        "Dholavira": 2,
+        "Lothal": 1
+      }
+    },
+    {
+      "sign": "095",
+      "total_lines": 30,
+      "top_object_types": {
+        "TAB:C": 14,
+        "SEAL:R": 4,
+        "TAB:B": 3,
+        "SEAL:S": 3
+      },
+      "top_symbols": {
+        "NONE": 17,
+        "Bull1:W": 4,
+        "-": 2,
+        "Hgls": 1
+      },
+      "top_sites": {
+        "Mohenjo-daro": 19,
+        "Harappa": 4,
+        "Dholavira": 2,
+        "Chanhu-daro": 1
+      }
+    },
+    {
+      "sign": "137",
+      "total_lines": 16,
+      "top_object_types": {
+        "TAB:B": 7,
+        "TAB:I": 5,
+        "SEAL:R": 2,
+        "SEAL:S": 2
+      },
+      "top_symbols": {
+        "NONE": 9,
+        "Mult": 3,
+        "Bull1:W": 2,
+        "Gavi": 1
+      },
+      "top_sites": {
+        "Harappa": 12,
+        "Mohenjo-daro": 4
+      }
+    }
+  ],
+  "domain_interaction_links": [
+    {
+      "from": "IS_ZANAAT_TICARET",
+      "to": "TOPRAK_ARAZI_MULK",
+      "count": 47,
+      "pmi": 1.021,
+      "ex": [
+        [
+          "590->390",
+          46
+        ],
+        [
+          "155->630",
+          1
+        ]
+      ]
+    },
+    {
+      "from": "TOPRAK_ARAZI_MULK",
+      "to": "YEMEK_BESIN_TAHIL",
+      "count": 109,
+      "pmi": 0.828,
+      "ex": [
+        [
+          "390->740",
+          33
+        ],
+        [
+          "388->740",
+          13
+        ],
+        [
+          "384->740",
+          11
+        ]
+      ]
+    },
+    {
+      "from": "SAVAS_SILAH_GUC",
+      "to": "TOPRAK_ARAZI_MULK",
+      "count": 34,
+      "pmi": 0.75,
+      "ex": [
+        [
+          "142->617",
+          13
+        ],
+        [
+          "125->390",
+          8
+        ],
+        [
+          "550->617",
+          4
+        ]
+      ]
+    },
+    {
+      "from": "YEMEK_BESIN_TAHIL",
+      "to": "SAVAS_SILAH_GUC",
+      "count": 60,
+      "pmi": 0.454,
+      "ex": [
+        [
+          "220->520",
+          35
+        ],
+        [
+          "740->550",
+          3
+        ],
+        [
+          "413->125",
+          2
+        ]
+      ]
+    },
+    {
+      "from": "YEMEK_BESIN_TAHIL",
+      "to": "IS_ZANAAT_TICARET",
+      "count": 134,
+      "pmi": 0.351,
+      "ex": [
+        [
+          "740->400",
+          86
+        ],
+        [
+          "740->151",
+          8
+        ],
+        [
+          "741->590",
+          7
+        ]
+      ]
+    },
+    {
+      "from": "IS_ZANAAT_TICARET",
+      "to": "IS_ZANAAT_TICARET",
+      "count": 59,
+      "pmi": 0.073,
+      "ex": [
+        [
+          "590->405",
+          16
+        ],
+        [
+          "158->400",
+          10
+        ],
+        [
+          "590->407",
+          7
+        ]
+      ]
+    },
+    {
+      "from": "SAVAS_SILAH_GUC",
+      "to": "YEMEK_BESIN_TAHIL",
+      "count": 63,
+      "pmi": 0.037,
+      "ex": [
+        [
+          "690->740",
+          28
+        ],
+        [
+          "142->740",
+          9
+        ],
+        [
+          "540->740",
+          4
+        ]
+      ]
+    },
+    {
+      "from": "IS_ZANAAT_TICARET",
+      "to": "SAVAS_SILAH_GUC",
+      "count": 22,
+      "pmi": -0.088,
+      "ex": [
+        [
+          "590->892",
+          7
+        ],
+        [
+          "400->520",
+          6
+        ],
+        [
+          "590->125",
+          2
+        ]
+      ]
+    },
+    {
+      "from": "SAVAS_SILAH_GUC",
+      "to": "IS_ZANAAT_TICARET",
+      "count": 42,
+      "pmi": -0.221,
+      "ex": [
+        [
+          "520->400",
+          8
+        ],
+        [
+          "142->400",
+          5
+        ],
+        [
+          "142->156",
+          4
+        ]
+      ]
+    },
+    {
+      "from": "YEMEK_BESIN_TAHIL",
+      "to": "YEMEK_BESIN_TAHIL",
+      "count": 108,
+      "pmi": -0.287,
+      "ex": [
+        [
+          "415->220",
+          37
+        ],
+        [
+          "220->740",
+          26
+        ],
+        [
+          "220->705",
+          6
+        ]
+      ]
+    },
+    {
+      "from": "TOPRAK_ARAZI_MULK",
+      "to": "SAVAS_SILAH_GUC",
+      "count": 14,
+      "pmi": -0.544,
+      "ex": [
+        [
+          "632->125",
+          3
+        ],
+        [
+          "382->520",
+          2
+        ],
+        [
+          "617->892",
+          1
+        ]
+      ]
+    },
+    {
+      "from": "IS_ZANAAT_TICARET",
+      "to": "YEMEK_BESIN_TAHIL",
+      "count": 45,
+      "pmi": -0.645,
+      "ex": [
+        [
+          "405->740",
+          15
+        ],
+        [
+          "400->740",
+          8
+        ],
+        [
+          "407->740",
+          5
+        ]
+      ]
+    },
+    {
+      "from": "SAVAS_SILAH_GUC",
+      "to": "SAVAS_SILAH_GUC",
+      "count": 12,
+      "pmi": -0.766,
+      "ex": [
+        [
+          "095->520",
+          5
+        ],
+        [
+          "520->692",
+          2
+        ],
+        [
+          "521->521",
+          1
+        ]
+      ]
+    },
+    {
+      "from": "YEMEK_BESIN_TAHIL",
+      "to": "TOPRAK_ARAZI_MULK",
+      "count": 22,
+      "pmi": -0.98,
+      "ex": [
+        [
+          "740->621",
+          4
+        ],
+        [
+          "415->390",
+          2
+        ],
+        [
+          "220->630",
+          2
+        ]
+      ]
+    },
+    {
+      "from": "TOPRAK_ARAZI_MULK",
+      "to": "IS_ZANAAT_TICARET",
+      "count": 24,
+      "pmi": -1.028,
+      "ex": [
+        [
+          "390->151",
+          5
+        ],
+        [
+          "390->400",
+          3
+        ],
+        [
+          "390->161",
+          2
+        ]
+      ]
+    }
+  ],
+  "semantic_parallels_engine": {
+    "vocab_size_ge12": 108,
+    "semantic_parallel_opposite_pairs": [
+      {
+        "sign_a": "460",
+        "sign_b": "463",
+        "freq_a": 26,
+        "freq_b": 14,
+        "context_sim": 0.956,
+        "visual_sim": 0.0,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.18
+      },
+      {
+        "sign_a": "388",
+        "sign_b": "555",
+        "freq_a": 32,
+        "freq_b": 17,
+        "context_sim": 0.852,
+        "visual_sim": 0.306,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.27
+      },
+      {
+        "sign_a": "585",
+        "sign_b": "923",
+        "freq_a": 31,
+        "freq_b": 26,
+        "context_sim": 0.836,
+        "visual_sim": 0.312,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.39
+      },
+      {
+        "sign_a": "004",
+        "sign_b": "016",
+        "freq_a": 57,
+        "freq_b": 27,
+        "context_sim": 0.82,
+        "visual_sim": 0.179,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.75
+      },
+      {
+        "sign_a": "400",
+        "sign_b": "621",
+        "freq_a": 212,
+        "freq_b": 16,
+        "context_sim": 0.818,
+        "visual_sim": 0.279,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.66
+      },
+      {
+        "sign_a": "482",
+        "sign_b": "923",
+        "freq_a": 19,
+        "freq_b": 26,
+        "context_sim": 0.817,
+        "visual_sim": 0.282,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.24
+      },
+      {
+        "sign_a": "004",
+        "sign_b": "005",
+        "freq_a": 57,
+        "freq_b": 32,
+        "context_sim": 0.791,
+        "visual_sim": 0.118,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.89
+      },
+      {
+        "sign_a": "017",
+        "sign_b": "070",
+        "freq_a": 50,
+        "freq_b": 29,
+        "context_sim": 0.767,
+        "visual_sim": 0.13,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.71
+      },
+      {
+        "sign_a": "482",
+        "sign_b": "585",
+        "freq_a": 19,
+        "freq_b": 31,
+        "context_sim": 0.751,
+        "visual_sim": 0.316,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.29
+      },
+      {
+        "sign_a": "384",
+        "sign_b": "790",
+        "freq_a": 18,
+        "freq_b": 23,
+        "context_sim": 0.737,
+        "visual_sim": 0.065,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.2
+      },
+      {
+        "sign_a": "016",
+        "sign_b": "790",
+        "freq_a": 27,
+        "freq_b": 23,
+        "context_sim": 0.726,
+        "visual_sim": 0.223,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.3
+      },
+      {
+        "sign_a": "016",
+        "sign_b": "590",
+        "freq_a": 27,
+        "freq_b": 121,
+        "context_sim": 0.722,
+        "visual_sim": 0.281,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.6
+      },
+      {
+        "sign_a": "384",
+        "sign_b": "590",
+        "freq_a": 18,
+        "freq_b": 121,
+        "context_sim": 0.71,
+        "visual_sim": 0.237,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.06
+      },
+      {
+        "sign_a": "016",
+        "sign_b": "017",
+        "freq_a": 27,
+        "freq_b": 50,
+        "context_sim": 0.686,
+        "visual_sim": 0.299,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.66
+      },
+      {
+        "sign_a": "016",
+        "sign_b": "035",
+        "freq_a": 27,
+        "freq_b": 14,
+        "context_sim": 0.685,
+        "visual_sim": 0.339,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.18
+      },
+      {
+        "sign_a": "692",
+        "sign_b": "850",
+        "freq_a": 50,
+        "freq_b": 24,
+        "context_sim": 0.682,
+        "visual_sim": 0.195,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.59
+      },
+      {
+        "sign_a": "061",
+        "sign_b": "790",
+        "freq_a": 45,
+        "freq_b": 23,
+        "context_sim": 0.675,
+        "visual_sim": 0.102,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.51
+      },
+      {
+        "sign_a": "004",
+        "sign_b": "790",
+        "freq_a": 57,
+        "freq_b": 23,
+        "context_sim": 0.674,
+        "visual_sim": 0.076,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.64
+      },
+      {
+        "sign_a": "035",
+        "sign_b": "590",
+        "freq_a": 14,
+        "freq_b": 121,
+        "context_sim": 0.664,
+        "visual_sim": 0.224,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.83
+      },
+      {
+        "sign_a": "070",
+        "sign_b": "175",
+        "freq_a": 29,
+        "freq_b": 15,
+        "context_sim": 0.656,
+        "visual_sim": 0.058,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.21
+      },
+      {
+        "sign_a": "520",
+        "sign_b": "752",
+        "freq_a": 171,
+        "freq_b": 17,
+        "context_sim": 0.654,
+        "visual_sim": 0.084,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.42
+      },
+      {
+        "sign_a": "003",
+        "sign_b": "004",
+        "freq_a": 111,
+        "freq_b": 57,
+        "context_sim": 0.653,
+        "visual_sim": 0.295,
+        "cooccur_obs": 0,
+        "cooccur_exp": 3.09
+      },
+      {
+        "sign_a": "032",
+        "sign_b": "035",
+        "freq_a": 241,
+        "freq_b": 14,
+        "context_sim": 0.652,
+        "visual_sim": 0.069,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.65
+      },
+      {
+        "sign_a": "061",
+        "sign_b": "384",
+        "freq_a": 45,
+        "freq_b": 18,
+        "context_sim": 0.651,
+        "visual_sim": 0.255,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.4
+      },
+      {
+        "sign_a": "156",
+        "sign_b": "226",
+        "freq_a": 37,
+        "freq_b": 25,
+        "context_sim": 0.649,
+        "visual_sim": 0.261,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.45
+      },
+      {
+        "sign_a": "004",
+        "sign_b": "035",
+        "freq_a": 57,
+        "freq_b": 14,
+        "context_sim": 0.646,
+        "visual_sim": 0.056,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.39
+      },
+      {
+        "sign_a": "482",
+        "sign_b": "904",
+        "freq_a": 19,
+        "freq_b": 34,
+        "context_sim": 0.646,
+        "visual_sim": 0.227,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.32
+      },
+      {
+        "sign_a": "017",
+        "sign_b": "055",
+        "freq_a": 50,
+        "freq_b": 37,
+        "context_sim": 0.64,
+        "visual_sim": 0.151,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.9
+      },
+      {
+        "sign_a": "154",
+        "sign_b": "740",
+        "freq_a": 32,
+        "freq_b": 986,
+        "context_sim": 0.638,
+        "visual_sim": 0.29,
+        "cooccur_obs": 5,
+        "cooccur_exp": 15.41
+      },
+      {
+        "sign_a": "320",
+        "sign_b": "585",
+        "freq_a": 12,
+        "freq_b": 31,
+        "context_sim": 0.634,
+        "visual_sim": 0.256,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.18
+      }
+    ],
+    "confirmed_visual_allographs_quick": [
+      {
+        "sign_a": "405",
+        "sign_b": "407",
+        "freq_a": 52,
+        "freq_b": 51,
+        "context_sim": 0.922,
+        "visual_sim": 1.0,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.3
+      },
+      {
+        "sign_a": "803",
+        "sign_b": "806",
+        "freq_a": 91,
+        "freq_b": 77,
+        "context_sim": 0.666,
+        "visual_sim": 0.903,
+        "cooccur_obs": 0,
+        "cooccur_exp": 3.42
+      },
+      {
+        "sign_a": "154",
+        "sign_b": "156",
+        "freq_a": 32,
+        "freq_b": 37,
+        "context_sim": 0.774,
+        "visual_sim": 0.773,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.58
+      },
+      {
+        "sign_a": "226",
+        "sign_b": "236",
+        "freq_a": 25,
+        "freq_b": 18,
+        "context_sim": 0.653,
+        "visual_sim": 0.805,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.22
+      },
+      {
+        "sign_a": "005",
+        "sign_b": "035",
+        "freq_a": 32,
+        "freq_b": 14,
+        "context_sim": 0.643,
+        "visual_sim": 0.78,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.22
+      },
+      {
+        "sign_a": "904",
+        "sign_b": "923",
+        "freq_a": 34,
+        "freq_b": 26,
+        "context_sim": 0.625,
+        "visual_sim": 0.679,
+        "cooccur_obs": 0,
+        "cooccur_exp": 0.43
+      },
+      {
+        "sign_a": "235",
+        "sign_b": "236",
+        "freq_a": 145,
+        "freq_b": 18,
+        "context_sim": 0.69,
+        "visual_sim": 0.601,
+        "cooccur_obs": 0,
+        "cooccur_exp": 1.28
+      }
+    ]
+  }
+}
