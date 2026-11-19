@@ -1,0 +1,1796 @@
+{
+  "layer1_graphemes": {
+    "unique_strict_sequences": 2047,
+    "pua_compound_total": 56,
+    "top_pua_compounds": [
+      {
+        "sign_id": "034",
+        "freq_all": 184,
+        "decomposition": "032+032",
+        "components": 2
+      },
+      {
+        "sign_id": "617",
+        "freq_all": 78,
+        "decomposition": "615+615",
+        "components": 2
+      },
+      {
+        "sign_id": "519",
+        "freq_all": 17,
+        "decomposition": "U+E302+U+E302",
+        "components": 2
+      },
+      {
+        "sign_id": "821",
+        "freq_all": 14,
+        "decomposition": "820+820",
+        "components": 2
+      },
+      {
+        "sign_id": "792",
+        "freq_all": 13,
+        "decomposition": "809+809",
+        "components": 2
+      },
+      {
+        "sign_id": "697",
+        "freq_all": 10,
+        "decomposition": "700+700+700",
+        "components": 3
+      },
+      {
+        "sign_id": "698",
+        "freq_all": 10,
+        "decomposition": "700+700",
+        "components": 2
+      },
+      {
+        "sign_id": "552",
+        "freq_all": 10,
+        "decomposition": "550+551",
+        "components": 2
+      },
+      {
+        "sign_id": "056",
+        "freq_all": 10,
+        "decomposition": "055+055",
+        "components": 2
+      },
+      {
+        "sign_id": "036",
+        "freq_all": 8,
+        "decomposition": "033+033",
+        "components": 2
+      },
+      {
+        "sign_id": "101",
+        "freq_all": 8,
+        "decomposition": "U+E339+100+U+E339",
+        "components": 3
+      },
+      {
+        "sign_id": "219",
+        "freq_all": 7,
+        "decomposition": "220+220",
+        "components": 2
+      },
+      {
+        "sign_id": "401",
+        "freq_all": 7,
+        "decomposition": "400+400",
+        "components": 2
+      },
+      {
+        "sign_id": "110",
+        "freq_all": 6,
+        "decomposition": "U+E5AB+U+E06D",
+        "components": 2
+      },
+      {
+        "sign_id": "791",
+        "freq_all": 6,
+        "decomposition": "790+790",
+        "components": 2
+      },
+      {
+        "sign_id": "221",
+        "freq_all": 6,
+        "decomposition": "U+E34E+220",
+        "components": 2
+      },
+      {
+        "sign_id": "103",
+        "freq_all": 5,
+        "decomposition": "927+100+927",
+        "components": 3
+      },
+      {
+        "sign_id": "893",
+        "freq_all": 4,
+        "decomposition": "892+892",
+        "components": 2
+      },
+      {
+        "sign_id": "799",
+        "freq_all": 4,
+        "decomposition": "798+797",
+        "components": 2
+      },
+      {
+        "sign_id": "223",
+        "freq_all": 3,
+        "decomposition": "031+222+031",
+        "components": 3
+      },
+      {
+        "sign_id": "843",
+        "freq_all": 3,
+        "decomposition": "032+840+032",
+        "components": 3
+      },
+      {
+        "sign_id": "381",
+        "freq_all": 3,
+        "decomposition": "380+380",
+        "components": 2
+      },
+      {
+        "sign_id": "126",
+        "freq_all": 2,
+        "decomposition": "898+U+E06D",
+        "components": 2
+      },
+      {
+        "sign_id": "822",
+        "freq_all": 2,
+        "decomposition": "032+820+032",
+        "components": 3
+      },
+      {
+        "sign_id": "479",
+        "freq_all": 2,
+        "decomposition": "480+480",
+        "components": 2
+      }
+    ],
+    "distributional_vocab_size_ge8": 158,
+    "allograph_candidates_count": 59,
+    "top_allograph_candidates": [
+      {
+        "sign_a": "526",
+        "sign_b": "527",
+        "freq_a": 9,
+        "freq_b": 44,
+        "distributional_cosine": 0.9595,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "460",
+        "sign_b": "463",
+        "freq_a": 26,
+        "freq_b": 14,
+        "distributional_cosine": 0.9438,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "495",
+        "sign_b": "503",
+        "freq_a": 18,
+        "freq_b": 34,
+        "distributional_cosine": 0.9347,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "405",
+        "sign_b": "407",
+        "freq_a": 52,
+        "freq_b": 51,
+        "distributional_cosine": 0.9237,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "222",
+        "sign_b": "773",
+        "freq_a": 10,
+        "freq_b": 9,
+        "distributional_cosine": 0.9207,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "222",
+        "sign_b": "772",
+        "freq_a": 10,
+        "freq_b": 8,
+        "distributional_cosine": 0.9115,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "550",
+        "sign_b": "554",
+        "freq_a": 72,
+        "freq_b": 8,
+        "distributional_cosine": 0.9104,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "772",
+        "sign_b": "773",
+        "freq_a": 8,
+        "freq_b": 9,
+        "distributional_cosine": 0.9083,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "390",
+        "sign_b": "405",
+        "freq_a": 172,
+        "freq_b": 52,
+        "distributional_cosine": 0.8997,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "390",
+        "sign_b": "407",
+        "freq_a": 172,
+        "freq_b": 51,
+        "distributional_cosine": 0.8908,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "097",
+        "sign_b": "243",
+        "freq_a": 11,
+        "freq_b": 10,
+        "distributional_cosine": 0.8874,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "772",
+        "sign_b": "927",
+        "freq_a": 8,
+        "freq_b": 8,
+        "distributional_cosine": 0.8723,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "222",
+        "sign_b": "927",
+        "freq_a": 10,
+        "freq_b": 8,
+        "distributional_cosine": 0.8633,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "388",
+        "sign_b": "555",
+        "freq_a": 32,
+        "freq_b": 17,
+        "distributional_cosine": 0.8549,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "773",
+        "sign_b": "927",
+        "freq_a": 9,
+        "freq_b": 8,
+        "distributional_cosine": 0.8508,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "904",
+        "sign_b": "927",
+        "freq_a": 34,
+        "freq_b": 8,
+        "distributional_cosine": 0.8408,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "585",
+        "sign_b": "923",
+        "freq_a": 31,
+        "freq_b": 26,
+        "distributional_cosine": 0.8339,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "772",
+        "sign_b": "923",
+        "freq_a": 8,
+        "freq_b": 26,
+        "distributional_cosine": 0.8319,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "773",
+        "sign_b": "923",
+        "freq_a": 9,
+        "freq_b": 26,
+        "distributional_cosine": 0.8251,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "585",
+        "sign_b": "904",
+        "freq_a": 31,
+        "freq_b": 34,
+        "distributional_cosine": 0.8219,
+        "same_line_cooccur": 1,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "055",
+        "sign_b": "097",
+        "freq_a": 37,
+        "freq_b": 11,
+        "distributional_cosine": 0.8157,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "495",
+        "sign_b": "510",
+        "freq_a": 18,
+        "freq_b": 8,
+        "distributional_cosine": 0.8135,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "004",
+        "sign_b": "016",
+        "freq_a": 57,
+        "freq_b": 27,
+        "distributional_cosine": 0.8111,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "554",
+        "sign_b": "555",
+        "freq_a": 8,
+        "freq_b": 17,
+        "distributional_cosine": 0.8095,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      },
+      {
+        "sign_a": "482",
+        "sign_b": "772",
+        "freq_a": 19,
+        "freq_b": 8,
+        "distributional_cosine": 0.8064,
+        "same_line_cooccur": 0,
+        "visual_sim_confirmed": false
+      }
+    ],
+    "visual_edges_tested_in_vocab": 3,
+    "top_visual_edges_by_distributional_sim": [
+      {
+        "sign_a": "803",
+        "sign_b": "806",
+        "freq_a": 91,
+        "freq_b": 77,
+        "distributional_cosine": 0.7021,
+        "same_line_cooccur": 0
+      },
+      {
+        "sign_a": "920",
+        "sign_b": "921",
+        "freq_a": 102,
+        "freq_b": 13,
+        "distributional_cosine": 0.047,
+        "same_line_cooccur": 1
+      },
+      {
+        "sign_a": "920",
+        "sign_b": "923",
+        "freq_a": 102,
+        "freq_b": 26,
+        "distributional_cosine": -0.1208,
+        "same_line_cooccur": 0
+      }
+    ]
+  },
+  "layer2a_entropy": {
+    "n_unique_sequences": 2047,
+    "unigram_entropy_H0_bits": 6.9574,
+    "bigram_cond_entropy_H1_bits": 3.7664,
+    "reverse_bigram_cond_entropy_bits": 3.7664,
+    "null_shuffled_H1_mean": 4.7647,
+    "null_shuffled_H1_std": 0.0092,
+    "syntax_order_z_score": -108.85,
+    "entropy_drop_vs_shuffled_bits": 0.9983
+  },
+  "layer2b_grammar": {
+    "slot_role_summary_ge20": {
+      "TERMINAL_SUFFIX": 10,
+      "MEDIAL_STEM_OR_LINK": 40,
+      "FLEXIBLE_CORE": 25,
+      "INITIAL_PREFIX": 5
+    },
+    "top_terminal_signs": [
+      {
+        "sign_id": "740",
+        "freq_unique": 986,
+        "p_init": 0.004,
+        "p_medial": 0.277,
+        "p_final": 0.719,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "400",
+        "freq_unique": 212,
+        "p_init": 0.005,
+        "p_medial": 0.113,
+        "p_final": 0.882,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "520",
+        "freq_unique": 171,
+        "p_init": 0.006,
+        "p_medial": 0.152,
+        "p_final": 0.842,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "090",
+        "freq_unique": 95,
+        "p_init": 0.074,
+        "p_medial": 0.168,
+        "p_final": 0.758,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "151",
+        "freq_unique": 60,
+        "p_init": 0.017,
+        "p_medial": 0.117,
+        "p_final": 0.867,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "407",
+        "freq_unique": 51,
+        "p_init": 0.0,
+        "p_medial": 0.333,
+        "p_final": 0.667,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "527",
+        "freq_unique": 44,
+        "p_init": 0.045,
+        "p_medial": 0.091,
+        "p_final": 0.864,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "156",
+        "freq_unique": 37,
+        "p_init": 0.027,
+        "p_medial": 0.189,
+        "p_final": 0.784,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "154",
+        "freq_unique": 32,
+        "p_init": 0.0,
+        "p_medial": 0.219,
+        "p_final": 0.781,
+        "slot_role": "TERMINAL_SUFFIX"
+      },
+      {
+        "sign_id": "226",
+        "freq_unique": 25,
+        "p_init": 0.12,
+        "p_medial": 0.16,
+        "p_final": 0.72,
+        "slot_role": "TERMINAL_SUFFIX"
+      }
+    ],
+    "top_initial_signs": [
+      {
+        "sign_id": "861",
+        "freq_unique": 163,
+        "p_init": 0.699,
+        "p_medial": 0.252,
+        "p_final": 0.049,
+        "slot_role": "INITIAL_PREFIX"
+      },
+      {
+        "sign_id": "820",
+        "freq_unique": 158,
+        "p_init": 0.747,
+        "p_medial": 0.171,
+        "p_final": 0.082,
+        "slot_role": "INITIAL_PREFIX"
+      },
+      {
+        "sign_id": "817",
+        "freq_unique": 130,
+        "p_init": 0.869,
+        "p_medial": 0.092,
+        "p_final": 0.038,
+        "slot_role": "INITIAL_PREFIX"
+      },
+      {
+        "sign_id": "920",
+        "freq_unique": 102,
+        "p_init": 0.647,
+        "p_medial": 0.324,
+        "p_final": 0.029,
+        "slot_role": "INITIAL_PREFIX"
+      },
+      {
+        "sign_id": "692",
+        "freq_unique": 50,
+        "p_init": 0.78,
+        "p_medial": 0.18,
+        "p_final": 0.04,
+        "slot_role": "INITIAL_PREFIX"
+      }
+    ],
+    "top_medial_signs": [
+      {
+        "sign_id": "002",
+        "freq_unique": 505,
+        "p_init": 0.016,
+        "p_medial": 0.956,
+        "p_final": 0.028,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "032",
+        "freq_unique": 241,
+        "p_init": 0.266,
+        "p_medial": 0.664,
+        "p_final": 0.071,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "220",
+        "freq_unique": 237,
+        "p_init": 0.131,
+        "p_medial": 0.814,
+        "p_final": 0.055,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "240",
+        "freq_unique": 190,
+        "p_init": 0.216,
+        "p_medial": 0.779,
+        "p_final": 0.005,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "060",
+        "freq_unique": 171,
+        "p_init": 0.018,
+        "p_medial": 0.965,
+        "p_final": 0.018,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "033",
+        "freq_unique": 159,
+        "p_init": 0.214,
+        "p_medial": 0.723,
+        "p_final": 0.063,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "741",
+        "freq_unique": 148,
+        "p_init": 0.108,
+        "p_medial": 0.872,
+        "p_final": 0.02,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "235",
+        "freq_unique": 145,
+        "p_init": 0.338,
+        "p_medial": 0.655,
+        "p_final": 0.007,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "001",
+        "freq_unique": 130,
+        "p_init": 0.062,
+        "p_medial": 0.862,
+        "p_final": 0.077,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "233",
+        "freq_unique": 127,
+        "p_init": 0.197,
+        "p_medial": 0.787,
+        "p_final": 0.016,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "590",
+        "freq_unique": 121,
+        "p_init": 0.223,
+        "p_medial": 0.702,
+        "p_final": 0.074,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "705",
+        "freq_unique": 102,
+        "p_init": 0.216,
+        "p_medial": 0.765,
+        "p_final": 0.02,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "798",
+        "freq_unique": 93,
+        "p_init": 0.194,
+        "p_medial": 0.796,
+        "p_final": 0.011,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "803",
+        "freq_unique": 91,
+        "p_init": 0.33,
+        "p_medial": 0.67,
+        "p_final": 0.0,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      },
+      {
+        "sign_id": "415",
+        "freq_unique": 88,
+        "p_init": 0.227,
+        "p_medial": 0.727,
+        "p_final": 0.045,
+        "slot_role": "MEDIAL_STEM_OR_LINK"
+      }
+    ],
+    "top_pmi_bound_bigrams": [
+      {
+        "bigram": "171 -> 035",
+        "count": 11,
+        "pmi": 9.189,
+        "P(b|a)": 0.688,
+        "P(a|b)": 0.786
+      },
+      {
+        "bigram": "555 -> 527",
+        "count": 13,
+        "pmi": 7.691,
+        "P(b|a)": 0.765,
+        "P(a|b)": 0.295
+      },
+      {
+        "bigram": "255 -> 435",
+        "count": 31,
+        "pmi": 7.195,
+        "P(b|a)": 0.456,
+        "P(a|b)": 0.838
+      },
+      {
+        "bigram": "017 -> 585",
+        "count": 17,
+        "pmi": 7.027,
+        "P(b|a)": 0.34,
+        "P(a|b)": 0.548
+      },
+      {
+        "bigram": "435 -> 690",
+        "count": 23,
+        "pmi": 7.019,
+        "P(b|a)": 0.622,
+        "P(a|b)": 0.404
+      },
+      {
+        "bigram": "142 -> 617",
+        "count": 13,
+        "pmi": 6.322,
+        "P(b|a)": 0.31,
+        "P(a|b)": 0.283
+      },
+      {
+        "bigram": "550 -> 527",
+        "count": 17,
+        "pmi": 5.995,
+        "P(b|a)": 0.236,
+        "P(a|b)": 0.386
+      },
+      {
+        "bigram": "017 -> 575",
+        "count": 12,
+        "pmi": 5.987,
+        "P(b|a)": 0.24,
+        "P(a|b)": 0.267
+      },
+      {
+        "bigram": "806 -> 154",
+        "count": 13,
+        "pmi": 5.971,
+        "P(b|a)": 0.169,
+        "P(a|b)": 0.406
+      },
+      {
+        "bigram": "415 -> 100",
+        "count": 30,
+        "pmi": 5.627,
+        "P(b|a)": 0.341,
+        "P(a|b)": 0.366
+      },
+      {
+        "bigram": "692 -> 060",
+        "count": 32,
+        "pmi": 5.476,
+        "P(b|a)": 0.64,
+        "P(a|b)": 0.187
+      },
+      {
+        "bigram": "705 -> 033",
+        "count": 58,
+        "pmi": 5.41,
+        "P(b|a)": 0.569,
+        "P(a|b)": 0.365
+      },
+      {
+        "bigram": "004 -> 407",
+        "count": 10,
+        "pmi": 5.354,
+        "P(b|a)": 0.175,
+        "P(a|b)": 0.196
+      },
+      {
+        "bigram": "706 -> 033",
+        "count": 29,
+        "pmi": 5.328,
+        "P(b|a)": 0.537,
+        "P(a|b)": 0.182
+      },
+      {
+        "bigram": "920 -> 060",
+        "count": 51,
+        "pmi": 5.119,
+        "P(b|a)": 0.5,
+        "P(a|b)": 0.298
+      },
+      {
+        "bigram": "070 -> 520",
+        "count": 14,
+        "pmi": 5.069,
+        "P(b|a)": 0.483,
+        "P(a|b)": 0.082
+      },
+      {
+        "bigram": "590 -> 405",
+        "count": 16,
+        "pmi": 4.918,
+        "P(b|a)": 0.132,
+        "P(a|b)": 0.308
+      },
+      {
+        "bigram": "158 -> 400",
+        "count": 10,
+        "pmi": 4.809,
+        "P(b|a)": 0.5,
+        "P(a|b)": 0.047
+      },
+      {
+        "bigram": "590 -> 390",
+        "count": 46,
+        "pmi": 4.716,
+        "P(b|a)": 0.38,
+        "P(a|b)": 0.267
+      },
+      {
+        "bigram": "032 -> 226",
+        "count": 13,
+        "pmi": 4.681,
+        "P(b|a)": 0.054,
+        "P(a|b)": 0.52
+      }
+    ],
+    "top_trigrams": [
+      {
+        "trigram": "590 -> 390 -> 740",
+        "count": 32
+      },
+      {
+        "trigram": "920 -> 060 -> 741",
+        "count": 29
+      },
+      {
+        "trigram": "415 -> 100 -> 740",
+        "count": 25
+      },
+      {
+        "trigram": "705 -> 033 -> 520",
+        "count": 23
+      },
+      {
+        "trigram": "255 -> 435 -> 690",
+        "count": 22
+      },
+      {
+        "trigram": "435 -> 690 -> 740",
+        "count": 21
+      },
+      {
+        "trigram": "002 -> 032 -> 220",
+        "count": 20
+      },
+      {
+        "trigram": "840 -> 032 -> 740",
+        "count": 19
+      },
+      {
+        "trigram": "706 -> 033 -> 520",
+        "count": 14
+      },
+      {
+        "trigram": "590 -> 405 -> 740",
+        "count": 14
+      },
+      {
+        "trigram": "233 -> 705 -> 033",
+        "count": 14
+      },
+      {
+        "trigram": "220 -> 740 -> 090",
+        "count": 13
+      },
+      {
+        "trigram": "017 -> 575 -> 740",
+        "count": 12
+      },
+      {
+        "trigram": "176 -> 100 -> 740",
+        "count": 11
+      },
+      {
+        "trigram": "017 -> 585 -> 740",
+        "count": 11
+      },
+      {
+        "trigram": "798 -> 415 -> 220",
+        "count": 11
+      },
+      {
+        "trigram": "415 -> 220 -> 520",
+        "count": 10
+      },
+      {
+        "trigram": "100 -> 740 -> 090",
+        "count": 10
+      },
+      {
+        "trigram": "861 -> 002 -> 032",
+        "count": 9
+      },
+      {
+        "trigram": "032 -> 740 -> 400",
+        "count": 9
+      }
+    ]
+  },
+  "layer2c_masked_prediction": {
+    "n_unique_sequences_len_ge3": 1736,
+    "total_masked_positions_evaluated": 8639,
+    "baseline_unigram_top1_pct": 10.74,
+    "baseline_unigram_top5_pct": 23.75,
+    "model_top1_pct": 37.03,
+    "model_top5_pct": 58.57,
+    "model_top10_pct": 66.1,
+    "by_position": {
+      "init": {
+        "n": 1736,
+        "top1_pct": 18.38,
+        "top5_pct": 44.3
+      },
+      "medial": {
+        "n": 5167,
+        "top1_pct": 37.39,
+        "top5_pct": 57.96
+      },
+      "final": {
+        "n": 1736,
+        "top1_pct": 54.61,
+        "top5_pct": 74.65
+      }
+    }
+  },
+  "layer2d_archaeology": {
+    "site_enriched_signs": [
+      {
+        "category": "Harappa",
+        "sign_id": "400",
+        "in_group_docs": 140,
+        "group_total_docs": 686,
+        "in_group_pct": 20.41,
+        "outside_pct": 5.17,
+        "lift": 3.95,
+        "chi2": 111.73,
+        "p_value": 4.089e-26
+      },
+      {
+        "category": "Harappa",
+        "sign_id": "700",
+        "in_group_docs": 46,
+        "group_total_docs": 686,
+        "in_group_pct": 6.71,
+        "outside_pct": 0.97,
+        "lift": 6.88,
+        "chi2": 50.47,
+        "p_value": 1.207e-12
+      },
+      {
+        "category": "Mohenjo-daro",
+        "sign_id": "923",
+        "in_group_docs": 24,
+        "group_total_docs": 1087,
+        "in_group_pct": 2.21,
+        "outside_pct": 0.21,
+        "lift": 10.3,
+        "chi2": 14.17,
+        "p_value": 0.0001666
+      },
+      {
+        "category": "Lothal",
+        "sign_id": "527",
+        "in_group_docs": 6,
+        "group_total_docs": 66,
+        "in_group_pct": 9.09,
+        "outside_pct": 1.89,
+        "lift": 4.8,
+        "chi2": 12.61,
+        "p_value": 0.0003842
+      }
+    ],
+    "motif_enriched_signs": [
+      {
+        "category": "Bull1_Unicorn",
+        "sign_id": "002",
+        "in_group_docs": 309,
+        "group_total_docs": 954,
+        "in_group_pct": 32.39,
+        "outside_pct": 15.95,
+        "lift": 2.03,
+        "chi2": 73.3,
+        "p_value": 1.116e-17
+      },
+      {
+        "category": "NO_MOTIF",
+        "sign_id": "400",
+        "in_group_docs": 127,
+        "group_total_docs": 760,
+        "in_group_pct": 16.71,
+        "outside_pct": 6.4,
+        "lift": 2.61,
+        "chi2": 52.94,
+        "p_value": 3.439e-13
+      },
+      {
+        "category": "NO_MOTIF",
+        "sign_id": "407",
+        "in_group_docs": 38,
+        "group_total_docs": 760,
+        "in_group_pct": 5.0,
+        "outside_pct": 0.73,
+        "lift": 6.86,
+        "chi2": 35.48,
+        "p_value": 2.579e-09
+      },
+      {
+        "category": "Bull1_Unicorn",
+        "sign_id": "390",
+        "in_group_docs": 111,
+        "group_total_docs": 954,
+        "in_group_pct": 11.64,
+        "outside_pct": 5.09,
+        "lift": 2.29,
+        "chi2": 27.39,
+        "p_value": 1.659e-07
+      },
+      {
+        "category": "NO_MOTIF",
+        "sign_id": "806",
+        "in_group_docs": 48,
+        "group_total_docs": 760,
+        "in_group_pct": 6.32,
+        "outside_pct": 1.78,
+        "lift": 3.55,
+        "chi2": 27.25,
+        "p_value": 1.789e-07
+      },
+      {
+        "category": "Bull1_Unicorn",
+        "sign_id": "060",
+        "in_group_docs": 105,
+        "group_total_docs": 954,
+        "in_group_pct": 11.01,
+        "outside_pct": 4.9,
+        "lift": 2.25,
+        "chi2": 24.92,
+        "p_value": 5.983e-07
+      },
+      {
+        "category": "Bull1_Unicorn",
+        "sign_id": "741",
+        "in_group_docs": 95,
+        "group_total_docs": 954,
+        "in_group_pct": 9.96,
+        "outside_pct": 4.32,
+        "lift": 2.3,
+        "chi2": 23.37,
+        "p_value": 1.336e-06
+      },
+      {
+        "category": "Bult",
+        "sign_id": "700",
+        "in_group_docs": 7,
+        "group_total_docs": 41,
+        "in_group_pct": 17.07,
+        "outside_pct": 3.12,
+        "lift": 5.47,
+        "chi2": 19.69,
+        "p_value": 9.097e-06
+      },
+      {
+        "category": "Gavi",
+        "sign_id": "700",
+        "in_group_docs": 5,
+        "group_total_docs": 23,
+        "in_group_pct": 21.74,
+        "outside_pct": 3.19,
+        "lift": 6.8,
+        "chi2": 18.45,
+        "p_value": 1.745e-05
+      },
+      {
+        "category": "Gavi",
+        "sign_id": "400",
+        "in_group_docs": 9,
+        "group_total_docs": 23,
+        "in_group_pct": 39.13,
+        "outside_pct": 9.99,
+        "lift": 3.92,
+        "chi2": 17.82,
+        "p_value": 2.427e-05
+      },
+      {
+        "category": "NO_MOTIF",
+        "sign_id": "154",
+        "in_group_docs": 24,
+        "group_total_docs": 760,
+        "in_group_pct": 3.16,
+        "outside_pct": 0.65,
+        "lift": 4.88,
+        "chi2": 17.23,
+        "p_value": 3.32e-05
+      },
+      {
+        "category": "Mult",
+        "sign_id": "090",
+        "in_group_docs": 7,
+        "group_total_docs": 40,
+        "in_group_pct": 17.5,
+        "outside_pct": 3.73,
+        "lift": 4.69,
+        "chi2": 15.89,
+        "p_value": 6.724e-05
+      },
+      {
+        "category": "Bull1_Unicorn",
+        "sign_id": "368",
+        "in_group_docs": 49,
+        "group_total_docs": 954,
+        "in_group_pct": 5.14,
+        "outside_pct": 2.02,
+        "lift": 2.55,
+        "chi2": 13.4,
+        "p_value": 0.000252
+      },
+      {
+        "category": "NO_MOTIF",
+        "sign_id": "700",
+        "in_group_docs": 40,
+        "group_total_docs": 760,
+        "in_group_pct": 5.26,
+        "outside_pct": 2.27,
+        "lift": 2.32,
+        "chi2": 11.93,
+        "p_value": 0.0005516
+      }
+    ],
+    "object_type_enriched_signs": [
+      {
+        "category": "TAB:B",
+        "sign_id": "400",
+        "in_group_docs": 95,
+        "group_total_docs": 317,
+        "in_group_pct": 29.97,
+        "outside_pct": 6.88,
+        "lift": 4.36,
+        "chi2": 150.57,
+        "p_value": 1.302e-34
+      },
+      {
+        "category": "TAB:C",
+        "sign_id": "407",
+        "in_group_docs": 15,
+        "group_total_docs": 58,
+        "in_group_pct": 25.86,
+        "outside_pct": 1.7,
+        "lift": 15.24,
+        "chi2": 131.59,
+        "p_value": 1.835e-30
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "002",
+        "in_group_docs": 386,
+        "group_total_docs": 1195,
+        "in_group_pct": 32.3,
+        "outside_pct": 11.89,
+        "lift": 2.72,
+        "chi2": 114.43,
+        "p_value": 1.05e-26
+      },
+      {
+        "category": "SEAL:R",
+        "sign_id": "806",
+        "in_group_docs": 34,
+        "group_total_docs": 232,
+        "in_group_pct": 14.66,
+        "outside_pct": 2.08,
+        "lift": 7.05,
+        "chi2": 92.91,
+        "p_value": 5.469e-22
+      },
+      {
+        "category": "TAB:I",
+        "sign_id": "400",
+        "in_group_docs": 51,
+        "group_total_docs": 182,
+        "in_group_pct": 28.02,
+        "outside_pct": 8.73,
+        "lift": 3.21,
+        "chi2": 64.06,
+        "p_value": 1.208e-15
+      },
+      {
+        "category": "SEAL:R",
+        "sign_id": "407",
+        "in_group_docs": 23,
+        "group_total_docs": 232,
+        "in_group_pct": 9.91,
+        "outside_pct": 1.42,
+        "lift": 6.97,
+        "chi2": 60.37,
+        "p_value": 7.872e-15
+      },
+      {
+        "category": "SEAL:R",
+        "sign_id": "154",
+        "in_group_docs": 17,
+        "group_total_docs": 232,
+        "in_group_pct": 7.33,
+        "outside_pct": 0.77,
+        "lift": 9.57,
+        "chi2": 55.5,
+        "p_value": 9.367e-14
+      },
+      {
+        "category": "TAB:B",
+        "sign_id": "700",
+        "in_group_docs": 31,
+        "group_total_docs": 317,
+        "in_group_pct": 9.78,
+        "outside_pct": 2.01,
+        "lift": 4.87,
+        "chi2": 49.8,
+        "p_value": 1.704e-12
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "741",
+        "in_group_docs": 121,
+        "group_total_docs": 1195,
+        "in_group_pct": 10.13,
+        "outside_pct": 2.77,
+        "lift": 3.65,
+        "chi2": 40.4,
+        "p_value": 2.065e-10
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "390",
+        "in_group_docs": 134,
+        "group_total_docs": 1195,
+        "in_group_pct": 11.21,
+        "outside_pct": 3.58,
+        "lift": 3.13,
+        "chi2": 38.7,
+        "p_value": 4.943e-10
+      },
+      {
+        "category": "SEAL:R",
+        "sign_id": "013",
+        "in_group_docs": 13,
+        "group_total_docs": 232,
+        "in_group_pct": 5.6,
+        "outside_pct": 0.77,
+        "lift": 7.32,
+        "chi2": 33.63,
+        "p_value": 6.682e-09
+      },
+      {
+        "category": "TAB:C",
+        "sign_id": "585",
+        "in_group_docs": 6,
+        "group_total_docs": 58,
+        "in_group_pct": 10.34,
+        "outside_pct": 1.15,
+        "lift": 9.01,
+        "chi2": 28.06,
+        "p_value": 1.179e-07
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "520",
+        "in_group_docs": 133,
+        "group_total_docs": 1195,
+        "in_group_pct": 11.13,
+        "outside_pct": 5.08,
+        "lift": 2.19,
+        "chi2": 22.64,
+        "p_value": 1.956e-06
+      },
+      {
+        "category": "TAB:I",
+        "sign_id": "700",
+        "in_group_docs": 17,
+        "group_total_docs": 182,
+        "in_group_pct": 9.34,
+        "outside_pct": 2.61,
+        "lift": 3.58,
+        "chi2": 22.14,
+        "p_value": 2.532e-06
+      },
+      {
+        "category": "TAB:I",
+        "sign_id": "690",
+        "in_group_docs": 16,
+        "group_total_docs": 182,
+        "in_group_pct": 8.79,
+        "outside_pct": 2.39,
+        "lift": 3.67,
+        "chi2": 21.46,
+        "p_value": 3.61e-06
+      },
+      {
+        "category": "SEAL:R",
+        "sign_id": "405",
+        "in_group_docs": 17,
+        "group_total_docs": 232,
+        "in_group_pct": 7.33,
+        "outside_pct": 2.02,
+        "lift": 3.62,
+        "chi2": 20.67,
+        "p_value": 5.443e-06
+      },
+      {
+        "category": "TAB:C",
+        "sign_id": "900",
+        "in_group_docs": 8,
+        "group_total_docs": 58,
+        "in_group_pct": 13.79,
+        "outside_pct": 2.65,
+        "lift": 5.21,
+        "chi2": 20.66,
+        "p_value": 5.486e-06
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "060",
+        "in_group_docs": 124,
+        "group_total_docs": 1195,
+        "in_group_pct": 10.38,
+        "outside_pct": 4.97,
+        "lift": 2.09,
+        "chi2": 19.02,
+        "p_value": 1.29e-05
+      },
+      {
+        "category": "SEAL:R",
+        "sign_id": "001",
+        "in_group_docs": 29,
+        "group_total_docs": 232,
+        "in_group_pct": 12.5,
+        "outside_pct": 5.19,
+        "lift": 2.41,
+        "chi2": 18.16,
+        "p_value": 2.027e-05
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "861",
+        "in_group_docs": 118,
+        "group_total_docs": 1195,
+        "in_group_pct": 9.87,
+        "outside_pct": 4.73,
+        "lift": 2.09,
+        "chi2": 17.92,
+        "p_value": 2.306e-05
+      },
+      {
+        "category": "TAB:B",
+        "sign_id": "158",
+        "in_group_docs": 10,
+        "group_total_docs": 317,
+        "in_group_pct": 3.15,
+        "outside_pct": 0.52,
+        "lift": 6.11,
+        "chi2": 17.66,
+        "p_value": 2.643e-05
+      },
+      {
+        "category": "TAB:C",
+        "sign_id": "142",
+        "in_group_docs": 6,
+        "group_total_docs": 58,
+        "in_group_pct": 10.34,
+        "outside_pct": 1.95,
+        "lift": 5.31,
+        "chi2": 14.89,
+        "p_value": 0.0001141
+      },
+      {
+        "category": "TAB:B",
+        "sign_id": "335",
+        "in_group_docs": 8,
+        "group_total_docs": 317,
+        "in_group_pct": 2.52,
+        "outside_pct": 0.4,
+        "lift": 6.29,
+        "chi2": 13.91,
+        "p_value": 0.0001914
+      },
+      {
+        "category": "SEAL:S",
+        "sign_id": "368",
+        "in_group_docs": 61,
+        "group_total_docs": 1195,
+        "in_group_pct": 5.1,
+        "outside_pct": 1.96,
+        "lift": 2.6,
+        "chi2": 12.76,
+        "p_value": 0.0003541
+      },
+      {
+        "category": "TAB:C",
+        "sign_id": "617",
+        "in_group_docs": 6,
+        "group_total_docs": 58,
+        "in_group_pct": 10.34,
+        "outside_pct": 2.25,
+        "lift": 4.6,
+        "chi2": 12.15,
+        "p_value": 0.0004919
+      }
+    ]
+  },
+  "layer2_to_4_foreign_surprisal": {
+    "heartland_cv_mean_surprisal": 5.978,
+    "heartland_cv_std_surprisal": 2.556,
+    "foreign_mean_surprisal": 8.425,
+    "mann_whitney_foreign_gt_heartland_p": 6.976e-08,
+    "foreign_count_evaluated": 34,
+    "top_rosetta_anomalies": [
+      {
+        "inscription_id": "5232.1",
+        "region": "Persian Gulf",
+        "site": "Janabiyah",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "L/R",
+        "reading_seq": "071 -> 031 -> 831 -> 055 -> 121 -> 099 -> 055",
+        "len": 7,
+        "surprisal_bits": 14.119,
+        "z_score_vs_heartland": 3.18,
+        "unseen_bigrams": "8/8",
+        "unseen_signs": [],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "3863.1",
+        "region": "Persian Gulf",
+        "site": "Qala'at al-Bahrain",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "L/R",
+        "reading_seq": "190 -> 060 -> 055 -> 090 -> 160",
+        "len": 5,
+        "surprisal_bits": 12.544,
+        "z_score_vs_heartland": 2.57,
+        "unseen_bigrams": "5/6",
+        "unseen_signs": [],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "5405.1",
+        "region": "Iranian Plateau",
+        "site": "Ornach area",
+        "object_type": "SEAL:S",
+        "symbol": "Zebu",
+        "complete": "N",
+        "direction": "R/L",
+        "reading_seq": "820 -> 374",
+        "len": 2,
+        "surprisal_bits": 12.34,
+        "z_score_vs_heartland": 2.49,
+        "unseen_bigrams": "2/3",
+        "unseen_signs": [],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "3881.1",
+        "region": "Iranian Plateau",
+        "site": "Susa",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "N",
+        "direction": "R/L",
+        "reading_seq": "365 -> 090 -> 407 -> 604 -> 700",
+        "len": 5,
+        "surprisal_bits": 11.414,
+        "z_score_vs_heartland": 2.13,
+        "unseen_bigrams": "5/6",
+        "unseen_signs": [],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "3858.1",
+        "region": "Iranian Plateau",
+        "site": "Nindowari-damb",
+        "object_type": "SEAL:S",
+        "symbol": "Bull1:S",
+        "complete": "Y",
+        "direction": "BUS",
+        "reading_seq": "257 -> 060 -> 026 -> 760 -> 740 -> 066 -> 632 -> 220 -> 817",
+        "len": 9,
+        "surprisal_bits": 11.33,
+        "z_score_vs_heartland": 2.09,
+        "unseen_bigrams": "8/10",
+        "unseen_signs": [
+          "026"
+        ],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "160.1",
+        "region": "Persian Gulf",
+        "site": "Hajar",
+        "object_type": "TAB:I",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "117 -> 617",
+        "len": 2,
+        "surprisal_bits": 10.898,
+        "z_score_vs_heartland": 1.92,
+        "unseen_bigrams": "2/3",
+        "unseen_signs": [
+          "117"
+        ],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "2153.1",
+        "region": "Iranian Plateau",
+        "site": "Luristan",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "091 -> 840 -> 413 -> 831",
+        "len": 4,
+        "surprisal_bits": 10.691,
+        "z_score_vs_heartland": 1.84,
+        "unseen_bigrams": "3/5",
+        "unseen_signs": [],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "3897.1",
+        "region": "Mesopotamia",
+        "site": "Ur",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "528 -> 220 -> 924 -> 340 -> 093",
+        "len": 5,
+        "surprisal_bits": 10.685,
+        "z_score_vs_heartland": 1.84,
+        "unseen_bigrams": "4/6",
+        "unseen_signs": [
+          "340"
+        ],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "3898.1",
+        "region": "Mesopotamia",
+        "site": "Ur",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "415 -> 803 -> 001 -> 328 -> 004 -> 002",
+        "len": 6,
+        "surprisal_bits": 10.386,
+        "z_score_vs_heartland": 1.72,
+        "unseen_bigrams": "5/7",
+        "unseen_signs": [
+          "328"
+        ],
+        "classification": "ROSETTA_ANOMALY_CANDIDATE"
+      },
+      {
+        "inscription_id": "3882.1",
+        "region": "Iranian Plateau",
+        "site": "Susa",
+        "object_type": "SEAL:CY",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "924 -> 001 -> 319 -> 031 -> 055 -> 002 -> 150 -> 416",
+        "len": 8,
+        "surprisal_bits": 9.772,
+        "z_score_vs_heartland": 1.48,
+        "unseen_bigrams": "5/9",
+        "unseen_signs": [],
+        "classification": "MIXED_HYBRID"
+      },
+      {
+        "inscription_id": "3899.1",
+        "region": "Mesopotamia",
+        "site": "Ur",
+        "object_type": "SEAL:C",
+        "symbol": "Gaur",
+        "complete": "N",
+        "direction": "UNK",
+        "reading_seq": "350 -> 090 -> 004",
+        "len": 3,
+        "surprisal_bits": 9.532,
+        "z_score_vs_heartland": 1.39,
+        "unseen_bigrams": "2/4",
+        "unseen_signs": [],
+        "classification": "MIXED_HYBRID"
+      },
+      {
+        "inscription_id": "3885.1",
+        "region": "Mesopotamia",
+        "site": "Tello",
+        "object_type": "SEAL:S",
+        "symbol": "Tigr",
+        "complete": "N",
+        "direction": "R/L",
+        "reading_seq": "384 -> 440 -> 390 -> 220",
+        "len": 4,
+        "surprisal_bits": 9.488,
+        "z_score_vs_heartland": 1.37,
+        "unseen_bigrams": "3/5",
+        "unseen_signs": [],
+        "classification": "MIXED_HYBRID"
+      },
+      {
+        "inscription_id": "5229.1",
+        "region": "Persian Gulf",
+        "site": "Saar",
+        "object_type": "SEAL:C",
+        "symbol": "",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "055 -> 220 -> 091 -> 001 -> 093 -> 031",
+        "len": 6,
+        "surprisal_bits": 9.451,
+        "z_score_vs_heartland": 1.36,
+        "unseen_bigrams": "4/7",
+        "unseen_signs": [],
+        "classification": "MIXED_HYBRID"
+      },
+      {
+        "inscription_id": "1970.1",
+        "region": "Mesopotamia",
+        "site": "Kish",
+        "object_type": "SEAL:S",
+        "symbol": "Bull1",
+        "complete": "N",
+        "direction": "UNK",
+        "reading_seq": "240 -> 643",
+        "len": 2,
+        "surprisal_bits": 9.247,
+        "z_score_vs_heartland": 1.28,
+        "unseen_bigrams": "1/3",
+        "unseen_signs": [],
+        "classification": "MIXED_HYBRID"
+      },
+      {
+        "inscription_id": "4173.1",
+        "region": "Persian Gulf",
+        "site": "Salut",
+        "object_type": "SEAL:S",
+        "symbol": "Gaur",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "595 -> 278 -> 002 -> 004 -> 392",
+        "len": 5,
+        "surprisal_bits": 9.124,
+        "z_score_vs_heartland": 1.23,
+        "unseen_bigrams": "3/6",
+        "unseen_signs": [],
+        "classification": "MIXED_HYBRID"
+      }
+    ],
+    "most_native_harappan_abroad": [
+      {
+        "inscription_id": "3865.1",
+        "region": "Persian Gulf",
+        "site": "Ra's al-Junayz",
+        "object_type": "POT:T:g",
+        "symbol": "",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "004 -> 405",
+        "len": 2,
+        "surprisal_bits": 3.661,
+        "z_score_vs_heartland": -0.91,
+        "unseen_bigrams": "0/3",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "3874.1",
+        "region": "Central Asia",
+        "site": "Shortughai",
+        "object_type": "SEAL:S",
+        "symbol": "Rhin",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "003 -> 426",
+        "len": 2,
+        "surprisal_bits": 3.995,
+        "z_score_vs_heartland": -0.78,
+        "unseen_bigrams": "0/3",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "1971.1",
+        "region": "Mesopotamia",
+        "site": "Kish",
+        "object_type": "SEAL:S",
+        "symbol": "Bull1:L",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "416 -> 840 -> 060 -> 003 -> 220 -> 590 -> 390 -> 740",
+        "len": 8,
+        "surprisal_bits": 4.278,
+        "z_score_vs_heartland": -0.66,
+        "unseen_bigrams": "1/9",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "16.1",
+        "region": "Central Asia",
+        "site": "Altyn Depe",
+        "object_type": "SEAL:S",
+        "symbol": "",
+        "complete": "Y",
+        "direction": "L/R",
+        "reading_seq": "415 -> 390",
+        "len": 2,
+        "surprisal_bits": 4.801,
+        "z_score_vs_heartland": -0.46,
+        "unseen_bigrams": "0/3",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "4155.1",
+        "region": "Central Asia",
+        "site": "Gonur Depe",
+        "object_type": "SEAL:S",
+        "symbol": "Elep",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "285 -> 002 -> 235 -> 220 -> 125 -> 590 -> 390 -> 740",
+        "len": 8,
+        "surprisal_bits": 5.088,
+        "z_score_vs_heartland": -0.35,
+        "unseen_bigrams": "1/9",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "5442.1",
+        "region": "Iranian Plateau",
+        "site": "Miri Qalat",
+        "object_type": "SEAL:S",
+        "symbol": "Bull1:I",
+        "complete": "Y",
+        "direction": "L/R",
+        "reading_seq": "742 -> 740",
+        "len": 2,
+        "surprisal_bits": 5.862,
+        "z_score_vs_heartland": -0.05,
+        "unseen_bigrams": "1/3",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "5444.1",
+        "region": "Iranian Plateau",
+        "site": "Miri Qalat",
+        "object_type": "SEAL:S",
+        "symbol": "Bull3",
+        "complete": "Y",
+        "direction": "L/R",
+        "reading_seq": "013 -> 520",
+        "len": 2,
+        "surprisal_bits": 6.177,
+        "z_score_vs_heartland": 0.08,
+        "unseen_bigrams": "1/3",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      },
+      {
+        "inscription_id": "3859.1",
+        "region": "Iranian Plateau",
+        "site": "Nindowari-damb",
+        "object_type": "SEAL:S",
+        "symbol": "Bull1:W",
+        "complete": "Y",
+        "direction": "R/L",
+        "reading_seq": "255 -> 798 -> 400",
+        "len": 3,
+        "surprisal_bits": 6.343,
+        "z_score_vs_heartland": 0.14,
+        "unseen_bigrams": "1/4",
+        "unseen_signs": [],
+        "classification": "NATIVE_HARAPPAN_ABROAD"
+      }
+    ]
+  }
+}

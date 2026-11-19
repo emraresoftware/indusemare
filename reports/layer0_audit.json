@@ -1,0 +1,282 @@
+{
+  "source_file": "data/raw/inscriptions_5679.csv",
+  "dropped_speculative_columns": [
+    "sanskrit",
+    "translation",
+    "notes"
+  ],
+  "total_inscriptions": 5679,
+  "total_parsed_lines": 5805,
+  "strict_analytic_lines": 3357,
+  "strict_unique_sequences": 2157,
+  "dedup_repetition_pct": 35.75,
+  "total_clean_sign_tokens": 18047,
+  "unique_observed_signs": 713,
+  "hapax_signs_count": 218,
+  "signs_freq_ge_5": 295,
+  "pua_compound_signs_detected": 56,
+  "sql_visual_similarity_edges": 69,
+  "foreign_inscriptions_count": 41,
+  "regions": {
+    "Inter-Riverine": 2950,
+    "Lower Indus": 2098,
+    "Gujarat/Kutch": 489,
+    "Eastern Headwaters": 65,
+    "Other": 28,
+    "Persian Gulf": 16,
+    "Mesopotamia": 11,
+    "Iranian Plateau": 11,
+    "Upper Indus": 6,
+    "Central Asia": 3,
+    "South India": 2
+  },
+  "mean_strict_line_length": 3.966,
+  "max_strict_line_length": 13,
+  "directionality_audit": {
+    "R/L": {
+      "strict_lines": 3042,
+      "top_initial_reading": [
+        [
+          "033",
+          154
+        ],
+        [
+          "817",
+          144
+        ],
+        [
+          "032",
+          143
+        ],
+        [
+          "861",
+          125
+        ],
+        [
+          "820",
+          123
+        ]
+      ],
+      "top_final_reading": [
+        [
+          "740",
+          910
+        ],
+        [
+          "700",
+          336
+        ],
+        [
+          "400",
+          299
+        ],
+        [
+          "520",
+          210
+        ],
+        [
+          "090",
+          100
+        ]
+      ],
+      "jar_740_initial_pct": 0.1,
+      "jar_740_final_pct": 29.91
+    },
+    "L/R": {
+      "strict_lines": 163,
+      "top_initial_reading": [
+        [
+          "032",
+          11
+        ],
+        [
+          "240",
+          10
+        ],
+        [
+          "033",
+          10
+        ],
+        [
+          "220",
+          7
+        ],
+        [
+          "415",
+          6
+        ]
+      ],
+      "top_final_reading": [
+        [
+          "740",
+          40
+        ],
+        [
+          "400",
+          29
+        ],
+        [
+          "700",
+          23
+        ],
+        [
+          "390",
+          8
+        ],
+        [
+          "520",
+          7
+        ]
+      ],
+      "jar_740_initial_pct": 0.61,
+      "jar_740_final_pct": 24.54
+    },
+    "BUS": {
+      "strict_lines": 11,
+      "top_initial_reading": [
+        [
+          "388",
+          1
+        ],
+        [
+          "717",
+          1
+        ],
+        [
+          "551",
+          1
+        ],
+        [
+          "319",
+          1
+        ],
+        [
+          "140",
+          1
+        ]
+      ],
+      "top_final_reading": [
+        [
+          "740",
+          2
+        ],
+        [
+          "129",
+          1
+        ],
+        [
+          "622",
+          1
+        ],
+        [
+          "368",
+          1
+        ],
+        [
+          "690",
+          1
+        ]
+      ],
+      "jar_740_initial_pct": 0.0,
+      "jar_740_final_pct": 18.18
+    },
+    "T/B": {
+      "strict_lines": 9,
+      "top_initial_reading": [
+        [
+          "817",
+          2
+        ],
+        [
+          "540",
+          1
+        ],
+        [
+          "003",
+          1
+        ],
+        [
+          "006",
+          1
+        ],
+        [
+          "391",
+          1
+        ]
+      ],
+      "top_final_reading": [
+        [
+          "390",
+          2
+        ],
+        [
+          "909",
+          1
+        ],
+        [
+          "220",
+          1
+        ],
+        [
+          "911",
+          1
+        ],
+        [
+          "821",
+          1
+        ]
+      ],
+      "jar_740_initial_pct": 0.0,
+      "jar_740_final_pct": 0.0
+    },
+    "UNK": {
+      "strict_lines": 124,
+      "top_initial_reading": [
+        [
+          "700",
+          10
+        ],
+        [
+          "031",
+          7
+        ],
+        [
+          "003",
+          5
+        ],
+        [
+          "032",
+          4
+        ],
+        [
+          "033",
+          4
+        ]
+      ],
+      "top_final_reading": [
+        [
+          "033",
+          10
+        ],
+        [
+          "700",
+          7
+        ],
+        [
+          "031",
+          6
+        ],
+        [
+          "697",
+          5
+        ],
+        [
+          "001",
+          4
+        ]
+      ],
+      "jar_740_initial_pct": 1.61,
+      "jar_740_final_pct": 0.0
+    }
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "axes": {
+    "AXIS_1A_GHARIAL_GAVI": {
+      "matching_lines": 64,
+      "top_enriched": [
+        {
+          "axis": "AXIS_1A_GHARIAL_GAVI",
+          "sign_id": "400",
+          "in_hits": 14,
+          "in_total": 38,
+          "out_hits": 265,
+          "out_total": 3254,
+          "in_pct": 36.84,
+          "out_pct": 8.14,
+          "lift": 4.52,
+          "p_value": 1.72e-09
+        },
+        {
+          "axis": "AXIS_1A_GHARIAL_GAVI",
+          "sign_id": "700",
+          "in_hits": 7,
+          "in_total": 38,
+          "out_hits": 75,
+          "out_total": 3254,
+          "in_pct": 18.42,
+          "out_pct": 2.3,
+          "lift": 7.99,
+          "p_value": 6.091e-09
+        },
+        {
+          "axis": "AXIS_1A_GHARIAL_GAVI",
+          "sign_id": "503",
+          "in_hits": 3,
+          "in_total": 38,
+          "out_hits": 43,
+          "out_total": 3254,
+          "in_pct": 7.89,
+          "out_pct": 1.32,
+          "lift": 5.97,
+          "p_value": 0.01531
+        },
+        {
+          "axis": "AXIS_1A_GHARIAL_GAVI",
+          "sign_id": "017",
+          "in_hits": 3,
+          "in_total": 38,
+          "out_hits": 63,
+          "out_total": 3254,
+          "in_pct": 7.89,
+          "out_pct": 1.94,
+          "lift": 4.08,
+          "p_value": 0.03942
+        }
+      ]
+    },
+    "AXIS_1B_WATER_BUFFALO": {
+      "matching_lines": 22,
+      "top_enriched": [
+        {
+          "axis": "AXIS_1B_WATER_BUFFALO",
+          "sign_id": "003",
+          "in_hits": 4,
+          "in_total": 22,
+          "out_hits": 146,
+          "out_total": 3262,
+          "in_pct": 18.18,
+          "out_pct": 4.48,
+          "lift": 4.06,
+          "p_value": 0.01607
+        },
+        {
+          "axis": "AXIS_1B_WATER_BUFFALO",
+          "sign_id": "900",
+          "in_hits": 3,
+          "in_total": 22,
+          "out_hits": 80,
+          "out_total": 3262,
+          "in_pct": 13.64,
+          "out_pct": 2.45,
+          "lift": 5.56,
+          "p_value": 0.01695
+        }
+      ]
+    },
+    "AXIS_1C_BOAT_FISH_AQUATIC": {
+      "matching_lines": 47,
+      "top_enriched": [
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "700",
+          "in_hits": 7,
+          "in_total": 34,
+          "out_hits": 78,
+          "out_total": 3261,
+          "in_pct": 20.59,
+          "out_pct": 2.39,
+          "lift": 8.61,
+          "p_value": 9.68e-10
+        },
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "400",
+          "in_hits": 9,
+          "in_total": 34,
+          "out_hits": 271,
+          "out_total": 3261,
+          "in_pct": 26.47,
+          "out_pct": 8.31,
+          "lift": 3.19,
+          "p_value": 0.000523
+        },
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "034",
+          "in_hits": 3,
+          "in_total": 34,
+          "out_hits": 26,
+          "out_total": 3261,
+          "in_pct": 8.82,
+          "out_pct": 0.8,
+          "lift": 11.07,
+          "p_value": 0.003055
+        },
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "032",
+          "in_hits": 8,
+          "in_total": 34,
+          "out_hits": 322,
+          "out_total": 3261,
+          "in_pct": 23.53,
+          "out_pct": 9.87,
+          "lift": 2.38,
+          "p_value": 0.0187
+        },
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "690",
+          "in_hits": 3,
+          "in_total": 34,
+          "out_hits": 65,
+          "out_total": 3261,
+          "in_pct": 8.82,
+          "out_pct": 1.99,
+          "lift": 4.43,
+          "p_value": 0.03188
+        }
+      ]
+    },
+    "AXIS_2A_GREAT_BATH_SD": {
+      "matching_lines": 39,
+      "top_enriched": [
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "407",
+          "in_hits": 5,
+          "in_total": 33,
+          "out_hits": 65,
+          "out_total": 3250,
+          "in_pct": 15.15,
+          "out_pct": 2.0,
+          "lift": 7.58,
+          "p_value": 4.265e-06
+        },
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "370",
+          "in_hits": 3,
+          "in_total": 33,
+          "out_hits": 5,
+          "out_total": 3250,
+          "in_pct": 9.09,
+          "out_pct": 0.15,
+          "lift": 59.09,
+          "p_value": 5.01e-05
+        },
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "845",
+          "in_hits": 3,
+          "in_total": 33,
+          "out_hits": 20,
+          "out_total": 3250,
+          "in_pct": 9.09,
+          "out_pct": 0.62,
+          "lift": 14.77,
+          "p_value": 0.001429
+        },
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "585",
+          "in_hits": 3,
+          "in_total": 33,
+          "out_hits": 39,
+          "out_total": 3250,
+          "in_pct": 9.09,
+          "out_pct": 1.2,
+          "lift": 7.58,
+          "p_value": 0.008137
+        },
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "055",
+          "in_hits": 3,
+          "in_total": 33,
+          "out_hits": 47,
+          "out_total": 3250,
+          "in_pct": 9.09,
+          "out_pct": 1.45,
+          "lift": 6.29,
+          "p_value": 0.01316
+        },
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "705",
+          "in_hits": 5,
+          "in_total": 33,
+          "out_hits": 150,
+          "out_total": 3250,
+          "in_pct": 15.15,
+          "out_pct": 4.62,
+          "lift": 3.28,
+          "p_value": 0.01523
+        },
+        {
+          "axis": "AXIS_2A_GREAT_BATH_SD",
+          "sign_id": "140",
+          "in_hits": 4,
+          "in_total": 33,
+          "out_hits": 94,
+          "out_total": 3250,
+          "in_pct": 12.12,
+          "out_pct": 2.89,
+          "lift": 4.19,
+          "p_value": 0.01573
+        }
+      ]
+    },
+    "AXIS_2B_MARITIME_PORTS_LOTHAL_DHOLAVIRA": {
+      "matching_lines": 454,
+      "top_enriched": [
+        {
+          "axis": "AXIS_2B_MARITIME_PORTS_LOTHAL_DHOLAVIRA",
+          "sign_id": "634",
+          "in_hits": 3,
+          "in_total": 369,
+          "out_hits": 2,
+          "out_total": 2998,
+          "in_pct": 0.81,
+          "out_pct": 0.07,
+          "lift": 12.19,
+          "p_value": 0.01103
+        },
+        {
+          "axis": "AXIS_2B_MARITIME_PORTS_LOTHAL_DHOLAVIRA",
+          "sign_id": "552",
+          "in_hits": 4,
+          "in_total": 369,
+          "out_hits": 6,
+          "out_total": 2998,
+          "in_pct": 1.08,
+          "out_pct": 0.2,
+          "lift": 5.42,
+          "p_value": 0.01741
+        },
+        {
+          "axis": "AXIS_2B_MARITIME_PORTS_LOTHAL_DHOLAVIRA",
+          "sign_id": "611",
+          "in_hits": 3,
+          "in_total": 369,
+          "out_hits": 3,
+          "out_total": 2998,
+          "in_pct": 0.81,
+          "out_pct": 0.1,
+          "lift": 8.12,
+          "p_value": 0.02028
+        },
+        {
+          "axis": "AXIS_2B_MARITIME_PORTS_LOTHAL_DHOLAVIRA",
+          "sign_id": "392",
+          "in_hits": 3,
+          "in_total": 369,
+          "out_hits": 3,
+          "out_total": 2998,
+          "in_pct": 0.81,
+          "out_pct": 0.1,
+          "lift": 8.12,
+          "p_value": 0.02028
+        },
+        {
+          "axis": "AXIS_2B_MARITIME_PORTS_LOTHAL_DHOLAVIRA",
+          "sign_id": "423",
+          "in_hits": 3,
+          "in_total": 369,
+          "out_hits": 3,
+          "out_total": 2998,
+          "in_pct": 0.81,
+          "out_pct": 0.1,
+          "lift": 8.12,
+          "p_value": 0.02028
+        }
+      ]
+    },
+    "AXIS_3_POTTERY_VESSELS": {
+      "matching_lines": 635,
+      "top_enriched": [
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "034",
+          "in_hits": 13,
+          "in_total": 350,
+          "out_hits": 15,
+          "out_total": 3032,
+          "in_pct": 3.71,
+          "out_pct": 0.49,
+          "lift": 7.51,
+          "p_value": 2.198e-09
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "480",
+          "in_hits": 14,
+          "in_total": 350,
+          "out_hits": 18,
+          "out_total": 3032,
+          "in_pct": 4.0,
+          "out_pct": 0.59,
+          "lift": 6.74,
+          "p_value": 2.831e-09
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "697",
+          "in_hits": 5,
+          "in_total": 350,
+          "out_hits": 2,
+          "out_total": 3032,
+          "in_pct": 1.43,
+          "out_pct": 0.07,
+          "lift": 21.66,
+          "p_value": 0.0002034
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "411",
+          "in_hits": 5,
+          "in_total": 350,
+          "out_hits": 3,
+          "out_total": 3032,
+          "in_pct": 1.43,
+          "out_pct": 0.1,
+          "lift": 14.44,
+          "p_value": 0.0004964
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "515",
+          "in_hits": 5,
+          "in_total": 350,
+          "out_hits": 4,
+          "out_total": 3032,
+          "in_pct": 1.43,
+          "out_pct": 0.13,
+          "lift": 10.83,
+          "p_value": 0.001023
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "956",
+          "in_hits": 3,
+          "in_total": 350,
+          "out_hits": 0,
+          "out_total": 3032,
+          "in_pct": 0.86,
+          "out_pct": 0.0,
+          "lift": 8571.43,
+          "p_value": 0.0011
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "849",
+          "in_hits": 4,
+          "in_total": 350,
+          "out_hits": 2,
+          "out_total": 3032,
+          "in_pct": 1.14,
+          "out_pct": 0.07,
+          "lift": 17.33,
+          "p_value": 0.001428
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "035",
+          "in_hits": 7,
+          "in_total": 350,
+          "out_hits": 19,
+          "out_total": 3032,
+          "in_pct": 2.0,
+          "out_pct": 0.63,
+          "lift": 3.19,
+          "p_value": 0.01381
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "036",
+          "in_hits": 3,
+          "in_total": 350,
+          "out_hits": 4,
+          "out_total": 3032,
+          "in_pct": 0.86,
+          "out_pct": 0.13,
+          "lift": 6.5,
+          "p_value": 0.02801
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "031",
+          "in_hits": 31,
+          "in_total": 350,
+          "out_hits": 178,
+          "out_total": 3032,
+          "in_pct": 8.86,
+          "out_pct": 5.87,
+          "lift": 1.51,
+          "p_value": 0.03755
+        }
+      ]
+    }
+  },
+  "cross_axis_triangulated": [
+    {
+      "sign_id": "700",
+      "axes_hit_count": 2,
+      "axes": [
+        "AXIS_1A_GHARIAL_GAVI",
+        "AXIS_1C_BOAT_FISH_AQUATIC"
+      ],
+      "combined_neg_log10_p": 17.23,
+      "details": [
+        {
+          "axis": "AXIS_1A_GHARIAL_GAVI",
+          "sign_id": "700",
+          "in_hits": 7,
+          "in_total": 38,
+          "out_hits": 75,
+          "out_total": 3254,
+          "in_pct": 18.42,
+          "out_pct": 2.3,
+          "lift": 7.99,
+          "p_value": 6.091e-09
+        },
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "700",
+          "in_hits": 7,
+          "in_total": 34,
+          "out_hits": 78,
+          "out_total": 3261,
+          "in_pct": 20.59,
+          "out_pct": 2.39,
+          "lift": 8.61,
+          "p_value": 9.68e-10
+        }
+      ]
+    },
+    {
+      "sign_id": "400",
+      "axes_hit_count": 2,
+      "axes": [
+        "AXIS_1A_GHARIAL_GAVI",
+        "AXIS_1C_BOAT_FISH_AQUATIC"
+      ],
+      "combined_neg_log10_p": 12.05,
+      "details": [
+        {
+          "axis": "AXIS_1A_GHARIAL_GAVI",
+          "sign_id": "400",
+          "in_hits": 14,
+          "in_total": 38,
+          "out_hits": 265,
+          "out_total": 3254,
+          "in_pct": 36.84,
+          "out_pct": 8.14,
+          "lift": 4.52,
+          "p_value": 1.72e-09
+        },
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "400",
+          "in_hits": 9,
+          "in_total": 34,
+          "out_hits": 271,
+          "out_total": 3261,
+          "in_pct": 26.47,
+          "out_pct": 8.31,
+          "lift": 3.19,
+          "p_value": 0.000523
+        }
+      ]
+    },
+    {
+      "sign_id": "034",
+      "axes_hit_count": 2,
+      "axes": [
+        "AXIS_1C_BOAT_FISH_AQUATIC",
+        "AXIS_3_POTTERY_VESSELS"
+      ],
+      "combined_neg_log10_p": 11.17,
+      "details": [
+        {
+          "axis": "AXIS_1C_BOAT_FISH_AQUATIC",
+          "sign_id": "034",
+          "in_hits": 3,
+          "in_total": 34,
+          "out_hits": 26,
+          "out_total": 3261,
+          "in_pct": 8.82,
+          "out_pct": 0.8,
+          "lift": 11.07,
+          "p_value": 0.003055
+        },
+        {
+          "axis": "AXIS_3_POTTERY_VESSELS",
+          "sign_id": "034",
+          "in_hits": 13,
+          "in_total": 350,
+          "out_hits": 15,
+          "out_total": 3032,
+          "in_pct": 3.71,
+          "out_pct": 0.49,
+          "lift": 7.51,
+          "p_value": 2.198e-09
+        }
+      ]
+    }
+  ]
+}
