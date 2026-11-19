@@ -68,7 +68,7 @@
 ## Part 2 — EKSIK #2A: Tamil Nadu Megalithic Graffiti Quantitative Test & Visual Stroke-Complexity Confounder Control
 
 - **Published External Benchmarks (`data/external/tamil_nadu_graffiti_published.json`):**
-  - **B. B. Lal (1960, *Ancient India* No. 16):** `47 / 61` surveyed pottery graffiti symbols shared between South Indian Megalithic and Harappan-Chalcolithic contexts (**89%** of Megalithic symbols; **85%** Harappan-Chalcolithic continuity), with explicit non-phonetic caution.
+  - **B. B. Lal (1960, *Ancient India* No. 16):** Out of **61** surveyed pottery graffiti symbols, **`47 / 61` (`77.05%` of the full surveyed set)** are shared across Harappan-Chalcolithic and South Indian Megalithic horizons (within Lal's specific subset denominators, **89%** of Megalithic symbols trace back to Harappan-Chalcolithic precursors and **85%** of Harappan-Chalcolithic symbols continue into the Megalithic), with explicit non-phonetic caution.
   - **K. Rajan & R. Sivanantham (2025, TN State Dept. of Archaeology):** `15,184` potsherds across `140` Tamil Nadu sites (`42` base signs, `544` variants, `1,521` composites); authors report **~90%** potsherd broad similarity and **~60%** base-sign parallels. **Open Data Audit:** No machine-readable CSV/JSON/GitHub dataset has been officially released (print/Tamil Digital Library flipbook only).
 - **Visual Glyph Stroke-Complexity Extraction:** Computed directly from `687` cleanly rendered TTF glyphs (`28` empty/`.notdef` `U+2047` excluded; typographic guide dots stripped, with raw sensitivity check).
 
