@@ -2,9 +2,12 @@
 
 **A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley (Harappan) Script**
 
+[![Live Portal](https://img.shields.io/badge/live%20portal-indus.emare.dev-315b41)](https://indus.emare.dev/?lang=en)
 [![Tests](https://img.shields.io/badge/claim--ledger-11%2F11%20PASS-2b6142)]()
 [![Cross-OS](https://img.shields.io/badge/repro-macOS%20%26%20Linux%20SHA--256-315b41)]()
 [![License](https://img.shields.io/badge/license-MIT%20%2F%20CC--BY--4.0-182c22)]()
+
+> **Live Interactive Explorer (EN / TR):** [**https://indus.emare.dev/?lang=en**](https://indus.emare.dev/?lang=en) · **PDF Preprint:** [`INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) · **1-Page Claim Ledger:** [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md)
 
 `INDUS-DEDUCT` is an end-to-end, reproducible 13-layer computational epigraphy benchmark across **5,679 Indus inscriptions** (`5,805` parsed lines; `713` raw signs). Every pipeline stage obeys a strict anti-hallucination contract:
 - **Zero speculative upstream leakage:** Upstream `sanskrit`, `translation`, and `notes` columns are stripped prior to modeling and guarded by `test_01_zero_speculative_contamination`.
@@ -44,17 +47,29 @@
 
 ## Quickstart & Full Reproduction
 
+### 1. Zero-Dependency Claim-Ledger Check (Works on Fresh Clone, No `pip` Required)
+
+```bash
+git clone https://github.com/emraresoftware/indusemare.git
+cd indusemare
+python3 -m unittest tests/test_claim_ledger.py -v
+```
+
+This immediately verifies all analytical invariants across Layers 0–12 (`reports/*.json`) and SHA-256 checksums for bundled `data/external/*` tables. To respect primary epigraphic concordance rights (ICIT / CISI), raw upstream corpus dumps are not redistributed inside the repository (`DATA_MANIFEST.json` records their exact SHA-256 hashes for full local verification).
+
+### 2. Full End-to-End Pipeline Reproduction (with Local Upstream Corpora)
+
 ```bash
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-# 1. Rebuild canonical corpus (requires raw ICIT SQL/CSV + font under data/raw/)
+# Place upstream raw corpora under data/raw/ and data/calibration/ (verified via DATA_MANIFEST.json)
 .venv/bin/python src/layer0_ingest.py
 
-# 2. Run verification ledger (11/11 tests + SHA-256 manifest)
-.venv/bin/python -m unittest tests/test_claim_ledger.py -v
+# Strict 11/11 verification including all 17 DATA_MANIFEST.json SHA-256 hashes + SQLite checks
+INDUS_STRICT_CORPUS=1 python3 -m unittest tests/test_claim_ledger.py -v
 
-# 3. Launch the interactive FaunaTech Doğal Atlas portal locally
+# Launch the bilingual (EN / TR) interactive FaunaTech Doğal Atlas portal locally
 python3 -m http.server 4188 --bind 127.0.0.1 --directory portal
 ```
 

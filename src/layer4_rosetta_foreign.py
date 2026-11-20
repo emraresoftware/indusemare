@@ -19,7 +19,7 @@ Strictly separates:
 Outputs:
   - reports/layer4_rosetta_findings.json
   - reports/rosetta_foreign_seals.png
-  - /Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/rosetta_foreign_seals.png
+  - reports/rosetta_foreign_seals.png
 """
 
 from __future__ import annotations
@@ -41,7 +41,7 @@ PROC_DIR = ROOT / "data" / "processed"
 RAW_DIR = ROOT / "data" / "raw"
 REPORTS_DIR = ROOT / "reports"
 BRAIN_PNG_PATH = Path(
-    "/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/rosetta_foreign_seals.png"
+    "reports/rosetta_foreign_seals.png"
 )
 
 BOS = "<BOS>"

@@ -204,7 +204,21 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>INDUS-DEDUCT — Açık Hesaplamalı Epigrafi Portalı</title>
+  <title>INDUS-DEDUCT — Calibrated Computational Epigraphy for the Indus Valley Script</title>
+  <meta name="description" content="5,679 Indus inscriptions, 5-way calibration vs Ur III Sumerian &amp; Linear B, 700-year BH-FDR paleographic drift (#838->#803->#806, #156->#154), Mohenjo-daro Copper Tablet Internal Rosetta, and 690 restored damaged inscriptions. 11/11 verified." />
+  <link rel="canonical" href="https://indus.emare.dev/" />
+  <link rel="icon" type="image/svg+xml" href="./assets/emare-ui/brand/emare-seal-pine.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://indus.emare.dev/" />
+  <meta property="og:title" content="INDUS-DEDUCT — Calibrated Computational Epigraphy for the Indus Valley Script" />
+  <meta property="og:description" content="5,679 inscriptions · Zero fabricated readings · z_H1 retired · 5-way calibration vs Sumerian &amp; Linear B · 700-yr glyph drift · 690 damaged inscriptions restored." />
+  <meta property="og:image" content="https://indus.emare.dev/assets/og-indusemare.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="INDUS-DEDUCT — Calibrated Open Benchmark for the Indus Valley Script" />
+  <meta name="twitter:description" content="We tested all 5,679 Indus inscriptions against real Ur III Sumerian, Linear B, Linear A &amp; non-linguistic stamps — retiring z_H1 and uncovering 700-year paleographic drift." />
+  <meta name="twitter:image" content="https://indus.emare.dev/assets/og-indusemare.png" />
   <link rel="stylesheet" href="./emare-tokens.css" />
   <style>
     @font-face {
@@ -265,10 +279,10 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
 
     .nav-tabs {
       max-width: 1260px; margin: 0 auto; padding: 0 24px;
-      display: flex; gap: 6px; overflow-x: auto; border-top: 1px solid var(--em-border-subtle);
+      display: flex; gap: 4px; overflow-x: auto; border-top: 1px solid var(--em-border-subtle);
     }
     .tab-btn {
-      padding: 11px 16px; border: none; background: transparent;
+      padding: 11px 13px; border: none; background: transparent;
       color: var(--em-ink-secondary); font-family: var(--em-font-sans); font-size: var(--em-text-sm);
       font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap;
       transition: color var(--em-dur-fast), border-color var(--em-dur-fast);
@@ -385,21 +399,24 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         <img src="./assets/emare-ui/brand/emare-seal-pine.svg" alt="Emare Mühür" />
         <div>
           <div class="brand-title">INDUS-DEDUCT</div>
-          <div class="brand-sub">FaunaTech Doğal Atlas v2.0 · Katman 0–12 Açık Hesaplamalı Epigrafi Portalı</div>
+          <div class="brand-sub" data-i18n="brandSub">FaunaTech Doğal Atlas v2.0 · Katman 0–12 Açık Hesaplamalı Epigrafi Portalı</div>
         </div>
       </div>
       <div class="actions">
-        <a class="btn btn-primary" href="./assets/INDUS_DEDUCT_PREPRINT.pdf" target="_blank">PDF Makale İndir</a>
+        <a class="btn" href="https://github.com/emraresoftware/indusemare" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md" target="_blank" rel="noopener" data-i18n="btnLedger">İddia Defteri</a>
+        <a class="btn btn-primary" href="./assets/INDUS_DEDUCT_PREPRINT.pdf" target="_blank" data-i18n="btnPdf">PDF Makale</a>
+        <button class="btn" id="langToggle" type="button">EN</button>
         <button class="btn" id="themeToggle" type="button">Orman Gecesi</button>
       </div>
     </div>
     <nav class="nav-tabs" role="tablist">
-      <button class="tab-btn active" data-tab="overview">1. Genel &amp; 5'li Kalibrasyon</button>
-      <button class="tab-btn" data-tab="atlas">2. Canlı Glif Atlası (294)</button>
-      <button class="tab-btn" data-tab="rosetta">3. İç Rosetta &amp; Meluhha Ticareti</button>
-      <button class="tab-btn" data-tab="restore">4. Kırık Yazıt Tamamlama (690)</button>
-      <button class="tab-btn" data-tab="diachronic">5. İndus Sonrası Dil &amp; Körfez Duvarı</button>
-      <button class="tab-btn" data-tab="time12">6. 700 Yıllık Evrim &amp; Denizcilik</button>
+      <button class="tab-btn active" data-tab="overview" data-i18n="tab1">1. Genel &amp; 5'li Kalibrasyon</button>
+      <button class="tab-btn" data-tab="atlas" data-i18n="tab2">2. Canlı Glif Atlası (294)</button>
+      <button class="tab-btn" data-tab="rosetta" data-i18n="tab3">3. İç Rosetta &amp; Meluhha Ticareti</button>
+      <button class="tab-btn" data-tab="restore" data-i18n="tab4">4. Kırık Yazıt Tamamlama (690)</button>
+      <button class="tab-btn" data-tab="diachronic" data-i18n="tab5">5. İndus Sonrası Dil &amp; Körfez Duvarı</button>
+      <button class="tab-btn" data-tab="time12" data-i18n="tab6">6. 700 Yıllık Evrim &amp; Denizcilik</button>
     </nav>
   </header>
 
@@ -407,32 +424,32 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
     <!-- TAB 1: OVERVIEW & CALIBRATION -->
     <section class="panel active" id="tab-overview">
       <div class="hero">
-        <span class="hero-eyebrow">Sıfır Halüsinasyon · 11/11 Doğrulanmış · Mac &amp; Linux Bit-Bit SHA-256 · v1.0.0</span>
-        <h1>İndus Vadisi Yazısı İçin Kalibre Edilmiş Açık Benchmark</h1>
-        <p>5.679 yazıt üzerinde görsel glif analizi, 5'li bilinen-cevap &amp; dil-dışı kalibrasyon, Mohenjo-daro bakır tablet iç Rosettası, Lothal çok-imzalı kargo ağı ve 690 kırık yazıtlık açık onarım kataloğu. Kanıtlanmış yapısal gerçekler ile kanıtlanmamış sesli okumalar kesin çizgiyle ayrılmıştır.</p>
+        <span class="hero-eyebrow" data-i18n="heroEyebrow">Sıfır Halüsinasyon · 11/11 Doğrulanmış · Mac &amp; Linux Bit-Bit SHA-256 · v1.0.0</span>
+        <h1 data-i18n="heroTitle">İndus Vadisi Yazısı İçin Kalibre Edilmiş Açık Benchmark</h1>
+        <p data-i18n="heroDesc">5.679 yazıt üzerinde görsel glif analizi, 5'li bilinen-cevap &amp; dil-dışı kalibrasyon, Mohenjo-daro bakır tablet iç Rosettası, 700 yıllık paleografik evrim, Lothal çok-imzalı kargo ağı ve 690 kırık yazıtlık açık onarım kataloğu. Kanıtlanmış yapısal gerçekler ile kanıtlanmamış sesli okumalar kesin çizgiyle ayrılmıştır.</p>
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi"><div class="kpi-label">Kanonik Korpus</div><div class="kpi-val">5.679</div><div class="kpi-note">5.805 satır · sıfır kuram kirliliği</div></div>
-        <div class="kpi"><div class="kpi-label">Çekirdek İşaret (Tipoloji)</div><div class="kpi-val">240–271</div><div class="kpi-note">Logo-heceli · %95.7 token kapsamı</div></div>
-        <div class="kpi"><div class="kpi-label">Kober Köprü Sinyali</div><div class="kpi-val">+53.67σ</div><div class="kpi-note">Dil-dışı kontrol: +0.07σ (sıfır)</div></div>
-        <div class="kpi"><div class="kpi-label">Bakır Tablet İç Kilidi</div><div class="kpi-val">%96.2</div><div class="kpi-note">MI z = +19.66σ (SEAL:S +2.79σ)</div></div>
-        <div class="kpi"><div class="kpi-label">LOCO Kırık Yazıt Onarımı</div><div class="kpi-val">%57.5</div><div class="kpi-note">Top-1 (n=275) · Top-5 %82.9 · 12 şehir</div></div>
+        <div class="kpi"><div class="kpi-label" data-i18n="kpi1L">Kanonik Korpus</div><div class="kpi-val" data-i18n="kpi1V">5.679</div><div class="kpi-note" data-i18n="kpi1N">5.805 satır · sıfır kuram kirliliği</div></div>
+        <div class="kpi"><div class="kpi-label" data-i18n="kpi2L">Çekirdek İşaret (Tipoloji)</div><div class="kpi-val">240–271</div><div class="kpi-note" data-i18n="kpi2N">Logo-heceli · %95.7 token kapsamı</div></div>
+        <div class="kpi"><div class="kpi-label" data-i18n="kpi3L">Kober Köprü Sinyali</div><div class="kpi-val">+53.67σ</div><div class="kpi-note" data-i18n="kpi3N">Dil-dışı kontrol: +0.07σ (sıfır)</div></div>
+        <div class="kpi"><div class="kpi-label" data-i18n="kpi4L">Bakır Tablet İç Kilidi</div><div class="kpi-val" data-i18n="kpi4V">%96.2</div><div class="kpi-note" data-i18n="kpi4N">MI z = +19.66σ (SEAL:S +2.79σ)</div></div>
+        <div class="kpi"><div class="kpi-label" data-i18n="kpi5L">LOCO Kırık Yazıt Onarımı</div><div class="kpi-val" data-i18n="kpi5V">%57.5</div><div class="kpi-note" data-i18n="kpi5N">Top-1 (n=275) · Top-5 %82.9 · 12 şehir</div></div>
       </div>
 
       <div class="card">
-        <h2>Katman 8: 5'li Kalibrasyon (Eşit Boyut &amp; Uzunluk — N = 2.047)</h2>
-        <p class="lead">İndus yazısının gerçek Sümer (Ur III CDLI), Linear B ve Linear A ile aynı kümeye oturup Dil-Dışı Damgalardan nasıl kesin ayrıştığı. <code>z_H1</code> emekliye ayrıldı; 3 doğrulanmış ayırt edici öne çıktı.</p>
+        <h2 data-i18n="calTitle">Katman 8: 5'li Kalibrasyon (Eşit Boyut &amp; Uzunluk — N = 2.047)</h2>
+        <p class="lead" data-i18n="calLead">İndus yazısının gerçek Sümer (Ur III CDLI), Linear B ve Linear A ile aynı kümeye oturup Dil-Dışı Damgalardan nasıl kesin ayrıştığı. z_H1 emekliye ayrıldı; 3 doğrulanmış ayırt edici öne çıktı.</p>
         <div style="overflow-x:auto">
           <table>
             <thead>
               <tr>
-                <th>Korpus</th>
-                <th><code>z_H1</code> (Emekli)</th>
-                <th>Sağ-Kenar Daralma</th>
-                <th>2-Ek Yığılması (Son:Ön)</th>
-                <th>Kober Köprü MI <code>z</code></th>
-                <th>Görülmemiş Trigram Kazancı</th>
+                <th data-i18n="thCorpus">Korpus</th>
+                <th data-i18n="thZh1">z_H1 (Emekli)</th>
+                <th data-i18n="thRb">Sağ-Kenar Daralma</th>
+                <th data-i18n="thAffix">2-Ek Yığılması (Son:Ön)</th>
+                <th data-i18n="thKober">Kober Köprü MI z</th>
+                <th data-i18n="thUnseen">Görülmemiş Trigram Kazancı</th>
                 <th><code>final_UNSEEN</code></th>
               </tr>
             </thead>
@@ -442,26 +459,26 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
       </div>
 
       <div class="card">
-        <h2>23-Mühürlü Bilinen-Cevap (Known-Answer) Max-CSP Doğrulaması</h2>
-        <p class="lead">Aynı çözücü kapalı Linear B ve Ur III Sümercede %100 kilit açarken, %74 açık sözlüklü gerçek Sümercede 0 çapayla gürültüye düşüp 2 çapayla (%68.2) çözülüyor — İndus Körfez duvarı algoritmik değil, fiziksel çapa eksikliği.</p>
+        <h2 data-i18n="cspTitle">23-Mühürlü Bilinen-Cevap (Known-Answer) Max-CSP Doğrulaması</h2>
+        <p class="lead" data-i18n="cspLead">Aynı çözücü kapalı Linear B ve Ur III Sümercede %100 kilit açarken, %74 açık sözlüklü gerçek Sümercede 0 çapayla gürültüye düşüp 2 çapayla (%68.2) çözülüyor — İndus Körfez duvarı algoritmik değil, fiziksel çapa eksikliği.</p>
         <div style="overflow-x:auto">
           <table>
-            <thead><tr><th>23-Mühürlü Graf Rejimi</th><th>Çapa (k)</th><th>En İyi Eşleşme</th><th>z-skoru</th><th>Doğru Kilitlenen</th><th>Karar</th></tr></thead>
+            <thead><tr><th data-i18n="thRegime">23-Mühürlü Graf Rejimi</th><th data-i18n="thAnchor">Çapa (k)</th><th data-i18n="thBest">En İyi Eşleşme</th><th data-i18n="thZ">z-skoru</th><th data-i18n="thLocked">Doğru Kilitlenen</th><th data-i18n="thVerdict">Karar</th></tr></thead>
             <tbody id="cspTableBody"></tbody>
           </table>
         </div>
       </div>
 
       <div class="card">
-        <h2>5'li Kalibrasyon Görsel Özeti</h2>
-        <img class="plate-img" src="./assets/charts/calibration_5way_chart.png" alt="Katman 8 5-Way Calibration Chart" />
+        <h2 data-i18n="calChartTitle">5'li Kalibrasyon Görsel Özeti</h2>
+        <img class="plate-img" src="./assets/charts/calibration_5way_chart.png" alt="Layer 8 5-Way Calibration Chart" />
       </div>
     </section>
 
     <!-- TAB 2: LIVE GLYPH ATLAS -->
     <section class="panel" id="tab-atlas">
       <div class="card">
-        <h2>Canlı İndus Glif Atlası (294 Sık İşaret = %95.7 Korpus Kapsamı)</h2>
+        <h2 data-i18n="atlasH2">Canlı İndus Glif Atlası (294 Sık İşaret = %95.7 Korpus Kapsamı)</h2>
         <p class="lead">Gerçek ICIT TTF yazı tipiyle canlı çizim. Alt çubuklar: <span class="badge badge-clay">Açıcı</span> · <span class="badge" style="background:var(--em-surface-muted)">Orta</span> · <span class="badge badge-ok">Bitiş</span> oranlarını gösterir.</p>
         <div class="controls">
           <input class="input" id="atlasSearch" placeholder="İşaret no ara (ör. 740, 091, 790)..." style="min-width:240px" />
@@ -636,17 +653,149 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
     </section>
   </main>
 
-  <footer>
-    INDUS-DEDUCT Açık Benchmark (v1.0.0-preprint) · FaunaTech Doğal Atlas v2.0 (<code>emare-ui</code>) · 11/11 Claim-Ledger Doğrulamalı · Sıfır Uydurma Okuma
+  <footer data-i18n="footerTxt">
+    INDUS-DEDUCT Açık Benchmark (v1.0.0-preprint) · FaunaTech Doğal Atlas v2.0 (emare-ui) · 11/11 Claim-Ledger Doğrulamalı · Sıfır Uydurma Okuma
   </footer>
 
   <script>
+    const I18N = {
+      tr: {
+        brandSub: "FaunaTech Doğal Atlas v2.0 · Katman 0–12 Açık Hesaplamalı Epigrafi Portalı",
+        btnLedger: "İddia Defteri",
+        btnPdf: "PDF Makale",
+        tab1: "1. Genel & Kalibrasyon",
+        tab2: "2. Glif Atlası (294)",
+        tab3: "3. İç Rosetta & Ticaret",
+        tab4: "4. Kırık Onarım (690)",
+        tab5: "5. Ardıl Dil & Körfez",
+        tab6: "6. 700 Yıl & Denizcilik",
+        heroEyebrow: "Sıfır Halüsinasyon · 11/11 Doğrulanmış · Mac & Linux Bit-Bit SHA-256 · v1.0.0",
+        heroTitle: "İndus Vadisi Yazısı İçin Kalibre Edilmiş Açık Benchmark",
+        heroDesc: "5.679 yazıt üzerinde görsel glif analizi, 5'li bilinen-cevap & dil-dışı kalibrasyon, Mohenjo-daro bakır tablet iç Rosettası, 700 yıllık paleografik evrim, Lothal çok-imzalı kargo ağı ve 690 kırık yazıtlık açık onarım kataloğu. Kanıtlanmış yapısal gerçekler ile kanıtlanmamış sesli okumalar kesin çizgiyle ayrılmıştır.",
+        kpi1L: "Kanonik Korpus", kpi1V: "5.679", kpi1N: "5.805 satır · sıfır kuram kirliliği",
+        kpi2L: "Çekirdek İşaret (Tipoloji)", kpi2N: "Logo-heceli · %95.7 token kapsamı",
+        kpi3L: "Kober Köprü Sinyali", kpi3N: "Dil-dışı kontrol: +0.07σ (sıfır)",
+        kpi4L: "Bakır Tablet İç Kilidi", kpi4V: "%96.2", kpi4N: "MI z = +19.66σ (SEAL:S +2.79σ)",
+        kpi5L: "LOCO Kırık Yazıt Onarımı", kpi5V: "%57.5", kpi5N: "Top-1 (n=275) · Top-5 %82.9 · 12 şehir",
+        calTitle: "Katman 8: 5'li Kalibrasyon (Eşit Boyut & Uzunluk — N = 2.047)",
+        calLead: "İndus yazısının gerçek Sümer (Ur III CDLI), Linear B ve Linear A ile aynı kümeye oturup Dil-Dışı Damgalardan nasıl kesin ayrıştığı. z_H1 emekliye ayrıldı; 3 doğrulanmış ayırt edici öne çıktı.",
+        thCorpus: "Korpus", thZh1: "z_H1 (Emekli)", thRb: "Sağ-Kenar Daralma", thAffix: "2-Ek Yığılması (Son:Ön)",
+        thKober: "Kober Köprü MI z", thUnseen: "Görülmemiş Trigram Kazancı",
+        cspTitle: "23-Mühürlü Bilinen-Cevap (Known-Answer) Max-CSP Doğrulaması",
+        cspLead: "Aynı çözücü kapalı Linear B ve Ur III Sümercede %100 kilit açarken, %74 açık sözlüklü gerçek Sümercede 0 çapayla gürültüye düşüp 2 çapayla (%68.2) çözülüyor — İndus Körfez duvarı algoritmik değil, fiziksel çapa eksikliği.",
+        thRegime: "23-Mühürlü Graf Rejimi", thAnchor: "Çapa (k)", thBest: "En İyi Eşleşme", thZ: "z-skoru", thLocked: "Doğru Kilitlenen", thVerdict: "Karar",
+        calChartTitle: "5'li Kalibrasyon Görsel Özeti",
+        atlasH2: "Canlı İndus Glif Atlası (294 Sık İşaret = %95.7 Korpus Kapsamı)",
+        themeDark: "Orman Gecesi", themeLight: "Sabah Keteni",
+        footerTxt: "INDUS-DEDUCT Açık Benchmark (v1.0.0-preprint) · FaunaTech Doğal Atlas v2.0 (emare-ui) · 11/11 Claim-Ledger Doğrulamalı · Sıfır Uydurma Okuma"
+      },
+      en: {
+        brandSub: "FaunaTech Natural Atlas v2.0 · Layers 0–12 Open Computational Epigraphy Portal",
+        btnLedger: "Claim Ledger",
+        btnPdf: "Preprint PDF",
+        tab1: "1. Overview & Calibration",
+        tab2: "2. Glyph Atlas (294)",
+        tab3: "3. Rosetta & Trade",
+        tab4: "4. Restorations (690)",
+        tab5: "5. Gulf & Successors",
+        tab6: "6. 700-Yr Drift & Sea",
+        heroEyebrow: "Zero Hallucination · 11/11 Verified · macOS & Linux Bit-for-Bit SHA-256 · v1.0.0",
+        heroTitle: "A Calibrated Open Benchmark for the Indus Valley Script",
+        heroDesc: "13-layer reproducible computational epigraphy across 5,679 inscriptions: 5-way calibration vs. real Ur III Sumerian, Linear B, Linear A & non-linguistic stamps; Mohenjo-daro Copper Tablet internal Rosetta; 700-year BH-FDR paleographic drift; Lothal multi-signature cargo network; and 690 strict-LOCO damaged restorations. Proven structure is strictly separated from unproven phonetic readings.",
+        kpi1L: "Canonical Corpus", kpi1V: "5,679", kpi1N: "5,805 lines · zero speculative leakage",
+        kpi2L: "Core Graphemes", kpi2N: "Logo-syllabic · 95.7% token coverage",
+        kpi3L: "Kober Bridge MI z", kpi3N: "Non-linguistic control: +0.07σ (flat zero)",
+        kpi4L: "Copper Tablet Lock", kpi4V: "96.2%", kpi4N: "MI z = +19.66σ (vs. SEAL:S +2.79σ)",
+        kpi5L: "LOCO Restoration", kpi5V: "57.5%", kpi5N: "Top-1 (n=275) · Top-5 82.9% · 12 cities",
+        calTitle: "Layer 8: Five-Way Matched Calibration (N = 2,047 Sequences)",
+        calLead: "Indus clusters with real Ur III Sumerian (CDLI) and Linear B while separating cleanly from structured Non-Linguistic Stamps. Within-sequence z_H1 is retired (-245.3σ on non-linguistic stamps); three validated discriminators remain.",
+        thCorpus: "Corpus", thZh1: "z_H1 (Retired)", thRb: "Right-Edge Bottleneck", thAffix: "2-Affix Stack (Suf:Pre)",
+        thKober: "Kober Bridge MI z", thUnseen: "Unseen-Trigram Gain",
+        cspTitle: "23-Seal Known-Answer Max-CSP Identifiability Calibration",
+        cspLead: "The exact same solver locks 23/23 (100%) on closed Linear B and Ur III Sumerian at k=0, collapses to noise on realistic 74% open Sumerian at k=0, and rescues 21/23 (68.2% shared signs) at k=2 anchors — proving the Gulf decipherment wall is physical anchor scarcity, not algorithmic failure.",
+        thRegime: "23-Seal Graph Regime", thAnchor: "Anchors (k)", thBest: "Best Match", thZ: "z-score", thLocked: "True Locked", thVerdict: "Verdict",
+        calChartTitle: "Five-Way Calibration Visual Summary",
+        atlasH2: "Live Indus Glyph Atlas (294 Core Signs = 95.7% Corpus Coverage)",
+        themeDark: "Forest Night", themeLight: "Morning Linen",
+        footerTxt: "INDUS-DEDUCT Open Benchmark (v1.0.0-preprint) · FaunaTech Natural Atlas v2.0 (emare-ui) · 11/11 Claim-Ledger Verified · Zero Fabricated Readings"
+      }
+    };
+    const CAL_NAMES_EN = {
+      indus_strict: "Indus (Canonical)",
+      sumerian_matched: "Ur III Sumerian (CDLI)",
+      linearb_matched: "Linear B (Mycenaean Greek)",
+      lineara_words: "Linear A (Minoan)",
+      nonlinguistic_stamps: "Non-Linguistic Stamps (Neg. Control)"
+    };
+    const CSP_MAP_EN = {
+      "Linear B (Kapalı %100)": "Linear B (Closed 100%)",
+      "Ur III Sümerce (Kapalı %100)": "Ur III Sumerian (Closed 100%)",
+      "Ur III Sümerce (Açık %74)": "Ur III Sumerian (Open 74%)",
+      "İndus Körfez Bileşeni (Gerçek)": "Indus Gulf Component (Real)",
+      "Tam Çözüm": "Exact Lock",
+      "Gürültü (Çapasız)": "Noise (Unanchored)",
+      "Çapayla Kırılma!": "Anchor Breakthrough!",
+      "Belirsiz (DOF=30)": "Underdetermined (DOF=30)"
+    };
+    const urlLang = new URLSearchParams(location.search).get("lang");
+    let curLang = urlLang === "en" || urlLang === "tr" ? urlLang : ((navigator.language || "").toLowerCase().startsWith("tr") ? "tr" : "en");
+    const langBtn = document.getElementById("langToggle");
     const themeBtn = document.getElementById("themeToggle");
+    let portalData = null;
+
+    function syncThemeBtn() {
+      const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+      const dict = I18N[curLang];
+      themeBtn.textContent = isDark ? dict.themeLight : dict.themeDark;
+    }
+
+    function renderCalTables() {
+      if (!portalData) return;
+      const B = portalData;
+      document.getElementById("calTableBody").innerHTML = B.calibration_5way.map(r => {
+        const isIndus = r.key === "indus_strict";
+        const isNeg = r.key === "nonlinguistic_stamps";
+        const bg = isIndus ? 'style="background:var(--em-accent-soft);font-weight:600"' : (isNeg ? 'style="background:var(--em-danger-soft)"' : "");
+        const label = curLang === "en" ? (CAL_NAMES_EN[r.key] || r.name) : r.name;
+        return `<tr ${bg}>
+          <td>${label}</td>
+          <td class="mono">${r.z_h1.toFixed(2)}σ</td>
+          <td class="mono">${r.rb.toFixed(2)}×</td>
+          <td class="mono">${r.suf_pre}</td>
+          <td class="mono"><strong>${r.kober_z >= 0 ? "+" : ""}${r.kober_z.toFixed(2)}σ</strong></td>
+          <td class="mono">${r.unseen_pp >= 0 ? "+" : ""}${r.unseen_pp.toFixed(2)} pp (${r.unseen_bits >= 0 ? "+" : ""}${r.unseen_bits.toFixed(3)} b)</td>
+          <td class="mono">${r.fin_unseen_pp.toFixed(2)} pp</td>
+        </tr>`;
+      }).join("");
+
+      document.getElementById("cspTableBody").innerHTML = B.csp_known_answer.map(r => {
+        const cls = r.status.includes("Tam") || r.status.includes("Kırılma") ? "badge-ok" : (r.status.includes("Gürültü") ? "badge-err" : "badge-warn");
+        const rName = curLang === "en" ? (CSP_MAP_EN[r.name] || r.name) : r.name;
+        const rStatus = curLang === "en" ? (CSP_MAP_EN[r.status] || r.status) : r.status;
+        return `<tr><td>${rName}</td><td class="mono">k=${r.k}</td><td class="mono">${r.max_k}</td><td class="mono">${r.z >= 0 ? "+" : ""}${r.z.toFixed(2)}σ</td><td class="mono">${r.locked}</td><td><span class="badge ${cls}">${rStatus}</span></td></tr>`;
+      }).join("");
+    }
+
+    function applyLang(l) {
+      curLang = l;
+      document.documentElement.lang = l;
+      const dict = I18N[l];
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const k = el.getAttribute("data-i18n");
+        if (dict[k]) el.textContent = dict[k];
+      });
+      langBtn.textContent = l === "tr" ? "EN" : "TR";
+      syncThemeBtn();
+      renderCalTables();
+    }
+    langBtn.addEventListener("click", () => applyLang(curLang === "tr" ? "en" : "tr"));
+    applyLang(curLang);
+
     themeBtn.addEventListener("click", () => {
       const root = document.documentElement;
       const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
       root.setAttribute("data-theme", next);
-      themeBtn.textContent = next === "dark" ? "Sabah Keteni" : "Orman Gecesi";
+      syncThemeBtn();
     });
 
     document.querySelectorAll(".tab-btn").forEach(btn => {
@@ -667,30 +816,12 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
     }
 
     fetch("./data/indus_portal_bundle.json").then(r => r.json()).then(B => {
+      portalData = B;
       const cp = B.cp_map;
       document.getElementById("glyph091").textContent = cp["091"] || "091";
 
-      // 1. Calibration 5-way
-      document.getElementById("calTableBody").innerHTML = B.calibration_5way.map(r => {
-        const isIndus = r.key === "indus_strict";
-        const isNeg = r.key === "nonlinguistic_stamps";
-        const bg = isIndus ? 'style="background:var(--em-accent-soft);font-weight:600"' : (isNeg ? 'style="background:var(--em-danger-soft)"' : "");
-        return `<tr ${bg}>
-          <td>${r.name}</td>
-          <td class="mono">${r.z_h1.toFixed(2)}σ</td>
-          <td class="mono">${r.rb.toFixed(2)}×</td>
-          <td class="mono">${r.suf_pre}</td>
-          <td class="mono"><strong>${r.kober_z >= 0 ? "+" : ""}${r.kober_z.toFixed(2)}σ</strong></td>
-          <td class="mono">${r.unseen_pp >= 0 ? "+" : ""}${r.unseen_pp.toFixed(2)} pp (${r.unseen_bits >= 0 ? "+" : ""}${r.unseen_bits.toFixed(3)} b)</td>
-          <td class="mono">${r.fin_unseen_pp.toFixed(2)} pp</td>
-        </tr>`;
-      }).join("");
-
-      // 2. CSP Known-Answer
-      document.getElementById("cspTableBody").innerHTML = B.csp_known_answer.map(r => {
-        const cls = r.status.includes("Tam") || r.status.includes("Kırılma") ? "badge-ok" : (r.status.includes("Gürültü") ? "badge-err" : "badge-warn");
-        return `<tr><td>${r.name}</td><td class="mono">k=${r.k}</td><td class="mono">${r.max_k}</td><td class="mono">${r.z >= 0 ? "+" : ""}${r.z.toFixed(2)}σ</td><td class="mono">${r.locked}</td><td><span class="badge ${cls}">${r.status}</span></td></tr>`;
-      }).join("");
+      // 1 & 2. Calibration 5-way & CSP Known-Answer (language-aware)
+      renderCalTables();
 
       // 3. Atlas
       function drawAtlas() {
@@ -955,9 +1086,9 @@ def build_preprint_pdf() -> Path:
 
     # Append Layer 11A & Layer 11B addendum directly to print HTML (and keep preprint synchronized!)
     body_html = md_to_print_html(md_text)
-    cal_img = (REPORTS_DIR / "calibration_5way_chart.png").resolve().as_uri()
-    l9_img = (REPORTS_DIR / "layer9_copper_rosetta_plate.png").resolve().as_uri()
-    l12_img = (REPORTS_DIR / "layer12_time_evolution_plate.png").resolve().as_uri()
+    cal_img = "../reports/calibration_5way_chart.png"
+    l9_img = "../reports/layer9_copper_rosetta_plate.png"
+    l12_img = "../reports/layer12_time_evolution_plate.png"
 
     full_html = f"""<!DOCTYPE html>
 <html lang="en">

@@ -20,6 +20,7 @@ import json
 import math
 import sqlite3
 from collections import Counter, defaultdict
+import os
 from pathlib import Path
 from typing import Any
 
@@ -32,7 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROC_DIR = ROOT / "data" / "processed"
 RAW_DIR = ROOT / "data" / "raw"
 REPORTS_DIR = ROOT / "reports"
-ART_DIR = Path("/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608")
+ART_DIR = Path(os.environ["INDUS_ARTIFACT_DIR"]) if os.environ.get("INDUS_ARTIFACT_DIR") else None
 
 FRAMED_SIGNS = {"226", "232", "234", "236", "241", "592", "804", "842"}
 ELITE_OPENERS = {"817", "820", "861", "920"}
@@ -631,7 +632,7 @@ def render_layer12_plate(glyphs_df: pd.DataFrame, payload: dict[str, Any], out_p
 
     out_path.parent.mkdir(parents=True, exist_ok=True)
     img.save(out_path)
-    if ART_DIR.exists():
+    if ART_DIR and ART_DIR.exists():
         img.save(ART_DIR / out_path.name)
 
 

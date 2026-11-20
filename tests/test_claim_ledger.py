@@ -14,25 +14,44 @@ Directly fulfills vega & seyyah's engineering audit requirements:
 
 from __future__ import annotations
 
+import csv
 import hashlib
 import json
+import os
 import sqlite3
 import unittest
 from pathlib import Path
-
-import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
 PROC = ROOT / "data" / "processed"
 REPORTS = ROOT / "reports"
 FORBIDDEN_COLS = {"sanskrit", "translation", "notes"}
+STRICT_CORPUS = os.environ.get("INDUS_STRICT_CORPUS") == "1"
+HAS_LOCAL_CORPUS = (PROC / "inscriptions_clean.csv").exists()
+
+
+def _csv_headers(path: Path) -> set[str]:
+    with path.open("r", encoding="utf-8", newline="") as f:
+        row = next(csv.reader(f))
+    return {c.strip().lower() for c in row}
+
+
+def _csv_row_count(path: Path) -> int:
+    with path.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.reader(f)
+        next(reader, None)
+        return sum(1 for _ in reader)
 
 
 class TestIndusDeductClaimLedger(unittest.TestCase):
     def test_01_zero_speculative_contamination(self) -> None:
+        if not HAS_LOCAL_CORPUS and not STRICT_CORPUS:
+            self.skipTest(
+                "Local raw/processed ICIT corpus not present (fresh clone). "
+                "See README.md 'Upstream Data' to rebuild locally or set INDUS_STRICT_CORPUS=1."
+            )
         for csv_name in ("inscriptions_clean.csv", "lines_clean.csv", "glyphs_clean.csv"):
-            df = pd.read_csv(PROC / csv_name, nrows=5)
-            cols = {c.strip().lower() for c in df.columns}
+            cols = _csv_headers(PROC / csv_name)
             self.assertEqual(cols & FORBIDDEN_COLS, set(), f"Contaminated column in {csv_name}")
 
         with sqlite3.connect(PROC / "indus_canonical.sqlite") as conn:
@@ -45,28 +64,37 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
         self.assertTrue(manifest_path.exists(), "DATA_MANIFEST.json missing")
         manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
         self.assertGreaterEqual(len(manifest["files"]), 15)
+        verified = 0
         for entry in manifest["files"]:
-            p = ROOT / entry["path"]
-            self.assertTrue(p.exists(), f"Manifest file missing: {entry['path']}")
+            rel = entry["path"]
+            p = ROOT / rel
+            if not p.exists():
+                if (rel.startswith("data/raw/") or rel.startswith("data/processed/")) and not STRICT_CORPUS:
+                    continue
+                self.fail(f"Manifest file missing: {rel}")
             if p.suffix == ".sqlite":
                 # SQLite binary headers embed host libsqlite3 version bytes (cross-OS non-deterministic);
                 # verify table integrity + row counts directly instead of raw binary header bytes.
                 with sqlite3.connect(p) as conn:
                     self.assertEqual(conn.execute("SELECT COUNT(*) FROM inscriptions").fetchone()[0], 5679)
                     self.assertEqual(conn.execute("SELECT COUNT(*) FROM lines").fetchone()[0], 5805)
+                verified += 1
                 continue
             actual = hashlib.sha256(p.read_bytes()).hexdigest()
-            self.assertEqual(actual, entry["sha256"], f"SHA-256 mismatch on {entry['path']}")
+            self.assertEqual(actual, entry["sha256"], f"SHA-256 mismatch on {rel}")
+            verified += 1
+        # Even on a fresh clone without raw ICIT files, data/external/* MUST verify bit-for-bit.
+        self.assertGreaterEqual(verified, 2)
 
     def test_03_layer0_canonical_counts_match_disk(self) -> None:
         l0 = json.loads((REPORTS / "layer0_audit.json").read_text(encoding="utf-8"))
-        ins = pd.read_csv(PROC / "inscriptions_clean.csv", dtype=str)
-        lines = pd.read_csv(PROC / "lines_clean.csv", dtype=str)
-        self.assertEqual(len(ins), l0["total_inscriptions"])
-        self.assertEqual(len(lines), l0["total_parsed_lines"])
         self.assertEqual(l0["total_inscriptions"], 5679)
+        self.assertEqual(l0["total_parsed_lines"], 5805)
         self.assertGreater(l0["directionality_audit"]["R/L"]["jar_740_final_pct"], 25.0)
         self.assertGreater(l0["directionality_audit"]["L/R"]["jar_740_final_pct"], 20.0)
+        if HAS_LOCAL_CORPUS or STRICT_CORPUS:
+            self.assertEqual(_csv_row_count(PROC / "inscriptions_clean.csv"), l0["total_inscriptions"])
+            self.assertEqual(_csv_row_count(PROC / "lines_clean.csv"), l0["total_parsed_lines"])
 
     def test_04_layer5_and_5b_anti_hallucination_invariants(self) -> None:
         l5b = json.loads((REPORTS / "layer5b_expanded_phonetic.json").read_text(encoding="utf-8"))

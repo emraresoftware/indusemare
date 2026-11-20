@@ -26,7 +26,7 @@ Investigates four decisive structural knots inside the canonical Indus corpus:
 Outputs:
   - reports/layer3d_deep_knots.json
   - reports/deep_knots_plate.png
-  - /Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/deep_knots_plate.png
+  - reports/deep_knots_plate.png
 """
 
 from __future__ import annotations
@@ -49,7 +49,7 @@ RAW_DIR = ROOT / "data" / "raw"
 PROC_DIR = ROOT / "data" / "processed"
 REPORTS_DIR = ROOT / "reports"
 BRAIN_PNG_PATH = Path(
-    "/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/deep_knots_plate.png"
+    "reports/deep_knots_plate.png"
 )
 
 BOS = "<BOS>"

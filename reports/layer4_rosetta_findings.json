@@ -10,9 +10,9 @@
       "exact_match": true
     },
     "outputs": {
-      "json_report": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer4_rosetta_findings.json",
-      "png_primary": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/rosetta_foreign_seals.png",
-      "png_brain_copy": "/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/rosetta_foreign_seals.png"
+      "json_report": "reports/layer4_rosetta_findings.json",
+      "png_primary": "reports/rosetta_foreign_seals.png",
+      "png_brain_copy": "reports/rosetta_foreign_seals.png"
     }
   },
   "section_A_verified_statistical_facts": {

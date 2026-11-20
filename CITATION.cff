@@ -4,6 +4,8 @@ title: "INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark f
 version: "1.0.0-preprint"
 date-released: "2026-11-20"
 type: software
+repository-code: "https://github.com/emraresoftware/indusemare"
+url: "https://indus.emare.dev"
 authors:
   - name: "Emre & Emare INDUS-DEDUCT Research Collective"
 license: "MIT"

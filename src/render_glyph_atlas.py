@@ -10,6 +10,7 @@ elemental/pictographic categorization.
 from __future__ import annotations
 
 import math
+import os
 from pathlib import Path
 
 import pandas as pd
@@ -19,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROC_DIR = ROOT / "data" / "processed"
 RAW_DIR = ROOT / "data" / "raw"
 REPORTS_DIR = ROOT / "reports" / "atlas"
-ART_DIR = Path("/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608")
+ART_DIR = Path(os.environ["INDUS_ARTIFACT_DIR"]) if os.environ.get("INDUS_ARTIFACT_DIR") else None
 
 
 def main() -> None:

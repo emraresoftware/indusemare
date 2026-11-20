@@ -52,7 +52,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PROC_DIR = ROOT / "data" / "processed"
 CAL_DIR = ROOT / "data" / "calibration"
 REPORTS_DIR = ROOT / "reports"
-BRAIN_COPY_PATH = Path("/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/calibration_5way_chart.png")
+BRAIN_COPY_PATH = Path("reports/calibration_5way_chart.png")
 
 BOS, EOS = "<BOS>", "<EOS>"
 SEED = 42

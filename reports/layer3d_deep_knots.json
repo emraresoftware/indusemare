@@ -4,9 +4,9 @@
     "corpus": "data/processed/inscriptions_clean.csv + lines_clean.csv + glyphs_clean.csv",
     "reading_order": "Canonical chronological reading order (clean_reading_seq)",
     "outputs": {
-      "json": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer3d_deep_knots.json",
-      "plate_primary": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/deep_knots_plate.png",
-      "plate_brain_copy": "/Users/emre/.gemini/antigravity/brain/969a4497-dabc-4f45-8c95-dcaebdbcb608/deep_knots_plate.png"
+      "json": "reports/layer3d_deep_knots.json",
+      "plate_primary": "reports/deep_knots_plate.png",
+      "plate_brain_copy": "reports/deep_knots_plate.png"
     }
   },
   "knot1_initial_openers_817_820_861_920": {

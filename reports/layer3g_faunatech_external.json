@@ -4,10 +4,10 @@
     "seed": 42,
     "n_permutations": 1000,
     "outputs": {
-      "faunatech_traits_json": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/data/external/faunatech_indus_traits.json",
-      "tamil_nadu_published_json": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/data/external/tamil_nadu_graffiti_published.json",
-      "layer3g_report_json": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer3g_faunatech_external.json",
-      "layer3g_summary_md": "/Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer3g_summary.md"
+      "faunatech_traits_json": "data/external/faunatech_indus_traits.json",
+      "tamil_nadu_published_json": "data/external/tamil_nadu_graffiti_published.json",
+      "layer3g_report_json": "reports/layer3g_faunatech_external.json",
+      "layer3g_summary_md": "reports/layer3g_summary.md"
     }
   },
   "part1_faunatech_ecological_traits": {
