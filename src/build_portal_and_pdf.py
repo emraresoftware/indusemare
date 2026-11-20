@@ -50,6 +50,7 @@ def build_portal_bundle() -> dict[str, Any]:
     l11a = json.loads((REPORTS_DIR / "layer11a_external_gulf_diachronic.json").read_text())
     l11b = json.loads((REPORTS_DIR / "layer11b_neural_restoration.json").read_text())
     l12 = json.loads((REPORTS_DIR / "layer12_stratigraphic_time.json").read_text())
+    l13 = json.loads((REPORTS_DIR / "layer13_music_rhythm_instruments.json").read_text())
     catalog = json.loads((REPORTS_DIR / "damaged_inscriptions_restoration_catalog.json").read_text())
 
     # Special tag sets
@@ -182,6 +183,7 @@ def build_portal_bundle() -> dict[str, Any]:
         "restoration_stats": l11b["open_restoration_catalog_stats"],
         "restoration_catalog": catalog,
         "layer12_time": l12,
+        "layer13_music": l13,
     }
     return bundle
 
@@ -190,7 +192,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
     (PORTAL_DIR / "assets" / "charts").mkdir(parents=True, exist_ok=True)
     (PORTAL_DIR / "data").mkdir(parents=True, exist_ok=True)
     shutil.copy2(RAW_DIR / "sk_indus_script-webfont.ttf", PORTAL_DIR / "assets" / "indus-font.ttf")
-    for img_name in ("calibration_5way_chart.png", "layer9_copper_rosetta_plate.png", "layer12_time_evolution_plate.png"):
+    for img_name in ("calibration_5way_chart.png", "layer9_copper_rosetta_plate.png", "layer12_time_evolution_plate.png", "layer13_music_and_scenes_plate.png"):
         src = REPORTS_DIR / img_name
         if src.exists():
             shutil.copy2(src, PORTAL_DIR / "assets" / "charts" / img_name)
@@ -279,10 +281,10 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
 
     .nav-tabs {
       max-width: 1260px; margin: 0 auto; padding: 0 24px;
-      display: flex; gap: 4px; overflow-x: auto; border-top: 1px solid var(--em-border-subtle);
+      display: flex; gap: 2px; overflow-x: auto; border-top: 1px solid var(--em-border-subtle);
     }
     .tab-btn {
-      padding: 11px 13px; border: none; background: transparent;
+      padding: 11px 11px; border: none; background: transparent;
       color: var(--em-ink-secondary); font-family: var(--em-font-sans); font-size: var(--em-text-sm);
       font-weight: 500; cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap;
       transition: color var(--em-dur-fast), border-color var(--em-dur-fast);
@@ -403,7 +405,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         </div>
       </div>
       <div class="actions">
-        <a class="btn" href="https://doi.org/10.5281/zenodo.24383348" target="_blank" rel="noopener">DOI</a>
+        <a class="btn" href="https://doi.org/10.5281/zenodo.24383347" target="_blank" rel="noopener">DOI</a>
         <a class="btn" href="https://github.com/emraresoftware/indusemare" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md" target="_blank" rel="noopener" data-i18n="btnLedger">İddia Defteri</a>
         <a class="btn btn-primary" href="./assets/INDUS_DEDUCT_PREPRINT.pdf" target="_blank" data-i18n="btnPdf">PDF Makale</a>
@@ -412,12 +414,13 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
       </div>
     </div>
     <nav class="nav-tabs" role="tablist">
-      <button class="tab-btn active" data-tab="overview" data-i18n="tab1">1. Genel &amp; 5'li Kalibrasyon</button>
-      <button class="tab-btn" data-tab="atlas" data-i18n="tab2">2. Canlı Glif Atlası (294)</button>
-      <button class="tab-btn" data-tab="rosetta" data-i18n="tab3">3. İç Rosetta &amp; Meluhha Ticareti</button>
-      <button class="tab-btn" data-tab="restore" data-i18n="tab4">4. Kırık Yazıt Tamamlama (690)</button>
-      <button class="tab-btn" data-tab="diachronic" data-i18n="tab5">5. İndus Sonrası Dil &amp; Körfez Duvarı</button>
-      <button class="tab-btn" data-tab="time12" data-i18n="tab6">6. 700 Yıllık Evrim &amp; Denizcilik</button>
+      <button class="tab-btn active" data-tab="overview" data-i18n="tab1">1. Genel &amp; Kalibrasyon</button>
+      <button class="tab-btn" data-tab="atlas" data-i18n="tab2">2. Glif Atlası (294)</button>
+      <button class="tab-btn" data-tab="rosetta" data-i18n="tab3">3. İç Rosetta &amp; Ticaret</button>
+      <button class="tab-btn" data-tab="restore" data-i18n="tab4">4. Kırık Onarım (690)</button>
+      <button class="tab-btn" data-tab="diachronic" data-i18n="tab5">5. Ardıl Dil &amp; Körfez</button>
+      <button class="tab-btn" data-tab="time12" data-i18n="tab6">6. 700 Yıl &amp; Denizcilik</button>
+      <button class="tab-btn" data-tab="music13" data-i18n="tab7">7. Müzik &amp; Tören</button>
     </nav>
   </header>
 
@@ -652,6 +655,51 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         <img class="plate-img" src="./assets/charts/layer12_time_evolution_plate.png" alt="Layer 12 Stratigraphic Time Evolution Plate" />
       </div>
     </section>
+
+    <!-- TAB 7: LAYER 13 MUSIC / RHYTHM CALIBRATION & INSTRUMENT-SCENE EPIGRAPHY -->
+    <section class="panel" id="tab-music13">
+      <div class="card">
+        <h2 data-i18n="m13Title">Katman 13: 8'li Müzik &amp; Ritim Kalibrasyonu (Avrupa/Çin Halk, Carnatic Swara, Tabla Bol)</h2>
+        <p class="lead" data-i18n="m13Lead">Gerçek müzik ve ritim dizilerinde Kober köprü MI z +18σ–+151σ düzeyinde patlıyor — fakat dizi-içi tekrar (%53–93 vs İndus %4.4), sağ-kenar daralması (0.9–1.6× vs 4.96×) ve 2-ek yığılması (0:0 vs 207:1) İndus'un kesinlikle müzik/ritim notasyonu olmadığını kanıtlıyor.</p>
+        <div style="overflow-x:auto">
+          <table>
+            <thead>
+              <tr>
+                <th data-i18n="thCorpus">Korpus</th>
+                <th data-i18n="thKober">Kober Köprü MI z</th>
+                <th data-i18n="thAffix">2-Ek (Son:Ön)</th>
+                <th data-i18n="thUnseen">Görülmemiş 3g</th>
+                <th data-i18n="thRb">Sağ-Kenar</th>
+                <th data-i18n="m13ThRep">Dizi Tekrar %</th>
+                <th><code>AA %</code></th>
+                <th><code>ABA %</code></th>
+                <th><code>ABAB %</code></th>
+                <th data-i18n="m13ThCls">Küme</th>
+              </tr>
+            </thead>
+            <tbody id="music8Body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="card">
+          <h2 data-i18n="m13HarpTitle">Parpola Yaylı Arp (#525–#527) &amp; Kum Saati (#550) Zorunlu Kilidi</h2>
+          <p class="lead" data-i18n="m13HarpLead">Başlangıç dışı #525–#527 kullanımlarının %86.9'u (tekrarsız %84.3, p = 2.32e-108) doğrudan Kum Saati #550/#554/#555 arkasından gelir; tören sahnesinde 0/43 geçer. #525 (10/11 TAB:B + 400) ile #527 (53/63 SEAL:S/R) keskin mecra ayrımı gösterir (p = 2.54e-6).</p>
+          <div id="musicGlyphLocks" style="display:grid;gap:12px"></div>
+        </div>
+        <div class="card">
+          <h2 data-i18n="m13SceneTitle">43 Tören Sahnesi (Scene): Davulcu H-182 &amp; Boynuzlu Tanrılar</h2>
+          <p class="lead" data-i18n="m13SceneLead">Global BH-FDR'den sağ çıkan tek işaret Mohenjo-daro'nun iki ünlü boynuzlu tanrı mührünü (Paşupati M-304 &amp; Yedi Figür M-1186) bağlayan #534 (q = 0.0297); TAB:B içinde tek sağ kalan Hilal #900 (24.15×, q = 0.0466). Harappa'nın Davulcu tableti H-182 (840 032 740) 5 şehirde 42 sıradan mühürde geçen ortak unvan formülüdür.</p>
+          <div id="sceneLocks" style="display:grid;gap:12px"></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="m13PlateTitle">Katman 13: 8'li Müzik Kalibrasyonu &amp; Enstrüman–Tören Levhası</h2>
+        <img class="plate-img" src="./assets/charts/layer13_music_and_scenes_plate.png" alt="Layer 13 Music Calibration and Instrument-Scene Plate" />
+      </div>
+    </section>
   </main>
 
   <footer data-i18n="footerTxt">
@@ -661,7 +709,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
   <script>
     const I18N = {
       tr: {
-        brandSub: "FaunaTech Doğal Atlas v2.0 · Katman 0–12 Açık Hesaplamalı Epigrafi Portalı",
+        brandSub: "FaunaTech Doğal Atlas v2.0 · Katman 0–13 Açık Hesaplamalı Epigrafi Portalı",
         btnLedger: "İddia Defteri",
         btnPdf: "PDF Makale",
         tab1: "1. Genel & Kalibrasyon",
@@ -670,9 +718,10 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         tab4: "4. Kırık Onarım (690)",
         tab5: "5. Ardıl Dil & Körfez",
         tab6: "6. 700 Yıl & Denizcilik",
-        heroEyebrow: "Sıfır Halüsinasyon · 11/11 Doğrulanmış · DOI: 10.5281/zenodo.24383348 · v1.0.1",
+        tab7: "7. Müzik & Tören",
+        heroEyebrow: "Sıfır Halüsinasyon · 12/12 Doğrulanmış · DOI: 10.5281/zenodo.24383347 · v1.1.0",
         heroTitle: "İndus Vadisi Yazısı İçin Kalibre Edilmiş Açık Benchmark",
-        heroDesc: "5.679 yazıt üzerinde görsel glif analizi, 5'li bilinen-cevap & dil-dışı kalibrasyon, Mohenjo-daro bakır tablet iç Rosettası, 700 yıllık paleografik evrim, Lothal çok-imzalı kargo ağı ve 690 kırık yazıtlık açık onarım kataloğu. Kanıtlanmış yapısal gerçekler ile kanıtlanmamış sesli okumalar kesin çizgiyle ayrılmıştır.",
+        heroDesc: "5.679 yazıt üzerinde 14 katmanlı tekrarlanabilir hesaplamalı epigrafi: gerçek Sümerce, Linear B, Linear A, Avrupa/Çin/Carnatic/Tabla müziği ve dil-dışı damgalara karşı 8'li kalibrasyon; Mohenjo-daro bakır tablet iç Rosettası; 700 yıllık paleografik evrim; Lothal kargo ağı ve 690 kırık yazıt onarım kataloğu.",
         kpi1L: "Kanonik Korpus", kpi1V: "5.679", kpi1N: "5.805 satır · sıfır kuram kirliliği",
         kpi2L: "Çekirdek İşaret (Tipoloji)", kpi2N: "Logo-heceli · %95.7 token kapsamı",
         kpi3L: "Kober Köprü Sinyali", kpi3N: "Dil-dışı kontrol: +0.07σ (sıfır)",
@@ -687,11 +736,19 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         thRegime: "23-Mühürlü Graf Rejimi", thAnchor: "Çapa (k)", thBest: "En İyi Eşleşme", thZ: "z-skoru", thLocked: "Doğru Kilitlenen", thVerdict: "Karar",
         calChartTitle: "5'li Kalibrasyon Görsel Özeti",
         atlasH2: "Canlı İndus Glif Atlası (294 Sık İşaret = %95.7 Korpus Kapsamı)",
+        m13Title: "Katman 13: 8'li Müzik & Ritim Kalibrasyonu (Avrupa/Çin Halk, Carnatic Swara, Tabla Bol)",
+        m13Lead: "Gerçek müzik ve ritim dizilerinde Kober köprü MI z +18σ–+151σ düzeyinde patlıyor — fakat dizi-içi tekrar (%53–93 vs İndus %4.4), sağ-kenar daralması (0.9–1.6× vs 4.96×) ve 2-ek yığılması (0:0 vs 207:1) İndus'un kesinlikle müzik/ritim notasyonu olmadığını kanıtlıyor.",
+        m13ThRep: "Dizi Tekrar %", m13ThCls: "Küme",
+        m13HarpTitle: "Parpola Yaylı Arp (#525–#527) & Kum Saati (#550) Zorunlu Kilidi",
+        m13HarpLead: "Başlangıç dışı #525–#527 kullanımlarının %86.9'u (tekrarsız %84.3, p = 2.32e-108) doğrudan Kum Saati #550/#554/#555 arkasından gelir; tören sahnesinde 0/43 geçer. #525 (10/11 TAB:B + 400) ile #527 (53/63 SEAL:S/R) keskin mecra ayrımı gösterir (p = 2.54e-6).",
+        m13SceneTitle: "43 Tören Sahnesi (Scene): Davulcu H-182 & Boynuzlu Tanrılar",
+        m13SceneLead: "Global BH-FDR'den sağ çıkan tek işaret Mohenjo-daro'nun iki ünlü boynuzlu tanrı mührünü (Paşupati M-304 & Yedi Figür M-1186) bağlayan #534 (q = 0.0297); TAB:B içinde tek sağ kalan Hilal #900 (24.15×, q = 0.0466). Harappa'nın Davulcu tableti H-182 (840 032 740) 5 şehirde 42 sıradan mühürde geçen ortak unvan formülüdür.",
+        m13PlateTitle: "Katman 13: 8'li Müzik Kalibrasyonu & Enstrüman–Tören Levhası",
         themeDark: "Orman Gecesi", themeLight: "Sabah Keteni",
-        footerTxt: "INDUS-DEDUCT Açık Benchmark (v1.0.1 · DOI: 10.5281/zenodo.24383348) · FaunaTech Doğal Atlas v2.0 (emare-ui) · 11/11 Doğrulamalı · Sıfır Uydurma Okuma"
+        footerTxt: "INDUS-DEDUCT Açık Benchmark (v1.1.0 · DOI: 10.5281/zenodo.24383347) · FaunaTech Doğal Atlas v2.0 (emare-ui) · 12/12 Doğrulamalı · Sıfır Uydurma Okuma"
       },
       en: {
-        brandSub: "FaunaTech Natural Atlas v2.0 · Layers 0–12 Open Computational Epigraphy Portal",
+        brandSub: "FaunaTech Natural Atlas v2.0 · Layers 0–13 Open Computational Epigraphy Portal",
         btnLedger: "Claim Ledger",
         btnPdf: "Preprint PDF",
         tab1: "1. Overview & Calibration",
@@ -700,9 +757,10 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         tab4: "4. Restorations (690)",
         tab5: "5. Gulf & Successors",
         tab6: "6. 700-Yr Drift & Sea",
-        heroEyebrow: "Zero Hallucination · 11/11 Verified · DOI: 10.5281/zenodo.24383348 · v1.0.1",
+        tab7: "7. Music & Scenes",
+        heroEyebrow: "Zero Hallucination · 12/12 Verified · DOI: 10.5281/zenodo.24383347 · v1.1.0",
         heroTitle: "A Calibrated Open Benchmark for the Indus Valley Script",
-        heroDesc: "13-layer reproducible computational epigraphy across 5,679 inscriptions: 5-way calibration vs. real Ur III Sumerian, Linear B, Linear A & non-linguistic stamps; Mohenjo-daro Copper Tablet internal Rosetta; 700-year BH-FDR paleographic drift; Lothal multi-signature cargo network; and 690 strict-LOCO damaged restorations. Proven structure is strictly separated from unproven phonetic readings.",
+        heroDesc: "14-layer reproducible computational epigraphy across 5,679 inscriptions: 8-way calibration vs. real Ur III Sumerian, Linear B, Linear A, European/Chinese/Carnatic/Tabla music & non-linguistic stamps; Mohenjo-daro Copper Tablet internal Rosetta; 700-year BH-FDR paleographic drift; Lothal multi-signature cargo network; and 690 strict-LOCO damaged restorations.",
         kpi1L: "Canonical Corpus", kpi1V: "5,679", kpi1N: "5,805 lines · zero speculative leakage",
         kpi2L: "Core Graphemes", kpi2N: "Logo-syllabic · 95.7% token coverage",
         kpi3L: "Kober Bridge MI z", kpi3N: "Non-linguistic control: +0.07σ (flat zero)",
@@ -717,8 +775,16 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         thRegime: "23-Seal Graph Regime", thAnchor: "Anchors (k)", thBest: "Best Match", thZ: "z-score", thLocked: "True Locked", thVerdict: "Verdict",
         calChartTitle: "Five-Way Calibration Visual Summary",
         atlasH2: "Live Indus Glyph Atlas (294 Core Signs = 95.7% Corpus Coverage)",
+        m13Title: "Layer 13: 8-Way Music & Rhythm Calibration (European/Chinese Folk, Carnatic Swara, Tabla Bol)",
+        m13Lead: "Real musical and rhythmic notation fires strongly on Kober MI z (+17.9σ to +151.1σ), uncovering a key confound — yet within-sequence repetition (52.6%–93.2% vs. Indus 4.4%), right-edge bottleneck (0.93×–1.58× vs. 4.96×), and 2-affix stacking (0:0 vs. 207:1) decisively rule out Indus as musical/rhythmic notation.",
+        m13ThRep: "Seq Repeat %", m13ThCls: "Cluster",
+        m13HarpTitle: "Parpola Bow-Harp (#525–#527) & Hourglass (#550) Bound Compound",
+        m13HarpLead: "86.9% of non-initial #525–#527 (84.3% dedup, p = 2.32e-108) lock immediately behind Hourglass #550/#554/#555 and appear 0/43 on Ceremonial Scenes. Sharp medium split: #525 (10/11 molded TAB:B + clitic 400) vs. #527 (53/63 stone SEAL:S/R, p = 2.54e-6 dedup).",
+        m13SceneTitle: "43 Ceremonial 'Scene' Artifacts: Drummer H-182 & Horned Deities",
+        m13SceneLead: "Exactly one sign survives global BH-FDR: ultra-rare #534 linking Mohenjo-daro's two iconic horned-deity seals (Pashupati M-304 & Seven Figures M-1186, q = 0.0297). Within TAB:B, only Crescent #900 survives (24.15×, q = 0.0466). Harappa's Drummer-before-Tiger tablet H-182 (840 032 740) carries a pan-Harappan title attested on 42 seals across 5 cities.",
+        m13PlateTitle: "Layer 13: 8-Way Music Calibration & Instrument–Scene Glyph Plate",
         themeDark: "Forest Night", themeLight: "Morning Linen",
-        footerTxt: "INDUS-DEDUCT Open Benchmark (v1.0.1 · DOI: 10.5281/zenodo.24383348) · FaunaTech Natural Atlas v2.0 (emare-ui) · 11/11 Verified · Zero Fabricated Readings"
+        footerTxt: "INDUS-DEDUCT Open Benchmark (v1.1.0 · DOI: 10.5281/zenodo.24383347) · FaunaTech Natural Atlas v2.0 (emare-ui) · 12/12 Verified · Zero Fabricated Readings"
       }
     };
     const CAL_NAMES_EN = {
@@ -989,6 +1055,54 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
           <td class="mono">${c.md_within_area_med_rel_time}</td>
         </tr>`;
       }).join("");
+
+      // 8. Layer 13 Music/Rhythm 8-Way Calibration & Instrument/Scene Locks
+      const l13 = B.layer13_music;
+      document.getElementById("music8Body").innerHTML = l13.part_a_music_rhythm_calibration.table_8way.map(r => {
+        const pr = r.prosody;
+        const isIndus = r.key === "indus_strict";
+        const isMus = r.key.includes("music") || r.key.includes("rhythm");
+        const isNeg = r.key === "nonlinguistic_stamps";
+        const bg = isIndus ? 'style="background:var(--em-accent-soft);font-weight:600"' : (isMus ? 'style="background:var(--em-clay-soft)"' : (isNeg ? 'style="background:var(--em-danger-soft)"' : ""));
+        return `<tr ${bg}>
+          <td>${r.label}</td>
+          <td class="mono"><strong>${r.kober_bridge_mi_z >= 0 ? "+" : ""}${r.kober_bridge_mi_z.toFixed(1)}σ</strong></td>
+          <td class="mono">${r.two_affix_suf}:${r.two_affix_pre}</td>
+          <td class="mono">${r.unseen_trigram_gain_pp >= 0 ? "+" : ""}${r.unseen_trigram_gain_pp.toFixed(2)} pp</td>
+          <td class="mono">${r.right_edge_bottleneck.toFixed(2)}×</td>
+          <td class="mono"><strong>${pr.seqs_with_any_repeat_pct.toFixed(1)}%</strong></td>
+          <td class="mono">${pr.lag1_AA_seq_pct.toFixed(1)}%</td>
+          <td class="mono">${pr.lag2_ABA_seq_pct.toFixed(1)}%</td>
+          <td class="mono">${pr.motif_ABAB_seq_pct.toFixed(1)}%</td>
+          <td><span class="badge ${isIndus ? "badge-ok" : (isMus ? "badge-clay" : "badge-soft")}">${r.cluster}</span></td>
+        </tr>`;
+      }).join("");
+
+      document.getElementById("musicGlyphLocks").innerHTML = `
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-surface-subtle);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-accent);margin-bottom:6px">TAB:B Molded Tablet Allograph (#525, n=11 · 100% after #550/554)</div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${renderSeqInline("550 525 400", cp)} <span class="mono">10/11 TAB:B · 9/11 + #400</span></div>
+        </div>
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-surface-subtle);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-accent);margin-bottom:6px">SEAL:S/R Stone Seal Allograph (#527, n=63 + #526, n=13)</div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${renderSeqInline("550 527", cp)} <span class="mono">53/63 SEAL:S/R · 82.5% FINAL · p=2.54e-6</span></div>
+        </div>
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-clay-soft);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-clay);margin-bottom:6px">4-String Frame (#420–#426, TAB:C Copper-Enriched p=2.89e-5 dedup)</div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${renderSeqInline("003 422 426", cp)} <span class="mono">12/32 TAB:C · 66.7% after #003</span></div>
+        </div>
+      `;
+
+      document.getElementById("sceneLocks").innerHTML = `
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-success-soft);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-success);margin-bottom:6px">M-304 Pashupati &amp; M-1186 Seven Figures (Global BH-FDR q = 0.0297*)</div>
+          <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap">${renderSeqInline("090 550 534 742 220 740 090", cp)}</div>
+        </div>
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-surface-subtle);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-accent);margin-bottom:6px">H-182 Drummer-before-Tiger (Harappa TAB:B) — Pan-Harappan Title</div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">${renderSeqInline("840 032 740", cp)} <span class="mono">42 seals · 5 cities (q = 0.236)</span></div>
+        </div>
+      `;
     });
   </script>
 </body>
@@ -1090,6 +1204,7 @@ def build_preprint_pdf() -> Path:
     cal_img = "../reports/calibration_5way_chart.png"
     l9_img = "../reports/layer9_copper_rosetta_plate.png"
     l12_img = "../reports/layer12_time_evolution_plate.png"
+    l13_img = "../reports/layer13_music_and_scenes_plate.png"
 
     full_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -1159,6 +1274,10 @@ def build_preprint_pdf() -> Path:
   <div class="figure">
     <img src="{l12_img}" alt="Layer 12 Stratigraphic Time Evolution Plate" />
     <div class="figcap"><strong>Figure 3 (Layer 12).</strong> 700-year de-confounded stratigraphic time evolution across Mohenjo-daro (within-area rank-normalized depth n=1,253 &amp; single-datum DKG(S) n=595) and Harappa (Period 2–5, Spearman rho=+0.289, p=0.0376), displaying the two global BH-FDR paleographic drift chains (#156→#154 q=0.0083; 3-stage sprouting chain #838→#803→#806 q=0.0339), frozen SEAL:S core grammar quartiles, and the four-axis Crescent ladder (#900→#904→#923).</div>
+  </div>
+  <div class="figure">
+    <img src="{l13_img}" alt="Layer 13 Music Calibration and Instrument-Scene Plate" />
+    <div class="figcap"><strong>Figure 4 (Layer 13).</strong> Eight-way structural and prosodic calibration comparing Indus against Ur III Sumerian, Linear B, real European/Chinese folk melodies (ABC), South Indian Carnatic Swara/Tala, Hindustani Tabla Bol, pure rhythm durations, and Non-Linguistic Stamps (uncovering the Kober MI z music confound while cleanly ruling out Indus as musical notation via 12×–21× lower self-repetition and 207:1 suffix asymmetry), alongside the Hourglass+Bow-Harp (#550+#525–527) bound compound and Ceremonial Scene (H-182, M-304, M-1186) BH-FDR audit.</div>
   </div>
 </body>
 </html>

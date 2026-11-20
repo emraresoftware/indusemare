@@ -45,8 +45,8 @@ def main() -> None:
     draw.rounded_rectangle([(36, 36), (W - 36, H - 36)], radius=24, fill="#183427", outline="#2d5440", width=2)
 
     # Top eyebrow pill
-    draw.rounded_rectangle([(68, 64), (612, 98)], radius=17, fill="#224534", outline="#4c7a5f", width=1)
-    draw.text((86, 72), "INDUS-DEDUCT v1.0  |  OPEN BENCHMARK  |  11/11 VERIFIED", fill="#d7efaf", font=f_mono)
+    draw.rounded_rectangle([(68, 64), (626, 98)], radius=17, fill="#224534", outline="#4c7a5f", width=1)
+    draw.text((86, 72), "INDUS-DEDUCT v1.1  |  8-WAY BENCHMARK  |  12/12 VERIFIED", fill="#d7efaf", font=f_mono)
 
     # Domain top right
     draw.text((926, 72), "indus.emare.dev", fill="#d7efaf", font=f_sans_b)
@@ -54,7 +54,7 @@ def main() -> None:
     # Main Title
     draw.text((68, 122), "Calibrated Computational Epigraphy", fill="#f6f7f3", font=f_serif_lg)
     draw.text((68, 174), "for the Indus Valley Script", fill="#d7efaf", font=f_serif_lg)
-    draw.text((68, 236), "5,679 inscriptions · Zero fabricated readings · 5-way calibration vs Sumerian & Linear B", fill="#b6c9bc", font=f_serif_md)
+    draw.text((68, 236), "5,679 inscriptions · Zero fabricated readings · 8-way calibration vs Scripts, Music & Stamps", fill="#b6c9bc", font=f_serif_md)
 
     # 3 Light-paper ("Sabah Keteni / Duru Kâğıt") highlight cards inside the deep pine seal
     card_y = 294

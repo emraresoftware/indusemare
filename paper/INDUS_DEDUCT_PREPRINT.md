@@ -1,15 +1,15 @@
 # INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script — Validated Linguistic Discriminators, Internal Icon-Text Registries, Trade Logistics, and Exact Decipherment Boundaries
 
-**Project:** INDUS-DEDUCT (Layers 0–12 Reproducible Open Benchmark, `v1.0.0-preprint`)  
+**Project:** INDUS-DEDUCT (Layers 0–13 Reproducible Open Benchmark, `v1.1.0`)  
 **Date:** November 20, 2026  
-**Repository:** `indus-decipher` (11/11 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)  
-**Epistemological Contract:** Zero fabricated phonetic readings; all speculative upstream annotations stripped prior to modeling; all positive claims paired with position-preserving nulls, global Benjamini–Hochberg FDR, known-answer positive controls, and non-linguistic negative controls.
+**Repository & Permanent Archive:** `github.com/emraresoftware/indusemare` · Zenodo Concept DOI `10.5281/zenodo.24383347` (12/12 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)  
+**Epistemological Contract:** Zero fabricated phonetic readings; all speculative upstream annotations stripped prior to modeling; all positive claims paired with position-preserving nulls, global Benjamini–Hochberg FDR, known-answer positive controls, real-music/rhythm controls, and non-linguistic negative controls.
 
 ---
 
 ## Abstract
 
-A century of research on the Indus Valley (Harappan) script (c. 2600–1900 BCE) has produced dozens of incompatible decipherment claims and an enduring methodological impasse between linguistic and non-linguistic interpretations. Here we present **INDUS-DEDUCT**, an end-to-end, reproducible 11-layer computational epigraphy benchmark across **5,679 inscriptions** (5,805 parsed lines; 713 raw signs) engineered to separate statistically verified structural properties from unfalsifiable phonetic speculation.
+A century of research on the Indus Valley (Harappan) script (c. 2600–1900 BCE) has produced dozens of incompatible decipherment claims and an enduring methodological impasse between linguistic and non-linguistic interpretations. Here we present **INDUS-DEDUCT**, an end-to-end, reproducible 14-layer computational epigraphy benchmark across **5,679 inscriptions** (5,805 parsed lines; 713 raw signs) engineered to separate statistically verified structural properties from unfalsifiable phonetic speculation.
 
 First, we audit and retire widely cited entropy tests: on a length- and size-matched **5-way calibration benchmark** against real **Ur III Sumerian (CDLI)**, **Linear B**, **Linear A**, and a **non-linguistic structured stamp negative control**, within-sequence conditional entropy (`z_H1`) fails catastrophically as a language discriminator (`Non-Linguistic Stamps = -245.34σ` vs. `Indus = -108.85σ`). By contrast, **three validated discriminators** cleanly separate Indus and attested natural-language scripts from structured non-linguistic stamps: (i) **unseen-trigram generalization** over a position-aware baseline (`Indus = +6.38 pp / +0.432 bits`, `Ur III Sumerian = +10.71 pp / +1.133 bits`, `Linear B = +0.81 pp`, vs. `Non-Linguistic Stamps = -2.95 pp / -0.960 bits`), (ii) **Kober bridge–ending mutual information** (`Indus = +53.67σ`, `Ur III Sumerian = +20.40σ`, `Linear B = +18.47σ`, vs. `Non-Linguistic = +0.07σ`), and (iii) **blind 2-affix stacking** (`Indus = 207:1` suffix-to-prefix ratio with a `4.96×` right-edge bottleneck, vs. `Non-Linguistic = 0:0`).
 
@@ -172,6 +172,16 @@ Eliminating inter-trench excavation datum offsets in Mohenjo-daro via both **wit
 
 ---
 
+### 8.5 Music & Rhythm Structural Calibration and Archaeological Instrument / Ceremonial Scene Epigraphy (Layer 13)
+
+Extending Layer 8 to an **8-way calibration** against real open-domain human music across three traditions—**European Folk Melodies** (Nottingham + Essen German, `18,140` bars), **Chinese Pentatonic Folk Melodies** (Essen Han 1+2, `21,169` bars), **South Indian Classical Carnatic *Swara/Tāla*** (10 *kritis*, `N = 1,582`), **Hindustani *Tablā Bol*** (*Jaitaal*, `n = 37`), and **Pure Melodic Rhythm Durations** (`25,844` bars), all matched to Indus's exact length distribution (`N = 2,047`)—yields a crucial methodological discovery and three epigraphic findings:
+
+- **Kober `MI z` Confound Discovered & Resolved:** Real melodic and rhythmic bars trigger strong Kober bridge–ending mutual information (`European Folk +28.74σ`, `Chinese Pentatonic +17.94σ`, `Carnatic Swara +81.41σ`, `Pure Rhythm +151.14σ`) due to voice-leading and cadential meter. Consequently, Kober `MI z` separates Indus from rigid non-linguistic stamps (`+0.07σ`) but **cannot alone separate language from music**. Combining three orthogonal axes completely separates Indus and natural scripts from *both* music and stamps: (i) **low within-sequence repetition** (`Indus 4.4%`, `Ur III Sumerian 9.3%`, `Linear B 17.7%` vs. `Music/Rhythm 52.6%–93.2%`; lag-2 `ABA`: `Indus 1.1%` vs. `Music/Rhythm 26.2%–70.3%`; even Indus ritual `TAB:C` and ceremonial `Scene` tablets show `0.0%` `AA` and `0.0%` `ABAB`), (ii) **asymmetric right-edge suffix stacking** (`Indus 207:1`, bottleneck `4.96×` vs. `Music/Rhythm 0:0–5:24`, bottleneck `0.93×–1.58×`), and (iii) **unseen-trigram generalization** (`Indus +6.38 pp` vs. `Carnatic -12.05 pp`, `Pure Rhythm -0.79 pp`, `Stamps -2.95 pp`).
+- **Hourglass (`#550/#554/#555`) + Parpola Bow-Harp (`#525–#527`) Obligatory Bound Compound:** Across all 5,679 inscriptions, the 3–4-stringed bow-harp/pennant family (`#525–#527`, `n = 87`) never appears solo (`0/87`), on ceremonial `Scene` tablets (`0/43`), or on `TAB:C` copper tablets (`0/230`). Instead, **`86.9%` (`73/84` raw, `p = 1.27e-139`)** and **`84.3%` (`59/70` deduplicated, `67.7×` lift, `p = 2.32e-108`)** of non-initial occurrences lock immediately behind Hourglass `#550/#554/#555`, splitting sharply by medium: `#525` (`10/11` molded `TAB:B`, `9/11 + 400` clitic) vs. `#527` (`53/63 = 84.1%` stone seals `SEAL:S/R`, `82.5%` terminal; medium split `p = 9.82e-10` raw / `2.54e-6` dedup). Meanwhile, the 4-stringed frame `#420–#426` enriches `TAB:C` copper tablets (`12/32 = 37.5%`, `p = 1.61e-9`; dedup `p = 2.89e-5`) and is `66.7%` preceded by `#003`.
+- **Ceremonial `Scene` Audit (`n = 43`):** Across all 75 signs on narrative/ceremonial `Scene` artifacts, exactly **one sign survives global deduplicated BH-FDR**: ultra-rare modified hourglass **`#534`** (`2/3` corpus occurrences fall on Mohenjo-daro's two iconic horned-deity seals, **Pashupati `M-304`** and **Seven Figures `M-1186`**, `lift = 112.7×, q = 0.0297`). Controlling within molded tablets (`TAB:B`), exactly **one sign survives**: Crescent **`#900`** (`24.15×, q = 0.0466`). Conversely, Harappa's famous **Drummer-before-Tiger tablet (`H-182`)** carries **`840 032 740`** on both faces—a pan-Harappan administrative/theophoric formula attested on 42 inscriptions across 5 cities (`q = 0.236`), ruling out musical notation.
+
+---
+
 ## 9. Reproducibility & Open Verification Appendix
 
 Every quantitative result in this manuscript is deterministically reproducible and machine-checked via `unittest`:
@@ -180,17 +190,18 @@ Every quantitative result in this manuscript is deterministically reproducible a
 # 1. Rebuild canonical corpus from raw SQL/CSV (Layer 0)
 .venv/bin/python src/layer0_ingest.py
 
-# 2. Run Layers 8–12 & portal/PDF compiler
+# 2. Run Layers 8–13 & portal/PDF compiler
 .venv/bin/python src/layer8_known_answer_calibration.py
 .venv/bin/python src/layer9_internal_rosetta_and_trade.py
 .venv/bin/python src/layer10_copper_rosetta_deep_test.py
 .venv/bin/python src/layer11a_external_gulf_and_diachronic.py
 .venv/bin/python src/layer11b_glyph_neural_restoration.py
 .venv/bin/python src/layer12_stratigraphic_time_evolution.py
+.venv/bin/python src/layer13_music_rhythm_and_instruments.py
 .venv/bin/python src/build_portal_and_pdf.py
 
-# 3. Verify all 11 claim-ledger invariants & SHA-256 data manifest
-.venv/bin/python -m unittest tests/test_claim_ledger.py -v
+# 3. Verify all 12 claim-ledger invariants & SHA-256 data manifest
+INDUS_STRICT_CORPUS=1 python3 -m unittest tests/test_claim_ledger.py -v
 ```
 
 ### Verification Ledger Summary (`tests/test_claim_ledger.py`)
@@ -205,3 +216,4 @@ Every quantitative result in this manuscript is deterministically reproducible a
 9. `test_09_layer10_copper_deep_and_091_invariants`: `TAB:C` `H1` refutation (mean len `> 4.5`, polysemous `777`, zero `SEAL:S` animal retention), `#091` `0%` final & `>10×` trade lift (`p < 1e-5`), and honest 4-family phonological null.
 10. `test_10_layer11_gulf_diachronic_and_neural_restoration`: Foreign DOF escalation (`Ring1 < Ring2`), foreign square (`0/12`) vs. circular (`≥4`) `#091` diaspora split, Hybrid LOCO restoration beating N-gram on `edge_all` (`n = 275`) and `interior_all` (`n = 10`), and `≥650` damaged-inscription catalog.
 11. `test_11_layer12_stratigraphic_time_evolution`: Monotonic Early/Intermediate/Late depth validation, BH-FDR paleographic drift (`#156 → #154` & `#838 → #806`), cross-city MD–Harappa replication (`rho > 0.20, p < 0.05`), and monotonic 4-axis Crescent ladder (`#900 → #904 → #923`).
+12. `test_12_layer13_music_rhythm_and_instruments`: 8-way real music/rhythm separation (`<10%` Indus repetition vs. `>50%` music/rhythm & `<2×` music right-edge bottleneck), Hourglass `#550/#554/#555` + Bow-Harp `#525–#527` bound compound (`>80%` dedup, `p < 1e-50`) & `#525` vs. `#527` medium split (`p < 1e-4`), and Ceremonial `Scene` global BH-FDR survivor `#534` (`q < 0.05`).

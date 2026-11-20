@@ -1,9 +1,9 @@
 # INDUS-DEDUCT (`indusemare`) — Global Launch & Media Kit
 
-- **Live Portal (TR / EN auto-detect):** https://indus.emare.dev/ (English direct: `https://indus.emare.dev/?lang=en`)
-- **Permanent CERN / Zenodo DOI:** https://doi.org/10.5281/zenodo.24383348 (Concept DOI: `10.5281/zenodo.24383347`)
-- **Preprint PDF (11 pages, 3 figures):** https://indus.emare.dev/assets/INDUS_DEDUCT_PREPRINT.pdf
-- **GitHub Repository (`v1.0.1`, 11/11 tests PASS):** https://github.com/emraresoftware/indusemare
+- **Live Portal (TR / EN auto-detect, 7 tabs):** https://indus.emare.dev/ (English direct: `https://indus.emare.dev/?lang=en`)
+- **Permanent CERN / Zenodo Concept DOI (always latest):** https://doi.org/10.5281/zenodo.24383347
+- **Preprint PDF (4 embedded figures, Layers 0–13):** https://indus.emare.dev/assets/INDUS_DEDUCT_PREPRINT.pdf
+- **GitHub Repository (`v1.1.0`, 12/12 tests PASS):** https://github.com/emraresoftware/indusemare
 - **1-Page Referee Claim Ledger:** https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md
 - **Social Share Card (1200×630):** `portal/assets/og-indusemare.png`
 
@@ -18,11 +18,11 @@
 `https://indus.emare.dev/?lang=en`
 
 **First Comment (Post immediately after submission):**
-> Hi HN — instead of another "I deciphered the Indus script!" claim, we built an anti-hallucination computational epigraphy benchmark across all 5,679 published Indus inscriptions (5,805 lines; 713 raw signs), strictly stripping all speculative upstream columns (`sanskrit`, `translation`, `notes`) and verifying 11/11 invariants bit-for-bit across macOS and Linux.
+> Hi HN — instead of another "I deciphered the Indus script!" claim, we built an anti-hallucination computational epigraphy benchmark across all 5,679 published Indus inscriptions (5,805 lines; 713 raw signs), strictly stripping all speculative upstream columns (`sanskrit`, `translation`, `notes`) and verifying 12/12 invariants bit-for-bit across macOS and Linux.
 >
-> Four things surprised us most when we calibrated our metrics against real **Ur III Sumerian (CDLI)**, **Linear B**, **Linear A**, and a **structured non-linguistic stamp negative control** (all matched to N=2,047 and exact Indus length distribution):
+> Four things surprised us most when we calibrated our metrics against real **Ur III Sumerian (CDLI)**, **Linear B**, **Linear A**, **European & Chinese Folk Melodies (ABC)**, **South Indian Carnatic *Swara/Tāla***, **pure rhythmic durations**, and a **structured non-linguistic stamp negative control** (all matched to N=2,047 and exact Indus length distribution):
 >
-> 1. **We had to retire `z_H1` conditional entropy (Rao et al. 2009 style):** Our rigid non-linguistic stamp negative control scored `-245.34σ` (more than 2× Indus's `-108.85σ`). However, three discriminators *did* cleanly separate Indus and real scripts from non-linguistic stamps: **unseen-trigram generalization** over a position-aware baseline (`Indus +6.38 pp`, `Sumerian +10.71 pp` vs. `Non-Linguistic -2.95 pp`), **Kober bridge–ending MI** (`Indus +53.67σ`, `Sumerian +20.40σ`, `Linear B +18.47σ` vs. `Non-Linguistic +0.07σ`), and **blind 2-affix stacking** (`Indus 207:1` suffix-to-prefix vs. `Non-Linguistic 0:0`).
+> 1. **We caught TWO major methodological traps (`z_H1` AND Kober `MI z` on music!):** Our rigid non-linguistic stamp negative control scored `z_H1 = -245.34σ` (more than 2× Indus's `-108.85σ`), retiring Rao-style conditional entropy; AND real melodic/rhythmic music scored `Kober MI z = +17.9σ` to `+151.1σ`! Combining **low within-sequence repetition** (`Indus 4.4%`, `Sumerian 9.3%` vs. `Music/Rhythm 52.6%–93.2%`), **asymmetric 2-affix stacking** (`Indus 207:1`, bottleneck `4.96×` vs. `Music/Stamps 0:0`), and **unseen-trigram generalization** (`Indus +6.38 pp`, `Sumerian +10.71 pp` vs. `Carnatic -12.05 pp`, `Stamps -2.95 pp`) cleanly separates Indus & natural scripts from *both* music and stamps.
 > 2. **First quantitative BH-FDR paleographic drift chains (700 years):** After de-confounding Mohenjo-daro excavation trench datums (`n=1,253` within-area; single-datum `DKG(S)` `n=595`) and replicating against Harappa `Period 2–5` (`Spearman rho = +0.289, p = 0.0376`), two visually similar allograph chains shift chronologically (`q < 0.05`): Carrier `#156 → #154` (`q = 0.0083`) and a 3-stage sprouting leaf/seed sign `#838 → #803 → #806` (`q = 0.0339`, with `#806` independently #1 late sign 600 km away in Harappa, `q = 0.0106`). Core square-seal grammar stayed frozen for 700 years (`p > 0.09`).
 > 3. **Why nobody has won Tamil Nadu's $1M prize yet (Known-Answer CSP proof):** On the 23-seal Gulf/Mesopotamia connected component (`DOF = 30`, `66%` singletons), our exact Max-CSP locks `0` signs. To prove it's not solver blindness, we ran the exact same solver on 23-seal closed graphs from real Linear B (`23/23`, `+22.75σ`, 100% signs locked) and Ur III Sumerian (`23/23`, `+7.00σ`). Under realistic 74% open-vocab Sumerian, `k = 0` anchors crashes to noise (`-0.11σ`), while **`k = 2` true anchors** jumps to `21/23` (`+4.97σ`, 68.2% shared signs locked). Expanding foreign Indus seals `24 → 55` actually *increases* `DOF` (`29 → 45`) — proving we need `≥2` bilingual anchors, not just a bigger neural net.
 > 4. **Open 690-inscription damaged restoration catalog:** Under strict 12-city Leave-One-City-Out CV (zero local duplicate leakage), our visual-glyph SVD + neural MLP hybrid reaches `57.5%` Top-1 / `82.9%` Top-5 on `n=275` edge breaks (baseline `10.2%`) and `40.0%` / `60.0%` Top-3 on interior breaks.

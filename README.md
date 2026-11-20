@@ -1,18 +1,18 @@
-# INDUS-DEDUCT (`v1.0.1`)
+# INDUS-DEDUCT (`v1.1.0`)
 
 **A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley (Harappan) Script**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24383348.svg)](https://doi.org/10.5281/zenodo.24383348)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24383347.svg)](https://doi.org/10.5281/zenodo.24383347)
 [![Live Portal](https://img.shields.io/badge/live%20portal-indus.emare.dev-315b41)](https://indus.emare.dev/?lang=en)
-[![Tests](https://img.shields.io/badge/claim--ledger-11%2F11%20PASS-2b6142)]()
+[![Tests](https://img.shields.io/badge/claim--ledger-12%2F12%20PASS-2b6142)]()
 [![Cross-OS](https://img.shields.io/badge/repro-macOS%20%26%20Linux%20SHA--256-315b41)]()
 [![License](https://img.shields.io/badge/license-MIT%20%2F%20CC--BY--4.0-182c22)]()
 
-> **Live Interactive Explorer (EN / TR):** [**https://indus.emare.dev/?lang=en**](https://indus.emare.dev/?lang=en) · **Zenodo DOI:** [`10.5281/zenodo.24383348`](https://doi.org/10.5281/zenodo.24383348) · **PDF Preprint:** [`INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) · **Claim Ledger:** [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md)
+> **Live Interactive Explorer (EN / TR):** [**https://indus.emare.dev/?lang=en**](https://indus.emare.dev/?lang=en) · **Zenodo Concept DOI:** [`10.5281/zenodo.24383347`](https://doi.org/10.5281/zenodo.24383347) · **PDF Preprint:** [`INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) · **Claim Ledger:** [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md)
 
-`INDUS-DEDUCT` is an end-to-end, reproducible 13-layer computational epigraphy benchmark across **5,679 Indus inscriptions** (`5,805` parsed lines; `713` raw signs). Every pipeline stage obeys a strict anti-hallucination contract:
+`INDUS-DEDUCT` is an end-to-end, reproducible 14-layer computational epigraphy benchmark across **5,679 Indus inscriptions** (`5,805` parsed lines; `713` raw signs). Every pipeline stage obeys a strict anti-hallucination contract:
 - **Zero speculative upstream leakage:** Upstream `sanskrit`, `translation`, and `notes` columns are stripped prior to modeling and guarded by `test_01_zero_speculative_contamination`.
-- **Calibrated against real scripts & negative controls:** Benchmarked at matched size and length (`N = 2,047`) against **Ur III Sumerian (CDLI)**, **Linear B**, **Linear A**, and a **structured non-linguistic stamp negative control**.
+- **Calibrated against real scripts, real music/rhythm & negative controls:** Benchmarked at matched size and length (`N = 2,047`) against **Ur III Sumerian (CDLI)**, **Linear B**, **Linear A**, **European & Chinese Folk Melodies (ABC)**, **South Indian Carnatic *Swara/Tāla***, **Hindustani *Tablā Bol***, **pure rhythmic durations**, and a **structured non-linguistic stamp negative control**.
 - **Zero fabricated phonetic readings:** We explicitly separate verified structural/stratigraphic proofs (Tier A) from comparative/typological leads (Tier B) and retired/falsified claims (Tier C). See [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md).
 
 ---
@@ -21,11 +21,11 @@
 
 | Deliverable | Path | Description |
 |---|---|---|
-| **Full Academic Preprint (PDF)** | [`paper/INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) | 11-page peer-review-ready preprint with 3 embedded high-res figures (Layers 0–12) |
+| **Full Academic Preprint (PDF)** | [`paper/INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) | Peer-review-ready preprint with 4 embedded high-res figures (Layers 0–13) |
 | **Executive Claim Ledger** | [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md) | 1-page Tier A (Proven) / Tier B (Supported) / Tier C (Retired/Null) referee map |
-| **Interactive Web Portal** | [`portal/index.html`](portal/index.html) | 6-tab live FaunaTech Doğal Atlas v2.0 browser (294 live TTF glyphs, 690 restorations, calibration & stratigraphy) |
+| **Interactive Web Portal** | [`portal/index.html`](portal/index.html) | 7-tab live bilingual (EN/TR) FaunaTech Doğal Atlas v2.0 browser (294 TTF glyphs, 690 restorations, 8-way calibration, stratigraphy & music/scene audit) |
 | **Open Damaged Restoration Catalog** | [`reports/damaged_inscriptions_restoration_catalog.csv`](reports/damaged_inscriptions_restoration_catalog.csv) | Calibrated Top-5 restorations for all 690 single-gap damaged inscriptions across 25 sites |
-| **Automated Verification Suite** | [`tests/test_claim_ledger.py`](tests/test_claim_ledger.py) | 11/11 machine-verified invariants + SHA-256 integrity (`DATA_MANIFEST.json`) |
+| **Automated Verification Suite** | [`tests/test_claim_ledger.py`](tests/test_claim_ledger.py) | 12/12 machine-verified invariants + SHA-256 integrity (`DATA_MANIFEST.json`) |
 
 ---
 
@@ -43,6 +43,7 @@
    - **Riverine Tablets vs. Maritime Cargo:** `98.9%` of tablets occur inland (enriched in freshwater `Gavi` gharial `62/66` and `Fish` `47/47`), whereas `65.3%` of cargo sealings (`TAG*`) and `~66%` of circular Gulf seals (`SEAL:C`) are coastal/maritime — anchored by Twin-Humans **`#091`** (`0%` final, `11.89×` trade/cargo lift `p = 1.48e-6`, `42.35×` in foreign corridor `q = 2.86e-4`).
 5. **Exact Phonetic Decipherment Boundary (Layers 4B, 5B, 8, 11A):** Known-answer 23-seal Max-CSP locks `23/23` (`100%`) of closed Linear B (`+22.75σ`) and Ur III Sumerian (`+7.00σ`) at `k = 0`, fails at `k = 0` under realistic 74% open Sumerian (`z = -0.11σ`), and recovers `21/23` (`+4.97σ`, `68.2%` shared signs) at **`k = 2` bilingual anchors**. Expanding foreign Indus seals `24 → 42 → 55` strictly increases `DOF` (`29 → 43 → 45`), proving `k ≥ 2` bilingual anchors are required.
 6. **Leak-Free Visual-Neural LOCO Damaged Restoration (Layer 11B):** Across `285` real damaged inscriptions held out over `12` cities (`STRICT_LOCO`), our visual-glyph + neural MLP hybrid improves `edge_all` Top-1 from `53.5% → 57.5%` (`Top-5 82.9%`, baseline `10.2%`) and `interior_all` Top-1 from `30.0% → 40.0%` (`Top-3 60.0%`).
+7. **8-Way Real Music/Rhythm Calibration & Instrument-Scene Epigraphy (Layer 13):** Comparing Indus against European/Chinese folk melodies (ABC), South Indian Carnatic *Swara/Tāla*, *Tablā Bol*, and pure rhythmic durations uncovers a major **Kober `MI z` music confound** (`+17.9σ` to `+151.1σ` on real music), while cleanly separating Indus & natural scripts from music/rhythm via low self-repetition (`Indus 4.4%` vs. `Music/Rhythm 52.6%–93.2%`), right-edge suffixing (`207:1` vs. `0:0`), and unseen-trigram gain (`+6.38 pp`). Archaeologically, Parpola's Bow-Harp (`#525–#527`) locks `84.3%` (dedup, `p = 2.32e-108`) onto Hourglass `#550/#554/#555` with medium-conditioned allography (`#525` `TAB:B + 400` vs. `#527` `SEAL:S/R`, `p = 2.54e-6`), while Ceremonial `Scene` (`n = 43`) BH-FDR yields **`#534`** (`M-304` Pashupati + `M-1186` Seven Figures, `q = 0.0297`) globally and **`#900`** Crescent (`q = 0.0466`) within `TAB:B`.
 
 ---
 
