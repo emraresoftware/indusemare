@@ -231,6 +231,26 @@ class TestIndusDeductClaimLedger(unittest.TestCase):
         self.assertLess(cr["900"]["followed_by_740_pct"], cr["904"]["followed_by_740_pct"])
         self.assertLess(cr["904"]["followed_by_740_pct"], cr["923"]["followed_by_740_pct"])
 
+    def test_12_layer13_music_rhythm_and_instruments(self) -> None:
+        l13 = json.loads((REPORTS / "layer13_music_rhythm_instruments.json").read_text(encoding="utf-8"))
+        t8 = {r["key"]: r for r in l13["part_a_music_rhythm_calibration"]["table_8way"]}
+        # Music/rhythm corpora exhibit >50% within-sequence repetition vs <10% for Indus & Sumerian
+        self.assertLess(t8["indus_strict"]["prosody"]["seqs_with_any_repeat_pct"], 10.0)
+        for mk in ("music_eu_folk", "music_cn_han", "music_carnatic", "rhythm_durations"):
+            self.assertGreater(t8[mk]["prosody"]["seqs_with_any_repeat_pct"], 50.0)
+            self.assertGreater(t8[mk]["prosody"]["lag2_ABA_seq_pct"], 20.0)
+            self.assertLess(t8[mk]["right_edge_bottleneck"], 2.0)
+        # Hourglass (#550/554/555) + Bow-Harp (#525-527) obligatory bound compound (>80% dedup, p < 1e-50)
+        bc = l13["part_b_instruments_and_scenes"]["hourglass_bowharp_bound_compound"]
+        self.assertGreater(bc["dedup_unique_texts"]["pct_noninit_harp_preceded_by_hourglass"], 80.0)
+        self.assertLess(bc["dedup_unique_texts"]["fisher_p"], 1e-50)
+        self.assertLess(bc["medium_split_525_vs_527_tab_b_fisher_p_dedup"], 1e-4)
+        # Only #534 survives dedup BH-FDR q < 0.05 on ceremonial Scene inscriptions (M-304 + M-1186)
+        sc = l13["part_b_instruments_and_scenes"]["ceremonial_scene_audit"]
+        top_sc = sc["top15_scene_vs_all_dedup_fdr"][0]
+        self.assertEqual(top_sc["sign"], "534")
+        self.assertTrue(top_sc["survives_fdr_05"])
+
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)

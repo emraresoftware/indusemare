@@ -1,0 +1,912 @@
+{
+  "layer": "Layer 13 — Music / Rhythm Structural Calibration & Archaeological Instrument / Ceremonial Scene Epigraphy",
+  "part_a_music_rhythm_calibration": {
+    "table_8way": [
+      {
+        "key": "indus_strict",
+        "label": "Indus (Canonical, N=2,047)",
+        "cluster": "Indus Target",
+        "n_sequences": 2047,
+        "vocab": 612,
+        "z_h1_retired": -108.85,
+        "right_edge_bottleneck": 4.96,
+        "two_affix_suf": 207,
+        "two_affix_pre": 1,
+        "kober_bridge_mi_z": 53.67,
+        "unseen_trigram_gain_pp": 6.38,
+        "unseen_trigram_gain_bits": 0.432,
+        "final_unseen_pp": -4.84,
+        "prosody": {
+          "n_total": 2047,
+          "n_len3": 1736,
+          "vocab": 612,
+          "mean_len": 4.52,
+          "mean_within_seq_rep_pct": 0.79,
+          "seqs_with_any_repeat_pct": 4.44,
+          "lag1_AA_pair_pct": 0.2,
+          "lag1_AA_seq_pct": 0.81,
+          "lag2_ABA_pair_pct": 0.39,
+          "lag2_ABA_seq_pct": 1.09,
+          "motif_ABAB_seq_pct": 0.0,
+          "palindrome_len3_pct": 0.17
+        }
+      },
+      {
+        "key": "sumerian_matched",
+        "label": "Ur III Sumerian (CDLI, N=2,047)",
+        "cluster": "Natural Script",
+        "n_sequences": 2047,
+        "vocab": 714,
+        "z_h1_retired": -105.29,
+        "right_edge_bottleneck": 0.63,
+        "two_affix_suf": 4,
+        "two_affix_pre": 39,
+        "kober_bridge_mi_z": 20.4,
+        "unseen_trigram_gain_pp": 10.71,
+        "unseen_trigram_gain_bits": 1.133,
+        "final_unseen_pp": -3.62,
+        "prosody": {
+          "n_total": 2047,
+          "n_len3": 1736,
+          "vocab": 714,
+          "mean_len": 4.52,
+          "mean_within_seq_rep_pct": 1.92,
+          "seqs_with_any_repeat_pct": 9.27,
+          "lag1_AA_pair_pct": 1.0,
+          "lag1_AA_seq_pct": 3.97,
+          "lag2_ABA_pair_pct": 0.77,
+          "lag2_ABA_seq_pct": 2.25,
+          "motif_ABAB_seq_pct": 0.0,
+          "palindrome_len3_pct": 0.12
+        }
+      },
+      {
+        "key": "linearb_matched",
+        "label": "Linear B (Mycenaean, N=2,047)",
+        "cluster": "Natural Script",
+        "n_sequences": 1651,
+        "vocab": 84,
+        "z_h1_retired": -82.93,
+        "right_edge_bottleneck": 1.22,
+        "two_affix_suf": 22,
+        "two_affix_pre": 11,
+        "kober_bridge_mi_z": 18.47,
+        "unseen_trigram_gain_pp": 0.81,
+        "unseen_trigram_gain_bits": -0.038,
+        "final_unseen_pp": -2.11,
+        "prosody": {
+          "n_total": 943,
+          "n_len3": 847,
+          "vocab": 85,
+          "mean_len": 4.56,
+          "mean_within_seq_rep_pct": 3.28,
+          "seqs_with_any_repeat_pct": 17.71,
+          "lag1_AA_pair_pct": 1.16,
+          "lag1_AA_seq_pct": 4.01,
+          "lag2_ABA_pair_pct": 3.23,
+          "lag2_ABA_seq_pct": 8.26,
+          "motif_ABAB_seq_pct": 0.88,
+          "palindrome_len3_pct": 0.24
+        }
+      },
+      {
+        "key": "music_eu_folk",
+        "label": "European Folk Melody (N=2,047)",
+        "cluster": "Melodic Music",
+        "name": "European Folk Melodies (ABC)",
+        "n_sequences": 2011,
+        "vocab": 240,
+        "mean_len": 4.44,
+        "z_h1_retired": -52.85,
+        "right_edge_bottleneck": 1.58,
+        "two_affix_suf": 0,
+        "two_affix_pre": 8,
+        "kober_bridge_mi_z": 28.74,
+        "unseen_trigram_gain_pp": 2.18,
+        "unseen_trigram_gain_bits": 0.704,
+        "final_unseen_pp": -0.26,
+        "prosody": {
+          "n_total": 2011,
+          "n_len3": 1700,
+          "vocab": 240,
+          "mean_len": 4.44,
+          "mean_within_seq_rep_pct": 16.29,
+          "seqs_with_any_repeat_pct": 53.94,
+          "lag1_AA_pair_pct": 6.86,
+          "lag1_AA_seq_pct": 20.29,
+          "lag2_ABA_pair_pct": 14.38,
+          "lag2_ABA_seq_pct": 32.53,
+          "motif_ABAB_seq_pct": 3.38,
+          "palindrome_len3_pct": 2.59
+        }
+      },
+      {
+        "key": "music_cn_han",
+        "label": "Chinese Pentatonic Folk (N=2,047)",
+        "cluster": "Melodic Music",
+        "name": "Chinese Folk Melodies (Essen Han)",
+        "n_sequences": 2047,
+        "vocab": 146,
+        "mean_len": 4.52,
+        "z_h1_retired": -57.67,
+        "right_edge_bottleneck": 0.93,
+        "two_affix_suf": 2,
+        "two_affix_pre": 0,
+        "kober_bridge_mi_z": 17.94,
+        "unseen_trigram_gain_pp": 0.79,
+        "unseen_trigram_gain_bits": 0.352,
+        "final_unseen_pp": -2.09,
+        "prosody": {
+          "n_total": 2047,
+          "n_len3": 1736,
+          "vocab": 146,
+          "mean_len": 4.52,
+          "mean_within_seq_rep_pct": 15.32,
+          "seqs_with_any_repeat_pct": 52.65,
+          "lag1_AA_pair_pct": 8.36,
+          "lag1_AA_seq_pct": 24.42,
+          "lag2_ABA_pair_pct": 11.75,
+          "lag2_ABA_seq_pct": 26.21,
+          "motif_ABAB_seq_pct": 4.87,
+          "palindrome_len3_pct": 0.86
+        }
+      },
+      {
+        "key": "music_carnatic",
+        "label": "Carnatic Swara/Tala (N=1582)",
+        "cluster": "Indian Music",
+        "name": "Carnatic Classical Swara/Tala",
+        "n_sequences": 1582,
+        "vocab": 21,
+        "mean_len": 4.7,
+        "z_h1_retired": -60.02,
+        "right_edge_bottleneck": 1.27,
+        "two_affix_suf": 0,
+        "two_affix_pre": 0,
+        "kober_bridge_mi_z": 81.41,
+        "unseen_trigram_gain_pp": -12.05,
+        "unseen_trigram_gain_bits": 0.034,
+        "final_unseen_pp": -14.29,
+        "prosody": {
+          "n_total": 1582,
+          "n_len3": 1565,
+          "vocab": 21,
+          "mean_len": 4.7,
+          "mean_within_seq_rep_pct": 30.12,
+          "seqs_with_any_repeat_pct": 81.73,
+          "lag1_AA_pair_pct": 17.09,
+          "lag1_AA_seq_pct": 42.81,
+          "lag2_ABA_pair_pct": 27.53,
+          "lag2_ABA_seq_pct": 59.68,
+          "motif_ABAB_seq_pct": 6.44,
+          "palindrome_len3_pct": 3.83
+        }
+      },
+      {
+        "key": "rhythm_durations",
+        "label": "Pure Rhythm Durations (N=2,047)",
+        "cluster": "Rhythm Control",
+        "name": "Pure Rhythm/Duration Patterns",
+        "n_sequences": 2047,
+        "vocab": 23,
+        "mean_len": 4.52,
+        "z_h1_retired": -38.41,
+        "right_edge_bottleneck": 0.93,
+        "two_affix_suf": 5,
+        "two_affix_pre": 24,
+        "kober_bridge_mi_z": 151.14,
+        "unseen_trigram_gain_pp": -0.79,
+        "unseen_trigram_gain_bits": 1.164,
+        "final_unseen_pp": 0.0,
+        "prosody": {
+          "n_total": 2047,
+          "n_len3": 1736,
+          "vocab": 23,
+          "mean_len": 4.52,
+          "mean_within_seq_rep_pct": 53.25,
+          "seqs_with_any_repeat_pct": 93.2,
+          "lag1_AA_pair_pct": 62.16,
+          "lag1_AA_seq_pct": 84.91,
+          "lag2_ABA_pair_pct": 56.61,
+          "lag2_ABA_seq_pct": 70.33,
+          "motif_ABAB_seq_pct": 6.59,
+          "palindrome_len3_pct": 25.75
+        }
+      },
+      {
+        "key": "nonlinguistic_stamps",
+        "label": "Non-Linguistic Stamps (N=2,047)",
+        "cluster": "Neg. Control",
+        "n_sequences": 2047,
+        "vocab": 192,
+        "z_h1_retired": -245.34,
+        "right_edge_bottleneck": 1.89,
+        "two_affix_suf": 0,
+        "two_affix_pre": 0,
+        "kober_bridge_mi_z": 0.07,
+        "unseen_trigram_gain_pp": -2.95,
+        "unseen_trigram_gain_bits": -0.96,
+        "final_unseen_pp": -16.0,
+        "prosody": {
+          "n_total": 2047,
+          "n_len3": 1736,
+          "vocab": 192,
+          "mean_len": 4.52,
+          "mean_within_seq_rep_pct": 1.14,
+          "seqs_with_any_repeat_pct": 7.2,
+          "lag1_AA_pair_pct": 1.2,
+          "lag1_AA_seq_pct": 4.32,
+          "lag2_ABA_pair_pct": 0.79,
+          "lag2_ABA_seq_pct": 2.25,
+          "motif_ABAB_seq_pct": 0.0,
+          "palindrome_len3_pct": 0.0
+        }
+      }
+    ],
+    "tabla_bol_prosody": {
+      "n_total": 37,
+      "n_len3": 37,
+      "vocab": 97,
+      "mean_len": 9.24,
+      "mean_within_seq_rep_pct": 24.5,
+      "seqs_with_any_repeat_pct": 86.49,
+      "lag1_AA_pair_pct": 6.23,
+      "lag1_AA_seq_pct": 40.54,
+      "lag2_ABA_pair_pct": 14.55,
+      "lag2_ABA_seq_pct": 48.65,
+      "motif_ABAB_seq_pct": 14.29,
+      "palindrome_len3_pct": 0.0
+    },
+    "indus_subregisters": {
+      "SEAL_S": {
+        "n_total": 1617,
+        "n_len3": 1297,
+        "vocab": 537,
+        "mean_len": 4.51,
+        "mean_within_seq_rep_pct": 0.99,
+        "seqs_with_any_repeat_pct": 5.78,
+        "lag1_AA_pair_pct": 0.32,
+        "lag1_AA_seq_pct": 1.31,
+        "lag2_ABA_pair_pct": 0.47,
+        "lag2_ABA_seq_pct": 1.39,
+        "motif_ABAB_seq_pct": 0.0,
+        "palindrome_len3_pct": 0.0
+      },
+      "Scene_43": {
+        "n_total": 37,
+        "n_len3": 27,
+        "vocab": 73,
+        "mean_len": 3.97,
+        "mean_within_seq_rep_pct": 2.51,
+        "seqs_with_any_repeat_pct": 14.81,
+        "lag1_AA_pair_pct": 0.0,
+        "lag1_AA_seq_pct": 0.0,
+        "lag2_ABA_pair_pct": 2.74,
+        "lag2_ABA_seq_pct": 7.41,
+        "motif_ABAB_seq_pct": 0.0,
+        "palindrome_len3_pct": 0.0
+      },
+      "TAB_B": {
+        "n_total": 938,
+        "n_len3": 561,
+        "vocab": 245,
+        "mean_len": 3.4,
+        "mean_within_seq_rep_pct": 0.83,
+        "seqs_with_any_repeat_pct": 3.21,
+        "lag1_AA_pair_pct": 0.37,
+        "lag1_AA_seq_pct": 1.07,
+        "lag2_ABA_pair_pct": 0.61,
+        "lag2_ABA_seq_pct": 1.43,
+        "motif_ABAB_seq_pct": 0.0,
+        "palindrome_len3_pct": 0.18
+      },
+      "TAB_C_230": {
+        "n_total": 195,
+        "n_len3": 178,
+        "vocab": 75,
+        "mean_len": 4.79,
+        "mean_within_seq_rep_pct": 1.31,
+        "seqs_with_any_repeat_pct": 8.43,
+        "lag1_AA_pair_pct": 0.0,
+        "lag1_AA_seq_pct": 0.0,
+        "lag2_ABA_pair_pct": 2.75,
+        "lag2_ABA_seq_pct": 8.43,
+        "motif_ABAB_seq_pct": 0.0,
+        "palindrome_len3_pct": 0.56
+      }
+    }
+  },
+  "part_b_instruments_and_scenes": {
+    "hourglass_bowharp_bound_compound": {
+      "raw_corpus": {
+        "hg_then_harp": 73,
+        "hg_then_other": 68,
+        "other_then_harp": 11,
+        "other_then_other": 12364,
+        "pct_noninit_harp_preceded_by_hourglass": 86.9,
+        "pct_hourglass_followed_by_harp": 51.77,
+        "lift_over_base": 77.14,
+        "odds_ratio": 1206.65,
+        "fisher_p": 1.2686064716436122e-139
+      },
+      "dedup_unique_texts": {
+        "hg_then_harp": 59,
+        "hg_then_other": 60,
+        "other_then_harp": 11,
+        "other_then_other": 9429,
+        "pct_noninit_harp_preceded_by_hourglass": 84.29,
+        "pct_hourglass_followed_by_harp": 49.58,
+        "lift_over_base": 67.7,
+        "odds_ratio": 842.9,
+        "fisher_p": 2.3176419999129297e-108
+      },
+      "sign_525_tab_b_allograph": {
+        "sign": "525",
+        "n_raw": 11,
+        "n_dedup": 7,
+        "tab_b_raw": 10,
+        "seal_raw": 0,
+        "tab_b_dedup": 6,
+        "seal_dedup": 0,
+        "followed_by_400_raw": 9,
+        "final_pct_raw": 18.2,
+        "scene_count": 0,
+        "tab_c_count": 0
+      },
+      "sign_526_bridge_allograph": {
+        "sign": "526",
+        "n_raw": 13,
+        "n_dedup": 9,
+        "tab_b_raw": 4,
+        "seal_raw": 5,
+        "tab_b_dedup": 3,
+        "seal_dedup": 4,
+        "followed_by_400_raw": 0,
+        "final_pct_raw": 100.0,
+        "scene_count": 0,
+        "tab_c_count": 0
+      },
+      "sign_527_seal_allograph": {
+        "sign": "527",
+        "n_raw": 63,
+        "n_dedup": 57,
+        "tab_b_raw": 2,
+        "seal_raw": 53,
+        "tab_b_dedup": 2,
+        "seal_dedup": 48,
+        "followed_by_400_raw": 3,
+        "final_pct_raw": 82.5,
+        "scene_count": 0,
+        "tab_c_count": 0
+      },
+      "medium_split_525_vs_527_tab_b_fisher_p_raw": 9.81859921203959e-10,
+      "medium_split_525_vs_527_tab_b_fisher_p_dedup": 2.5369589851257452e-06,
+      "clitic_400_525_vs_527_fisher_p_raw": 1.0051240680699125e-07,
+      "parpola_yazh_structural_verdict": "Falsifies musical-scene/ritual-only reading for #525-#527: 0/43 Scene, 0/230 TAB:C, 0/87 solo. Instead proves #550/554/555 + #525/526/527 is an obligatory 2-sign bound terminal compound (86.9% non-initial lock; dedup Fisher p < 1e-40) with a sharp medium-conditioned allograph split (#525 on molded TAB:B + clitic 400 vs #527 final on SEAL:S/R)."
+    },
+    "four_string_frame_420_426_audit": {
+      "n_raw": 32,
+      "tab_c_raw": 12,
+      "tab_c_enrichment_p_raw": 1.6129859297667767e-09,
+      "n_dedup": 24,
+      "tab_c_dedup": 6,
+      "tab_c_enrichment_p_dedup": 2.887527816260863e-05,
+      "preceded_by_003_count": 22,
+      "total_occurrences": 33,
+      "preceded_by_003_pct": 66.7
+    },
+    "ceremonial_scene_audit": {
+      "n_scene_raw_nonempty": 42,
+      "n_scene_dedup_unique_texts": 38,
+      "n_scene_tab_b_dedup": 24,
+      "top15_scene_vs_all_dedup_fdr": [
+        {
+          "sign": "534",
+          "fg_n": 2,
+          "fg_pct": 5.26,
+          "bg_n": 1,
+          "bg_pct": 0.03,
+          "lift": 112.7,
+          "fisher_p": 0.00039650851266096273,
+          "q_fdr": 0.02974,
+          "survives_fdr_05": true
+        },
+        {
+          "sign": "135",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 169.05,
+          "fisher_p": 0.011692307692307693,
+          "q_fdr": 0.21923,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "532",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 169.05,
+          "fisher_p": 0.011692307692307693,
+          "q_fdr": 0.21923,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "599",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 169.05,
+          "fisher_p": 0.011692307692307693,
+          "q_fdr": 0.21923,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "840",
+          "fg_n": 4,
+          "fg_pct": 10.53,
+          "bg_n": 87,
+          "bg_pct": 2.71,
+          "lift": 3.86,
+          "fisher_p": 0.020527691779897442,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "330",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 1,
+          "bg_pct": 0.03,
+          "lift": 56.35,
+          "fisher_p": 0.023251461988304092,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "928",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 1,
+          "bg_pct": 0.03,
+          "lift": 56.35,
+          "fisher_p": 0.023251461988304092,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "145",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 2,
+          "bg_pct": 0.06,
+          "lift": 33.81,
+          "fisher_p": 0.03467893872612566,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "318",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 2,
+          "bg_pct": 0.06,
+          "lift": 33.81,
+          "fisher_p": 0.03467893872612566,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "560",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 2,
+          "bg_pct": 0.06,
+          "lift": 33.81,
+          "fisher_p": 0.03467893872612566,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "843",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 2,
+          "bg_pct": 0.06,
+          "lift": 33.81,
+          "fisher_p": 0.03467893872612566,
+          "q_fdr": 0.23645,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "922",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 3,
+          "bg_pct": 0.09,
+          "lift": 24.15,
+          "fisher_p": 0.045976197835582766,
+          "q_fdr": 0.28572,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "139",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 4,
+          "bg_pct": 0.12,
+          "lift": 18.78,
+          "fisher_p": 0.057144683504790364,
+          "q_fdr": 0.28572,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "362",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 4,
+          "bg_pct": 0.12,
+          "lift": 18.78,
+          "fisher_p": 0.057144683504790364,
+          "q_fdr": 0.28572,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "603",
+          "fg_n": 1,
+          "fg_pct": 2.63,
+          "bg_n": 4,
+          "bg_pct": 0.12,
+          "lift": 18.78,
+          "fisher_p": 0.057144683504790364,
+          "q_fdr": 0.28572,
+          "survives_fdr_05": false
+        }
+      ],
+      "n_survive_fdr_vs_all": 1,
+      "top10_scene_vs_tabb_dedup_fdr": [
+        {
+          "sign": "900",
+          "fg_n": 3,
+          "fg_pct": 12.5,
+          "bg_n": 2,
+          "bg_pct": 0.41,
+          "lift": 24.15,
+          "fisher_p": 0.0008797178846191698,
+          "q_fdr": 0.04663,
+          "survives_fdr_05": true
+        },
+        {
+          "sign": "140",
+          "fg_n": 3,
+          "fg_pct": 12.5,
+          "bg_n": 5,
+          "bg_pct": 1.04,
+          "lift": 10.98,
+          "fisher_p": 0.004479641121247424,
+          "q_fdr": 0.11871,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "840",
+          "fg_n": 4,
+          "fg_pct": 16.67,
+          "bg_n": 17,
+          "bg_pct": 3.52,
+          "lift": 4.6,
+          "fisher_p": 0.013481111234668636,
+          "q_fdr": 0.23817,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "135",
+          "fg_n": 1,
+          "fg_pct": 4.17,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 40.25,
+          "fisher_p": 0.047337278106508875,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "330",
+          "fg_n": 1,
+          "fg_pct": 4.17,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 40.25,
+          "fisher_p": 0.047337278106508875,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "392",
+          "fg_n": 1,
+          "fg_pct": 4.17,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 40.25,
+          "fisher_p": 0.047337278106508875,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "922",
+          "fg_n": 1,
+          "fg_pct": 4.17,
+          "bg_n": 0,
+          "bg_pct": 0.0,
+          "lift": 40.25,
+          "fisher_p": 0.047337278106508875,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "002",
+          "fg_n": 5,
+          "fg_pct": 20.83,
+          "bg_n": 44,
+          "bg_pct": 9.11,
+          "lift": 2.26,
+          "fisher_p": 0.07092003056177035,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "590",
+          "fg_n": 3,
+          "fg_pct": 12.5,
+          "bg_n": 19,
+          "bg_pct": 3.93,
+          "lift": 3.1,
+          "fisher_p": 0.07929133212815531,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        },
+        {
+          "sign": "032",
+          "fg_n": 4,
+          "fg_pct": 16.67,
+          "bg_n": 33,
+          "bg_pct": 6.83,
+          "lift": 2.4,
+          "fisher_p": 0.08862401448439076,
+          "q_fdr": 0.27243,
+          "survives_fdr_05": false
+        }
+      ],
+      "n_survive_fdr_vs_tabb": 1,
+      "formula_840_032_audit": {
+        "total_inscriptions": 42,
+        "sites": {
+          "Harappa": 19,
+          "Mohenjo-daro": 15,
+          "Dholavira": 4,
+          "Lothal": 2,
+          "Bakkar Buthi": 1,
+          "Chanhu-daro": 1
+        },
+        "object_types": {
+          "SEAL:S": 17,
+          "TAB:B": 17,
+          "TAB:I": 3,
+          "SEAL:R": 2,
+          "POT:T:g": 1,
+          "TAG:PC": 1,
+          "TAG": 1
+        },
+        "symbols_top10": {
+          "(none)": 14,
+          "Scene": 5,
+          "Bull1": 5,
+          "Mult": 4,
+          "Bull1:W": 3,
+          "Bull1:J": 3,
+          "Phyt": 2,
+          "Rhin": 1,
+          "Bull1:S": 1,
+          "Gaur": 1
+        },
+        "notable_scene_artifacts": [
+          "H-182 (Harappa TAB:B, Drummer-before-Tiger: 840 032 740 on both faces)",
+          "M-453 & M-454 (Mohenjo-daro TAB:B, Seated Deity with Cobras: ... 840 032 740)",
+          "2511.1 (Mohenjo-daro TAB:B Scene: 840 032 740)"
+        ],
+        "verdict": "Even Harappa's famous 'Drummer-before-Tiger' tablet (H-182) bears the pan-Harappan administrative/theophoric title formula '840 032 740' attested across 5 cities and ordinary unicorn/rhino/elephant stone seals — NOT musical notation."
+      },
+      "sign_534_pashupati_seven_figures_link": [
+        {
+          "id": "501.1",
+          "cisi": "H-2576",
+          "site": "Harappa",
+          "obj": "BNGL",
+          "sym": "",
+          "seq": "556 534"
+        },
+        {
+          "id": "2823.1",
+          "cisi": "M-304",
+          "site": "Mohenjo-daro",
+          "obj": "SEAL:S",
+          "sym": "Scene",
+          "seq": "090 550 534 742 220 740 090"
+        },
+        {
+          "id": "3538.1",
+          "cisi": "M-1186",
+          "site": "Mohenjo-daro",
+          "obj": "SEAL:S",
+          "sym": "Scene",
+          "seq": "621 534 560 740 231 740 090"
+        }
+      ],
+      "sign_560_link": [
+        {
+          "id": "2545.1",
+          "cisi": "M-17",
+          "site": "Mohenjo-daro",
+          "obj": "SEAL:S",
+          "sym": "Bull1:W",
+          "seq": "560 814 002 016 390"
+        },
+        {
+          "id": "3079.1",
+          "cisi": "M-628",
+          "site": "Mohenjo-daro",
+          "obj": "SEAL:S",
+          "sym": "Bull1:W",
+          "seq": "564 690 291 002 233 560 740"
+        },
+        {
+          "id": "3538.1",
+          "cisi": "M-1186",
+          "site": "Mohenjo-daro",
+          "obj": "SEAL:S",
+          "sym": "Scene",
+          "seq": "621 534 560 740 231 740 090"
+        }
+      ]
+    },
+    "candidate_families_summary": {
+      "BowHarp_525_527": {
+        "signs": [
+          "525",
+          "526",
+          "527"
+        ],
+        "n_inscriptions": 87,
+        "init_pct": 3.4,
+        "med_pct": 19.5,
+        "final_pct": 77.0,
+        "scene_hits": 0,
+        "tab_c_hits": 0,
+        "seal_hits": 58,
+        "tab_b_hits": 16
+      },
+      "Hourglass_Damaru_530_565": {
+        "signs": [
+          "530",
+          "531",
+          "532",
+          "534",
+          "540",
+          "545",
+          "550",
+          "552",
+          "554",
+          "555",
+          "556",
+          "560",
+          "564",
+          "565"
+        ],
+        "n_inscriptions": 257,
+        "init_pct": 33.6,
+        "med_pct": 43.7,
+        "final_pct": 12.7,
+        "scene_hits": 3,
+        "tab_c_hits": 0,
+        "seal_hits": 160,
+        "tab_b_hits": 29
+      },
+      "FourStringFrame_420_426": {
+        "signs": [
+          "420",
+          "421",
+          "422",
+          "423",
+          "426"
+        ],
+        "n_inscriptions": 32,
+        "init_pct": 6.1,
+        "med_pct": 33.3,
+        "final_pct": 48.5,
+        "scene_hits": 0,
+        "tab_c_hits": 12,
+        "seal_hits": 16,
+        "tab_b_hits": 1
+      },
+      "CurvedHarpHorn_491_495": {
+        "signs": [
+          "491",
+          "495"
+        ],
+        "n_inscriptions": 48,
+        "init_pct": 54.2,
+        "med_pct": 35.4,
+        "final_pct": 2.1,
+        "scene_hits": 0,
+        "tab_c_hits": 2,
+        "seal_hits": 21,
+        "tab_b_hits": 8
+      },
+      "BowArcher_125_890_892": {
+        "signs": [
+          "125",
+          "890",
+          "892"
+        ],
+        "n_inscriptions": 153,
+        "init_pct": 23.0,
+        "med_pct": 52.2,
+        "final_pct": 19.3,
+        "scene_hits": 0,
+        "tab_c_hits": 1,
+        "seal_hits": 83,
+        "tab_b_hits": 22
+      },
+      "WavyHuman_101_103": {
+        "signs": [
+          "101",
+          "103"
+        ],
+        "n_inscriptions": 13,
+        "init_pct": 23.1,
+        "med_pct": 69.2,
+        "final_pct": 7.7,
+        "scene_hits": 0,
+        "tab_c_hits": 0,
+        "seal_hits": 8,
+        "tab_b_hits": 3
+      },
+      "RitualHuman_135_140": {
+        "signs": [
+          "135",
+          "136",
+          "137",
+          "139",
+          "140"
+        ],
+        "n_inscriptions": 142,
+        "init_pct": 40.0,
+        "med_pct": 34.5,
+        "final_pct": 16.6,
+        "scene_hits": 6,
+        "tab_c_hits": 0,
+        "seal_hits": 97,
+        "tab_b_hits": 21
+      },
+      "SceneOvals_840_845": {
+        "signs": [
+          "840",
+          "842",
+          "843",
+          "844",
+          "845"
+        ],
+        "n_inscriptions": 208,
+        "init_pct": 18.2,
+        "med_pct": 67.9,
+        "final_pct": 7.2,
+        "scene_hits": 8,
+        "tab_c_hits": 41,
+        "seal_hits": 89,
+        "tab_b_hits": 36
+      }
+    }
+  }
+}
