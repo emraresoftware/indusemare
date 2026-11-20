@@ -1,8 +1,9 @@
 # INDUS-DEDUCT (`indusemare`) — Global Launch & Media Kit
 
 - **Live Portal (TR / EN auto-detect):** https://indus.emare.dev/ (English direct: `https://indus.emare.dev/?lang=en`)
+- **Permanent CERN / Zenodo DOI:** https://doi.org/10.5281/zenodo.24383348 (Concept DOI: `10.5281/zenodo.24383347`)
 - **Preprint PDF (11 pages, 3 figures):** https://indus.emare.dev/assets/INDUS_DEDUCT_PREPRINT.pdf
-- **GitHub Repository (`v1.0.0-preprint`, 11/11 tests PASS):** https://github.com/emraresoftware/indusemare
+- **GitHub Repository (`v1.0.1`, 11/11 tests PASS):** https://github.com/emraresoftware/indusemare
 - **1-Page Referee Claim Ledger:** https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md
 - **Social Share Card (1200×630):** `portal/assets/og-indusemare.png`
 
@@ -26,7 +27,7 @@
 > 3. **Why nobody has won Tamil Nadu's $1M prize yet (Known-Answer CSP proof):** On the 23-seal Gulf/Mesopotamia connected component (`DOF = 30`, `66%` singletons), our exact Max-CSP locks `0` signs. To prove it's not solver blindness, we ran the exact same solver on 23-seal closed graphs from real Linear B (`23/23`, `+22.75σ`, 100% signs locked) and Ur III Sumerian (`23/23`, `+7.00σ`). Under realistic 74% open-vocab Sumerian, `k = 0` anchors crashes to noise (`-0.11σ`), while **`k = 2` true anchors** jumps to `21/23` (`+4.97σ`, 68.2% shared signs locked). Expanding foreign Indus seals `24 → 55` actually *increases* `DOF` (`29 → 45`) — proving we need `≥2` bilingual anchors, not just a bigger neural net.
 > 4. **Open 690-inscription damaged restoration catalog:** Under strict 12-city Leave-One-City-Out CV (zero local duplicate leakage), our visual-glyph SVD + neural MLP hybrid reaches `57.5%` Top-1 / `82.9%` Top-5 on `n=275` edge breaks (baseline `10.2%`) and `40.0%` / `60.0%` Top-3 on interior breaks.
 >
-> Everything is open-source (MIT / CC-BY-4.0), with a 1-page Tier A (Proven) / Tier B (Leads) / Tier C (Retired/Null) Claim Ledger: https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md and full 11-page PDF: https://indus.emare.dev/assets/INDUS_DEDUCT_PREPRINT.pdf. Brutal critiques welcome!
+> Everything is open-source (MIT / CC-BY-4.0), archived permanently on Zenodo (DOI: https://doi.org/10.5281/zenodo.24383348), with a 1-page Tier A (Proven) / Tier B (Leads) / Tier C (Retired/Null) Claim Ledger: https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md and full 11-page PDF: https://indus.emare.dev/assets/INDUS_DEDUCT_PREPRINT.pdf. Zero-dependency verification (`python3 -m unittest tests/test_claim_ledger.py -v`) runs in 4 ms on a fresh clone. Brutal critiques welcome!
 
 ---
 
@@ -142,9 +143,10 @@
 **Body:**
 > Dear Prof. [Name],
 >
-> We have released **INDUS-DEDUCT (v1.0.0-preprint)**, a fully reproducible, anti-hallucination computational epigraphy benchmark over 5,679 Indus inscriptions (derived from ICIT/CISI with all speculative upstream columns stripped), paired with an 11/11 automated claim-ledger test suite and interactive portal:
+> We have released **INDUS-DEDUCT (v1.0.1; Zenodo DOI: `10.5281/zenodo.24383348`)**, a fully reproducible, anti-hallucination computational epigraphy benchmark over 5,679 Indus inscriptions (derived from ICIT/CISI with all speculative upstream columns stripped), paired with an 11/11 automated claim-ledger test suite and interactive portal:
 >
 > - **Interactive Portal (EN):** https://indus.emare.dev/?lang=en
+> - **Permanent Zenodo Archive (DOI):** https://doi.org/10.5281/zenodo.24383348
 > - **11-Page Preprint PDF:** https://indus.emare.dev/assets/INDUS_DEDUCT_PREPRINT.pdf
 > - **1-Page Claim Ledger (Tier A Proven / Tier B Leads / Tier C Retired):** https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md
 > - **Code & 690-Inscription Restoration Catalog:** https://github.com/emraresoftware/indusemare
@@ -161,8 +163,7 @@
 
 ---
 
-## 6. 3-Dakikalık Zenodo DOI Checklist (Kalıcı Akademik Atıf İçin)
-1. `https://zenodo.org` → GitHub hesabınla (`emraresoftware`) giriş yap.
-2. **GitHub → `emraresoftware/indusemare`** anahtarını aç (ON).
-3. GitHub'da oluşturduğumuz **`v1.0.0-preprint`** Release'ini Zenodo otomatik arşivleyip kalıcı **DOI** (`10.5281/zenodo.xxxxxxx`) üretecektir.
-4. DOI rozetini `README.md` ve `CITATION.cff` içine ekle — artık arXiv / dergi / Vikipedi / akademisyenler kalıcı DOI ile atıf yapabilir!
+## 6. Zenodo DOI Arşivi (TAMAMLANDI ✓)
+- **Kalıcı Sürüm DOI (`v1.0.1`):** https://doi.org/10.5281/zenodo.24383348 (`https://zenodo.org/records/24383348`)
+- **Konsept DOI (her zaman en güncel sürümü gösterir):** https://doi.org/10.5281/zenodo.24383347
+- `README.md`, `CITATION.cff`, `indus.emare.dev` ve yukarıdaki tüm yayın metinlerine işlendi!

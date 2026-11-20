@@ -4,6 +4,14 @@ title: "INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark f
 version: "1.0.1"
 date-released: "2026-11-20"
 type: software
+doi: "10.5281/zenodo.24383348"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24383348"
+    description: "Version v1.0.1 archival DOI on Zenodo"
+  - type: doi
+    value: "10.5281/zenodo.24383347"
+    description: "Concept DOI resolving to all versions of INDUS-DEDUCT on Zenodo"
 repository-code: "https://github.com/emraresoftware/indusemare"
 url: "https://indus.emare.dev"
 authors:

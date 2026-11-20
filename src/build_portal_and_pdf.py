@@ -403,6 +403,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         </div>
       </div>
       <div class="actions">
+        <a class="btn" href="https://doi.org/10.5281/zenodo.24383348" target="_blank" rel="noopener">DOI</a>
         <a class="btn" href="https://github.com/emraresoftware/indusemare" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="https://github.com/emraresoftware/indusemare/blob/main/CLAIM_LEDGER.md" target="_blank" rel="noopener" data-i18n="btnLedger">İddia Defteri</a>
         <a class="btn btn-primary" href="./assets/INDUS_DEDUCT_PREPRINT.pdf" target="_blank" data-i18n="btnPdf">PDF Makale</a>
@@ -669,7 +670,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         tab4: "4. Kırık Onarım (690)",
         tab5: "5. Ardıl Dil & Körfez",
         tab6: "6. 700 Yıl & Denizcilik",
-        heroEyebrow: "Sıfır Halüsinasyon · 11/11 Doğrulanmış · Mac & Linux Bit-Bit SHA-256 · v1.0.0",
+        heroEyebrow: "Sıfır Halüsinasyon · 11/11 Doğrulanmış · DOI: 10.5281/zenodo.24383348 · v1.0.1",
         heroTitle: "İndus Vadisi Yazısı İçin Kalibre Edilmiş Açık Benchmark",
         heroDesc: "5.679 yazıt üzerinde görsel glif analizi, 5'li bilinen-cevap & dil-dışı kalibrasyon, Mohenjo-daro bakır tablet iç Rosettası, 700 yıllık paleografik evrim, Lothal çok-imzalı kargo ağı ve 690 kırık yazıtlık açık onarım kataloğu. Kanıtlanmış yapısal gerçekler ile kanıtlanmamış sesli okumalar kesin çizgiyle ayrılmıştır.",
         kpi1L: "Kanonik Korpus", kpi1V: "5.679", kpi1N: "5.805 satır · sıfır kuram kirliliği",
@@ -687,7 +688,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         calChartTitle: "5'li Kalibrasyon Görsel Özeti",
         atlasH2: "Canlı İndus Glif Atlası (294 Sık İşaret = %95.7 Korpus Kapsamı)",
         themeDark: "Orman Gecesi", themeLight: "Sabah Keteni",
-        footerTxt: "INDUS-DEDUCT Açık Benchmark (v1.0.0-preprint) · FaunaTech Doğal Atlas v2.0 (emare-ui) · 11/11 Claim-Ledger Doğrulamalı · Sıfır Uydurma Okuma"
+        footerTxt: "INDUS-DEDUCT Açık Benchmark (v1.0.1 · DOI: 10.5281/zenodo.24383348) · FaunaTech Doğal Atlas v2.0 (emare-ui) · 11/11 Doğrulamalı · Sıfır Uydurma Okuma"
       },
       en: {
         brandSub: "FaunaTech Natural Atlas v2.0 · Layers 0–12 Open Computational Epigraphy Portal",
@@ -699,7 +700,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         tab4: "4. Restorations (690)",
         tab5: "5. Gulf & Successors",
         tab6: "6. 700-Yr Drift & Sea",
-        heroEyebrow: "Zero Hallucination · 11/11 Verified · macOS & Linux Bit-for-Bit SHA-256 · v1.0.0",
+        heroEyebrow: "Zero Hallucination · 11/11 Verified · DOI: 10.5281/zenodo.24383348 · v1.0.1",
         heroTitle: "A Calibrated Open Benchmark for the Indus Valley Script",
         heroDesc: "13-layer reproducible computational epigraphy across 5,679 inscriptions: 5-way calibration vs. real Ur III Sumerian, Linear B, Linear A & non-linguistic stamps; Mohenjo-daro Copper Tablet internal Rosetta; 700-year BH-FDR paleographic drift; Lothal multi-signature cargo network; and 690 strict-LOCO damaged restorations. Proven structure is strictly separated from unproven phonetic readings.",
         kpi1L: "Canonical Corpus", kpi1V: "5,679", kpi1N: "5,805 lines · zero speculative leakage",
@@ -717,7 +718,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         calChartTitle: "Five-Way Calibration Visual Summary",
         atlasH2: "Live Indus Glyph Atlas (294 Core Signs = 95.7% Corpus Coverage)",
         themeDark: "Forest Night", themeLight: "Morning Linen",
-        footerTxt: "INDUS-DEDUCT Open Benchmark (v1.0.0-preprint) · FaunaTech Natural Atlas v2.0 (emare-ui) · 11/11 Claim-Ledger Verified · Zero Fabricated Readings"
+        footerTxt: "INDUS-DEDUCT Open Benchmark (v1.0.1 · DOI: 10.5281/zenodo.24383348) · FaunaTech Natural Atlas v2.0 (emare-ui) · 11/11 Verified · Zero Fabricated Readings"
       }
     };
     const CAL_NAMES_EN = {

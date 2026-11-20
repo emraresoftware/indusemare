@@ -1,13 +1,14 @@
-# INDUS-DEDUCT (`v1.0.0-preprint`)
+# INDUS-DEDUCT (`v1.0.1`)
 
 **A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley (Harappan) Script**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24383348.svg)](https://doi.org/10.5281/zenodo.24383348)
 [![Live Portal](https://img.shields.io/badge/live%20portal-indus.emare.dev-315b41)](https://indus.emare.dev/?lang=en)
 [![Tests](https://img.shields.io/badge/claim--ledger-11%2F11%20PASS-2b6142)]()
 [![Cross-OS](https://img.shields.io/badge/repro-macOS%20%26%20Linux%20SHA--256-315b41)]()
 [![License](https://img.shields.io/badge/license-MIT%20%2F%20CC--BY--4.0-182c22)]()
 
-> **Live Interactive Explorer (EN / TR):** [**https://indus.emare.dev/?lang=en**](https://indus.emare.dev/?lang=en) · **PDF Preprint:** [`INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) · **1-Page Claim Ledger:** [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md)
+> **Live Interactive Explorer (EN / TR):** [**https://indus.emare.dev/?lang=en**](https://indus.emare.dev/?lang=en) · **Zenodo DOI:** [`10.5281/zenodo.24383348`](https://doi.org/10.5281/zenodo.24383348) · **PDF Preprint:** [`INDUS_DEDUCT_PREPRINT.pdf`](paper/INDUS_DEDUCT_PREPRINT.pdf) · **Claim Ledger:** [`CLAIM_LEDGER.md`](CLAIM_LEDGER.md)
 
 `INDUS-DEDUCT` is an end-to-end, reproducible 13-layer computational epigraphy benchmark across **5,679 Indus inscriptions** (`5,805` parsed lines; `713` raw signs). Every pipeline stage obeys a strict anti-hallucination contract:
 - **Zero speculative upstream leakage:** Upstream `sanskrit`, `translation`, and `notes` columns are stripped prior to modeling and guarded by `test_01_zero_speculative_contamination`.
@@ -71,6 +72,23 @@ INDUS_STRICT_CORPUS=1 python3 -m unittest tests/test_claim_ledger.py -v
 
 # Launch the bilingual (EN / TR) interactive FaunaTech Doğal Atlas portal locally
 python3 -m http.server 4188 --bind 127.0.0.1 --directory portal
+```
+
+## Citation
+
+If you use INDUS-DEDUCT code, benchmark tables, or the 690-inscription damaged restoration catalog, please cite the permanent Zenodo archive:
+
+```bibtex
+@software{emre_2026_indus_deduct,
+  author       = {Emre and {Emare INDUS-DEDUCT Research Collective}},
+  title        = {{INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script}},
+  month        = nov,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v1.0.1},
+  doi          = {10.5281/zenodo.24383348},
+  url          = {https://doi.org/10.5281/zenodo.24383348}
+}
 ```
 
 ## Upstream Data Attribution
