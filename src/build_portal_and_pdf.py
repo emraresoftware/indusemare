@@ -49,6 +49,7 @@ def build_portal_bundle() -> dict[str, Any]:
     l10 = json.loads((REPORTS_DIR / "layer10_copper_rosetta_deep.json").read_text())
     l11a = json.loads((REPORTS_DIR / "layer11a_external_gulf_diachronic.json").read_text())
     l11b = json.loads((REPORTS_DIR / "layer11b_neural_restoration.json").read_text())
+    l12 = json.loads((REPORTS_DIR / "layer12_stratigraphic_time.json").read_text())
     catalog = json.loads((REPORTS_DIR / "damaged_inscriptions_restoration_catalog.json").read_text())
 
     # Special tag sets
@@ -135,7 +136,7 @@ def build_portal_bundle() -> dict[str, Any]:
             "inscriptions": 5679,
             "lines": 5805,
             "core_signs": "240–271",
-            "tests_passing": "10/10",
+            "tests_passing": "11/11",
             "restored_damaged_total": len(catalog),
         },
         "cp_map": cp_map,
@@ -180,6 +181,7 @@ def build_portal_bundle() -> dict[str, Any]:
         "restoration_benchmark": l11b["strict_loco_head_to_head"],
         "restoration_stats": l11b["open_restoration_catalog_stats"],
         "restoration_catalog": catalog,
+        "layer12_time": l12,
     }
     return bundle
 
@@ -188,7 +190,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
     (PORTAL_DIR / "assets" / "charts").mkdir(parents=True, exist_ok=True)
     (PORTAL_DIR / "data").mkdir(parents=True, exist_ok=True)
     shutil.copy2(RAW_DIR / "sk_indus_script-webfont.ttf", PORTAL_DIR / "assets" / "indus-font.ttf")
-    for img_name in ("calibration_5way_chart.png", "layer9_copper_rosetta_plate.png"):
+    for img_name in ("calibration_5way_chart.png", "layer9_copper_rosetta_plate.png", "layer12_time_evolution_plate.png"):
         src = REPORTS_DIR / img_name
         if src.exists():
             shutil.copy2(src, PORTAL_DIR / "assets" / "charts" / img_name)
@@ -383,7 +385,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         <img src="./assets/emare-ui/brand/emare-seal-pine.svg" alt="Emare Mühür" />
         <div>
           <div class="brand-title">INDUS-DEDUCT</div>
-          <div class="brand-sub">FaunaTech Doğal Atlas v2.0 · Katman 0–11B Açık Hesaplamalı Epigrafi Portalı</div>
+          <div class="brand-sub">FaunaTech Doğal Atlas v2.0 · Katman 0–12 Açık Hesaplamalı Epigrafi Portalı</div>
         </div>
       </div>
       <div class="actions">
@@ -397,6 +399,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
       <button class="tab-btn" data-tab="rosetta">3. İç Rosetta &amp; Meluhha Ticareti</button>
       <button class="tab-btn" data-tab="restore">4. Kırık Yazıt Tamamlama (690)</button>
       <button class="tab-btn" data-tab="diachronic">5. İndus Sonrası Dil &amp; Körfez Duvarı</button>
+      <button class="tab-btn" data-tab="time12">6. 700 Yıllık Evrim &amp; Denizcilik</button>
     </nav>
   </header>
 
@@ -404,7 +407,7 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
     <!-- TAB 1: OVERVIEW & CALIBRATION -->
     <section class="panel active" id="tab-overview">
       <div class="hero">
-        <span class="hero-eyebrow">Sıfır Halüsinasyon · 10/10 Doğrulanmış · Mac &amp; Linux Bit-Bit SHA-256</span>
+        <span class="hero-eyebrow">Sıfır Halüsinasyon · 11/11 Doğrulanmış · Mac &amp; Linux Bit-Bit SHA-256 · v1.0.0</span>
         <h1>İndus Vadisi Yazısı İçin Kalibre Edilmiş Açık Benchmark</h1>
         <p>5.679 yazıt üzerinde görsel glif analizi, 5'li bilinen-cevap &amp; dil-dışı kalibrasyon, Mohenjo-daro bakır tablet iç Rosettası, Lothal çok-imzalı kargo ağı ve 690 kırık yazıtlık açık onarım kataloğu. Kanıtlanmış yapısal gerçekler ile kanıtlanmamış sesli okumalar kesin çizgiyle ayrılmıştır.</p>
       </div>
@@ -594,10 +597,47 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
         </div>
       </div>
     </section>
+    <!-- TAB 6: 700-YEAR STRATIGRAPHIC EVOLUTION & MARITIME SPLIT -->
+    <section class="panel" id="tab-time12">
+      <div class="two-col">
+        <div class="card">
+          <h2>İlk Nicel Paleografik Evrim Zincirleri (BH-FDR q &lt; 0.05)</h2>
+          <p class="lead">Mohenjo-daro alan-içi normalleştirilmiş derinlik (n=1.253) &amp; tek-datum DKG(S) (n=595) ile Harappa Period 2→5 (Spearman rho = +0.289, p = 0.0376) çapraz doğrulaması:</p>
+          <div id="paleoChains" style="display:grid;gap:12px"></div>
+        </div>
+        <div class="card">
+          <h2>Denizcilik (Kargo/Körfez) vs Irmak Başkentleri (Tabletler)</h2>
+          <p class="lead">Tabletlerin %98.9'u iç nehir şehirlerinde (Harappa Gavi timsahı 62/66, Balık 47/47); gerçek açık-deniz lojistiği <strong>TAG* (%65.3)</strong> ve <strong>SEAL:C (~%66)</strong> üzerinde.</p>
+          <table>
+            <thead><tr><th>Belge Türü</th><th>Deniz Kıyısı &amp; Körfez</th><th>Aşağı İndus (MD)</th><th>İç Kara (Harappa vb.)</th></tr></thead>
+            <tbody>
+              <tr><td><strong>TAB:I (Minyatür)</strong></td><td class="mono">19 (%2.0)</td><td class="mono">8</td><td class="mono"><strong>925 (%97.2)</strong></td></tr>
+              <tr><td><strong>TAB:B (Kabartma)</strong></td><td class="mono">5 (%0.5)</td><td class="mono">150</td><td class="mono"><strong>946 (%85.4)</strong></td></tr>
+              <tr><td><strong>TAB:C (Bakır)</strong></td><td class="mono">0 (%0.0)</td><td class="mono"><strong>229 (%99.6)</strong></td><td class="mono">1</td></tr>
+              <tr style="background:var(--em-accent-soft)"><td><strong>TAG* (Kargo Kil)</strong></td><td class="mono"><strong>171 (%65.3)</strong></td><td class="mono">29</td><td class="mono">56</td></tr>
+              <tr style="background:var(--em-accent-soft)"><td><strong>SEAL:C/CY (Yuvarlak)</strong></td><td class="mono"><strong>16 (+11 Körfez)</strong></td><td class="mono">9</td><td class="mono">5</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>4 Eksenli Hilal Merdiveni (#900 → #904 → #923, TAB:C Hariç Tekrarsız)</h2>
+        <table>
+          <thead><tr><th>İşaret</th><th>Görsel</th><th>n</th><th>Solunda Balık/Yıldız</th><th>Solunda Sayı</th><th>Sağında 740 Küp</th><th>MD Zaman Sırası</th></tr></thead>
+          <tbody id="crescentBody"></tbody>
+        </table>
+      </div>
+
+      <div class="card">
+        <h2>Katman 12: 700 Yıllık Stratigrafik Zaman Evrimi Levhası</h2>
+        <img class="plate-img" src="./assets/charts/layer12_time_evolution_plate.png" alt="Layer 12 Stratigraphic Time Evolution Plate" />
+      </div>
+    </section>
   </main>
 
   <footer>
-    INDUS-DEDUCT Açık Benchmark · FaunaTech Doğal Atlas v2.0 (<code>emare-ui</code>) · 10/10 Claim-Ledger Doğrulamalı · Sıfır Uydurma Okuma
+    INDUS-DEDUCT Açık Benchmark (v1.0.0-preprint) · FaunaTech Doğal Atlas v2.0 (<code>emare-ui</code>) · 11/11 Claim-Ledger Doğrulamalı · Sıfır Uydurma Okuma
   </footer>
 
   <script>
@@ -784,6 +824,39 @@ def write_portal_html(bundle: dict[str, Any]) -> None:
           <td class="mono">${d.has_091_seals} / ${d.has_090_seals}</td>
         </tr>
       `).join("");
+
+      // 7. Layer 12 Paleographic Chains & Crescent Ladder
+      document.getElementById("paleoChains").innerHTML = `
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-clay-soft);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-clay);margin-bottom:6px">1) Taşıyıcı Kayması (vis=0.88 · BH-FDR q = 0.0083*)</div>
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+            ${renderSeqInline("156", cp)} <span class="mono">sıra 0.51 · DKG(S) -15.05 ft</span>
+            <strong style="color:var(--em-clay)">→</strong>
+            ${renderSeqInline("154", cp)} <span class="mono">sıra 0.86 · DKG(S) -7.55 ft (p=0.0021)</span>
+          </div>
+        </div>
+        <div style="padding:12px 14px;border-radius:12px;background:var(--em-success-soft);border:1px solid var(--em-border)">
+          <div style="font-weight:600;color:var(--em-success);margin-bottom:6px">2) 3 Aşamalı Filizlenme / Yaprak Evrimi (vis=0.87–0.96 · BH-FDR q = 0.0339*)</div>
+          <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+            ${renderSeqInline("838", cp)} <span class="mono">(0.22)</span> <strong>→</strong>
+            ${renderSeqInline("803", cp)} <span class="mono">(0.52)</span> <strong>→</strong>
+            ${renderSeqInline("806", cp)} <span class="mono">(0.67 · Harappa #1 Geç q=0.0106*)</span>
+          </div>
+        </div>
+      `;
+      const cr = B.layer12_time.calendar_and_crescent_audit.crescent_progression_non_tabc;
+      document.getElementById("crescentBody").innerHTML = ["900", "904", "923"].map(sid => {
+        const c = cr[sid];
+        return `<tr>
+          <td class="mono"><strong>#${sid}</strong> · ${c.label}</td>
+          <td>${renderSeqInline(sid, cp)}</td>
+          <td class="mono">${c.dedup_non_tabc_count}</td>
+          <td class="mono"><strong>%${c.preceded_by_fish_pct}</strong></td>
+          <td class="mono">%${c.preceded_by_numeral_pct}</td>
+          <td class="mono"><strong>%${c.followed_by_740_pct}</strong></td>
+          <td class="mono">${c.md_within_area_med_rel_time}</td>
+        </tr>`;
+      }).join("");
     });
   </script>
 </body>
@@ -884,6 +957,7 @@ def build_preprint_pdf() -> Path:
     body_html = md_to_print_html(md_text)
     cal_img = (REPORTS_DIR / "calibration_5way_chart.png").resolve().as_uri()
     l9_img = (REPORTS_DIR / "layer9_copper_rosetta_plate.png").resolve().as_uri()
+    l12_img = (REPORTS_DIR / "layer12_time_evolution_plate.png").resolve().as_uri()
 
     full_html = f"""<!DOCTYPE html>
 <html lang="en">
@@ -949,6 +1023,10 @@ def build_preprint_pdf() -> Path:
   <div class="figure">
     <img src="{l9_img}" alt="Layer 9 Internal Rosetta and Meluhha Trade Plate" />
     <div class="figcap"><strong>Figure 2 (Layer 9).</strong> Actual ICIT TTF glyph plate illustrating Mohenjo-daro Copper Tablet (TAB:C) Text-to-Icon locks &amp; single-sign reverse equations (#341 quadruped pictograph, #753 Hare, #777–782 class vessels), Lothal multi-signature cargo co-signing with Mohenjo-daro stone seal #2239.1, Harappa double-sided ration tokens (: X : + 400 stacking), and global BH-FDR trade/material enrichments (#091 Twin-Humans, #790 Ring).</div>
+  </div>
+  <div class="figure">
+    <img src="{l12_img}" alt="Layer 12 Stratigraphic Time Evolution Plate" />
+    <div class="figcap"><strong>Figure 3 (Layer 12).</strong> 700-year de-confounded stratigraphic time evolution across Mohenjo-daro (within-area rank-normalized depth n=1,253 &amp; single-datum DKG(S) n=595) and Harappa (Period 2–5, Spearman rho=+0.289, p=0.0376), displaying the two global BH-FDR paleographic drift chains (#156→#154 q=0.0083; 3-stage sprouting chain #838→#803→#806 q=0.0339), frozen SEAL:S core grammar quartiles, and the four-axis Crescent ladder (#900→#904→#923).</div>
   </div>
 </body>
 </html>

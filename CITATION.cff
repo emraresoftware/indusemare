@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use INDUS-DEDUCT code, benchmark data, or restoration catalog, please cite this work."
+title: "INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script"
+version: "1.0.0-preprint"
+date-released: "2026-11-20"
+type: software
+authors:
+  - name: "Emre & Emare INDUS-DEDUCT Research Collective"
+license: "MIT"
+keywords:
+  - indus-script
+  - harappan
+  - computational-epigraphy
+  - undeciphered-scripts
+  - paleo-linguistics
+  - benchmark
+  - reproducible-research
+abstract: >-
+  An end-to-end 13-layer calibrated computational epigraphy benchmark across 5,679 Indus Valley
+  inscriptions, featuring five-way known-answer and non-linguistic calibration (Ur III Sumerian,
+  Linear B, Linear A, Non-Linguistic Stamps), exact 23-seal Max-CSP identifiability boundaries,
+  Mohenjo-daro Copper Tablet internal Rosetta analysis, 700-year de-confounded paleographic drift
+  chains, and a 690-inscription strict Leave-One-City-Out damaged restoration catalog.

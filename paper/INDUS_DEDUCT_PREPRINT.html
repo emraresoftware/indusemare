@@ -55,9 +55,9 @@
 </head>
 <body>
   <h1>INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script — Validated Linguistic Discriminators, Internal Icon-Text Registries, Trade Logistics, and Exact Decipherment Boundaries</h1>
-<p><strong>Project:</strong> INDUS-DEDUCT (Layers 0–11B Reproducible Open Benchmark)</p>
+<p><strong>Project:</strong> INDUS-DEDUCT (Layers 0–12 Reproducible Open Benchmark, <code>v1.0.0-preprint</code>)</p>
 <p><strong>Date:</strong> November 20, 2026</p>
-<p><strong>Repository:</strong> <code>indus-decipher</code> (10/10 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)</p>
+<p><strong>Repository:</strong> <code>indus-decipher</code> (11/11 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)</p>
 <p><strong>Epistemological Contract:</strong> Zero fabricated phonetic readings; all speculative upstream annotations stripped prior to modeling; all positive claims paired with position-preserving nulls, global Benjamini–Hochberg FDR, known-answer positive controls, and non-linguistic negative controls.</p>
 <hr/>
 <h2>Abstract</h2>
@@ -195,6 +195,14 @@
 <li><strong><code>interior_all_STRICT_LOCO</code> (<code>n = 10</code>, baseline <code>10.0%</code>):</strong> Hybrid Ensemble improves from <code>30.0%</code> → <strong><code>40.0%</code> Top-1 (<code>+10.0 pp</code>)</strong> and <code>50.0%</code> → <strong><code>60.0%</code> Top-3 (<code>+10.0 pp</code>)</strong>.</li>
 <li><strong>Open Restoration Catalog:</strong> Deployed across all <strong><code>690</code> real single-gap damaged inscriptions across <code>25</code> archaeological sites</strong> (<code>405</code> novel unattested restorations, <code>32</code> high-confidence <code>p ≥ 0.40</code>; exported to <code>reports/damaged_inscriptions_restoration_catalog.{json,csv}</code> and live-browsable in <code>portal/index.html</code>).</li>
 </ul>
+<h3>8.4 700-Year Stratigraphic Evolution, Paleographic Drift, and Maritime vs. Riverine Split (Layer 12)</h3>
+<p>Eliminating inter-trench excavation datum offsets in Mohenjo-daro via both <strong>within-area rank-normalized depth (<code>n = 1,253</code>)</strong> and <strong>single-datum <code>DKG(S)</code> stratigraphy (<code>n = 595</code>)</strong>—validated monotonically against Early (<code>0.038</code>), Intermediate (<code>0.387</code>), and Late (<code>0.799</code>) strata—and replicating against <strong>Harappa Period <code>2 → 5</code> (<code>n = 637</code>)</strong> yields four diachronic findings (<code>src/layer12_stratigraphic_time_evolution.py</code>):</p>
+<ol>
+<li><strong>First Quantitative BH-FDR Paleographic Evolution Chains:</strong> Testing Layer 1B visually similar allograph pairs identifies two globally significant chronological substitutions (<code>q &lt; 0.05</code>): Carrier <strong><code>#156 → #154</code></strong> (<code>vis_sim = 0.879</code>, within-area median <code>0.510 → 0.862</code>, <code>p = 3.94e-4, q = 0.0083</code>; single-datum <code>DKG(S)</code>: <code>-15.05 ft → -7.55 ft</code>, <code>p = 0.0021</code>) and a <strong>3-stage botanical/sprouting chain <code>#838 → #803 → #806</code></strong> (1-line oval <code>0.215</code> → 3-branch <code>0.520</code> → 5-branch <code>0.674</code>, <code>vis_sim = 0.87–0.96</code>, <code>p = 0.0032, q = 0.0339</code>), where <strong><code>#806</code></strong> independently replicates 600 km away as the <strong>#1 late-period sign in Harappa</strong> (<code>Period 3C-3</code>, <code>q = 0.0106</code>) and is <code>#154</code>&#x27;s top left neighbor (<code>806 154</code>, <code>18×</code>).</li>
+<li><strong>Cross-City Chronological Lockstep &amp; Core Grammar Stability:</strong> Across <code>52</code> shared dated signs, Mohenjo-daro depth and Harappa periods correlate positively (<strong><code>Spearman rho = +0.289, p = 0.0376</code></strong>), while core <code>SEAL:S</code> grammar (<code>n = 844</code>, Q1 Oldest <code>-16.5 ft</code> → Q4 Youngest <code>-4.2 ft</code>) remains remarkably frozen across 700 years (<code>740</code> finality <code>39.2% → 42.7%</code>, 4 elite openers <code>24.5% → 24.6%</code>, <code>: X :</code> <code>4.2% → 4.7%</code>, length <code>4.50 → 4.70</code>, seal area <code>713 → 734 mm²</code>; all <code>p &gt; 0.09</code>).</li>
+<li><strong>Four-Axis Crescent Ladder (<code>#900 → #904 → #923</code>):</strong> Excluding <code>TAB:C</code> duplicates, 1-, 2-, and 3-crescent signs form a monotonic gradient in preceding Fish/Star (<code>1.4% → 22.9% → 44.8%</code>), following Jar <code>740</code> (<code>31.9% → 45.8% → 89.7%</code>), preceding numerals (<code>43.1% → 37.5% → 13.8%</code>), and Mohenjo-daro depth (<code>0.619 → 0.439 → 0.366</code>). On Parpola&#x27;s calendar-star hypothesis, <code>7-Fish</code> (<code>14×</code>) exceeds <code>5-Fish</code> and <code>8-Fish</code> (<code>0×</code>) but remains dwarfed by <code>2-Fish</code> (<code>241×</code>).</li>
+<li><strong>Riverine Tablets vs. Maritime Cargo Protocol:</strong> Geographic stratification refutes interpreting Harappan tablets (<code>TAB<em></code>) as open-sea maritime records: <strong><code>98.9%</code></strong> of tablets (<code>2,243/2,290</code>) occur in inland river capitals (Harappa &amp; Mohenjo-daro; Lothal dockyard has only <code>3</code>), enriched in strictly freshwater riverine icons (<strong><code>Gavi</code> gharial <code>62/66 = 93.9%</code></strong>, <strong><code>Fish</code> <code>47/47 = 100%</code></strong> on Harappa tablets). True maritime/coastal logistics localize sharply to </em><em>clay cargo sealings (<code>TAG</em></code>, <code>171/262 = 65.3%</code> coastal/Gulf)<strong> and </strong>circular Gulf seals (<code>SEAL:C/CY</code>, <code>~66%</code>)**, where Twin-Humans <code>#091</code> (<code>4.6×</code>, <code>p = 0.046</code>) and Single-Human <code>#090</code> (<code>p = 0.058</code>) rise while inland Jar <code>740</code> falls (<code>39.2% → 27.7%</code>, <code>p = 2.88e-4</code>).</li>
+</ol>
 <hr/>
 <h2>9. Reproducibility &amp; Open Verification Appendix</h2>
 <p>Every quantitative result in this manuscript is deterministically reproducible and machine-checked via <code>unittest</code>:</p>
@@ -202,15 +210,16 @@
 # 1. Rebuild canonical corpus from raw SQL/CSV (Layer 0)
 .venv/bin/python src/layer0_ingest.py
 
-# 2. Run Layers 8, 9, 10, 11A, 11B &amp; portal/PDF compiler
+# 2. Run Layers 8–12 &amp; portal/PDF compiler
 .venv/bin/python src/layer8_known_answer_calibration.py
 .venv/bin/python src/layer9_internal_rosetta_and_trade.py
 .venv/bin/python src/layer10_copper_rosetta_deep_test.py
 .venv/bin/python src/layer11a_external_gulf_and_diachronic.py
 .venv/bin/python src/layer11b_glyph_neural_restoration.py
+.venv/bin/python src/layer12_stratigraphic_time_evolution.py
 .venv/bin/python src/build_portal_and_pdf.py
 
-# 3. Verify all 10 claim-ledger invariants &amp; SHA-256 data manifest
+# 3. Verify all 11 claim-ledger invariants &amp; SHA-256 data manifest
 .venv/bin/python -m unittest tests/test_claim_ledger.py -v
 </code></pre>
 <h3>Verification Ledger Summary (<code>tests/test_claim_ledger.py</code>)</h3>
@@ -225,6 +234,7 @@
 <li><code>test_08_layer9_internal_rosetta_and_trade_invariants</code>: <code>TAB:C</code> Mohenjo-daro monopoly (<code>&gt;99%</code>) &amp; <code>MI z &gt; 15</code> vs. <code>SEAL:S &lt; 5</code>, Harappa <code>Entity↔Qty MI z &gt; 7</code> &amp; <code>: X : + 400</code> clitic stacking (<code>&gt;90%</code>), 26 multi-sig cargo lumps, Lothal <code>0</code> FDR after dedup, and Export <code>#091</code> + Bangle <code>#790</code> BH-FDR survival.</li>
 <li><code>test_09_layer10_copper_deep_and_091_invariants</code>: <code>TAB:C</code> <code>H1</code> refutation (mean len <code>&gt; 4.5</code>, polysemous <code>777</code>, zero <code>SEAL:S</code> animal retention), <code>#091</code> <code>0%</code> final &amp; <code>&gt;10×</code> trade lift (<code>p &lt; 1e-5</code>), and honest 4-family phonological null.</li>
 <li><code>test_10_layer11_gulf_diachronic_and_neural_restoration</code>: Foreign DOF escalation (<code>Ring1 &lt; Ring2</code>), foreign square (<code>0/12</code>) vs. circular (<code>≥4</code>) <code>#091</code> diaspora split, Hybrid LOCO restoration beating N-gram on <code>edge_all</code> (<code>n = 275</code>) and <code>interior_all</code> (<code>n = 10</code>), and <code>≥650</code> damaged-inscription catalog.</li>
+<li><code>test_11_layer12_stratigraphic_time_evolution</code>: Monotonic Early/Intermediate/Late depth validation, BH-FDR paleographic drift (<code>#156 → #154</code> &amp; <code>#838 → #806</code>), cross-city MD–Harappa replication (<code>rho &gt; 0.20, p &lt; 0.05</code>), and monotonic 4-axis Crescent ladder (<code>#900 → #904 → #923</code>).</li>
 </ol>
   <div class="figure">
     <img src="file:///Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/calibration_5way_chart.png" alt="Layer 8 Five-Way Calibration" />
@@ -233,6 +243,10 @@
   <div class="figure">
     <img src="file:///Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer9_copper_rosetta_plate.png" alt="Layer 9 Internal Rosetta and Meluhha Trade Plate" />
     <div class="figcap"><strong>Figure 2 (Layer 9).</strong> Actual ICIT TTF glyph plate illustrating Mohenjo-daro Copper Tablet (TAB:C) Text-to-Icon locks &amp; single-sign reverse equations (#341 quadruped pictograph, #753 Hare, #777–782 class vessels), Lothal multi-signature cargo co-signing with Mohenjo-daro stone seal #2239.1, Harappa double-sided ration tokens (: X : + 400 stacking), and global BH-FDR trade/material enrichments (#091 Twin-Humans, #790 Ring).</div>
+  </div>
+  <div class="figure">
+    <img src="file:///Users/emre/.gemini/antigravity/scratch/indus-decipher/reports/layer12_time_evolution_plate.png" alt="Layer 12 Stratigraphic Time Evolution Plate" />
+    <div class="figcap"><strong>Figure 3 (Layer 12).</strong> 700-year de-confounded stratigraphic time evolution across Mohenjo-daro (within-area rank-normalized depth n=1,253 &amp; single-datum DKG(S) n=595) and Harappa (Period 2–5, Spearman rho=+0.289, p=0.0376), displaying the two global BH-FDR paleographic drift chains (#156→#154 q=0.0083; 3-stage sprouting chain #838→#803→#806 q=0.0339), frozen SEAL:S core grammar quartiles, and the four-axis Crescent ladder (#900→#904→#923).</div>
   </div>
 </body>
 </html>

@@ -1,8 +1,8 @@
 # INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script — Validated Linguistic Discriminators, Internal Icon-Text Registries, Trade Logistics, and Exact Decipherment Boundaries
 
-**Project:** INDUS-DEDUCT (Layers 0–11B Reproducible Open Benchmark)  
+**Project:** INDUS-DEDUCT (Layers 0–12 Reproducible Open Benchmark, `v1.0.0-preprint`)  
 **Date:** November 20, 2026  
-**Repository:** `indus-decipher` (10/10 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)  
+**Repository:** `indus-decipher` (11/11 automated claim-ledger tests passing; cross-OS macOS/Linux bit-for-bit SHA-256 verified)  
 **Epistemological Contract:** Zero fabricated phonetic readings; all speculative upstream annotations stripped prior to modeling; all positive claims paired with position-preserving nulls, global Benjamini–Hochberg FDR, known-answer positive controls, and non-linguistic negative controls.
 
 ---
@@ -163,6 +163,13 @@ To upgrade damaged-inscription restoration without city leakage (`src/layer11b_g
 - **`interior_all_STRICT_LOCO` (`n = 10`, baseline `10.0%`):** Hybrid Ensemble improves from `30.0%` → **`40.0%` Top-1 (`+10.0 pp`)** and `50.0%` → **`60.0%` Top-3 (`+10.0 pp`)**.
 - **Open Restoration Catalog:** Deployed across all **`690` real single-gap damaged inscriptions across `25` archaeological sites** (`405` novel unattested restorations, `32` high-confidence `p ≥ 0.40`; exported to `reports/damaged_inscriptions_restoration_catalog.{json,csv}` and live-browsable in `portal/index.html`).
 
+### 8.4 700-Year Stratigraphic Evolution, Paleographic Drift, and Maritime vs. Riverine Split (Layer 12)
+Eliminating inter-trench excavation datum offsets in Mohenjo-daro via both **within-area rank-normalized depth (`n = 1,253`)** and **single-datum `DKG(S)` stratigraphy (`n = 595`)**—validated monotonically against Early (`0.038`), Intermediate (`0.387`), and Late (`0.799`) strata—and replicating against **Harappa Period `2 → 5` (`n = 637`)** yields four diachronic findings (`src/layer12_stratigraphic_time_evolution.py`):
+1. **First Quantitative BH-FDR Paleographic Evolution Chains:** Testing Layer 1B visually similar allograph pairs identifies two globally significant chronological substitutions (`q < 0.05`): Carrier **`#156 → #154`** (`vis_sim = 0.879`, within-area median `0.510 → 0.862`, `p = 3.94e-4, q = 0.0083`; single-datum `DKG(S)`: `-15.05 ft → -7.55 ft`, `p = 0.0021`) and a **3-stage botanical/sprouting chain `#838 → #803 → #806`** (1-line oval `0.215` → 3-branch `0.520` → 5-branch `0.674`, `vis_sim = 0.87–0.96`, `p = 0.0032, q = 0.0339`), where **`#806`** independently replicates 600 km away as the **#1 late-period sign in Harappa** (`Period 3C-3`, `q = 0.0106`) and is `#154`'s top left neighbor (`806 154`, `18×`).
+2. **Cross-City Chronological Lockstep & Core Grammar Stability:** Across `52` shared dated signs, Mohenjo-daro depth and Harappa periods correlate positively (**`Spearman rho = +0.289, p = 0.0376`**), while core `SEAL:S` grammar (`n = 844`, Q1 Oldest `-16.5 ft` → Q4 Youngest `-4.2 ft`) remains remarkably frozen across 700 years (`740` finality `39.2% → 42.7%`, 4 elite openers `24.5% → 24.6%`, `: X :` `4.2% → 4.7%`, length `4.50 → 4.70`, seal area `713 → 734 mm²`; all `p > 0.09`).
+3. **Four-Axis Crescent Ladder (`#900 → #904 → #923`):** Excluding `TAB:C` duplicates, 1-, 2-, and 3-crescent signs form a monotonic gradient in preceding Fish/Star (`1.4% → 22.9% → 44.8%`), following Jar `740` (`31.9% → 45.8% → 89.7%`), preceding numerals (`43.1% → 37.5% → 13.8%`), and Mohenjo-daro depth (`0.619 → 0.439 → 0.366`). On Parpola's calendar-star hypothesis, `7-Fish` (`14×`) exceeds `5-Fish` and `8-Fish` (`0×`) but remains dwarfed by `2-Fish` (`241×`).
+4. **Riverine Tablets vs. Maritime Cargo Protocol:** Geographic stratification refutes interpreting Harappan tablets (`TAB*`) as open-sea maritime records: **`98.9%`** of tablets (`2,243/2,290`) occur in inland river capitals (Harappa & Mohenjo-daro; Lothal dockyard has only `3`), enriched in strictly freshwater riverine icons (**`Gavi` gharial `62/66 = 93.9%`**, **`Fish` `47/47 = 100%`** on Harappa tablets). True maritime/coastal logistics localize sharply to **clay cargo sealings (`TAG*`, `171/262 = 65.3%` coastal/Gulf)** and **circular Gulf seals (`SEAL:C/CY`, `~66%`)**, where Twin-Humans `#091` (`4.6×`, `p = 0.046`) and Single-Human `#090` (`p = 0.058`) rise while inland Jar `740` falls (`39.2% → 27.7%`, `p = 2.88e-4`).
+
 ---
 
 ## 9. Reproducibility & Open Verification Appendix
@@ -173,15 +180,16 @@ Every quantitative result in this manuscript is deterministically reproducible a
 # 1. Rebuild canonical corpus from raw SQL/CSV (Layer 0)
 .venv/bin/python src/layer0_ingest.py
 
-# 2. Run Layers 8, 9, 10, 11A, 11B & portal/PDF compiler
+# 2. Run Layers 8–12 & portal/PDF compiler
 .venv/bin/python src/layer8_known_answer_calibration.py
 .venv/bin/python src/layer9_internal_rosetta_and_trade.py
 .venv/bin/python src/layer10_copper_rosetta_deep_test.py
 .venv/bin/python src/layer11a_external_gulf_and_diachronic.py
 .venv/bin/python src/layer11b_glyph_neural_restoration.py
+.venv/bin/python src/layer12_stratigraphic_time_evolution.py
 .venv/bin/python src/build_portal_and_pdf.py
 
-# 3. Verify all 10 claim-ledger invariants & SHA-256 data manifest
+# 3. Verify all 11 claim-ledger invariants & SHA-256 data manifest
 .venv/bin/python -m unittest tests/test_claim_ledger.py -v
 ```
 
@@ -196,3 +204,4 @@ Every quantitative result in this manuscript is deterministically reproducible a
 8. `test_08_layer9_internal_rosetta_and_trade_invariants`: `TAB:C` Mohenjo-daro monopoly (`>99%`) & `MI z > 15` vs. `SEAL:S < 5`, Harappa `Entity↔Qty MI z > 7` & `: X : + 400` clitic stacking (`>90%`), 26 multi-sig cargo lumps, Lothal `0` FDR after dedup, and Export `#091` + Bangle `#790` BH-FDR survival.
 9. `test_09_layer10_copper_deep_and_091_invariants`: `TAB:C` `H1` refutation (mean len `> 4.5`, polysemous `777`, zero `SEAL:S` animal retention), `#091` `0%` final & `>10×` trade lift (`p < 1e-5`), and honest 4-family phonological null.
 10. `test_10_layer11_gulf_diachronic_and_neural_restoration`: Foreign DOF escalation (`Ring1 < Ring2`), foreign square (`0/12`) vs. circular (`≥4`) `#091` diaspora split, Hybrid LOCO restoration beating N-gram on `edge_all` (`n = 275`) and `interior_all` (`n = 10`), and `≥650` damaged-inscription catalog.
+11. `test_11_layer12_stratigraphic_time_evolution`: Monotonic Early/Intermediate/Late depth validation, BH-FDR paleographic drift (`#156 → #154` & `#838 → #806`), cross-city MD–Harappa replication (`rho > 0.20, p < 0.05`), and monotonic 4-axis Crescent ladder (`#900 → #904 → #923`).
