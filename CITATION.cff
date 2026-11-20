@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use INDUS-DEDUCT code, benchmark data, or restoration catalog, please cite this work."
 title: "INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script"
-version: "1.0.0-preprint"
+version: "1.0.1"
 date-released: "2026-11-20"
 type: software
 repository-code: "https://github.com/emraresoftware/indusemare"

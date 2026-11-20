@@ -1,0 +1,37 @@
+{
+  "title": "INDUS-DEDUCT: A Calibrated, Anti-Hallucination Computational Benchmark for the Indus Valley Script",
+  "upload_type": "software",
+  "description": "An end-to-end, reproducible 13-layer computational epigraphy benchmark across 5,679 Indus Valley (Harappan) inscriptions (5,805 parsed lines; 713 raw signs). Features five-way matched known-answer and non-linguistic calibration (Indus vs. Ur III Sumerian CDLI, Linear B, Linear A, and structured non-linguistic stamps), exact 23-seal Max-CSP identifiability boundaries, Mohenjo-daro Copper Tablet (TAB:C) internal Rosetta and H1 refutation, Harappa double-sided token locks, Lothal multi-signature cargo network, Export Header #091 audit, 700-year de-confounded paleographic drift chains (#156->#154 and #838->#803->#806, replicated across Mohenjo-daro and Harappa), and a 690-inscription strict Leave-One-City-Out (LOCO) damaged restoration catalog. Zero fabricated phonetic readings; 11/11 machine-verified claim-ledger invariants.",
+  "creators": [
+    {
+      "name": "Emre",
+      "affiliation": "Emare INDUS-DEDUCT Research Collective"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "Indus Valley Script",
+    "Harappan Civilization",
+    "Computational Epigraphy",
+    "Undeciphered Scripts",
+    "Historical Linguistics",
+    "Reproducible Benchmark",
+    "Mohenjo-daro",
+    "Harappa",
+    "Lothal",
+    "Paleography"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://indus.emare.dev/?lang=en",
+      "relation": "isSupplementedBy",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://github.com/emraresoftware/indusemare",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    }
+  ]
+}
